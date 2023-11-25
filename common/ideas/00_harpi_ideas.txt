@@ -11,8 +11,25 @@ reclamation_ideas = {
 		OR = {
 			culture = moon_elf
 			culture = star_elf
-			culture_group = dwarven
+			AND = { # dwarves only get to take it if they already own 2 restored holds, otherwise too strong
+			        # even this might be too strong honestly... but whatever
+				culture_group = dwarven
+				num_of_owned_provinces_with = {
+					value = 2
+					OR = {
+						has_terrain = dwarven_hold
+						has_terrain = dwarven_hold_surface
+					}
+					NOT = {
+						has_province_modifier = damaged_hold
+						has_province_modifier = partially_ruined_hold
+						has_province_modifier = ruined_hold
+					}
+					is_city = yes
+				}
+			}
 		}
+		
 		NOT = { is_colonial_nation = yes }
 		NOT = {
 			has_disaster = remnant_stagnation_disaster
@@ -59,7 +76,7 @@ reclamation_ideas = {
 		}
 		modifier = { # disallow while still migratory OPM
 			factor = 0
-			num_of_cities = 2
+			NOT = { num_of_cities = 2 }
 		}
 		modifier = { # disallow if nowhere to colonize
 			factor = 0
@@ -247,6 +264,7 @@ urbanization_ideas = {
 			NOT = { has_reform = adventurer_reform }
 			has_reform = found_our_nation
 		} 
+		NOT = { has_reform = dwarover_adventurer_reform }
 	}
 
 	urbanization1 = {
