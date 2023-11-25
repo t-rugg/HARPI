@@ -365,7 +365,7 @@ innovativeness_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0.45
+		factor = 0.35
 		modifier = {
 			factor = 1.25
 			has_reform = steppe_horde
@@ -1673,7 +1673,7 @@ administrative_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0.55
+		factor = 0.4
 		# modifier = {
 		# 	factor = 2
 		# 	has_strong_mil_national_ideas = yes 
@@ -1708,7 +1708,7 @@ humanist_ideas = {
 	category = ADM
 
 	bonus = {
-		idea_cost = -0.1
+		idea_cost = -0.075
 		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
 		brahmins_muslim_loyalty_modifier = 0.1
 		dhimmi_loyalty_modifier = 0.1

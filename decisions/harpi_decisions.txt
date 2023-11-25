@@ -261,12 +261,13 @@ mixed_armies7_initialize = {
 	}
 }
 
-patronage_decision = {
+patronage1_decision = {
 	potential = {
 		has_idea_group = patronage_ideas
 	}
 	allow = {
-		has_idea = patronage1
+		has_idea = patronage1		
+		NOT = { has_country_flag = patronage_decision_menu_open }
 	}
 	
 	effect = {

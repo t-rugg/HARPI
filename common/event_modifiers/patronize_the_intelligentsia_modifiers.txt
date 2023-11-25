@@ -1,0 +1,23 @@
+patronage7_autonomy = {
+	global_autonomy = -0.05
+}
+
+patronage7_spy_offence = {
+	spy_offence = 0.33
+}
+
+patronage7_spy_defence = {
+	global_spy_defence = 0.33
+}
+
+patronage7_tolerance_own = {
+	tolerance_own = 1
+}
+
+patronage7_religious_unity = {
+	religious_unity = 0.05
+}
+
+patronage7_development_cost = {
+	development_cost = -0.02
+}

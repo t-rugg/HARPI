@@ -1034,11 +1034,19 @@ country_event = {
 
 country_event = { # Patronize the Intelligentsia
 	id = harpi.6
-	title = harpi.2.t
-	desc = harpi.2.d
+	title = harpi.6.t
+	desc = harpi.6.d
 	picture = KINGS_CHOICE_eventPicture
 
 	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = patronage_decision_menu_open
+	}
+
+	after = {
+		clr_country_flag = patronage_decision_menu_open
+	}
 
 	option = { # Prestige
 		name = harpi.6.prestige
@@ -1050,7 +1058,14 @@ country_event = { # Patronize the Intelligentsia
 					NOT = { has_country_flag = patronize_the_intelligentsia_prestige }
 					had_country_flag = {
 						flag = patronize_the_intelligentsia_prestige
-						days = 365
+						days = 3650
+					}
+					AND = {
+						has_idea = patronage7
+						had_country_flag = {
+							flag = patronize_the_intelligentsia_prestige
+							days = 1825
+						}
 					}
 				}
 			}
@@ -1073,7 +1088,14 @@ country_event = { # Patronize the Intelligentsia
 					NOT = { has_country_flag = patronize_the_intelligentsia_government }
 					had_country_flag = {
 						flag = patronize_the_intelligentsia_government
-						days = 365
+						days = 3650
+					}
+					AND = {
+						has_idea = patronage7
+						had_country_flag = {
+							flag = patronize_the_intelligentsia_government
+							days = 1825
+						}
 					}
 				}
 			}
@@ -1086,6 +1108,164 @@ country_event = { # Patronize the Intelligentsia
 		hidden_effect = {
 			clr_country_flag = patronize_the_intelligentsia_government
 			set_country_flag = patronize_the_intelligentsia_government
+		}
+	}
+
+	# TODO: relations option (rebalance?)
+
+	option = { # Autonomy Reduction
+		name = harpi.6.autonomy
+		trigger = {
+			has_idea = patronage7
+			custom_trigger_tooltip = {
+				tooltip = patronize_the_intelligentsia_minor_modifier_delay
+				OR = {
+					NOT = { has_country_flag = patronize_the_intelligentsia_minor_modifier }
+					had_country_flag = {
+						flag = patronize_the_intelligentsia_minor_modifier
+						days = 1825
+					}
+				}
+			}
+		}
+		add_years_of_income = -0.5
+		add_country_modifier = {
+			name = patronage7_autonomy
+			duration = 1825
+		}
+		hidden_effect = {
+			clr_country_flag = patronize_the_intelligentsia_minor_modifier
+			set_country_flag = patronize_the_intelligentsia_minor_modifier
+		}
+	}
+
+	option = { # Spy Offense
+		name = harpi.6.spy_offence
+		trigger = {
+			has_idea = patronage7
+			custom_trigger_tooltip = {
+				tooltip = patronize_the_intelligentsia_minor_modifier_delay
+				OR = {
+					NOT = { has_country_flag = patronize_the_intelligentsia_minor_modifier }
+					had_country_flag = {
+						flag = patronize_the_intelligentsia_minor_modifier
+						days = 1825
+					}
+				}
+			}
+		}
+		add_years_of_income = -0.5
+		add_country_modifier = {
+			name = patronage7_spy_offence
+			duration = 1825
+		}
+		hidden_effect = {
+			clr_country_flag = patronize_the_intelligentsia_minor_modifier
+			set_country_flag = patronize_the_intelligentsia_minor_modifier
+		}
+	}
+
+	option = { # Spy Defense
+		name = harpi.6.spy_defence
+		trigger = {
+			has_idea = patronage7
+			custom_trigger_tooltip = {
+				tooltip = patronize_the_intelligentsia_minor_modifier_delay
+				OR = {
+					NOT = { has_country_flag = patronize_the_intelligentsia_minor_modifier }
+					had_country_flag = {
+						flag = patronize_the_intelligentsia_minor_modifier
+						days = 1825
+					}
+				}
+			}
+		}
+		add_years_of_income = -0.5
+		add_country_modifier = {
+			name = patronage7_spy_defence
+			duration = 1825
+		}
+		hidden_effect = {
+			clr_country_flag = patronize_the_intelligentsia_minor_modifier
+			set_country_flag = patronize_the_intelligentsia_minor_modifier
+		}
+	}	
+	
+	option = { # Tolerance Own
+		name = harpi.6.tolerance_own
+		trigger = {
+			has_idea = patronage7
+			custom_trigger_tooltip = {
+				tooltip = patronize_the_intelligentsia_minor_modifier_delay
+				OR = {
+					NOT = { has_country_flag = patronize_the_intelligentsia_minor_modifier }
+					had_country_flag = {
+						flag = patronize_the_intelligentsia_minor_modifier
+						days = 1825
+					}
+				}
+			}
+		}
+		add_years_of_income = -0.5
+		add_country_modifier = {
+			name = patronage7_tolerance_own
+			duration = 1825
+		}
+		hidden_effect = {
+			clr_country_flag = patronize_the_intelligentsia_minor_modifier
+			set_country_flag = patronize_the_intelligentsia_minor_modifier
+		}
+	}
+
+	option = { # Religious Unity
+		name = harpi.6.religious_unity
+		trigger = {
+			has_idea = patronage7
+			custom_trigger_tooltip = {
+				tooltip = patronize_the_intelligentsia_minor_modifier_delay
+				OR = {
+					NOT = { has_country_flag = patronize_the_intelligentsia_minor_modifier }
+					had_country_flag = {
+						flag = patronize_the_intelligentsia_minor_modifier
+						days = 1825
+					}
+				}
+			}
+		}
+		add_years_of_income = -0.5
+		add_country_modifier = {
+			name = patronage7_religious_unity
+			duration = 1825
+		}
+		hidden_effect = {
+			clr_country_flag = patronize_the_intelligentsia_minor_modifier
+			set_country_flag = patronize_the_intelligentsia_minor_modifier
+		}
+	}
+
+	option = { # Development cost
+		name = harpi.6.development_cost
+		trigger = {
+			has_idea = patronage7
+			custom_trigger_tooltip = {
+				tooltip = patronize_the_intelligentsia_minor_modifier_delay
+				OR = {
+					NOT = { has_country_flag = patronize_the_intelligentsia_minor_modifier }
+					had_country_flag = {
+						flag = patronize_the_intelligentsia_minor_modifier
+						days = 1825
+					}
+				}
+			}
+		}
+		add_years_of_income = -0.5
+		add_country_modifier = {
+			name = patronage7_development_cost
+			duration = 1825
+		}
+		hidden_effect = {
+			clr_country_flag = patronize_the_intelligentsia_minor_modifier
+			set_country_flag = patronize_the_intelligentsia_minor_modifier
 		}
 	}
 
