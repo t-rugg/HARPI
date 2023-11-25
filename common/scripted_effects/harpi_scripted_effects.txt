@@ -1,0 +1,20 @@
+harpi_on_parliament_seat_given_effect = {
+	if = {
+		limit = {
+			owner = {
+				has_idea = parliamentary5
+			}
+		}
+	}
+	add_base_tax = 1
+	add_base_production = 1
+	add_base_manpower = 1
+	add_prosperity = 10
+}
+
+harpi_on_parliament_seat_lost_effect = {
+	add_base_tax = -1
+	add_base_production = -1
+	add_base_manpower = -1
+	add_prosperity = -10
+}

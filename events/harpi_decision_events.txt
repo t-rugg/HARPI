@@ -1,0 +1,1096 @@
+namespace = harpi
+
+country_event = {
+	id = harpi.1
+	title = harpi.1.t
+	desc = harpi.1.d
+	picture = KINGS_CHOICE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = harpi.1.a
+		ai_chance = { factor = 50 }	
+		trigger = {
+			adm = 1
+		}
+		change_adm = -1
+		change_mil = 1
+		hidden_effect = {
+			set_ruler_flag = militarist1_adm
+			clr_country_flag = militarist1_gained_points # will be set later if we did gain points
+		}
+		if = {
+			limit = {
+				OR = {
+					NOT = { has_country_flag = militarist1_timer }
+					had_country_flag = {
+						flag = militarist1_timer
+						days = 3650
+					}
+				}
+			}
+			add_adm_power = 30
+			add_dip_power = 30
+			add_mil_power = 30
+			hidden_effect = {
+				clr_country_flag = militarist1_timer # timer measures time since last gaining points
+				set_country_flag = militarist1_timer
+				set_country_flag = militarist1_gained_points
+			}
+		}
+	}
+	option = {
+		name = harpi.1.b
+		ai_chance = { factor = 50 }	
+		trigger = {
+			dip = 1
+		}
+		change_dip = -1
+		change_mil = 1
+		hidden_effect = {
+			set_ruler_flag = militarist1_adm
+		}		
+		if = {
+			limit = {
+				OR = {
+					NOT = { has_country_flag = militarist1_timer }
+					had_country_flag = {
+						flag = militarist1_timer
+						days = 3650
+					}
+				}
+			}
+			add_adm_power = 30
+			add_dip_power = 30
+			add_mil_power = 30
+			hidden_effect = {
+				clr_country_flag = militarist1_timer
+				set_country_flag = militarist1_timer
+				set_country_flag = militarist1_gained_points
+			}
+		}
+	}
+	option = {
+		name = harpi.1.c
+		ai_chance = { factor = 50 }	
+		trigger = {
+			adm = 1
+			dip = 1
+		}	
+		change_adm = -1
+		change_dip = -1
+		change_mil = 2
+		hidden_effect = {
+			set_ruler_flag = militarist1_both
+		}
+		if = {
+			limit = {
+				OR = {
+					NOT = { has_country_flag = militarist1_timer }
+					had_country_flag = {
+						flag = militarist1_timer
+						days = 3650
+					}
+				}
+			}
+			add_adm_power = 30
+			add_dip_power = 30
+			add_mil_power = 30
+			hidden_effect = {
+				clr_country_flag = militarist1_timer
+				set_country_flag = militarist1_timer
+				set_country_flag = militarist1_gained_points
+			}
+		}
+	}
+	option = {
+		name = harpi.1.cancel
+		ai_chance = { factor = 0 }	
+		hidden_effect = {
+			clr_ruler_flag = militarist1_used
+		}
+	}
+}
+
+country_event = {
+	id = harpi.2
+	title = harpi.2.t
+	desc = harpi.2.d
+	hidden = yes
+	picture = KINGS_CHOICE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = integrated_elites
+					has_country_flag = integrated_elites_initialized
+				}
+				every_subject_country = {
+					add_country_modifier = {
+						name = overlord_has_integrated_elites
+						duration = 35
+					}
+				}
+				country_event = {
+					id = harpi.2
+					days = 30
+				}
+			}
+			else = {
+				every_subject_country = {
+					remove_country_modifier = overlord_has_integrated_elites
+				}
+				clr_country_flag = marcher_lords_initialized
+			}
+			
+		}
+	}
+
+	option = {
+		name = harpi.2.a
+		# pass
+		ai_chance = {
+			factor = 500
+		}
+	}
+}
+
+country_event = {
+	id = harpi.3
+	title = harpi.3.t
+	desc = harpi.3.d
+	hidden = yes
+	picture = KINGS_CHOICE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = marcher_lords
+					has_country_flag = marcher_lords_initialized
+				}
+				if = {
+					limit = {
+						march = 2
+					}
+					remove_country_modifier = marcher_lords_1_march
+					add_country_modifier = {
+						name = marcher_lords_2_marches
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						march = 1
+						NOT = { march = 2 }
+					} 
+					remove_country_modifier = marcher_lords_2_marches
+					add_country_modifier = {
+						name = marcher_lords_1_march
+						duration = -1
+					}
+				}
+				country_event = {
+					id = harpi.3
+					days = 30
+				}
+			}
+			else = {
+				remove_country_modifier = marcher_lords_2_marches
+				remove_country_modifier = marcher_lords_1_march
+				clr_country_flag = marcher_lords_initialized
+			}
+		}
+	}
+
+	option = {
+		name = harpi.3.a
+		# pass
+		ai_chance = {
+			factor = 500
+		}
+	}
+}
+
+country_event = {
+	id = harpi.4
+	title = harpi.4.t
+	desc = harpi.4.d
+	hidden = yes
+	picture = KINGS_CHOICE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = federalist7
+					has_country_flag = federalist7_initialized
+				}
+				if = {
+					limit = {
+						current_age = age_of_revolutions
+					}
+					remove_country_modifier = federalist7_age1
+					remove_country_modifier = federalist7_age2
+					remove_country_modifier = federalist7_age3
+					add_country_modifier = {
+						name = federalist7_age4
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						current_age = age_of_absolutism
+					}
+					remove_country_modifier = federalist7_age1
+					remove_country_modifier = federalist7_age2
+					remove_country_modifier = federalist7_age4
+					add_country_modifier = {
+						name = federalist7_age3
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						current_age = age_of_reformation
+					}
+					remove_country_modifier = federalist7_age1
+					remove_country_modifier = federalist7_age3
+					remove_country_modifier = federalist7_age4
+					add_country_modifier = {
+						name = federalist7_age2
+						duration = -1
+					}
+				}
+				else = {
+					remove_country_modifier = federalist7_age2
+					remove_country_modifier = federalist7_age3
+					remove_country_modifier = federalist7_age4
+					add_country_modifier = {
+						name = federalist7_age1
+						duration = -1
+					}
+				}
+				
+				country_event = {
+					id = harpi.4
+					days = 30
+				}
+			}
+			else = {
+				remove_country_modifier = federalist7_age1
+				remove_country_modifier = federalist7_age2
+				remove_country_modifier = federalist7_age3
+				remove_country_modifier = federalist7_age4
+				clr_country_flag = federalist7_initialized
+			}
+		}
+	}
+
+	option = {
+		name = harpi.4.a
+		# pass
+		ai_chance = {
+			factor = 500
+		}
+	}
+}
+
+country_event = {
+	id = harpi.5
+	title = harpi.5.t
+	desc = harpi.5.d
+	hidden = yes
+	picture = KINGS_CHOICE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			# remove them all to start
+			remove_country_modifier = mixed_armies_elf_integrated
+			remove_country_modifier = mixed_armies_elf_coexisting
+			remove_country_modifier = mixed_armies_dwarf_integrated
+			remove_country_modifier = mixed_armies_dwarf_coexisting
+			remove_country_modifier = mixed_armies_gnoll_integrated
+			remove_country_modifier = mixed_armies_gnoll_coexisting
+			remove_country_modifier = mixed_armies_gnome_integrated
+			remove_country_modifier = mixed_armies_gnome_coexisting
+			remove_country_modifier = mixed_armies_goblin_integrated
+			remove_country_modifier = mixed_armies_goblin_coexisting
+			remove_country_modifier = mixed_armies_half_elf_integrated
+			remove_country_modifier = mixed_armies_half_elf_coexisting
+			remove_country_modifier = mixed_armies_half_orc_integrated
+			remove_country_modifier = mixed_armies_half_orc_coexisting
+			remove_country_modifier = mixed_armies_halfling_integrated
+			remove_country_modifier = mixed_armies_halfling_coexisting
+			remove_country_modifier = mixed_armies_harpy_integrated
+			remove_country_modifier = mixed_armies_harpy_coexisting
+			remove_country_modifier = mixed_armies_human_integrated
+			remove_country_modifier = mixed_armies_human_coexisting
+			remove_country_modifier = mixed_armies_kobold_integrated
+			remove_country_modifier = mixed_armies_kobold_coexisting
+			remove_country_modifier = mixed_armies_orc_integrated
+			remove_country_modifier = mixed_armies_orc_coexisting
+			remove_country_modifier = mixed_armies_ruinborn_integrated
+			remove_country_modifier = mixed_armies_ruinborn_coexisting
+			remove_country_modifier = mixed_armies_troll_integrated
+			remove_country_modifier = mixed_armies_troll_coexisting
+			remove_country_modifier = mixed_armies_ogre_integrated
+			remove_country_modifier = mixed_armies_ogre_coexisting
+			remove_country_modifier = mixed_armies_centaur_integrated
+			remove_country_modifier = mixed_armies_centaur_coexisting
+			remove_country_modifier = mixed_armies_hobgoblin_integrated
+			remove_country_modifier = mixed_armies_hobgoblin_coexisting
+			remove_country_modifier = mixed_armies_harimari_integrated
+			remove_country_modifier = mixed_armies_harimari_coexisting
+			remove_country_modifier = mixed_armies_lizardfolk_integrated
+			remove_country_modifier = mixed_armies_lizardfolk_coexisting
+
+			if = {
+				limit = {
+					has_idea = mixed_armies7
+					has_country_flag = mixed_armies7_initialized
+				}
+
+				# add pop-based modifier
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_elven_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_elf_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_elven_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_elf_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_dwarven_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_dwarf_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_dwarven_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_dwarf_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_gnollish_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_gnoll_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_gnollish_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_gnoll_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_gnomish_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_gnome_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_gnomish_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_gnome_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_goblin_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_goblin_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_goblin_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_goblin_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_half_elven_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_half_elf_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_half_elven_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_half_elf_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_half_orcish_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_half_orc_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_half_orcish_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_half_orc_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_halfling_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_halfling_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_halfling_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_halfling_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_harpy_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_harpy_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_harpy_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_harpy_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_human_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_human_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_human_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_human_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_kobold_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_kobold_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_kobold_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_kobold_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_orcish_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_orc_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_orcish_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_orc_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_ruinborn_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_ruinborn_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_ruinborn_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_ruinborn_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_troll_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_troll_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_troll_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_troll_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_ogre_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_ogre_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_ogre_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_ogre_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_centaur_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_centaur_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_centaur_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_centaur_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_hobgoblin_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_hobgoblin_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_hobgoblin_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_hobgoblin_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_harimari_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_harimari_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_harimari_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_harimari_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+				if = {
+					limit = {
+						any_owned_province = {
+							has_integrated_lizardfolk_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_lizardfolk_integrated
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							has_coexisting_lizardfolk_pop_trigger = yes
+						}
+					}
+
+					add_country_modifier = {
+						name = mixed_armies_lizardfolk_coexisting
+						duration = -1
+						hidden = yes
+					}
+				}
+
+
+				# remove military race's modifier
+				if = {
+					limit = {
+						has_country_modifier = elven_military
+					}
+					remove_country_modifier = mixed_armies_elf_integrated
+					remove_country_modifier = mixed_armies_elf_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = dwarven_military
+					}
+					remove_country_modifier = mixed_armies_dwarf_integrated
+					remove_country_modifier = mixed_armies_dwarf_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = gnollish_military
+					}
+					remove_country_modifier = mixed_armies_gnoll_integrated
+					remove_country_modifier = mixed_armies_gnoll_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = gnomish_military
+					}
+					remove_country_modifier = mixed_armies_gnome_integrated
+					remove_country_modifier = mixed_armies_gnome_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = goblin_military
+					}
+					remove_country_modifier = mixed_armies_goblin_integrated
+					remove_country_modifier = mixed_armies_goblin_coexisting
+				} 
+				else_if = {
+					limit = {
+						has_country_modifier = half_elven_military
+					}
+					remove_country_modifier = mixed_armies_half_elf_integrated
+					remove_country_modifier = mixed_armies_half_elf_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = half_orcish_military
+					}
+					remove_country_modifier = mixed_armies_half_orc_integrated
+					remove_country_modifier = mixed_armies_half_orc_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = halfling_military
+					}
+					remove_country_modifier = mixed_armies_halfling_integrated
+					remove_country_modifier = mixed_armies_halfling_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = harpy_military
+					}
+					remove_country_modifier = mixed_armies_harpy_integrated
+					remove_country_modifier = mixed_armies_harpy_coexisting
+				} 
+				else_if = {
+					limit = {
+						has_country_modifier = human_military
+					}
+					remove_country_modifier = mixed_armies_human_integrated
+					remove_country_modifier = mixed_armies_human_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = kobold_military
+					}
+					remove_country_modifier = mixed_armies_kobold_integrated
+					remove_country_modifier = mixed_armies_kobold_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = orcish_military
+					}
+					remove_country_modifier = mixed_armies_orc_integrated
+					remove_country_modifier = mixed_armies_orc_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = ruinborn_military
+					}
+					remove_country_modifier = mixed_armies_ruinborn_integrated
+					remove_country_modifier = mixed_armies_ruinborn_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = troll_military
+					}
+					remove_country_modifier = mixed_armies_troll_integrated
+					remove_country_modifier = mixed_armies_troll_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = ogre_military
+					}
+					remove_country_modifier = mixed_armies_ogre_integrated
+					remove_country_modifier = mixed_armies_ogre_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = centaur_military
+					}
+					remove_country_modifier = mixed_armies_centaur_integrated
+					remove_country_modifier = mixed_armies_centaur_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = hobgoblin_military
+					}
+					remove_country_modifier = mixed_armies_hobgoblin_integrated
+					remove_country_modifier = mixed_armies_hobgoblin_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = harimari_military
+					}
+					remove_country_modifier = mixed_armies_harimari_integrated
+					remove_country_modifier = mixed_armies_harimari_coexisting
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = lizardfolk_military
+					}
+					remove_country_modifier = mixed_armies_lizardfolk_integrated
+					remove_country_modifier = mixed_armies_lizardfolk_coexisting
+				}
+
+				
+				country_event = {
+					id = harpi.5
+					days = 30
+				}
+			}
+			else = {
+				clr_country_flag = mixed_armies7_initialize
+			}
+		}
+	}
+
+	option = {
+		name = harpi.5.a
+		# pass
+		ai_chance = {
+			factor = 500
+		}
+	}
+}
+
+country_event = { # Patronize the Intelligentsia
+	id = harpi.6
+	title = harpi.2.t
+	desc = harpi.2.d
+	picture = KINGS_CHOICE_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # Prestige
+		name = harpi.6.prestige
+		trigger = {
+			has_idea = patronage1
+			custom_trigger_tooltip = {
+				tooltip = patronize_the_intelligentsia_prestige_delay
+				OR = {
+					NOT = { has_country_flag = patronize_the_intelligentsia_prestige }
+					had_country_flag = {
+						flag = patronize_the_intelligentsia_prestige
+						days = 365
+					}
+				}
+			}
+		}
+		add_years_of_income = -0.5
+		add_prestige = 5
+		hidden_effect = {
+			clr_country_flag = patronize_the_intelligentsia_prestige
+			set_country_flag = patronize_the_intelligentsia_prestige
+		}
+	}
+
+	option = { # Government Points
+		name = harpi.6.government
+		trigger = {
+			has_idea = patronage1
+			custom_trigger_tooltip = {
+				tooltip = patronize_the_intelligentsia_government_delay
+				OR = {
+					NOT = { has_country_flag = patronize_the_intelligentsia_government }
+					had_country_flag = {
+						flag = patronize_the_intelligentsia_government
+						days = 365
+					}
+				}
+			}
+		}
+		add_years_of_income = -0.5
+		add_legitimacy_equivalent = {
+			amount = 5
+			republican_tradition = 1.5
+		}
+		hidden_effect = {
+			clr_country_flag = patronize_the_intelligentsia_government
+			set_country_flag = patronize_the_intelligentsia_government
+		}
+	}
+
+	option = {
+		name = harpi.6.cancel
+		# pass
+	}
+}

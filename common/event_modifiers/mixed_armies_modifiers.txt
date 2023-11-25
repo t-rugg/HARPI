@@ -1,0 +1,151 @@
+mixed_armies_elf_integrated = {
+	discipline = 0.03
+}
+
+mixed_armies_elf_coexisting = {
+	discipline = 0.02
+}
+
+mixed_armies_dwarf_integrated = {
+	siege_ability = 0.06
+}
+
+mixed_armies_dwarf_coexisting = {
+	siege_ability = 0.04
+}
+
+mixed_armies_gnoll_integrated = {
+	morale_damage = 0.06
+}
+
+mixed_armies_gnoll_coexisting = {
+	morale_damage = 0.04
+}
+
+mixed_armies_gnome_integrated = {
+	artillery_power = 0.06
+}
+
+mixed_armies_gnome_coexisting = {
+	artillery_power = 0.04
+}
+
+mixed_armies_goblin_integrated = {
+	fire_damage = 0.06
+}
+
+mixed_armies_goblin_coexisting = {
+	fire_damage = 0.04
+}
+
+mixed_armies_half_elf_integrated = {
+	drill_decay_modifier = -0.12
+}
+
+mixed_armies_half_elf_coexisting = {
+	drill_decay_modifier = -0.08
+}
+
+mixed_armies_half_orc_integrated = {
+	global_manpower_modifier = 0.09
+}
+
+mixed_armies_half_orc_coexisting = {
+	global_manpower_modifier = 0.06
+}
+
+mixed_armies_halfling_integrated = {
+	manpower_recovery_speed = 0.09
+}
+
+mixed_armies_halfling_coexisting = {
+	manpower_recovery_speed = 0.06
+}
+
+mixed_armies_harpy_integrated = {
+	movement_speed = 0.09
+}
+
+mixed_armies_harpy_coexisting = {
+	movement_speed = 0.06
+}
+
+mixed_armies_human_integrated = {
+	land_morale = 0.09
+}
+
+mixed_armies_human_coexisting = {
+	land_morale = 0.06
+}
+
+mixed_armies_kobold_integrated = {
+	land_forcelimit_modifier = 0.09
+}
+
+mixed_armies_kobold_coexisting = {
+	land_forcelimit_modifier = 0.06
+}
+
+mixed_armies_orc_integrated = {
+	shock_damage_received = -0.06
+}
+
+mixed_armies_orc_coexisting = {
+	shock_damage_received = -0.04
+}
+
+mixed_armies_ruinborn_integrated = {
+	land_attrition = -0.12
+}
+
+mixed_armies_ruinborn_coexisting = {
+	land_attrition = -0.08
+}
+
+mixed_armies_troll_integrated = {
+	fire_damage_received = -0.06
+}
+
+mixed_armies_troll_coexisting = {
+	fire_damage_received = -0.04
+}
+
+mixed_armies_ogre_integrated = {
+	shock_damage = 0.06
+}
+
+mixed_armies_ogre_coexisting = {
+	shock_damage = 0.04
+}
+
+mixed_armies_centaur_integrated = {
+	cavalry_power = 0.09
+}
+
+mixed_armies_centaur_coexisting = {
+	cavalry_power = 0.06
+}
+
+mixed_armies_hobgoblin_integrated = {
+	yearly_army_professionalism = 0.003
+}
+
+mixed_armies_hobgoblin_coexisting = {
+	yearly_army_professionalism = 0.002
+}
+
+mixed_armies_harimari_integrated = {
+	infantry_power = 0.06
+}
+
+mixed_armies_harimari_coexisting = {
+	infantry_power = 0.04
+}
+
+mixed_armies_lizardfolk_integrated = {
+	naval_morale = 0.06
+}
+
+mixed_armies_lizardfolk_coexisting = {
+	naval_morale = 0.04
+}

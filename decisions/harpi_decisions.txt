@@ -1,0 +1,285 @@
+country_decisions = {
+
+parliamentary7_decision = {
+	potential = {
+		has_idea_group = parliamentary_ideas
+	}
+	allow = {
+		has_idea = parliamentary7
+		has_parliament = yes
+		has_active_debate = yes
+		custom_trigger_tooltip = {
+			tooltip = decision_once_every_twenty_years
+			OR = {
+				NOT = { has_country_flag = parliamentary7_used }
+				had_country_flag = {
+					flag = parliamentary7_used
+					days = 7300
+				}
+			}
+		}
+		if = {
+			limit = { uses_devotion = yes }
+			devotion = 10
+		}
+		else_if = {
+			limit = { uses_republican_tradition = yes }
+			republican_tradition = 3
+		}
+		else_if = {
+			limit = { uses_meritocracy = yes }
+			meritocracy = 10
+		}
+		else_if = {
+			limit = { uses_horde_unity = yes }
+			horde_unity = 10
+		}
+		else = {
+			legitimacy = 10
+		}
+	}
+	effect = {
+		end_current_debate = yes
+		add_legitimacy_equivalent = {
+			amount = -10
+			republican_tradition = -3
+		}
+		hidden_effect = {
+			clr_country_flag = parliamentary7_used
+			set_country_flag = parliamentary7_used
+		}
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+militarist1_decision = {
+	potential = {
+		has_idea_group = militarist_ideas
+		NOT = { has_ruler_flag = militarist1_used }
+	}
+	allow = {
+		has_idea = militarist1
+		OR = {
+			adm = 1
+			dip = 1
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			clr_ruler_flag = militarist1_adm
+			clr_ruler_flag = militarist1_dip
+			clr_ruler_flag = militarist1_both # I don't think these first 3 are necessary, but I'll include 'em anyway to be safe
+			set_ruler_flag = militarist1_used # this definitely IS necessary
+		}
+		country_event = {
+			id = harpi.1
+		}
+	}
+
+	ai_will_do = { factor = 0 }
+}
+
+militarist1_undo = {
+	potential = {
+		has_idea_group = militarist_ideas
+		OR = {
+			has_ruler_flag = militarist1_adm
+			has_ruler_flag = militarist1_dip
+			has_ruler_flag = militarist1_both
+		}
+	}
+	allow = {
+		has_idea = militarist1
+		custom_trigger_tooltip = {
+			tooltip = militarist1_undo_tooltip
+			OR = {
+				AND = {
+					OR = {
+						has_ruler_flag = militarist1_adm
+						has_ruler_flag = militarist1_dip
+					}
+					mil = 1
+				}
+				AND = {
+					has_ruler_flag = militarist1_both
+					mil = 2
+				}
+			}
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			clr_ruler_flag = militarist1_used
+		}
+		if = {
+			limit = {
+				has_ruler_flag = militarist1_adm
+			}
+			change_adm = 1
+			change_mil = -1
+			hidden_effect = {
+				clr_ruler_flag = militarist1_adm
+			}
+		}
+		if = {
+			limit = {
+				has_ruler_flag = militarist1_dip
+			}
+			change_dip = 1
+			change_mil = -1
+			hidden_effect = {
+				clr_ruler_flag = militarist1_dip
+			}
+		}
+		if = {
+			limit = {
+				has_ruler_flag = militarist1_both
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = -2
+			hidden_effect = {
+				clr_ruler_flag = militarist1_both
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = militarist1_gained_points
+			}
+			add_adm_power = -30
+			add_dip_power = -30
+			add_mil_power = -30
+			hidden_effect = {
+				clr_country_flag = militarist1_timer
+				clr_country_flag = militarist1_gained_points
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+integrated_elites_initialize = {
+	potential = {
+		has_idea_group = influence_ideas
+		NOT = { has_country_flag = integrated_elites_initialized }
+	}
+	allow = {
+		has_idea = integrated_elites
+	}
+
+	effect = {
+		hidden_effect = {
+			set_country_flag = integrated_elites_initialized
+			country_event = {
+				id = harpi.2
+				days = 30
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 400
+	}
+}
+
+marcher_lords_initialize = {
+	potential = {
+		has_idea_group = influence_ideas
+		NOT = { has_country_flag = marcher_lords_initialized }
+	}
+	allow = {
+		has_idea = marcher_lords
+	}
+
+	effect = {
+		hidden_effect = {
+			set_country_flag = marcher_lords_initialized
+			country_event = {
+				id = harpi.3
+				days = 30
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 400
+	}
+}
+
+federalist7_initialize = {
+	potential = {
+		has_idea_group = federalist_ideas
+		NOT = { has_country_flag = federalist7_initialized }
+	}
+	allow = {
+		has_idea = federalist7
+	}
+
+	effect = {
+		hidden_effect = {
+			set_country_flag = federalist7_initialized
+			country_event = {
+				id = harpi.4
+				days = 30
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 400
+	}
+}
+
+mixed_armies7_initialize = {
+	potential = {
+		has_idea_group = mixed_armies_ideas
+		NOT = { has_country_flag = mixed_armies7_initialized }
+	}
+	allow = {
+		has_idea = mixed_armies7
+	}
+
+	effect = {
+		hidden_effect = {
+			set_country_flag = mixed_armies7_initialize
+			country_event = {
+				id = harpi.5
+				days = 30
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 400
+	}
+}
+
+patronage_decision = {
+	potential = {
+		has_idea_group = patronage_ideas
+	}
+	allow = {
+		has_idea = patronage1
+	}
+	
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = harpi.6
+			}
+		}
+	}
+
+	ai_will_do = { # idk what to do here
+		factor = 0
+	}
+}
+
+} # necessary, closes country_decisions

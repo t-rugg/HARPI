@@ -1,0 +1,1378 @@
+reclamation_ideas = {
+	category = MIL
+	important = yes
+
+	bonus = {
+		colony_development_boost = 1
+	}
+
+	trigger = {
+		num_of_colonists = 1 # require the tag to already have a colonist; no free lunch!
+		OR = {
+			culture = moon_elf
+			culture = star_elf
+			culture_group = dwarven
+		}
+		NOT = { is_colonial_nation = yes }
+		NOT = {
+			has_disaster = remnant_stagnation_disaster
+		}
+	}
+	
+	reclamation1 = {
+		global_tax_income = 12 # 1 ducat per month
+		colony_cost_modifier = -0.1
+	}
+	reclamation2 = {
+		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+	}
+	reclamation3 = {
+		morale_damage_received = -0.1
+	}
+	reclamation4 = {
+		warscore_cost_vs_other_religion = -0.1
+	}
+	reclamation5 = {
+		land_forcelimit_modifier = 0.15
+		prestige_from_land = 0.5
+	}
+	reclamation6 = {
+		build_cost = -0.1
+	}
+	reclamation7 = {
+		tolerance_own = 2
+	}
+	
+
+	ai_will_do = {
+		factor = 0.6
+
+		modifier = { # increase the chance Venail takes it, but only if they already have Exploration and Expansion
+			factor = 5
+			has_idea_group = exploration_ideas
+			has_idea_group = expansion_ideas
+			OR = {
+				tag = A21 #Venail
+				tag = Z43 #Aelnar
+			}
+		}
+		modifier = { # disallow while still migratory OPM
+			factor = 0
+			num_of_cities = 2
+		}
+		modifier = { # disallow if nowhere to colonize
+			factor = 0
+			NOT = { has_idea_group = exploration_ideas }
+			NOT = {
+				any_owned_province = {
+					has_empty_adjacent_province = yes
+				}
+			}
+		}
+		modifier = { # disallow after age of unravelling
+			factor = 0
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
+	}
+}
+
+patronage_ideas = {
+	category = DIP
+
+	bonus = {
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		horde_unity = 1
+		parliament_backing_chance = 0.05
+	}
+
+	patronage1 = {
+		idea_cost = -0.1
+		# enables decision to pay cash for stuff - can pay for prestige/legitimacy/etc
+	}
+	patronage2 = {
+		innovativeness_gain = 0.25
+		advisor_pool = 2
+	}
+	patronage3 = {
+		all_estate_loyalty_equilibrium = 0.05
+		church_privilege_slots = 1
+		burghers_privilege_slots = 1
+		eunuchs_anb_privilege_slots = 1
+		middlecastes_privilege_slots = 1
+		vampires_privilege_slots = 1
+		castonath_patricians_privilege_slots = 1
+		# upgrades decision to pay cash for stuff - can now pay for estate loyalty
+	}
+	patronage4 = {
+		monthly_splendor = 2
+		prestige = 1
+	}
+	patronage5 = {
+		accept_vassalization_reasons = 10
+		diplomatic_reputation = 0.5
+		# upgrades decision to pay cash for stuff - can now pay for relations
+	}
+	patronage6 = {
+		culture_conversion_cost = -0.15
+		culture_conversion_time = -0.25
+	}
+	patronage7 = {
+		monarch_diplomatic_power = 1
+		# upgrades decision to pay cash for stuff
+	}
+	
+
+	ai_will_do = { # haven't coded the AI for the decision, so probably shouldn't give the AI much chance
+		factor = 0.25
+		modifier = {
+			factor = 3
+			monthly_income = 10
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				artist = 2
+				philosopher = 2
+			}
+		}
+		modifier = { # artsy tags
+			factor = 2
+			OR = {
+				tag = A19 #Portnamm
+				tag = A57 #Toarnen - commissioning chess counts, right?
+				tag = A90 #Seinathil
+			}
+		}
+	}
+}
+
+extraction_ideas = {
+	category = ADM
+
+	bonus = {
+		min_autonomy_in_territories = -0.1
+		inflation_reduction = -0.1 # downside!
+	}
+
+	extraction1 = {
+		production_efficiency = 0.1
+	}
+	extraction2 = {
+		gold_depletion_chance_modifier = -0.5
+		inflation_action_cost = -0.25
+	}
+	extraction3 = {
+		build_time = -0.1
+	}
+	extraction4 = {
+		trade_steering = 0.25
+	}
+	extraction5 = {
+		trade_company_governing_cost = -0.1
+	}
+	extraction6 = {
+		reduced_trade_penalty_on_non_main_tradenode = 0.25
+		global_tariffs = 0.2
+	}
+	extraction7 = {
+		global_trade_goods_size_modifier = 0.15
+	}
+
+	ai_will_do = {
+		factor = 0.3
+		modifier = { #dwarves
+			factor = 1.5
+			culture_group = dwarven
+		}
+		modifier = { #high chance for extractive tags, but only after 1500 (when they can actually start extractin')
+			factor = 10
+			is_year = 1500
+			OR = {
+				tag = H82 #Greedy Grin
+				tag = A73 #Silverforge
+			}
+		}
+		modifier = { # high gold income or gold hold
+			factor = 1.6
+			NOT = { inflation = 3 }
+			OR = {
+				gold_income_percentage = 0.25
+				any_owned_province = {
+					has_province_modifier = gold_hold
+				}
+			}
+		}
+		modifier = { # high production income
+			factor = 1.3
+			NOT = { inflation = 3 }
+			production_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 0.6
+			inflation = 3
+		}
+		modifier = {
+			factor = 0.6
+			inflation = 6
+		}
+		modifier = {
+			factor = 0
+			inflation = 10
+		}
+		modifier = { # embezzler or greedy ruler
+			factor = 1.3
+			OR = {
+				ruler_has_personality = embezzler_personality
+				ruler_has_personality = greedy_personality
+			}
+		}
+	}
+}
+
+urbanization_ideas = {
+	category = ADM
+
+	bonus = {
+		development_cost = -0.05
+	}
+
+	trigger = {
+		OR = { # disallow adventurers from urbanizing - they're not a country!
+			NOT = { has_reform = adventurer_reform }
+			has_reform = found_our_nation
+		} 
+	}
+
+	urbanization1 = {
+		state_maintenance_modifier = -0.25
+		promote_culture_cost = -0.25
+	}
+	urbanization2 = {
+		development_cost = -0.025
+		expand_infrastructure_cost_modifier = -0.25
+	}
+	urbanization3 = {
+		reform_progress_growth = 0.15
+	}
+	urbanization4 = {
+		advisor_cost = -0.1
+	}
+	urbanization5 = {
+		global_prosperity_growth = 0.1
+	}
+	urbanization6 = {
+		global_tax_modifier = 0.15
+	}
+	urbanization7 = {
+		great_project_upgrade_cost = -0.25
+	}
+
+	ai_will_do = {
+		factor = 0.45
+		modifier = { # high dev province
+			factor = 1.1
+			any_owned_province = {
+				development = 30
+			}
+		}
+		modifier = { # devving-oriented nation
+			factor = 3
+			OR = {
+				culture_group = dwarven
+				has_reform = free_city
+			}
+		}
+		modifier = { # near full gov cap
+			factor = 1.3
+			governing_capacity_percentage = 0.9
+		}
+		modifier = {
+			factor = 1.15
+			has_idea_group = infrastructure_ideas
+		}
+		modifier = { # monstrous nations shouldn't urbanize as much, unless they're the Command
+			factor = 0.1
+			has_country_modifier = monstrous_nation
+			NOT = {tag = R62}
+		}
+	}
+}
+
+war_economy_ideas = {
+	category = MIL
+
+	bonus = {
+		available_province_loot = 0.33
+	}
+
+	trigger = {
+		mil_tech = 7 # require access to artillery
+	}
+
+	war_economy1 = { #rationing
+		defensiveness = 0.10
+		war_exhaustion = -0.01
+	}
+	war_economy2 = {
+		production_efficiency = 0.10
+	}
+	war_economy3 = {
+		reserves_organisation = 0.1
+		land_attrition = -0.05
+	}
+	war_economy4 = {
+		artillery_power = 0.075
+	}
+	war_economy5 = {
+		global_regiment_cost = -0.05
+	}
+	war_economy6 = {
+		fire_damage_received = -0.05
+	}
+	war_economy7 = {
+		artillery_cost = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.3
+		modifier = {
+			factor = 1.3
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 15
+		}
+	}
+}
+
+advanced_armies_ideas = {
+	category = MIL
+
+	bonus = {
+		free_mil_policy = 1
+	}
+
+	trigger = {
+		mil_tech = 7 # require access to artillery
+	}
+
+	advanced_armies1 = {
+		innovativeness_gain = 0.25
+		# decision to pay innovativeness for temporary military buffs
+	}
+	advanced_armies2 = {
+		artillery_levels_available_vs_fort = 1
+		siege_ability = 0.05
+	}
+	advanced_armies3 = {
+		infantry_fire = 0.10
+		special_unit_forcelimit = 0.2
+	}
+	advanced_armies4 = {
+		mil_tech_cost_modifier = -0.1
+	}
+	advanced_armies5 = {
+		global_institution_spread = 0.2
+	}
+	advanced_armies6 = {
+		number_of_cannons_modifier = 0.1
+	}
+	advanced_armies7 = {
+		backrow_artillery_damage = 0.1
+		# upgrades decision
+	}
+
+	ai_will_do = {
+		factor = 0.25
+		modifier = {
+			factor = 1.2
+			innovativeness = 20
+		}
+		modifier = {
+			factor = 1.2
+			innovativeness = 40
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				innovativeness = 60
+				culture_group = gnomish
+				tag = Y20 #Feiten
+			}
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				innovativeness = 80
+				culture_group = gnomish
+				tag = Y20 #Feiten
+			}
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				innovativeness = 100
+				culture_group = gnomish
+				tag = Y20 #Feiten
+			}
+		}
+		modifier = { # bonus for artificers
+			factor = 1.1
+			has_estate = estate_artificers
+			OR = {
+				culture_group = gnomish
+				culture_group = goblin
+				culture_group = kobold
+				tag = A05 #Reveria
+				tag = I12 #Orlghelovar
+				tag = A99 #Varainê
+				tag = Y20 #Feiten
+			}
+		}
+		modifier = { # Feiten gets an extra bonus because airships
+			factor = 5
+			tag = Y20 #Feiten
+		}
+		modifier = { # if any neighbour is very far ahead technologically, the AI can't take this 
+		             # (which is arguably suboptimal given that it gives mil tech cost reduction, but it wouldn't be flavourful to see a backwards nation with this group)
+			factor = 0
+			any_neighbor_country = {
+				tech_difference = 4
+			}
+		}
+		modifier = { # disallow if no artillery
+			factor = 0
+			NOT = { num_of_artillery = 1 }
+		}
+	}
+}
+
+legalist_ideas = {
+	category = DIP
+
+	bonus = {
+		national_focus_years = -10
+	}
+
+	legalist1 = {
+		yearly_corruption = -0.1
+	}
+	legalist2 = {
+		reform_progress_growth = 0.15
+	}
+	legalist3 = {
+		global_autonomy = -0.05
+	}
+	legalist4 = {
+		global_unrest = -1
+	}
+	legalist5 = {
+		global_spy_defence = 0.2
+	}
+	legalist6 = {
+		unjustified_demands = -0.1
+		years_of_nationalism = -5
+	}
+	legalist7 = {
+		# Legalist ideas has stronger policies than other groups
+		free_policy = 1
+		possible_policy = 1
+	}
+
+	ai_will_do = {
+		factor = 0.4
+		modifier = { # more likely for more reformed states
+			factor = 1.2
+			reform_level = 6 
+		}
+		modifier = { # no monsters!
+			factor = 0
+			has_country_modifier = monstrous_nation
+			NOT = { tag = R62 } #Command
+		}
+		modifier = { # higher with "balanced" absolutism
+			factor = 1.3
+			absolutism = 50
+			NOT = {
+				absolutism = 80
+			}
+		}
+		modifier = { # lawgivers more likely
+			factor = 1.5
+			ruler_has_personality = lawgiver_personality
+		}
+	}
+}
+
+realist_ideas = {
+	# "realist" is kind of an anachronism for the time period, only developing ~halfway into EU4's timeline IRL
+	# but economic ideas mentions Smithian economics so we'll just pretend it's fine
+	category = DIP
+
+	bonus = {
+		unjustified_demands = -0.5
+	}
+
+	realist1 = { # the field of international relations
+		dip_advisor_cost = -0.25
+	}
+	realist2 = { # this is only useful super early game as very specific tags (cycling Show Strengths), so it's early in the idea group despite being very meh
+		rival_change_cost = -0.5
+		rival_border_fort_maintenance = -0.25
+	}
+	realist3 = {
+		ae_impact = -0.1
+	}
+	realist4 = { # spheres of influence
+		reduced_liberty_desire_on_same_continent = 10
+	}
+	realist5 = {
+		monthly_favor_modifier = 0.33
+	}
+	realist6 = { # realpolitik - we can't let treaties or marital ties hold us back, etc.
+		reduced_stab_impacts = yes
+	}
+	realist7 = {
+		dip_tech_cost_modifier = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.3
+		modifier = { 
+			factor = 2
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.2
+			or = {
+				ruler_has_personality = malevolent_personality
+				ruler_has_personality = fierce_negotiator_personality
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				ruler_has_personality = great_conqueror_personality
+				ruler_has_personality = mythical_conqueror_personality
+			}
+		}
+	}
+}
+
+integration_ideas = {
+	category = DIP
+
+	bonus = {
+		culture_conversion_time = -0.25
+	}
+
+	integration1 = {
+		culture_conversion_cost = -0.5
+	}
+	integration2 = {
+		years_of_nationalism = -5
+		autonomy_change_time = -0.25
+	}
+	integration3 = {
+		state_maintenance_modifier = -0.25
+	}
+	integration4 = {
+		global_missionary_strength = 0.02
+	}
+	integration5 = {
+		diplomatic_annexation_cost = -0.15
+	}
+	integration6 = {
+		manpower_in_own_culture_provinces = 0.2
+		manpower_in_accepted_culture_provinces = 0.1
+	}
+	integration7 = {
+		overextension_impact_modifier = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.4
+		modifier = {
+			factor = 1.3
+			vassal = 2
+		}
+		modifier = {
+			factor = 1.3
+			vassal = 3
+		}
+		modifier = {
+			factor = 1.5
+			num_of_different_cultures_in_court = 5
+		}
+		modifier = {
+			factor = 1.3
+			OR = {
+				has_idea_group = humanist_ideas
+				has_idea_group = influence_ideas
+			}
+		}
+	}
+}
+
+militarist_ideas = {
+	# i want a better name for this
+	# because this really sounds like a military group
+	# the idea is a country with a heavy emphasis on militaristic posturing a la jiantsiang, grombar, prussia, malacnar
+	category = ADM
+
+	bonus = {
+		global_regiment_cost = -0.05
+	}
+	
+	militarist1 = {
+		# Grants decision to increase ruler's mil at the cost of admin and/or dip - once per ruler
+		# militarist1_decision
+		war_exhaustion = -0.03
+	}
+	militarist2 = { # stratocratic institutions
+		leader_cost = -0.2
+		nobles_influence_modifier = 0.05
+	}
+	militarist3 = {
+		drill_gain_modifier = 0.5
+	}
+	militarist4 = {
+		core_creation = -0.1
+	}
+	militarist5 = {
+		global_unrest = -2
+	}
+	militarist6 = {
+		max_absolutism = 10
+	}
+	militarist7 = { # military cantons
+		global_manpower_modifier = 0.15
+	}
+
+	ai_will_do = {
+		factor = 0.3
+		modifier = {
+			factor = 1.5
+			OR = {
+				ruler_has_personality = conqueror_personality
+				ruler_has_personality = great_conqueror_personality
+				ruler_has_personality = mythical_conqueror_personality
+			}
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				ruler_has_personality = strict_personality
+				ruler_has_personality = inspiring_leader_personality
+				ruler_has_personality = martial_educator_personality
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				ruler_has_personality = craven_personality
+				ruler_has_personality = benevolent_personality
+			}
+		}
+		modifier = {
+			factor = 1.1
+			national_focus = MIL
+		}
+		modifier = {
+			factor = 1.2
+			war_exhaustion = 10
+		}
+	}
+}
+
+zealous_ideas = {
+	category = MIL
+
+	bonus = {
+		cavalry_cost = -0.15
+		tolerance_heretic = -2
+		tolerance_heathen = -2
+		adventurers_loyalty_modifier = 0.05
+		church_loyalty_modifier = 0.05
+	}
+
+
+	zealous1 = {
+		manpower_in_true_faith_provinces = 0.2
+	}
+	zealous2 = {
+		shock_damage = 0.075
+	}
+	zealous3 = {
+		warscore_cost_vs_other_religion = -0.1
+    }
+	zealous4 = {
+		recover_army_morale_speed = 0.1
+	}
+	zealous5 = {
+		missionaries = 1
+		global_missionary_strength = 0.01
+	}
+	zealous6 = {
+		land_morale = 0.075
+	}
+	zealous7 = {
+		cb_on_religious_enemies = yes
+	}
+
+	ai_will_do = {
+		factor = 0.7
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { religious_unity = 0.5 }
+		}
+		modifier = {
+			factor = 0.75
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.25
+			religious_unity = 0.95 
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_neighbor_country = {
+					religion = ROOT 
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { monthly_mil = 7 }
+		}
+		
+		modifier = {
+			factor = 1.5
+			has_idea_group = religious_ideas
+		}
+
+		modifier = {
+			factor = 1.2
+			ruler_has_personality = zealot_personality
+		}
+	}
+}
+
+authority_ideas = {
+	# consolidation of power
+	category = DIP
+
+	bonus = {
+		max_absolutism = 15
+		imperial_authority = 0.1
+		reelection_cost = -0.1
+	}
+
+	authority1 = { # dominate the court
+		all_estate_influence_modifier = -0.1
+		all_estate_loyalty_equilibrium = -0.05
+	}
+	authority2 = { # elevate experts
+		mages_loyalty_modifier = 0.075
+		mages_influence_modifier = 0.1
+		artificers_loyalty_modifier = 0.075
+		artificers_influence_modifier = 0.1
+	}
+	authority3 = {
+		yearly_corruption = -0.1
+	}
+	authority4 = {
+		free_leader_pool = 1
+	}
+	authority5 = {
+		estate_interaction_cooldown_modifier = -0.2
+	}
+	authority6 = {
+		expand_administration_cost = -0.33
+	}
+	authority7 = {
+		min_autonomy_in_territories = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.3 # low chance, the AI can really screw stuff up by taking this at a bad time + it generally won't be that good for them anyway
+		modifier = {
+			factor = 1.2
+			OR = {
+				ruler_has_personality = strict_personality
+				ruler_has_personality = cruel_personality
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				ruler_has_personality = well_advised_personality
+				ruler_has_personality = well_connected_personality
+			}
+		}
+		modifier = {
+			factor = 0
+			has_idea_group = court_ideas
+		}
+		modifier = {
+			factor = 1.1 
+			national_focus = DIP 
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_dip = 8 } 
+		}
+		modifier = {
+			factor = 0.5
+			num_of_powerful_estates = 3 
+		}
+	}
+}
+
+artificery_ideas = {
+	category = MIL
+
+	bonus = {
+		artificers_privilege_slots = 2
+	}
+
+	trigger = {
+		has_estate = estate_artificers
+	}
+
+	artificery1 = {
+		artificers_loyalty_modifier = 0.1
+		artificers_influence_modifier = 0.1
+	}
+	artificery2 = {
+		allowed_rajput_fraction = 0.05 # artificers - does this work?
+	}
+	artificery3 = {
+		infantry_power = 0.075
+		infantry_cost = 0.1
+	}
+	artificery4 = {
+		siege_ability = 0.15
+	}
+	artificery5 = {
+		global_trade_goods_size_modifier = 0.075
+	}
+	artificery6 = {
+		drill_decay_modifier = -0.25
+	}
+	artificery7 = {
+		technology_cost = -0.05
+	}
+
+	ai_will_do = {
+		factor = 0.4
+		modifier = { # bonus for artificers
+			factor = 3
+			OR = {
+				culture_group = gnomish
+				culture_group = goblin
+				culture_group = kobold
+				tag = A05 #Reveria
+				tag = I12 #Orlghelovar
+				tag = A99 #Varainê
+				tag = Y20 #Feiten
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_reform = magocracy_reform
+				tag = H74 #Chaingrasper
+			}
+		}
+	}
+}
+
+logistics_ideas = {
+	category = MIL
+
+	bonus = {
+		leader_land_manuever = 1
+		leader_naval_manuever = 1
+	}
+
+	logistics1 = {
+		movement_speed = 0.15 # big number, but we removed movement speed from infra, so i think it's reasonable?
+	}
+	logistics2 = {
+		land_attrition = -0.15
+		global_supply_limit_modifier = 0.25
+	}
+	logistics3 = {
+		land_forcelimit_modifier = 0.15
+		vassal_forcelimit_bonus = 0.5
+	}
+	logistics4 = {
+		discipline = 0.025
+	}
+	logistics5 = {
+		reinforce_speed = 0.15 # reinforce speed also affects cost, so no need to lower cost
+		global_regiment_recruit_speed = -0.15
+	}
+	logistics6 = {
+		envoy_travel_time = -0.2
+		global_spy_defence = 0.2
+	}
+	logistics7 = {
+		global_regiment_cost = -0.1 # A LOT of savings
+	}
+}
+
+leadership_ideas = {
+	category = MIL
+
+	bonus = {
+		leader_cost = -0.2
+		merc_leader_army_tradition = 0.33
+	}
+
+	trigger = { # prevent The Command from having this. sorry! you'll have to find your leader pips via another source
+		NOT = { tag = R62 }	#The Command and offshoots
+		NOT = { tag = R67 }
+		NOT = { tag = R68 }
+		NOT = { tag = R69 }
+	}
+
+	leadership1 = {
+		leader_land_shock = 1
+	}
+	leadership2 = {
+		free_leader_pool = 2
+	}
+	leadership3 = {
+		leader_land_fire = 1
+	}
+	leadership4 = {
+		leader_naval_shock = 1
+		leader_naval_fire = 1
+	}
+	leadership5 = {
+		leader_land_manuever = 1
+		leader_naval_manuever = 1
+	}
+	leadership6 = {
+		army_tradition_decay = -0.01
+	}
+	leadership7 = {
+		leader_siege = 1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+	}
+}
+
+parliamentary_ideas = { 
+	category = DIP
+
+	bonus = {
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		horde_unity = 1
+	}
+
+	trigger = {
+		has_parliament = yes
+	}
+
+	parliamentary1 = {
+		parliament_backing_chance = 0.33
+	}
+	parliamentary2 = {
+		num_of_parliament_issues = 2
+	}
+	parliamentary3 = {
+		can_revoke_parliament_seats = yes
+	}
+	parliamentary4 = { # something about not being held back by feudal bureaucracy
+		global_manpower_modifier = 0.1
+	}
+	parliamentary5 = {
+		# adds 1 of each dev and 10 prosperity when assigning parliament seat
+		# removes when unassigning
+		# done via on_actions
+		global_tax_modifier = 0.1
+	}
+	parliamentary6 = {
+		reform_progress_growth = 0.15
+	}
+	parliamentary7 = {
+		# grants a decision to force an issue through parliament
+		# can be done once every 20 years; costs 10 legitimacy/equivalent or 3 rt
+		# done via parliamentary7_decision
+		harsh_treatment_cost = -0.2
+	}
+
+	ai_will_do = {
+		factor = 0.5
+	}
+}
+
+professional_army_ideas = { # focus is thematically on standing armies, drilling, etc.
+	category = MIL
+
+	bonus = {
+		drill_decay_modifier = -0.66
+		available_province_loot = -0.66
+	}
+
+	professional_army1 = {
+		drill_gain_modifier = 0.5
+	}
+	professional_army2 = {
+		leader_land_manuever = 1
+		leader_naval_manuever = 1
+	}
+	professional_army3 = {
+		yearly_army_professionalism = 0.005
+	}
+	professional_army4 = {
+		heavy_ship_power = 0.1
+		global_sailors_modifier = 0.2
+	}
+	professional_army5 = {
+		army_tradition_decay = -0.01
+	}
+	professional_army6 = { # standing armies are cheaper than having to navigate feudal bureaucracies and conscription rolls
+		land_maintenance_modifier = -0.1
+		war_exhaustion = -0.03
+	}
+	professional_army7 = {
+		discipline = 0.025
+	}
+
+	ai_will_do = {
+		factor = 0.5
+	}
+}
+
+federalist_ideas = {
+	category = ADM
+
+	bonus = {
+		move_capital_cost_modifier = -0.5
+		parliament_backing_chance = 0.05
+	}
+
+	federalist1 = {
+		governing_capacity = 100
+	}
+	federalist2 = {
+		num_accepted_cultures = 2
+	}
+	federalist3 = { # Union of Sovereign States
+		diplomatic_upkeep = 1
+		accept_vassalization_reasons = 10
+	}
+	federalist4 = {
+		governing_cost = -0.1
+	}
+	federalist5 = {
+		diplomatic_annexation_cost = -0.15
+	}
+	federalist6 = {
+		global_unrest = -2
+	}
+	federalist7 = { # Decentralized Administration
+		administrative_efficiency = 0.01
+		# 1% EXTRA ADMIN EFFICIENCY PER AGE
+		max_absolutism_effect = -0.10 #downside!
+	}
+	
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1.2
+			has_parliament = yes
+		}
+		modifier = { 
+			factor = 1.8
+			governing_capacity_percentage = 0.9
+		}
+	}
+}
+
+honor_ideas = {
+	category = MIL
+
+	bonus = {
+		monarch_military_power = 1
+		mil_tech_cost_modifier = 0.025 #downside!
+	}
+
+	honor1 = { # Lance and Horse
+		cavalry_power = 0.1
+		cav_to_inf_ratio = 0.1
+	}
+	honor2 = { # Saber and Shield
+		army_tradition_from_battle = 0.5
+		prestige_from_land = 0.5
+	}
+	honor3 = { # Trumpet and Staff
+		leader_land_shock = 1
+	}
+	honor4 = { # They Will Greet Us As Liberators
+		ae_impact = -0.1
+		years_of_nationalism = -5
+	}
+	honor5 = { # Respect for Aged Warriors
+		mil_advisor_cost = -0.25
+		prestige_decay = -0.01
+	}
+	honor6 = { # Chivalric Duels
+		warscore_from_battles_modifier = 0.5
+	}
+	honor7 = { # A Cause Worth Fighting For
+		land_morale = 0.05
+		reasons_to_elect = 5
+	}
+
+	ai_will_do = {
+		factor = 0.4
+		modifier = { # CENTAURS
+			factor = 5
+			culture_is_centaur = yes
+		}
+		modifier = { # gives reasons to elect, so...
+			factor = 1.8
+			is_emperor = yes
+		}
+		modifier = { # corintes are all about active virtue
+			factor = 1.1
+			religion = corinite
+		}
+		modifier = { # "honor" is old-fashioned and outdated
+			factor = 0.5
+			OR = {
+				current_age = age_of_revolutions
+				ruler_has_personality = scholar_personality 
+				ruler_has_personality = free_thinker_personality
+				in_golden_age = yes
+			}
+		}
+		modifier = { # non-cav races
+			factor = 0
+			OR = {
+				culture_is_gnomish = yes
+				culture_is_goblin = yes
+				culture_is_dwarven = yes
+				culture_is_halfling = yes
+				culture_is_kobold = yes
+			}
+		}
+		modifier = { # slight early-game boost when it's most relevant
+			factor = 1.15
+			NOT = { is_year = 1500 }
+		}
+		modifier = { # escanni tag; only includes "civilized" races until 1550, then applies to everyone
+			factor = 1.3
+			capital_scope = { # capital in castanor proper
+				OR = {
+					region = inner_castanor_region
+					region = west_castanor_region
+					region = south_castanor_region
+				}
+			}
+			OR = {
+				monstrous_culture = no
+				is_year = 1550
+			}
+		}
+		modifier = {
+			factor = 1.1
+			has_global_modifier_value = { 
+				which = cavalry_power 
+				value = 0.25
+			}
+		}
+		modifier = { # boost for adenica
+			factor = 2
+			tag = B58 #Adenica
+		}
+	}
+}
+
+mixed_armies_ideas = { # loc: assimilated army ideas??
+	category = MIL
+
+	bonus = {
+		possible_mil_policy = 1
+	}
+
+	mixed_armies1 = {
+		num_accepted_cultures = 2
+	}
+	mixed_armies2 = { # Service Guarantees Citizenship
+		manpower_in_accepted_culture_provinces = 0.15
+		land_forcelimit_modifier = 0.05
+	}
+	mixed_armies3 = {
+		improve_relation_modifier = 0.2
+	}
+	mixed_armies4 = {
+		idea_cost = -0.1
+	}
+	mixed_armies5 = {
+		advisor_pool = 1
+		free_leader_pool = 1
+	}
+	mixed_armies6 = {
+		vassal_forcelimit_bonus = 1
+	}
+	mixed_armies7 = { # Diverse Barracks
+		# receive a bonus to your army for every tolerated race present in your country
+		# bonus is 1.5x larger for integrated races; you need to actually have a pop of that race (sorry azkare)
+		# your racial military does NOT get the bonus, so you can't stack with that. it's meant to represent mixed-composition armies
+		# bonuses:
+		# 	elf: 2%/3% discipline
+		# 	dwarf: 4%/6% siege ability
+		# 	gnoll: 4%/6% morale damage
+		# 	gnomish: 4%/6% artillery power
+		# 	goblin: 4%/6% fire damage
+		# 	half-elf: -8%/-12% drill decay
+		# 	half-orc: 6%/9% manpower
+		# 	halfling: 6%/9% manpower recovery speed
+		# 	harpy: 4%/6% movement speed
+		# 	human: 4%/6% land morale
+		# 	kobold: 6%/9% forcelimit (should I do attrition instead? it just seems kinda zzzzz)
+		# 	orc: -4%/-6% shock damage received
+		# 	ruinborn: -8%/-12% land attrition
+		# 	trolls: -4%/-6% fire damage received
+		# 	ogre: 4%/6% shock damage
+		# 	centaur: 6%/9% cavalry power
+		# 	hobgoblin: 0.002/0.003 yearly army professionalism
+		# 	harimari: 4%/6% infantry power
+		# 	lizardfolk: 4%/6% naval morale
+		# 	undead: (not a pop)
+		army_tradition_decay = 0.005 #downside!
+	}
+
+	ai_will_do = { 
+		factor = 10
+		modifier = { # THIS GROUP IS SUPER LAGGY SO DON'T LET THE AI DO IT. EVER. (unless I optimize it later)
+		             # that said, if by some miracle the EoA/Sunrise Emperor form, then... fine. they can have it.
+			factor = 0
+			AND = {
+				NOT = { tag = Z01 } #Empire of Anbennar
+				NOT = { tag = Y00 } #Sunrise Empire
+			}
+		}
+	}
+}
+
+imperialist_ideas = {
+	category = DIP
+
+	bonus = {
+		reduced_liberty_desire_on_other_continent = 15
+		mercantilism_cost = -0.2
+	}
+
+	imperialist1 = {
+		fabricate_claims_cost = -0.25
+		can_chain_claim = yes
+	}
+	imperialist2 = { # Mission to Civilize
+		global_missionary_strength = 0.01
+		culture_conversion_cost = -0.15
+	}
+	imperialist3 = {
+		diplomatic_upkeep = 1
+	}
+	imperialist4 = {
+		naval_forcelimit_modifier = 0.25
+		naval_maintenance_modifier = -0.1
+	}
+	imperialist5 = {
+		ae_impact = -0.1
+	}
+	imperialist6 = {
+		merchants = 1
+		envoy_travel_time = -0.2
+	}
+	imperialist7 = {
+		province_warscore_cost = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.33
+		modifier = {
+			factor = 2
+			government_rank = 3
+		}
+		modifier = {
+			factor = 1.3
+			OR = {
+				has_idea_group = exploration_ideas
+				has_idea_group = expansion_ideas
+			}
+		}
+		modifier = {
+			factor = 1.2
+			is_great_power = yes
+		}
+	}
+}
+
+governance_ideas = {
+	category = ADM
+
+	bonus = {
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		horde_unity = 1
+	}
+	governance1 = { # Expanded Bureaucracy
+		state_governing_cost = -0.1
+	}
+	governance2 = {
+		global_tax_modifier = 0.15
+	}
+	governance3 = {
+		core_creation = -0.15
+	}
+	governance4 = {
+		state_maintenance_modifier = -0.25
+	}
+	governance5 = {
+		global_autonomy = -0.05
+	}
+	governance6 = {
+		yearly_absolutism = 1
+	}
+	governance7 = {
+		governing_capacity_modifier = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0.44
+		modifier = { 
+			factor = 1.25
+			governing_capacity_percentage = 0.9
+		}
+		modifier = { 
+			factor = 1.25
+			governing_capacity_percentage = 0.95
+		}
+	}
+}
