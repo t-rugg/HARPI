@@ -683,14 +683,14 @@ offensive_ideas = {
 			factor = 1.1 
 			national_focus = MIL 
 		}
-		modifier = {
-			factor = 1.15
-			OR = {
-				has_idea_group = economic_ideas 
-				has_idea_group = innovativeness_ideas 
-				has_idea_group = infrastructure_ideas
-			}
-		}
+		# modifier = {
+		# 	factor = 1.15
+		# 	OR = {
+		# 		has_idea_group = economic_ideas 
+		# 		has_idea_group = innovativeness_ideas 
+		# 		has_idea_group = infrastructure_ideas
+		# 	}
+		# }
 		modifier = {
 			factor = 1.25
 			is_march = yes
@@ -929,13 +929,13 @@ economic_ideas = {
 			factor = 1.1
 			national_focus = ADM 
 		}
-		modifier = {
-			factor = 1.05
-			OR = {
-				has_idea_group = quality_ideas
-				has_idea_group = trade_ideas
-				has_idea_group = offensive_ideas 
-			}
+		# modifier = {
+		# 	factor = 1.05
+		# 	OR = {
+		# 		has_idea_group = quality_ideas
+		# 		has_idea_group = trade_ideas
+		# 		has_idea_group = offensive_ideas 
+		# 	}
 		}
 	}
 }
