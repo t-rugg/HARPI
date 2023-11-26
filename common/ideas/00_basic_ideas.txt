@@ -936,7 +936,7 @@ economic_ideas = {
 		# 		has_idea_group = trade_ideas
 		# 		has_idea_group = offensive_ideas 
 		# 	}
-		}
+		# }
 	}
 }
 
