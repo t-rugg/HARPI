@@ -3,7 +3,7 @@ reclamation_ideas = {
 	important = yes
 
 	bonus = {
-		colony_development_boost = 1
+		artillery_levels_available_vs_fort = 1
 	}
 
 	trigger = {
@@ -11,11 +11,13 @@ reclamation_ideas = {
 		OR = {
 			culture = moon_elf
 			culture = star_elf
-			AND = { # dwarves only get to take it if they already own 2 restored holds, otherwise too strong
+			AND = { # dwarves only get to take it if they already own a restored holds, otherwise too strong
 			        # even this might be too strong honestly... but whatever
 				culture_group = dwarven
-				num_of_owned_provinces_with = {
-					value = 2
+				NOT = {
+					has_disaster = remnant_stagnation_disaster
+				}
+				any_owned_province = {
 					OR = {
 						has_terrain = dwarven_hold
 						has_terrain = dwarven_hold_surface
@@ -29,20 +31,16 @@ reclamation_ideas = {
 				}
 			}
 		}
-
 		NOT = { is_colonial_nation = yes }
-		NOT = {
-			has_disaster = remnant_stagnation_disaster
-		}
 	}
 	
 	reclamation1 = {
 		global_tax_income = 12 # 1 ducat per month
-		colony_cost_modifier = -0.1
+		colony_cost_modifier = -0.2
 	}
 	reclamation2 = {
 		colonists = 1
-		auto_explore_adjacent_to_colony = yes
+		may_explore = yes
 	}
 	reclamation3 = {
 		morale_damage_received = -0.1
@@ -343,7 +341,7 @@ war_economy_ideas = {
 		war_exhaustion = -0.01
 	}
 	war_economy2 = {
-		production_efficiency = 0.10
+		production_efficiency = 0.1
 	}
 	war_economy3 = {
 		reserves_organisation = 0.1
@@ -664,7 +662,7 @@ militarist_ideas = {
 		war_exhaustion = -0.03
 	}
 	militarist2 = { # stratocratic institutions
-		leader_cost = -0.2
+		leader_cost = -0.15
 		nobles_influence_modifier = 0.05
 	}
 	militarist3 = {
@@ -970,7 +968,7 @@ leadership_ideas = {
 	category = MIL
 
 	bonus = {
-		leader_cost = -0.2
+		leader_cost = -0.15
 		merc_leader_army_tradition = 0.33
 	}
 
@@ -1404,6 +1402,201 @@ governance_ideas = {
 		modifier = { 
 			factor = 1.25
 			governing_capacity_percentage = 0.95
+		}
+	}
+}
+
+subterranean_ideas = { # this group is comparable to Reclamation Ideas but for the other Subterranean races
+                       # they can take it earlier than dwarves can take Reclamation (i.e. it's an alternative to Expansion)
+	category = MIL
+
+	trigger = {
+		capital_scope = {
+			continent = serpentspine
+		}
+		OR = {
+			culture_group = goblin
+			culture_group = kobold
+		}
+	}
+
+	bonus = {
+		global_regiment_cost = -0.05
+	}
+	subterranean1 = { 
+		shock_damage_received = -0.1
+	}
+	subterranean2 = {
+		auto_explore_adjacent_to_colony = yes
+		colonists = 1
+	}
+	subterranean3 = {
+		global_colonial_growth = 15
+		native_assimilation = 0.75 # this is REALLY strong in the spine, maybe overtuned?
+	}
+	subterranean4 = { # Cavern Navigation
+		land_leader_maneuver = 1
+		infantry_fire = 0.1
+	}
+	subterranean5 = {
+		colony_development_boost = 1
+	}
+	subterranean6 = { # Traps and Dead Ends
+		defensiveness = 0.15
+		fort_maintenance_modifier = -0.15
+	}
+	subterranean7 = {
+		fire_damage = 0.05
+	}
+
+	ai_will_do = {
+		factor = 0.9
+		modifier = { # disallow if nothing left to colonize
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					has_empty_adjacent_province = yes
+				}
+			}
+		}	
+		modifier = { # disincentivize after age of unravelling
+			factor = 0.3
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
+	}
+}
+
+adventure_ideas = {
+	category = DIP
+
+	trigger = {
+		has_adventurer_reform = yes
+	}
+
+	bonus = {
+		adventurer_loyalty_modifier = 0.1
+		adventurer_influence_modifier = 0.1
+	}
+	adventure1 = { # the call of adventure
+		global_manpower = 3 # +3000 manpower
+		mercenary_manpower = 0.15
+	}
+	adventure2 = { # a home without a homeland
+		migration_cost = -0.25
+		province_warscore_cost = -0.1
+	}
+	adventure3 = { # promotion of esteemed adventurers
+		reform_progress_growth = 0.15
+		monthly_adventurer_unity = 0.05
+	}
+	adventure4 = { # to make a name for oneself
+		leader_cost = -0.25
+	}
+	adventure5 = { # adventurer parties
+		mercenary_cost = -0.2
+		merc_maintenace_modifier = -0.2
+	}
+	adventure6 = { # settling down
+		build_time = -0.1
+	}
+	adventure7 = { # swords to plowshares
+		global_monthly_devastation = -0.05
+	}
+
+	ai_will_do = {
+		factor = 1.5
+		modifier = { # disallow after age of greentide
+			factor = 0
+			OR = {
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
+		modifier = { # aelentir adventurers should take this much less
+			factor = 0.3
+			has_reform = aelantir_adventurer_reform
+		}
+	}
+}
+
+metallurgy_ideas = {
+	category = ADM
+
+	bonus = {
+		embargo_efficiency = 0.5
+	}
+	metallurgy1 = {
+		production_efficiency = 0.1
+	}
+	metallurgy2 = { # Efficient Mines
+		mercantilism_cost = -0.1
+		# provinces producing mineable goods gain +5% goods produced and -2.5% development cost (todo: loc)
+	}
+	metallurgy3 = {
+		fire_damage = 0.075
+	}
+	metallurgy4 = { # pristine mints
+		inflation_reduction = 0.1
+	}
+	metallurgy5 = { # blood and steel
+		reinforce_cost_modifier = -0.1
+	}
+	metallurgy6 = {
+		number_of_cannons_modifier = 0.1 # ship cannons
+	}
+	metallurgy7 = { # Quality Mines
+		mercantilism_cost = -0.1
+		# doubles the effects of metallurgy2 to 10% goods produced and -5% dev cost (todo: loc)
+	}
+
+	ai_will_do = {
+		factor = 0.4
+		modifier = { # require having metals
+			factor = 0
+			NOT = {
+				gold = 1
+				mithril = 1
+				iron = 1
+				copper = 1
+			}
+		}
+		modifier = {
+			factor = 1.5
+			gold = 1  
+		}
+		modifier = {
+			factor = 1.5
+			mithril = 1
+		}
+		modifier = {
+			factor = 1.2
+			iron = 5
+		}
+		modifier = {
+			factor = 1.2
+			copper = 5
+		}
+		modifier = {
+			factor = 1.2
+			production_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.2
+			culture_group = dwarven
+		}
+		modifier = { # big boost if your capital is a metallurgy hold
+			factor = 3
+			capital_scope = {
+				OR = {
+					has_terrain = dwarven_hold
+					has_terrain = dwarven_hold_surface
+				}
+				province_with_mineable_goods = yes
+			}
 		}
 	}
 }

@@ -1,0 +1,49 @@
+metallurgy2_modifier = {
+	potential = {
+		always = yes
+	}
+	
+	trigger = {
+		province_with_mineable_goods = yes
+		owner = {
+			has_idea = metallurgy2
+			has_country_flag = metallurgy2_initialized
+			NOT = { has_idea = metallurgy7 }
+		}
+	}
+	
+	trade_goods_size_modifier = 0.05
+	local_development_cost = -0.025
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+		remove_province_triggered_modifier = metallurgy2_modifier
+	}
+}
+
+metallurgy7_modifier = {
+	potential = {
+		always = yes
+	}
+	
+	trigger = {
+		province_with_mineable_goods = yes
+		owner = {
+			has_idea = metallurgy7
+			has_country_flag = metallurgy2_initialized
+		}
+	}
+	
+	trade_goods_size_modifier = 0.1
+	local_development_cost = -0.05
+	
+	on_activation = {
+		remove_province_triggered_modifier = metallurgy2_modifier
+	}
+	
+	on_deactivation = {
+		remove_province_triggered_modifier = metallurgy7_modifier
+	}
+}

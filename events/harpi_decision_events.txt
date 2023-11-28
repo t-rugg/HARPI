@@ -1274,3 +1274,66 @@ country_event = { # Patronize the Intelligentsia
 		# pass
 	}
 }
+
+country_event = { # Metallurgy Metal Provinces Boost
+	id = harpi.7
+	title = harpi.7.t
+	desc = harpi.7.d
+	hidden = yes
+	picture = KINGS_CHOICE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = metallurgy2
+					has_country_flag = metallurgy2_initialized
+					NOT = { has_idea = metallurgy7 }
+				}
+				
+				every_owned_province = {
+					limit = {
+						province_with_mineable_goods = yes
+					}
+					add_province_triggered_modifier = metallurgy2_modifier # i hope this works
+				}
+				
+				country_event = {
+					id = harpi.7
+					days = 30
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = metallurgy7
+					has_country_flag = metallurgy2_initialized
+				}
+
+				every_owned_province = {
+					limit = {
+						province_with_mineable_goods = yes
+					}
+					add_province_triggered_modifier = metallurgy7_modifier
+				}
+				
+				country_event = {
+					id = harpi.7
+					days = 30
+				}
+			}
+			else = {
+				clr_country_flag = metallurgy2_initialized
+			}
+		}
+	}
+
+	option = {
+		name = harpi.7.a
+		# pass
+		ai_chance = {
+			factor = 500
+		}
+	}
+}

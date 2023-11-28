@@ -283,4 +283,28 @@ patronage1_decision = {
 	}
 }
 
+metallurgy2_initialized = {
+	potential = {
+		has_idea_group = metallurgy_ideas
+		NOT = { has_country_flag = metallurgy2_initialized }
+	}
+	allow = {
+		has_idea = metallurgy_2
+	}
+
+	effect = {
+		hidden_effect = {
+			set_country_flag = metallurgy2_initialized
+			country_event = {
+				id = harpi.7
+				days = 30
+			}
+		}
+
+		ai_will_do = {
+			factor = 400
+		}
+	}
+}
+
 } # necessary, closes country_decisions
