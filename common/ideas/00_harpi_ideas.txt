@@ -1547,6 +1547,7 @@ metallurgy_ideas = {
 	}
 	metallurgy6 = {
 		number_of_cannons_modifier = 0.1 # ship cannons
+		heavy_ship_cost = -0.1
 	}
 	metallurgy7 = { # Quality Mines
 		mercantilism_cost = -0.1
