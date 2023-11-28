@@ -1337,3 +1337,52 @@ country_event = { # Metallurgy Metal Provinces Boost
 		}
 	}
 }
+
+country_event = {
+	id = harpi.8
+	title = harpi.8
+	desc = harpi.8.d
+	picture = KINGS_CHOICE_eventPicture
+
+	is_triggered_only = yes	
+	
+	immediate = {
+		set_country_flag = monastic_decision_menu_open
+	}
+
+	after = {
+		clr_country_flag = monastic_decision_menu_open
+	}
+
+	option = { # Admin
+		name = harpi.8.a
+		increase_ruler_adm_effect = yes
+		add_country_modifier = {
+			name = monastic1_contemplation
+			duration = 1825
+		}
+	}
+
+	option = { # Dip
+		name = harpi.8.b
+		increase_ruler_dip_effect = yes
+		add_country_modifier = {
+			name = monastic1_contemplation
+			duration = 1825
+		}
+	}	
+	
+	option = { # Mil
+		name = harpi.8.c
+		increase_ruler_mil_effect = yes
+		add_country_modifier = {
+			name = monastic1_contemplation
+			duration = 1825
+		}
+	}
+
+	option = { # Cancel
+		name = harpi.8.cancel
+		# pass
+	}
+}

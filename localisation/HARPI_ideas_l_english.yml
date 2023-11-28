@@ -150,6 +150,20 @@
  professional_army_ideas:0 "Professional Army Ideas"
 
  federalist_ideas:0 "Federalist Ideas"
+ federalist1:0 "Delegation of Duties"
+ federalist1_desc:0 "Managing a large state of many competing interests can be quite difficult. Fortunately, our federal government need not do all the work. Delegating our powers to lower-level entities helps them feel more politically represented while reducing the amount of work we need to do.\n—"
+ federalist2:0 "Many Nations, One State"
+ federalist2_desc:0 "Let us celebrate the different nationalities and backgrounds that make up our country.\n—"
+ federalist3:0 "Union of Sovereign States"
+ federalist3_desc:0 "Historically, most land has been taken through bloodshed. We offer an alternative. By joining our federation peacefully, nations can avoid conflict while keeping much of their internal autonomy.\n—"
+ federalist4:0 "Streamlined Bureaucracy"
+ federalist4_desc:0 "Managing a multi-level government requires making the processes and systems that compose it more efficient and adaptable. We have become experts at this.\n—"
+ federalist5:0 "The Confederation Process"
+ federalist5_desc:0 "The states composing our realm are already de facto self-governing, at least internally. It is much easier to absorb other governments into our own when we do not need to dissolve them fully, and can simply adapt their systems into our existing structures.\n—"
+ federalist6:0 "Manufactured Consent"
+ federalist6_desc:0 "Creating so many layers of separation between our federal and provincial governments has allowed us to easily deflect criticism. We can simply redirect any complaints to the more appropriate authorities, whoever those may be, and leave them to deal with the peasant rabble.\n—"
+ federalist7:0 "Decentralized Administration"
+ federalist7_desc:0 "A loose government is a flexible one.\n—§G+1% Administrative Efficiency per age §Y(for a total of +4% in the Age of Artificery)§W. The full bonus for the current age applies no matter when this idea group was taken."
 
  mixed_armies_ideas:0 "Assimilated Army Ideas"
  mixed_armies1:0 "The Monster You Know"
@@ -174,3 +188,9 @@
  governance_ideas:0 "Governance Ideas"
 
  subterranean_ideas:0 "Subterranean Ideas"
+
+ adventure_ideas:0 "Adventure Ideas"
+
+ metallurgy_ideas:0 "Metallurgy Ideas"
+
+ monastic_ideas:0 "Monastic Ideas"

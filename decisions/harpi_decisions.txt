@@ -307,4 +307,28 @@ metallurgy2_initialized = {
 	}
 }
 
+monastic1_decision = {
+	potential = {
+		has_idea_group = monastic_ideas
+		NOT = { has_country_flag = monastic_decision_menu_open }
+	}
+	allow = {
+		has_idea = monastic1
+		custom_trigger_tooltip = {
+			tooltip = decision_once_every_five_years
+			NOT = { has_country_modifier = monastic1_contemplation }
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = harpi.8
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
 } # necessary, closes country_decisions

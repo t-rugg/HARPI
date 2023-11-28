@@ -1118,10 +1118,9 @@ federalist_ideas = {
 		diplomatic_annexation_cost = -0.15
 	}
 	federalist6 = {
-		global_unrest = -2
+		global_unrest = -1.5
 	}
 	federalist7 = { # Decentralized Administration
-		administrative_efficiency = 0.01
 		# 1% EXTRA ADMIN EFFICIENCY PER AGE
 		max_absolutism_effect = -0.10 #downside!
 	}
@@ -1575,11 +1574,11 @@ metallurgy_ideas = {
 		}
 		modifier = {
 			factor = 1.2
-			iron = 5
+			iron = 3
 		}
 		modifier = {
 			factor = 1.2
-			copper = 5
+			copper = 3
 		}
 		modifier = {
 			factor = 1.2
@@ -1598,6 +1597,76 @@ metallurgy_ideas = {
 				}
 				province_with_mineable_goods = yes
 			}
+		}
+	}
+}
+
+monastic_ideas = {
+	category = DIP
+
+	trigger = {
+		NOT = {
+			religion = godlost
+			#religion = the_thought - i think it's fine to allow this?
+		}
+	}
+
+	bonus = {
+		papal_influence = 1.5
+		church_power_modifier = 0.15
+		monthly_fervor_increase = 1.5
+		church_loyalty_modifier = 0.1
+	}
+
+	monastic1 = { # Monastic Contemplation
+		stability_cost_modifier = -0.1
+		# every 5 years, can take decision to improve one of your ruler's stats, at the cost of +1 stability cost to declare war for the next 5 years
+		# the +1 stab cost persists even if you cancel this idea group
+	}
+	monastic2 = {
+		idea_cost = -0.075
+	}
+	monastic3 = {
+		institution_spread_from_true_faith = 0.5
+		embracement_cost = -0.25
+	}
+	monastic4 = {
+		# include note that this gives more devotion than usual
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 2
+		horde_unity = 1
+	}
+	monastic5 = { 
+		improve_relation_modifier = 0.2
+		reverse_relation_with_same_religion = 10
+	}
+	monastic6 = { # smthn about tithes
+		global_tax_modifier = 0.15
+	}
+	monastic7 = {
+		tolerance_own = 2
+		global_heretic_missionary_strength = 0.02
+	}
+
+	ai_will_do = {
+		factor = 0.4
+		modifier = {
+			factor = 2
+			OR = {
+				has_reform = secular_order_reform
+				has_reform = monastic_order_reform
+				has_country_flag = knightly_order_adventurer
+			}	
+			government = theocracy
+		}
+		modifier = {
+			factor = 2
+			government = theocracy
+		}
+		modifier = {
+			factor = 3
+			is_defender_of_faith = yes
 		}
 	}
 }

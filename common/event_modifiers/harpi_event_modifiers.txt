@@ -28,3 +28,7 @@ federalist7_age3 = {
 federalist7_age4 = {
 	administrative_efficiency = 0.04
 }
+
+monastic1_contemplation = {
+	stability_cost_to_declare_war = 1
+}
