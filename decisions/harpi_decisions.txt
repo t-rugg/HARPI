@@ -289,7 +289,7 @@ metallurgy2_initialized = {
 		NOT = { has_country_flag = metallurgy2_initialized }
 	}
 	allow = {
-		has_idea = metallurgy_2
+		has_idea = metallurgy2
 	}
 
 	effect = {
@@ -300,10 +300,10 @@ metallurgy2_initialized = {
 				days = 30
 			}
 		}
+	}
 
-		ai_will_do = {
-			factor = 400
-		}
+	ai_will_do = {
+		factor = 400
 	}
 }
 
