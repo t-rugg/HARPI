@@ -1478,9 +1478,10 @@ quantity_ideas = { # change loc to conscription ideas
 
 
 expansion_ideas = {
-	# colonial stuff not touched to preserve colonial balanced
+	# colonial stuff mostly not touched to preserve colonial balanced
+	# 1 colonist was removed however
 	# other things shuffled around/tweaked
-	# generally speaking, this group was buffed significantly
+	# generally speaking, this group was buffed significantly but lost a colonist
 	category = ADM
 	important = yes
 
@@ -1508,9 +1509,8 @@ expansion_ideas = {
 	competetive_merchants  = { # change the loc
 		governing_capacity_modifier = 0.1
 	}
-	general_colonization_law  = { # moved back for balance pacing
-		colonists = 1
-		colonist_placement_chance = 0.05
+	general_colonization_law  = { # moved back for balance pacing, colonist removed
+		colonist_placement_chance = 0.10
 	}
 
 	ai_will_do = {
