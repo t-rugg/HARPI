@@ -1356,6 +1356,7 @@ country_event = {
 
 	option = { # Admin
 		name = harpi.8.a
+		ai_chance = { factor = 0 }	
 		increase_ruler_adm_effect = yes
 		add_country_modifier = {
 			name = monastic1_contemplation
@@ -1365,6 +1366,7 @@ country_event = {
 
 	option = { # Dip
 		name = harpi.8.b
+		ai_chance = { factor = 0 }	
 		increase_ruler_dip_effect = yes
 		add_country_modifier = {
 			name = monastic1_contemplation
@@ -1374,6 +1376,7 @@ country_event = {
 	
 	option = { # Mil
 		name = harpi.8.c
+		ai_chance = { factor = 0 }	
 		increase_ruler_mil_effect = yes
 		add_country_modifier = {
 			name = monastic1_contemplation
@@ -1383,6 +1386,7 @@ country_event = {
 
 	option = { # Cancel
 		name = harpi.8.cancel
+		ai_chance = { factor = 500 }	
 		# pass
 	}
 }

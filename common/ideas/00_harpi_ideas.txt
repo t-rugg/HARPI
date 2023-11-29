@@ -1410,12 +1410,17 @@ subterranean_ideas = { # this group is comparable to Reclamation Ideas but for t
 	category = MIL
 
 	trigger = {
-		capital_scope = {
-			continent = serpentspine
-		}
 		OR = {
 			culture_group = goblin
 			culture_group = kobold
+		}
+		any_owned_province = {
+			OR = {
+				has_terrain = cavern
+				has_terrain = dwarven_road
+				has_terrain = dwarven_hold
+				has_terrain = dwarven_hold_surface
+			}
 		}
 	}
 

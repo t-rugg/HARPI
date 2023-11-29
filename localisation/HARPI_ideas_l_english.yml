@@ -3,7 +3,7 @@
  dwarf_legacy1:0 "A Dwarven Empire"
  dwarf_legacy1_desc:0 "Aul-Dwarov was an empire by dwarves, for dwarves. Certain lesser races may be allowed residence in our holds, but they live in the shadows of the halls our ancestors built.\n"
  dwarf_legacy2:0 "Responsible Digging"
- dwarf_legacy2_desc:0 "Our ancestors left behind their holds, masterworks of subterranian construction and architecture. We must not disrespect them, but instead preserve their glory and splendour.\n—" 
+ dwarf_legacy2_desc:0 "Our ancestors left behind their holds, masterworks of subterranean construction and architecture. We must not disrespect them, but instead preserve their glory and splendour.\n—" 
  dwarf_legacy3:0 "Rulers of the Serpentspine" 
  dwarf_legacy3_desc:0 "Unfortunately, there are still a great many pests kicking around our ancestral mountains, and even some outsiders looking in, eyes set on the riches of our holds. We must be prepared to protect the legacy of our ancestors against these hostile incursions.\n—"
  dwarf_legacy4:0 "Back in the Fold"
@@ -188,9 +188,26 @@
  governance_ideas:0 "Governance Ideas"
 
  subterranean_ideas:0 "Subterranean Ideas"
+ subterranean:0 "Crevace Warfare"
+ subterranean1_desc:0 "Mastery of the caves has given us intricate knowledge of various shelters and escape paths. Our enemies will struggle to pursue us as we fit into every nook and cranny and can easily slip away.\n—"
+ subterranean2:0 "Cave System Maps"
+ subterranean2_desc:0 "Over time, we have built up quite an extensive map of the local cavern systems. This helps with navigation and with extending our claims.\n—"
+ subterranean3:0 "Natives to the Subterranne"
+ subterranean3_desc:0 "We are not the only ones to occupy the caverns of the Serpentspine. Thankfully, our bethren are more than willing to join our noble project.\n—"
+ subterranean4:0 "Cavern Navigation"
+ subterranean4_desc:0 "Even with access to maps, there is a great level of cave-traversal proficiency that can be borne only through much effort and experience. Thnakfully, our armies are more than capable.\n—" 
+ subterranean5:0 "Chthonic Food"
+ subterranean5_desc:0 "While the surface-dwellers subsist off their pathetic, sun-scorched, soil-grown slop, we find nourishment and fulfilment in the fungi and serpentsbloom of the caverns.\n—"
+ subterranean6:0 "Traps and Dead Ends"
+ subterranean6_desc:0 "Those on the surface need to build their fortificationss from scratch, in the middle of the open. What fools! We already have such impressive defensive structures available to us, carved into the earth of Halann itself!\n—"
+ subterranean7:0 "Cave-Ins"
+ subterranean7_desc:0 "It's not the most noble tactic, but why would we be noble to our enemies? By shooting at supports and ceilings, we can easily trigger cave-ins, vastly magnifying the amount of casualties our cannons are capable of inflicting.\n—"
+ 
 
  adventure_ideas:0 "Adventure Ideas"
 
  metallurgy_ideas:0 "Metallurgy Ideas"
 
  monastic_ideas:0 "Monastic Ideas"
+ monastic1:0 "Monastic Contemplation"
+ monastic1_desc:0 "Through temperance, we can reflect. Through reflection, we gain clarity.\n—\nCan take a decision to §Gimprove your ruler's stats by 1 point§W at the cost of §Rincreased Stability cost to declare war§W for §Y5 years§W. §YThis decision can only be taken when its debuff is not active, and removing the idea group does not remove this debuff.§W"
