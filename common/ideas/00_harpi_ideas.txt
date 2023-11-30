@@ -1481,16 +1481,17 @@ adventure_ideas = {
 	}
 
 	bonus = {
+		mercenary_manpower = 0.25
 		adventurer_loyalty_modifier = 0.1
 		adventurer_influence_modifier = 0.1
 	}
 	adventure1 = { # the call of adventure
-		global_manpower = 3 # +3000 manpower
-		mercenary_manpower = 0.15
+		global_manpower = 4 # +4000 manpower
+		infantry_cost = -0.1
 	}
 	adventure2 = { # a home without a homeland
-		migration_cost = -0.25
 		province_warscore_cost = -0.1
+		migration_cost = -0.25
 	}
 	adventure3 = { # promotion of esteemed adventurers
 		reform_progress_growth = 0.15
@@ -1501,12 +1502,12 @@ adventure_ideas = {
 	}
 	adventure5 = { # adventurer parties
 		mercenary_cost = -0.2
-		merc_maintenace_modifier = -0.2
 	}
 	adventure6 = { # settling down
 		build_time = -0.1
 	}
 	adventure7 = { # swords to plowshares
+		global_trade_goods_size_modifier = 0.1
 		global_monthly_devastation = -0.05
 	}
 
