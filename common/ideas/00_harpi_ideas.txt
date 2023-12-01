@@ -1548,7 +1548,7 @@ metallurgy_ideas = {
 		inflation_reduction = 0.1
 	}
 	metallurgy5 = { # blood and steel
-		reinforce_cost_modifier = -0.1
+		reinforce_cost_modifier = -0.15
 	}
 	metallurgy6 = {
 		number_of_cannons_modifier = 0.1 # ship cannons
