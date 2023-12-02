@@ -85,7 +85,7 @@ dwarf_legacy = {
 			current_size_of_parliament = 7
 		}
 		modifier = { # ancestor worship
-			factor = 1.1
+			factor = 1.2
 			religion = ancestor_worship
 			dominant_religion = ancestor_worship
 		}
@@ -162,7 +162,7 @@ corin_legacy = {
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.6
 			OR = {
 				culture_group = escanni
 				tag = B02 #Corintar
@@ -254,7 +254,7 @@ dameria_legacy = {
 	ai_will_do = {
 		factor = 0.3
 		modifier = {
-			factor = 5
+			factor = 10
 			OR = {
 				tag = A58 #Dameria
 				tag = Z01 #Empire of Anbennar
@@ -332,7 +332,7 @@ harimar_legacy = {
 	}
 
 	ai_will_do = {
-		factor = 0.5
+		factor = 0.6
 		modifier = { # empire ranks only
 			factor = 0
 			NOT = { government_rank = 3 }
@@ -415,7 +415,7 @@ precursor_legacy = {
 	}
 
 	ai_will_do = {
-		factor = 0.3
+		factor = 0.33
 		modifier = {
 			factor = 2
 			tag = Z43 #Aelnar - not Venail!

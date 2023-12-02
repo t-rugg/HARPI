@@ -55,7 +55,7 @@
  reclamation7:0 "Cult of Ancients"
  reclamation7_desc:0 "When we look at the glory and splendour around us, and acknowledge our accomplishments in reclaiming this land, we know that we must have been helped along by fate and faith. By establishing a cult to our ancestors and forefounders, we can repay their blessings and continue their legacy.\n—"
 
- patronage_ideas:0 "Patronage Ideas"
+ patronage_ideas:0 "Cultural Ideas"
  patronage1:0 "Sponsor the Arts"
  patronage1_desc:0 "Investment in our culture can pay dividends in solidifying the respectability and reputation of our rule.\n—\n§GUnlocks the §TPatronize the Intelligentsia§G decision§W, allowing you to spend ¤ Crowns to purchase §GPrestige§W or to §Gstrengthen your government§W.\n§TPatronize the Intelligentsia§W can be used §Yonce every 10 years§W."
  patronage2:0 "New Talent"
@@ -211,3 +211,7 @@
  monastic_ideas:0 "Monastic Ideas"
  monastic1:0 "Monastic Contemplation"
  monastic1_desc:0 "Through temperance, we can reflect. Through reflection, we gain clarity.\n—\nCan take a decision to §Gimprove one of your ruler's stats by 1 point§W at the cost of §Rincreased Stability cost to declare war§W for §Y5 years§W. §YThis decision can only be taken when its debuff is not active, and removing the idea group does not remove this debuff.§W"
+
+ lawful_ideas:0 "§VLawful Alignment§W"
+
+ chaotic_ideas:0 "§YChaotic Alignment§W"

@@ -889,7 +889,7 @@ economic_ideas = {
 		land_maintenance_modifier = -0.05
 	}
 	debt_and_loans = { #1.35
-		interest = -0.5
+		interest = -0.75 # slight buff... is this a good idea? who knows!
 	}
 	merchant_passes = { #1.35
 		merchants = 1
@@ -1661,7 +1661,7 @@ administrative_ideas = {
 		expand_administration_cost = -0.33
 	}
 	stable_government = {
-		stability_cost_modifier = -0.25 
+		stability_cost_modifier = -0.2 # down from 0.25 to make stacking it slightly less good
 		advisor_pool = 1
 	}
 	local_rule = {
