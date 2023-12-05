@@ -1641,10 +1641,9 @@ monastic_ideas = {
 		embracement_cost = -0.25
 	}
 	monastic4 = {
-		# include note that this gives more devotion than usual
 		legitimacy = 1
 		republican_tradition = 0.3
-		devotion = 2
+		devotion = 1
 		horde_unity = 1
 	}
 	monastic5 = { 
