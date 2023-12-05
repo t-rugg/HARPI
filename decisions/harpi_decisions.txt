@@ -318,6 +318,7 @@ monastic1_decision = {
 			tooltip = decision_once_every_five_years
 			NOT = { has_country_modifier = monastic1_contemplation }
 		}
+		is_at_war = no
 	}
 	effect = {
 		hidden_effect = {
