@@ -458,7 +458,7 @@ religious_ideas = {
 	# 	cb_on_religious_enemies = yes
 	# }
 	deus_vult = { # change the loc
-		same_religion_advisor_cost = -0.2 # biggest single advisor cost reduction
+		adm_advisor_cost = -0.2
 	}
 
 	ai_will_do = {
