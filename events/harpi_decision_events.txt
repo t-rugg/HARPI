@@ -1354,30 +1354,10 @@ country_event = {
 		clr_country_flag = monastic_decision_menu_open
 	}
 
-	option = { # Admin
+	option = { # Yes
 		name = harpi.8.a
 		ai_chance = { factor = 0 }	
-		increase_ruler_adm_effect = yes
-		add_country_modifier = {
-			name = monastic1_contemplation
-			duration = 1825
-		}
-	}
-
-	option = { # Dip
-		name = harpi.8.b
-		ai_chance = { factor = 0 }	
-		increase_ruler_dip_effect = yes
-		add_country_modifier = {
-			name = monastic1_contemplation
-			duration = 1825
-		}
-	}	
-	
-	option = { # Mil
-		name = harpi.8.c
-		ai_chance = { factor = 0 }	
-		increase_ruler_mil_effect = yes
+		change_innovativeness = 2
 		add_country_modifier = {
 			name = monastic1_contemplation
 			duration = 1825

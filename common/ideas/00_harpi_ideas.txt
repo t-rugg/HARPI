@@ -182,7 +182,7 @@ extraction_ideas = {
 		inflation_action_cost = -0.25
 	}
 	extraction3 = {
-		build_time = -0.1
+		build_time = -0.15
 	}
 	extraction4 = {
 		trade_steering = 0.25
@@ -1439,7 +1439,7 @@ subterranean_ideas = { # this group is comparable to Reclamation Ideas but for t
 		native_assimilation = 0.75 # this is REALLY strong in the spine, maybe overtuned?
 	}
 	subterranean4 = { # Cavern Navigation
-		land_leader_maneuver = 1
+		leader_land_manuever = 1
 		infantry_fire = 0.1
 	}
 	subterranean5 = {
@@ -1504,7 +1504,7 @@ adventure_ideas = {
 		mercenary_cost = -0.2
 	}
 	adventure6 = { # settling down
-		build_time = -0.1
+		build_time = -0.15
 	}
 	adventure7 = { # swords to plowshares
 		global_trade_goods_size_modifier = 0.1
@@ -1626,7 +1626,7 @@ monastic_ideas = {
 
 	monastic1 = { # Monastic Contemplation
 		stability_cost_modifier = -0.1
-		# every 5 years, can take decision to improve one of your ruler's stats, at the cost of +1 stability cost to declare war for the next 5 years
+		# every 5 years, can take decision to gain to innovativeness, at the cost of +1 stability cost to declare war for the next 5 years and a manpower malus
 		# the +1 stab cost persists even if you cancel this idea group
 	}
 	monastic2 = {
@@ -1792,6 +1792,117 @@ chaotic_ideas = {
 		modifier = {
 			factor = 1.3
 			culture_is_goblin = yes
+		}
+	}
+}
+
+influence_ideas = {
+	# the theme is for influence ideas to be used for EXPANSION via vassals (i.e. eventually annexing them)
+	# whereas stewardship is used for KEEPING vassals (i.e. keeping them loyal and profitable)
+	category = DIP
+
+	bonus = {
+		state_governing_cost = -0.1 # annexing a subject gives full state cores, so..
+	}
+
+	influence1 = {
+		diplomats = 1
+		diplomatic_upkeep = 1
+	}
+	diplomatic_influence = {
+		diplomatic_reputation = 2
+	}
+	influence3 = {
+		diplomatic_annexation_cost = -0.2
+	}
+	additional_loyalist_recruitment = {
+		reduced_liberty_desire = 5
+		promote_culture_cost = -0.25
+	}
+	postal_service = {
+		envoy_travel_time = -0.25
+		annexation_relations_impact = -0.5
+	}
+	buffer_states = {
+		allow_client_states = yes
+	}
+	influence7 = {
+		can_transfer_vassal_wargoal = yes
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1.5
+			is_emperor = yes
+		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 2
+		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 3
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_dip = 8 }
+		}
+	}
+}
+
+stewardship_ideas = {
+	# focused on KEEPING vassals
+	# I mean, nothing in the group forces you to keep vassals around, but almost all of your modifiers reward you for it
+	category = DIP
+
+	bonus = {
+		liberty_desire_from_subject_development = -0.2
+		reduced_liberty_desire_on_same_continent = 0.1
+	}
+
+	tribute_system = {
+		vassal_income = 0.25
+	}
+	stewardship2 = {
+		reduced_liberty_desire = 15
+	}
+	stewardship3 = {
+		diplomatic_upkeep = 2
+	}
+	integrated_elites = {
+		# our subjects receive +20% tax and manpower, as well as -1 interest per annum and -50% fort maintenance
+		accept_vassalization_reasons = 15
+	}
+	stewardship5 = {
+		reverse_relation_with_same_religion = 25 # makes both diplo-vassalization and converting vassals easier
+	}
+	marcher_lords = {
+		# two free marches - DO THE LOC FOR THIS!!!
+		vassal_forcelimit_bonus = 1.5
+	}
+	stewardship7 = {
+		can_fabricate_for_vassals = yes
+	}
+	
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1.5
+			is_emperor = yes
+		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 2
+		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 3
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_dip = 8 }
 		}
 	}
 }

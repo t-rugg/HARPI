@@ -336,32 +336,32 @@ innovativeness_ideas = {
 	category = ADM
 
 	bonus = {
-		advisor_cost = -0.2 # inno can keep its big advisor cost reduction, I nerfed the tech cost and free policy
+		trade_efficiency = 0.1 # not sure whether this is the most appropriate modifier... it's good for feiten at least?
 		artificers_loyalty_modifier = 0.1
 	}
 
+	empiricism = {
+		innovativeness_gain = 0.5 # should this be nerfed? might screw with MT balance....
+	}
 	patron_of_art  = {
 		prestige_decay = -0.01
 	}
-	empiricism = {
-		innovativeness_gain = 0.33
-	}
 	scientific_revolution = {
-		technology_cost = -0.05
+		technology_cost = -0.075 # slight nerf
 		embracement_cost = -0.1
 	}
 	dynamic_court = {
 		advisor_pool = 1
+		advisor_cost = -0.15 # slight nerf
 	}
 	print_culture = {
 		global_institution_spread = 0.25
 	}
-	optimism = {
+	optimism = { # removed the splendor, doesn't really fit
 		war_exhaustion = -0.03
-		monthly_splendor = 1 #1.35
 	}
 	expanded_policies = {
-		free_adm_policy = 1
+		free_adm_policy = 1 # big nerf
 	}
 
 	ai_will_do = {
@@ -434,6 +434,7 @@ religious_ideas = {
 		global_missionary_strength = 0.03
 	}
 	devoutness = {
+		# temples provide provincial bonuses (TODO: implement)
 		tolerance_own = 2
 	}
 	inquisition = { #1.35
@@ -457,8 +458,7 @@ religious_ideas = {
 	# 	cb_on_religious_enemies = yes
 	# }
 	deus_vult = { # change the loc
-		# temples provide provincial bonuses
-		same_religion_advisor_cost = -0.1
+		same_religion_advisor_cost = -0.2 # biggest single advisor cost reduction
 	}
 
 	ai_will_do = {
@@ -1781,59 +1781,7 @@ humanist_ideas = {
 	}
 }
 
-influence_ideas = {
-	# focused on keeping vassals long-term
-	category = DIP
-
-	bonus = {
-		diplomatic_reputation = 1
-	}
-
-	tribute_system = {
-		vassal_income = 0.25
-	}
-	diplomatic_influence = {
-		diplomatic_upkeep = 2
-	}
-	additional_loyalist_recruitment = {
-		reduced_liberty_desire = 15
-		vassal_naval_forcelimit_bonus = 0.1 
-	}
-	integrated_elites = { # no diplo annex cost in this group!
-		# our subjects receive +10% tax and manpower, as well as -0.5 interest per annum and -50% fort maintenance
-		accept_vassalization_reasons = 15
-	}
-	postal_service = {
-		liberty_desire_from_subject_development = -0.2
-	}
-	marcher_lords = {
-		# two free marches - DO THE LOC FOR THIS!!!
-		vassal_forcelimit_bonus = 1.5
-	}
-	buffer_states = {
-		allow_client_states = yes
-	}
-
-	ai_will_do = {
-		factor = 0.5
-		modifier = {
-			factor = 1.5
-			is_emperor = yes
-		}
-		modifier = {
-			factor = 1.5
-			num_of_subjects = 2
-		}
-		modifier = {
-			factor = 1.5
-			num_of_subjects = 3
-		}
-		modifier = {
-			factor = 0.75
-			NOT = { monthly_dip = 8 }
-		}
-	}
-}
+# see 00_harpi_ideas.txt for new influence
 
 naval_ideas = {
 	# wtf do I do with this group
@@ -2038,7 +1986,7 @@ infrastructure_ideas = { #1.35
 		fort_maintenance_modifier = -0.25
  	}
 	regulation_bureau = {
-		build_time = -0.1
+		build_time = -0.15
 	}
 
 	ai_will_do = {

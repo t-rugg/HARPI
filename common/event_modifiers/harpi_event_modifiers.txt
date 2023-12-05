@@ -1,7 +1,7 @@
 overlord_has_integrated_elites = {
-	global_tax_modifier = 0.1
-	global_manpower_modifier = 0.1
-	interest = -0.5
+	global_tax_modifier = 0.2
+	global_manpower_modifier = 0.2
+	interest = -1
 	fort_maintenance_modifier = -0.5
 }
 
@@ -31,4 +31,5 @@ federalist7_age4 = {
 
 monastic1_contemplation = {
 	stability_cost_to_declare_war = 1
+	global_manpower_modifier = -0.2
 }
