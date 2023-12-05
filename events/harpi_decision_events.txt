@@ -1338,35 +1338,35 @@ country_event = { # Metallurgy Metal Provinces Boost
 	}
 }
 
-country_event = {
-	id = harpi.8
-	title = harpi.8
-	desc = harpi.8.d
-	picture = KINGS_CHOICE_eventPicture
+# country_event = {
+# 	id = harpi.8
+# 	title = harpi.8
+# 	desc = harpi.8.d
+# 	picture = KINGS_CHOICE_eventPicture
 
-	is_triggered_only = yes	
+# 	is_triggered_only = yes	
 	
-	immediate = {
-		set_country_flag = monastic_decision_menu_open
-	}
+# 	immediate = {
+# 		set_country_flag = monastic_decision_menu_open
+# 	}
 
-	after = {
-		clr_country_flag = monastic_decision_menu_open
-	}
+# 	after = {
+# 		clr_country_flag = monastic_decision_menu_open
+# 	}
 
-	option = { # Yes
-		name = harpi.8.a
-		ai_chance = { factor = 0 }	
-		change_innovativeness = 2
-		add_country_modifier = {
-			name = monastic1_contemplation
-			duration = 1825
-		}
-	}
+# 	option = { # Yes
+# 		name = harpi.8.a
+# 		ai_chance = { factor = 0 }	
+# 		change_innovativeness = 2
+# 		add_country_modifier = {
+# 			name = monastic1_contemplation
+# 			duration = 1825
+# 		}
+# 	}
 
-	option = { # Cancel
-		name = harpi.8.cancel
-		ai_chance = { factor = 500 }	
-		# pass
-	}
-}
+# 	option = { # Cancel
+# 		name = harpi.8.cancel
+# 		ai_chance = { factor = 500 }	
+# 		# pass
+# 	}
+# }

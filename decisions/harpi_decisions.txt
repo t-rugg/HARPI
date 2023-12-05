@@ -310,7 +310,7 @@ metallurgy2_initialized = {
 monastic1_decision = {
 	potential = {
 		has_idea_group = monastic_ideas
-		NOT = { has_country_flag = monastic_decision_menu_open }
+		# NOT = { has_country_flag = monastic_decision_menu_open }
 	}
 	allow = {
 		has_idea = monastic1
@@ -321,10 +321,10 @@ monastic1_decision = {
 		is_at_war = no
 	}
 	effect = {
-		hidden_effect = {
-			country_event = {
-				id = harpi.8
-			}
+		change_innovativeness = 2
+		add_country_modifier = {
+			name = monastic1_contemplation
+			duration = 1825
 		}
 	}
 	ai_will_do = {
