@@ -1919,7 +1919,7 @@ court_ideas = { #1.35
 }
 
 mercenary_ideas = { #1.35
-	# widespread nerfs — yet I think this group is still strong!
+	# widespread nerfs ï¿½ yet I think this group is still strong!
 	category = MIL 
 
 	bonus = {
@@ -1962,7 +1962,7 @@ infrastructure_ideas = { #1.35
 	category = ADM
 
 	bonus = {
-		development_cost = -0.025
+		development_cost = -0.05
 	}
 
 	state_efficiency = {
