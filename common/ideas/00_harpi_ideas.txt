@@ -390,7 +390,7 @@ advanced_armies_ideas = {
 	}
 
 	advanced_armies1 = {
-		innovativeness_gain = 0.25
+		innovativeness_gain = 0.33
 		# decision to pay innovativeness for temporary military buffs
 	}
 	advanced_armies2 = {
