@@ -1962,7 +1962,7 @@ infrastructure_ideas = { #1.35
 	category = ADM
 
 	bonus = {
-		development_cost = -0.05
+		development_cost = -0.075
 	}
 
 	state_efficiency = {
