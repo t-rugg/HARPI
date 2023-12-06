@@ -89,7 +89,7 @@
 
  advanced_armies_ideas:0 "Advanced Army Ideas"
  advanced_armies1:0 "Military Inventions"
- advanced_armies1_desc:0 "When necessary, we muster our brightest minds to improve the capabilities of our military. Scientists and artificers are truly our nation's farthest-back line.\n—\n§G+1% Discipline§ for each 20 Innovativeness we have.""
+ advanced_armies1_desc:0 "When necessary, we muster our brightest minds to improve the capabilities of our military. Scientists and artificers are truly our nation's farthest-back line.\n—\n§G+1% Discipline§ for each 20 Innovativeness we have.§W"
  advanced_armies2:0 "a"
  advanced_armies2_desc:0 "a"
  advanced_armies3:0 "a"
