@@ -279,7 +279,7 @@
 
  monastic_ideas:0 "Monastic Ideas"
  monastic1:0 "Monastic Contemplation"
- monastic1_desc:0 "Through temperance, we can reflect. Through reflection, we gain clarity.\n—\nCan take a decision to §Ggain 2 Innovativeness§W at the cost of £icon_stability£§R+1 Stability cost to declare war§W and £icon_manpower£§R-20% national Manpower§W for §Y5 years§W. §YThis decision can only be taken when at peace and when its debuff is not active, and removing the idea group does not remove this debuff.§W"
+ monastic1_desc:0 "Through temperance, we can reflect. Through reflection, we gain clarity.\n—\nCan take a decision to §Ggain 2 Innovativeness§W at the cost of £icon_stability£§R+1 Stability cost to declare war§W and £icon_manpower£§R-50% Manpower recovery speed§W for §Y5 years§W. §YThis decision can only be taken when at peace and when its debuff is not active, and removing the idea group does not remove this debuff.§W"
  monastic2:0 "Pious Thought"
  monastic2_desc:0 "Our commitment to religious studies allows us to better inform our societal development in a righteous and divine manner.\n—"
  monastic3:0 "Monastery Scribes"
