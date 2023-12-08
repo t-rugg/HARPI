@@ -872,7 +872,7 @@ artificery_ideas = {
 	category = MIL
 
 	bonus = {
-		technology_cost = -0.05
+		artificers_privilege_slots = 2
 	}
 
 	trigger = {
@@ -902,7 +902,7 @@ artificery_ideas = {
 		# artificers receive +10% movement speed and -25% reinforcement cost
 	}
 	artificery7 = {
-		artificers_privilege_slots = 2
+		technology_cost = -0.05
 	}
 
 	ai_will_do = {
