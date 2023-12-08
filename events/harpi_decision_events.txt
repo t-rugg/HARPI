@@ -1465,14 +1465,20 @@ country_event = { # Advanced Armies 1
 						innovativeness = 20
 						NOT = { innovativeness = 40 }
 					}
-					add_country_modifier = advanced_armies1_20
+					add_country_modifier = {
+						name = advanced_armies1_20
+						duration = -1
+					}
 				}
 				else_if = {
 					limit = {
 						innovativeness = 40
 						NOT = { innovativeness = 60 }
 					}
-					add_country_modifier = advanced_armies1_40
+					add_country_modifier = {
+						name = advanced_armies1_40
+						duration = -1
+					}
 				}
 				
 				country_event = {
@@ -1484,7 +1490,10 @@ country_event = { # Advanced Armies 1
 						innovativeness = 60
 						NOT = { innovativeness = 80 }
 					}
-					add_country_modifier = advanced_armies1_60
+					add_country_modifier = {
+						name = advanced_armies1_60
+						duration = -1
+					}
 				}
 				
 				country_event = {
@@ -1496,7 +1505,10 @@ country_event = { # Advanced Armies 1
 						innovativeness = 80
 						NOT = { innovativeness = 100 }
 					}
-					add_country_modifier = advanced_armies1_80
+					add_country_modifier = {
+						name = advanced_armies1_80
+						duration = -1
+					}
 				}
 				
 				country_event = {
@@ -1507,7 +1519,10 @@ country_event = { # Advanced Armies 1
 					limit = {
 						innovativeness = 100
 					}
-					add_country_modifier = advanced_armies1_100
+					add_country_modifier = {
+						name = advanced_armies1_100
+						duration = -1
+					}
 				}
 				
 				country_event = {

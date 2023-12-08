@@ -39,6 +39,13 @@ artificery2_artificers = {
 	discipline = 0.05
 }
 
+artificery6_artificers = {
+	is_rajput_modifier = yes
+	discipline = 0.05
+	movement_speed = 0.1
+	reinforce_cost_modifier = -0.25
+}
+
 artificery7_artificers = {
 	is_rajput_modifier = yes
 	discipline = 0.05
