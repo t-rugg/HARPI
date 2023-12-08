@@ -283,7 +283,7 @@ patronage1_decision = {
 	}
 }
 
-metallurgy2_initialized = {
+metallurgy2_initialize = {
 	potential = {
 		has_idea_group = metallurgy_ideas
 		NOT = { has_country_flag = metallurgy2_initialized }
@@ -329,6 +329,46 @@ monastic1_decision = {
 	}
 	ai_will_do = {
 		factor = 0
+	}
+}
+
+artificery2_initialize = {
+	potential = {
+		has_idea_group = artificery_ideas
+		NOT = { has_country_flag = artificery2_initialized }
+	}
+	allow = {
+		has_idea = artificery2
+	}
+
+	effect = {
+		hidden_effect = {
+			set_country_flag = artificery2_initialized
+			country_event = {
+				id = harpi.8
+				days = 30
+			}
+		}
+	}
+}
+
+advanced_armies1_initialize = {
+	potential = {
+		has_idea_group = advanced_armies_ideas
+		NOT = { has_country_flag = advanced_armies1_initialized }
+	}
+	allow = {
+		has_idea = advanced_armies1
+	}
+
+	effect = {
+		hidden_effect = {
+			set_country_flag = advanced_armies1_initialized
+			country_event = {
+				id = harpi.9
+				days = 30
+			}
+		}
 	}
 }
 

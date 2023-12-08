@@ -33,3 +33,35 @@ monastic1_contemplation = {
 	stability_cost_to_declare_war = 1
 	manpower_recovery_speed = -0.5
 }
+
+artificery2_artificers = {
+	is_rajput_modifier = yes
+	discipline = 0.05
+}
+
+artificery7_artificers = {
+	is_rajput_modifier = yes
+	discipline = 0.05
+	movement_speed = 0.1
+	reinforce_cost_modifier = -0.25
+}
+
+advanced_armies1_20 = {
+	discipline = 0.01
+}
+
+advanced_armies1_40 = {
+	discipline = 0.02
+}
+
+advanced_armies1_60 = {
+	discipline = 0.03
+}
+
+advanced_armies1_80 = {
+	discipline = 0.04
+}
+
+advanced_armies1_100 = {
+	discipline = 0.05
+}

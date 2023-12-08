@@ -391,7 +391,7 @@ advanced_armies_ideas = {
 
 	advanced_armies1 = {
 		innovativeness_gain = 0.33
-		# decision to pay innovativeness for temporary military buffs
+		# +1% disc per 20 inno
 	}
 	advanced_armies2 = {
 		artillery_levels_available_vs_fort = 1
@@ -399,7 +399,8 @@ advanced_armies_ideas = {
 	}
 	advanced_armies3 = {
 		infantry_fire = 0.10
-		special_unit_forcelimit = 0.2
+		special_unit_forcelimit = 0.3 # adds 30% of the fraction (e.g. 30% rajput fraction becomes 40% rajput fraction)
+		                              # this might be broken with some tag... not sure. might have to change to rajput fraction but this is more fun
 	}
 	advanced_armies4 = {
 		mil_tech_cost_modifier = -0.1
@@ -412,7 +413,6 @@ advanced_armies_ideas = {
 	}
 	advanced_armies7 = {
 		backrow_artillery_damage = 0.1
-		# upgrades decision
 	}
 
 	ai_will_do = {
@@ -872,7 +872,7 @@ artificery_ideas = {
 	category = MIL
 
 	bonus = {
-		artificers_privilege_slots = 2
+		technology_cost = -0.05
 	}
 
 	trigger = {
@@ -885,7 +885,7 @@ artificery_ideas = {
 	}
 	artificery2 = {
 		allowed_rajput_fraction = 0.15 # artificers - gnomes get 0.3 now... not sure what the right number is
-		# TODO: buff artificer regiments in some way (pips?)
+		# artificers receive +5% discipline
 	}
 	artificery3 = {
 		infantry_power = 0.075
@@ -899,10 +899,10 @@ artificery_ideas = {
 	}
 	artificery6 = {
 		drill_decay_modifier = -0.25
-		# TODO: buff artificer regiments in some way (movement speed?)
+		# artificers receive +10% movement speed and -25% reinforcement cost
 	}
 	artificery7 = {
-		technology_cost = -0.05
+		artificers_privilege_slots = 2
 	}
 
 	ai_will_do = {
@@ -1485,8 +1485,8 @@ adventure_ideas = {
 
 	bonus = {
 		mercenary_manpower = 0.25
-		adventurer_loyalty_modifier = 0.1
-		adventurer_influence_modifier = 0.1
+		adventurers_loyalty_modifier = 0.1
+		adventurers_influence_modifier = 0.1
 	}
 	adventure1 = { # the call of adventure
 		global_manpower = 4 # +4000 manpower

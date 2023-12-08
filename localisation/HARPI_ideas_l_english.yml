@@ -101,7 +101,7 @@
  advanced_armies6:0 "a" 
  advanced_armies6_desc:0 "a"
  advanced_armies7:0 "Better Guns"
- advanced_armies7_desc:0 "As a result of our many inventions, we have top-of-the-line equipment, and they give top-of-the-line results.\n—\n§GUpgrades the §TMilitary Inventions§G decision§W. Effects now last §Y10 years§W."
+ advanced_armies7_desc:0 "As a result of our many inventions, we have top-of-the-line equipment, and they give top-of-the-line results.\n—\n"
 
  leadership_ideas:0 "Leadership Ideas"
 
@@ -110,6 +110,20 @@
  diplomatic_ideas:0 "Ambassadorial Ideas"
 
  artificery_ideas:0 "Artificery Ideas"
+ artificery1:0 "filler"
+ artificery1_desc:0 "filler"
+ artificery2:0 "filler"
+ artificery2_desc:0 "filler \n—\nArtificer regiments receive §G+5% Discipline§W."
+ artificery3:0 "filler"
+ artificery3_desc:0 "filler"
+ artificery4:0 "filler"
+ artificery4_desc:0 "filler"
+ artificery5:0 "filler"
+ artificery5_desc:0 "filler"
+ artificery6:0 "filler"
+ artificery6_desc:0 "filler \n—\nArtificer regiments receive §G+10% movement speed§W and §G-25% reinforcement cost§W."
+ artificery7:0 "filler"
+ artificery7_desc:0 "filler"
 
  authority_ideas:0 "Authority Ideas"
 

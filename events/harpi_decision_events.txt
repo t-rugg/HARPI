@@ -1370,3 +1370,162 @@ country_event = { # Metallurgy Metal Provinces Boost
 # 		# pass
 # 	}
 # }
+
+country_event = { # Artificery2
+	id = harpi.8
+	title = harpi.8.t
+	desc = harpi.8.d
+	hidden = yes
+	picture = KINGS_CHOICE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = artificery2
+					has_country_flag = artificery2_initialized
+					NOT = { has_idea = artificery6 }
+				}
+				
+				add_country_modifier = {
+					name = artificery2_artificers
+					duration = -1
+				}
+				remove_country_modifier = artificery6_artificers
+				
+				country_event = {
+					id = harpi.8
+					days = 30
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = artificery6
+					has_country_flag = artificery2_initialized
+				}
+				
+				add_country_modifier = {
+					name = artificery6_artificers
+					duration = -1
+				}
+				remove_country_modifier = artificery2_artificers
+				
+				country_event = {
+					id = harpi.8
+					days = 30
+				}
+			}
+			else = {
+				clr_country_flag = artificery2_initialized
+				remove_country_modifier = artificery2_artificers
+				remove_country_modifier = artificery6_artificers
+			}
+		}
+	}
+
+	option = {
+		name = harpi.8.a
+		# pass
+		ai_chance = {
+			factor = 500
+		}
+	}
+}
+
+country_event = { # Advanced Armies 1
+	id = harpi.9
+	title = harpi.9.t
+	desc = harpi.9.d
+	hidden = yes
+	picture = KINGS_CHOICE_eventPicture
+
+	is_triggered_only = yes
+
+
+
+	immediate = {
+		hidden_effect = {
+			# remove modifiers first
+			remove_country_modifier = advanced_armies1_20
+			remove_country_modifier = advanced_armies1_40
+			remove_country_modifier = advanced_armies1_60
+			remove_country_modifier = advanced_armies1_80
+			remove_country_modifier = advanced_armies1_100
+
+			if = {
+				limit = {
+					has_idea = advanced_armies1
+					has_country_flag = advanced_armies1_initialized
+				}
+				
+				if = {
+					limit = {
+						innovativeness = 20
+						NOT = { innovativeness = 40 }
+					}
+					add_country_modifier = advanced_armies1_20
+				}
+				else_if = {
+					limit = {
+						innovativeness = 40
+						NOT = { innovativeness = 60 }
+					}
+					add_country_modifier = advanced_armies1_40
+				}
+				
+				country_event = {
+					id = harpi.9
+					days = 30
+				}
+				else_if = {
+					limit = {
+						innovativeness = 60
+						NOT = { innovativeness = 80 }
+					}
+					add_country_modifier = advanced_armies1_60
+				}
+				
+				country_event = {
+					id = harpi.9
+					days = 30
+				}
+				else_if = {
+					limit = {
+						innovativeness = 80
+						NOT = { innovativeness = 100 }
+					}
+					add_country_modifier = advanced_armies1_80
+				}
+				
+				country_event = {
+					id = harpi.9
+					days = 30
+				}
+				else_if = {
+					limit = {
+						innovativeness = 100
+					}
+					add_country_modifier = advanced_armies1_100
+				}
+				
+				country_event = {
+					id = harpi.9
+					days = 30
+				}
+			}
+			else = {
+				clr_country_flag = advanced_armies1_initialized
+			}
+		}
+	}
+
+	option = {
+		name = harpi.9.a
+		# pass
+		ai_chance = {
+			factor = 500
+		}
+	}
+}
