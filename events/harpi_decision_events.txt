@@ -1480,11 +1480,6 @@ country_event = { # Advanced Armies 1
 						duration = -1
 					}
 				}
-				
-				country_event = {
-					id = harpi.9
-					days = 30
-				}
 				else_if = {
 					limit = {
 						innovativeness = 60
@@ -1495,11 +1490,6 @@ country_event = { # Advanced Armies 1
 						duration = -1
 					}
 				}
-				
-				country_event = {
-					id = harpi.9
-					days = 30
-				}
 				else_if = {
 					limit = {
 						innovativeness = 80
@@ -1509,11 +1499,6 @@ country_event = { # Advanced Armies 1
 						name = advanced_armies1_80
 						duration = -1
 					}
-				}
-				
-				country_event = {
-					id = harpi.9
-					days = 30
 				}
 				else_if = {
 					limit = {
