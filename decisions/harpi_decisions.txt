@@ -167,7 +167,7 @@ militarist1_undo = {
 
 integrated_elites_initialize = {
 	potential = {
-		has_idea_group = influence_ideas
+		has_idea_group = stewardship_ideas
 		NOT = { has_country_flag = integrated_elites_initialized }
 	}
 	allow = {
@@ -191,7 +191,7 @@ integrated_elites_initialize = {
 
 marcher_lords_initialize = {
 	potential = {
-		has_idea_group = influence_ideas
+		has_idea_group = stewardship_ideas
 		NOT = { has_country_flag = marcher_lords_initialized }
 	}
 	allow = {
