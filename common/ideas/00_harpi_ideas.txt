@@ -1830,6 +1830,7 @@ influence_ideas = {
 	}
 	buffer_states = {
 		allow_client_states = yes
+		ae_impact = -0.05
 	}
 	influence7 = {
 		can_transfer_vassal_wargoal = yes
