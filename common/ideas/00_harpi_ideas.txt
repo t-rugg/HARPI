@@ -884,7 +884,8 @@ artificery_ideas = {
 		artificers_influence_modifier = 0.1
 	}
 	artificery2 = {
-		allowed_rajput_fraction = 0.05 # artificers - does this work?
+		allowed_rajput_fraction = 0.15 # artificers - gnomes get 0.3 now... not sure what the right number is
+		# TODO: buff artificer regiments in some way (pips?)
 	}
 	artificery3 = {
 		infantry_power = 0.075
@@ -894,10 +895,11 @@ artificery_ideas = {
 		siege_ability = 0.15
 	}
 	artificery5 = {
-		global_trade_goods_size_modifier = 0.075
+		global_trade_goods_size_modifier = 0.1
 	}
 	artificery6 = {
 		drill_decay_modifier = -0.25
+		# TODO: buff artificer regiments in some way (movement speed?)
 	}
 	artificery7 = {
 		technology_cost = -0.05
