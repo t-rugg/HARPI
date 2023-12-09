@@ -127,24 +127,34 @@ country_event = {
 			if = {
 				limit = {
 					has_idea = integrated_elites
-					has_country_flag = integrated_elites_initialized
 				}
+
+				if = {
+					limit = {
+						capital_scope = {
+							NOT = { has_province_modifier = integrated_elites_pulse }
+						}
+					}
+
+					every_owned_province = {
+						remove_province_triggered_modifier = integrated_elites_pulse
+					}
+					capital_scope = {
+						add_province_triggered_modifier = integrated_elites_pulse
+					}
+				}
+
 				every_subject_country = {
 					add_country_modifier = {
 						name = overlord_has_integrated_elites
 						duration = 35
 					}
 				}
-				country_event = {
-					id = harpi.2
-					days = 30
-				}
 			}
 			else = {
-				every_subject_country = {
-					remove_country_modifier = overlord_has_integrated_elites
+				every_owned_province = {
+					remove_province_triggered_modifier = integrated_elites_pulse
 				}
-				clr_country_flag = marcher_lords_initialized
 			}
 			
 		}
@@ -173,8 +183,23 @@ country_event = {
 			if = {
 				limit = {
 					has_idea = marcher_lords
-					has_country_flag = marcher_lords_initialized
 				}
+
+				if = {
+					limit = {
+						capital_scope = {
+							NOT = { has_province_modifier = marcher_lords_pulse }
+						}
+					}
+
+					every_owned_province = {
+						remove_province_triggered_modifier = marcher_lords_pulse
+					}
+					capital_scope = {
+						add_province_triggered_modifier = marcher_lords_pulse
+					}
+				}
+
 				if = {
 					limit = {
 						march = 2
@@ -196,15 +221,13 @@ country_event = {
 						duration = -1
 					}
 				}
-				country_event = {
-					id = harpi.3
-					days = 30
-				}
 			}
 			else = {
 				remove_country_modifier = marcher_lords_2_marches
 				remove_country_modifier = marcher_lords_1_march
-				clr_country_flag = marcher_lords_initialized
+				every_owned_province = {
+					remove_province_triggered_modifier = marcher_lords_pulse
+				}
 			}
 		}
 	}
@@ -232,8 +255,23 @@ country_event = {
 			if = {
 				limit = {
 					has_idea = federalist7
-					has_country_flag = federalist7_initialized
 				}
+
+				if = {
+					limit = {
+						capital_scope = {
+							NOT = { has_province_modifier = federalist7_pulse }
+						}
+					}
+
+					every_owned_province = {
+						remove_province_triggered_modifier = federalist7_pulse
+					}
+					capital_scope = {
+						add_province_triggered_modifier = federalist7_pulse
+					}
+				}
+
 				if = {
 					limit = {
 						current_age = age_of_revolutions
@@ -280,17 +318,19 @@ country_event = {
 					}
 				}
 				
-				country_event = {
-					id = harpi.4
-					days = 30
-				}
+				# country_event = {
+				# 	id = harpi.4
+				# 	days = 30
+				# }
 			}
 			else = {
 				remove_country_modifier = federalist7_age1
 				remove_country_modifier = federalist7_age2
 				remove_country_modifier = federalist7_age3
 				remove_country_modifier = federalist7_age4
-				clr_country_flag = federalist7_initialized
+				every_owned_province = {
+					remove_province_triggered_modifier = federalist7_pulse
+				}
 			}
 		}
 	}
@@ -358,7 +398,21 @@ country_event = {
 			if = {
 				limit = {
 					has_idea = mixed_armies7
-					has_country_flag = mixed_armies7_initialized
+				}
+
+				if = {
+					limit = {
+						capital_scope = {
+							NOT = { has_province_modifier = mixed_armies7_pulse }
+						}
+					}
+
+					every_owned_province = {
+						remove_province_triggered_modifier = mixed_armies7_pulse
+					}
+					capital_scope = {
+						add_province_triggered_modifier = mixed_armies7_pulse
+					}
 				}
 
 				# add pop-based modifier
@@ -1012,13 +1066,15 @@ country_event = {
 				}
 
 				
-				country_event = {
-					id = harpi.5
-					days = 30
-				}
+				# country_event = {
+				# 	id = harpi.5
+				# 	days = 30
+				# }
 			}
 			else = {
-				clr_country_flag = mixed_armies7_initialize
+				every_owned_province = {
+					remove_province_triggered_modifier = mixed_armies7_pulse
+				}
 			}
 		}
 	}
@@ -1289,8 +1345,21 @@ country_event = { # Metallurgy Metal Provinces Boost
 			if = {
 				limit = {
 					has_idea = metallurgy2
-					has_country_flag = metallurgy2_initialized
-					NOT = { has_idea = metallurgy7 }
+				}
+
+				if = {
+					limit = {
+						capital_scope = {
+							NOT = { has_province_modifier = metallurgy2_pulse }
+						}
+					}
+
+					every_owned_province = {
+						remove_province_triggered_modifier = metallurgy2_pulse
+					}
+					capital_scope = {
+						add_province_triggered_modifier = metallurgy2_pulse
+					}
 				}
 				
 				every_owned_province = {
@@ -1300,15 +1369,29 @@ country_event = { # Metallurgy Metal Provinces Boost
 					add_province_triggered_modifier = metallurgy2_modifier # i hope this works
 				}
 				
-				country_event = {
-					id = harpi.7
-					days = 30
-				}
+				# country_event = {
+				# 	id = harpi.7
+				# 	days = 30
+				# }
 			}
 			else_if = {
 				limit = {
 					has_idea = metallurgy7
-					has_country_flag = metallurgy2_initialized
+				}
+
+				if = {
+					limit = {
+						capital_scope = {
+							NOT = { has_province_modifier = metallurgy2_pulse }
+						}
+					}
+
+					every_owned_province = {
+						remove_province_triggered_modifier = metallurgy2_pulse
+					}
+					capital_scope = {
+						add_province_triggered_modifier = metallurgy2_pulse
+					}
 				}
 
 				every_owned_province = {
@@ -1318,13 +1401,15 @@ country_event = { # Metallurgy Metal Provinces Boost
 					add_province_triggered_modifier = metallurgy7_modifier
 				}
 				
-				country_event = {
-					id = harpi.7
-					days = 30
-				}
+				# country_event = {
+				# 	id = harpi.7
+				# 	days = 30
+				# }
 			}
 			else = {
-				clr_country_flag = metallurgy2_initialized
+				every_owned_province = {
+					remove_province_triggered_modifier = metallurgy2_pulse
+				}
 			}
 		}
 	}
@@ -1385,8 +1470,22 @@ country_event = { # Artificery2
 			if = {
 				limit = {
 					has_idea = artificery2
-					has_country_flag = artificery2_initialized
 					NOT = { has_idea = artificery6 }
+				}
+
+				if = {
+					limit = {
+						capital_scope = {
+							NOT = { has_province_modifier = artificery2_pulse }
+						}
+					}
+
+					every_owned_province = {
+						remove_province_triggered_modifier = artificery2_pulse
+					}
+					capital_scope = {
+						add_province_triggered_modifier = artificery2_pulse
+					}
 				}
 				
 				add_country_modifier = {
@@ -1395,15 +1494,29 @@ country_event = { # Artificery2
 				}
 				remove_country_modifier = artificery6_artificers
 				
-				country_event = {
-					id = harpi.8
-					days = 30
-				}
+				# country_event = {
+				# 	id = harpi.8
+				# 	days = 30
+				# }
 			}
 			else_if = {
 				limit = {
 					has_idea = artificery6
-					has_country_flag = artificery2_initialized
+				}
+
+				if = {
+					limit = {
+						capital_scope = {
+							NOT = { has_province_modifier = artificery2_pulse }
+						}
+					}
+
+					every_owned_province = {
+						remove_province_triggered_modifier = artificery2_pulse
+					}
+					capital_scope = {
+						add_province_triggered_modifier = artificery2_pulse
+					}
 				}
 				
 				add_country_modifier = {
@@ -1412,13 +1525,15 @@ country_event = { # Artificery2
 				}
 				remove_country_modifier = artificery2_artificers
 				
-				country_event = {
-					id = harpi.8
-					days = 30
-				}
+				# country_event = {
+				# 	id = harpi.8
+				# 	days = 30
+				# }
 			}
 			else = {
-				clr_country_flag = artificery2_initialized
+				every_owned_province = {
+					remove_province_triggered_modifier = artificery2_pulse
+				}
 				remove_country_modifier = artificery2_artificers
 				remove_country_modifier = artificery6_artificers
 			}
@@ -1457,7 +1572,21 @@ country_event = { # Advanced Armies 1
 			if = {
 				limit = {
 					has_idea = advanced_armies1
-					has_country_flag = advanced_armies1_initialized
+				}
+
+				if = {
+					limit = {
+						capital_scope = {
+							NOT = { has_province_modifier = advanced_armies1_pulse }
+						}
+					}
+
+					every_owned_province = {
+						remove_province_triggered_modifier = advanced_armies1_pulse
+					}
+					capital_scope = {
+						add_province_triggered_modifier = advanced_armies1_pulse
+					}
 				}
 				
 				if = {
@@ -1510,13 +1639,15 @@ country_event = { # Advanced Armies 1
 					}
 				}
 				
-				country_event = {
-					id = harpi.9
-					days = 30
-				}
+				# country_event = {
+				# 	id = harpi.9
+				# 	days = 30
+				# }
 			}
 			else = {
-				clr_country_flag = advanced_armies1_initialized
+				every_owned_province = {
+					remove_province_triggered_modifier = advanced_armies1_pulse
+				}
 			}
 		}
 	}

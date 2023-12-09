@@ -168,7 +168,9 @@ militarist1_undo = {
 integrated_elites_initialize = {
 	potential = {
 		has_idea_group = stewardship_ideas
-		NOT = { has_country_flag = integrated_elites_initialized }
+		capital_scope = {
+			NOT = { has_province_modifier = integrated_elites_pulse }
+		}
 	}
 	allow = {
 		has_idea = integrated_elites
@@ -176,10 +178,8 @@ integrated_elites_initialize = {
 
 	effect = {
 		hidden_effect = {
-			set_country_flag = integrated_elites_initialized
-			country_event = {
-				id = harpi.2
-				days = 30
+			capital_scope = {
+				add_province_triggered_modifier = integrated_elites_pulse
 			}
 		}
 	}
@@ -192,7 +192,9 @@ integrated_elites_initialize = {
 marcher_lords_initialize = {
 	potential = {
 		has_idea_group = stewardship_ideas
-		NOT = { has_country_flag = marcher_lords_initialized }
+		capital_scope = {
+			NOT = { has_province_modifier = marcher_lords_pulse }
+		}
 	}
 	allow = {
 		has_idea = marcher_lords
@@ -200,10 +202,8 @@ marcher_lords_initialize = {
 
 	effect = {
 		hidden_effect = {
-			set_country_flag = marcher_lords_initialized
-			country_event = {
-				id = harpi.3
-				days = 30
+			capital_scope = {
+				add_province_triggered_modifier = marcher_lords_pulse
 			}
 		}
 	}
@@ -216,7 +216,9 @@ marcher_lords_initialize = {
 federalist7_initialize = {
 	potential = {
 		has_idea_group = federalist_ideas
-		NOT = { has_country_flag = federalist7_initialized }
+		capital_scope = {
+			NOT = { has_province_modifier = federalist7_pulse }
+		}
 	}
 	allow = {
 		has_idea = federalist7
@@ -224,10 +226,8 @@ federalist7_initialize = {
 
 	effect = {
 		hidden_effect = {
-			set_country_flag = federalist7_initialized
-			country_event = {
-				id = harpi.4
-				days = 30
+			capital_scope = {
+				add_province_triggered_modifier = federalist7_pulse
 			}
 		}
 	}
@@ -240,7 +240,9 @@ federalist7_initialize = {
 mixed_armies7_initialize = {
 	potential = {
 		has_idea_group = mixed_armies_ideas
-		NOT = { has_country_flag = mixed_armies7_initialized }
+		capital_scope = {
+			NOT = { has_province_modifier = mixed_armies7_pulse }
+		}
 	}
 	allow = {
 		has_idea = mixed_armies7
@@ -248,10 +250,8 @@ mixed_armies7_initialize = {
 
 	effect = {
 		hidden_effect = {
-			set_country_flag = mixed_armies7_initialize
-			country_event = {
-				id = harpi.5
-				days = 30
+			capital_scope = {
+				add_province_triggered_modifier = mixed_armies7_pulse
 			}
 		}
 	}
@@ -286,7 +286,11 @@ patronage1_decision = {
 metallurgy2_initialize = {
 	potential = {
 		has_idea_group = metallurgy_ideas
-		NOT = { has_country_flag = metallurgy2_initialized }
+		capital_scope = {
+			NOT = {
+				has_province_modifier = metallurgy2_pulse
+			}
+		}
 	}
 	allow = {
 		has_idea = metallurgy2
@@ -294,10 +298,8 @@ metallurgy2_initialize = {
 
 	effect = {
 		hidden_effect = {
-			set_country_flag = metallurgy2_initialized
-			country_event = {
-				id = harpi.7
-				days = 30
+			capital_scope = {
+				add_province_triggered_modifier = metallurgy2_pulse
 			}
 		}
 	}
@@ -335,7 +337,9 @@ monastic1_decision = {
 artificery2_initialize = {
 	potential = {
 		has_idea_group = artificery_ideas
-		NOT = { has_country_flag = artificery2_initialized }
+		capital_scope = {
+			NOT = { has_province_modifier = artificery2_pulse }
+		}
 	}
 	allow = {
 		has_idea = artificery2
@@ -343,10 +347,8 @@ artificery2_initialize = {
 
 	effect = {
 		hidden_effect = {
-			set_country_flag = artificery2_initialized
-			country_event = {
-				id = harpi.8
-				days = 30
+			capital_scope = {
+				add_province_triggered_modifier = artificery2_pulse
 			}
 		}
 	}
@@ -355,7 +357,9 @@ artificery2_initialize = {
 advanced_armies1_initialize = {
 	potential = {
 		has_idea_group = advanced_armies_ideas
-		NOT = { has_country_flag = advanced_armies1_initialized }
+		capital_scope = {
+			NOT = { has_province_modifier = advanced_armies1_pulse }
+		}
 	}
 	allow = {
 		has_idea = advanced_armies1
@@ -363,12 +367,35 @@ advanced_armies1_initialize = {
 
 	effect = {
 		hidden_effect = {
-			set_country_flag = advanced_armies1_initialized
-			country_event = {
-				id = harpi.9
-				days = 30
+			capital_scope = {
+				add_province_triggered_modifier = advanced_armies1_pulse
 			}
 		}
+	}
+
+	ai_will_do = {
+		factor = 0 # very laggy, don't let AI do it!
+	}
+}
+
+parliamentary5_initialize = {
+	potential = {
+		has_idea_group = parliamentary_ideas
+		NOT = { has_country_flag = parliamentary5_initialized }
+	}
+
+	allow = {
+		has_idea = parliamentary5
+	}
+
+	effect = {
+		hidden_effect = {
+			set_country_flag = parliamentary5_initialized
+		}
+	}
+
+	ai_will_do = {
+		factor = 400
 	}
 }
 

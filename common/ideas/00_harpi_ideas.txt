@@ -818,7 +818,7 @@ authority_ideas = {
 		artificers_influence_modifier = 0.1
 	}
 	authority3 = {
-		yearly_corruption = -0.1
+		build_time = -0.15
 	}
 	authority4 = {
 		free_leader_pool = 1
@@ -1016,6 +1016,7 @@ parliamentary_ideas = {
 	category = DIP
 
 	bonus = {
+		yearly_corruption = -0.1
 		legitimacy = 1
 		republican_tradition = 0.3
 		devotion = 1
@@ -1031,6 +1032,7 @@ parliamentary_ideas = {
 	}
 	parliamentary2 = {
 		num_of_parliament_issues = 2
+		# gain 25 of each mana upon succeeding in a parliament debate
 	}
 	parliamentary3 = {
 		can_revoke_parliament_seats = yes
@@ -1046,6 +1048,7 @@ parliamentary_ideas = {
 	}
 	parliamentary6 = {
 		reform_progress_growth = 0.15
+		# gain 15 reform progress upon succeeding in a parliament debate
 	}
 	parliamentary7 = {
 		# grants a decision to force an issue through parliament
@@ -1564,6 +1567,14 @@ metallurgy_ideas = {
 
 	ai_will_do = {
 		factor = 0.4
+		modifier = {
+			factor = 0
+			has_global_flag = harpi_no_lag
+		}
+		modifier = {
+			factor = 0.5
+			has_global_flag = harpi_half_lag
+		}
 		modifier = { # require having metals
 			factor = 0
 			NOT = {

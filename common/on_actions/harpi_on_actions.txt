@@ -1,10 +1,12 @@
 
 on_parliament_seat_given = {
-	on_parliament_seat_given_effect = yes
 	harpi_on_parliament_seat_given_effect = yes
 }
 
 on_parliament_seat_lost = {
-	on_parliament_seat_lost_effect = yes
 	harpi_on_parliament_seat_lost_effect = yes
+}
+
+on_parliament_debate_succeeded = {
+	harpi_on_parliament_debate_succeeded_effect = yes
 }

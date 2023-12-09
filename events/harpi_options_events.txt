@@ -1,0 +1,27 @@
+country_event = {
+	id = harpioptions.1
+	title = harpioptions.1.t
+	desc = harpioptions.1.d
+	picture = KINGS_CHOICE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = harpioptions.1.a
+		ai_chance = { factor = 0 }
+		set_global_flag = harpi_no_lag
+		clr_global_flag = harpi_half_lag
+	}
+	option = {
+		name = harpioptions.1.b
+		ai_chance = { factor = 0 }
+		clr_global_flag = harpi_no_lag
+		set_global_flag = harpi_half_lag
+	}
+	option = {
+		name = harpioptions.1.c
+		ai_chance = { factor = 50 }	
+		clr_global_flag = harpi_no_lag
+		clr_global_flag = harpi_half_lag
+	}
+}

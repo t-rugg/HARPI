@@ -2,6 +2,7 @@ harpi_on_parliament_seat_given_effect = {
 	if = {
 		limit = {
 			owner = {
+				has_country_flag = parliamentary5_initialized
 				has_idea = parliamentary5
 			}
 		}
@@ -16,12 +17,34 @@ harpi_on_parliament_seat_lost_effect = {
 	if = {
 		limit = {
 			owner = {
-				has_idea = parliamentary5
+				has_country_flag = parliamentary5_initialized
 			}
 		}
 		add_base_tax = -1
 		add_base_production = -1
 		add_base_manpower = -1
 		add_prosperity = -10
+	}
+}
+
+harpi_on_parliament_debate_succeeded_effect = {
+	if = {
+		limit = {
+			owner = {
+				has_idea = parliamentary2
+			}
+		}
+		add_adm_power = 25
+		add_dip_power = 25
+		add_mil_power = 25
+	}
+
+	if = {
+		limit = {
+			owner = {
+				has_idea = parliamentary6
+			}
+		}
+		change_government_reform_progress = 15
 	}
 }
