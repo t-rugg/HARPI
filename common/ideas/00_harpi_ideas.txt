@@ -886,6 +886,12 @@ artificery_ideas = {
 	artificery2 = {
 		allowed_rajput_fraction = 0.15 # artificers - gnomes get 0.3 now... not sure what the right number is
 		# artificers receive +5% discipline
+		effect = {
+			harpi_artificery_artificer_buffs_update = yes
+		}
+		removed_effect = {
+			remove_country_modifier = artificery2_artificers
+		}
 	}
 	artificery3 = {
 		infantry_power = 0.075
@@ -900,6 +906,12 @@ artificery_ideas = {
 	artificery6 = {
 		drill_decay_modifier = -0.25
 		# artificers receive +10% movement speed and -25% reinforcement cost
+		effect = {
+			harpi_artificery_artificer_buffs_update = yes
+		}
+		removed_effect = {
+			remove_country_modifier = artificery6_artificers
+		}
 	}
 	artificery7 = {
 		technology_cost = -0.05
@@ -1546,6 +1558,18 @@ metallurgy_ideas = {
 	metallurgy2 = { # Efficient Mines
 		mercantilism_cost = -0.1
 		# provinces producing mineable goods gain +5% goods produced and -2.5% development cost
+		effect = {
+			every_owned_province = {
+				harpi_metallurgy_province_update = yes
+			}
+		}
+		removed_effect = { # ignore CWTools, this works
+			every_owned_province = {
+				# can't use harpi_metallurgy_province_update even though it really feels like it should work...
+				# presumably the effect happens before the idea group is officially "cancelled"
+				remove_province_modifier = metallurgy2_modifier
+			}
+		}
 	}
 	metallurgy3 = {
 		fire_damage = 0.075
@@ -1563,6 +1587,16 @@ metallurgy_ideas = {
 	metallurgy7 = { # Quality Mines
 		mercantilism_cost = -0.1
 		# doubles the effects of metallurgy2 to 10% goods produced and -5% dev cost
+		effect = {
+			every_owned_province = {
+				harpi_metallurgy_province_update = yes
+			}
+		}
+		removed_effect = { # ignore CWTools, this works
+			every_owned_province = {
+				remove_province_modifier = metallurgy7_modifier
+			}
+		}
 	}
 
 	ai_will_do = {
@@ -1890,6 +1924,14 @@ stewardship_ideas = {
 	integrated_elites = {
 		# our subjects receive +20% tax and manpower, as well as -1 interest per annum and -50% fort maintenance
 		accept_vassalization_reasons = 15
+		effect = {
+			harpi_integrated_elites_overlord_update = yes
+		}
+		removed_effect = {
+			every_subject_country = {
+				remove_country_modifier = overlord_has_integrated_elites
+			}
+		}
 	}
 	stewardship5 = {
 		reverse_relation_with_same_religion = 25 # makes both diplo-vassalization and converting vassals easier
@@ -1897,6 +1939,13 @@ stewardship_ideas = {
 	marcher_lords = {
 		# two free marches - DO THE LOC FOR THIS!!!
 		vassal_forcelimit_bonus = 1.5
+		effect = {
+			harpi_marcher_lords_overlord_update = yes
+		}
+		removed_effect = {
+			remove_country_modifier = marcher_lords_2_marches
+			remove_country_modifier = marcher_lords_1_march
+		}
 	}
 	stewardship7 = {
 		can_fabricate_for_vassals = yes

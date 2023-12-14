@@ -48,3 +48,125 @@ harpi_on_parliament_debate_succeeded_effect = {
 		change_government_reform_progress = 15
 	}
 }
+
+harpi_metallurgy_province_update = {
+	if = {
+		limit = {
+			OR = {
+				NOT = {
+					owner = {
+						has_idea = metallurgy2
+					}
+				}
+				province_with_mineable_goods = no
+			}
+		}
+		remove_province_modifier = metallurgy2_modifier
+		remove_province_modifier = metallurgy7_modifier
+	}
+	else_if = { # owner has metallurgy2
+		limit = {
+			owner = {
+				has_idea = metallurgy7
+			}
+		}
+		remove_province_modifier = metallurgy2_modifier
+		add_province_modifier = {
+			name = metallurgy7_modifier
+			duration = -1
+		}
+	}
+	else = { # owner has metallurgy2 but not metallurgy7
+		remove_province_modifier = metallurgy7_modifier
+		add_province_modifier = {
+			name = metallurgy2_modifier
+			duration = -1
+		}
+	}
+}
+
+harpi_integrated_elites_overlord_update = {
+	every_subject_country = {
+		harpi_integrated_elites_subject_update = yes
+	}
+}
+
+harpi_integrated_elites_subject_update = {
+	if = {
+		limit = {
+			is_subject = yes
+			overlord = {
+				has_idea = integrated_elites
+			}
+		}
+		add_country_modifier = {
+			name = overlord_has_integrated_elites
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = overlord_has_integrated_elites
+	}
+}
+
+harpi_marcher_lords_overlord_update = {
+	if = {
+		limit = {
+			has_idea = marcher_lords
+		}
+		if = {
+			limit = {
+				march = 2
+			}
+			remove_country_modifier = marcher_lords_1_march
+			add_country_modifier = {
+				name = marcher_lords_2_marches
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				march = 1
+				NOT = { march = 2 }
+			} 
+			remove_country_modifier = marcher_lords_2_marches
+			add_country_modifier = {
+				name = marcher_lords_1_march
+				duration = -1
+			}
+		}
+		else = {
+			remove_country_modifier = marcher_lords_2_marches
+			remove_country_modifier = marcher_lords_1_march
+		}
+	}
+}
+
+harpi_artificery_artificer_buffs_update = {
+	if = {
+		limit = {
+			has_idea = artificery2
+			NOT = { has_idea = artificery6 }
+		}
+		
+		add_country_modifier = {
+			name = artificery2_artificers
+			duration = -1
+		}
+		remove_country_modifier = artificery6_artificers
+	}
+	else_if = {
+		limit = {
+			has_idea = artificery6
+		}
+		add_country_modifier = {
+			name = artificery6_artificers
+			duration = -1
+		}
+		remove_country_modifier = artificery2_artificers
+	}
+	else = {
+		remove_country_modifier = artificery2_artificers
+		remove_country_modifier = artificery6_artificers
+	}
+}

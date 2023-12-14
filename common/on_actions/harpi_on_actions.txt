@@ -1,3 +1,5 @@
+# on_actions are additive as of 1.36
+# thank you PDX
 
 on_parliament_seat_given = {
 	harpi_on_parliament_seat_given_effect = yes
@@ -9,4 +11,32 @@ on_parliament_seat_lost = {
 
 on_parliament_debate_succeeded = {
 	harpi_on_parliament_debate_succeeded_effect = yes
+}
+
+# province
+# FROM = old owner
+on_province_owner_change = {
+	harpi_metallurgy_province_update = yes
+}
+
+on_trade_good_changed = {
+	harpi_metallurgy_province_update = yes
+}
+
+on_dependency_gained = {
+	ROOT = { # overlord
+		harpi_marcher_lords_overlord_update = yes
+	}
+	FROM = { # subject
+		harpi_integrated_elites_subject_update = yes
+	}
+}
+
+on_dependency_lost = {
+	ROOT = { # overlord
+		harpi_marcher_lords_overlord_update = yes
+	}
+	FROM = { # subject
+		harpi_integrated_elites_subject_update = yes
+	}
 }

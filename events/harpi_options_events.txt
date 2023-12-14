@@ -1,3 +1,5 @@
+namespace = harpioptions
+
 country_event = {
 	id = harpioptions.1
 	title = harpioptions.1.t

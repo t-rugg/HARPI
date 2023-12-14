@@ -2,6 +2,7 @@ country_decisions = {
 
 lag_decision = {
 	potential = {
+		always = no # for now
 		ai = no
 		is_year = 1444
 		NOT = { is_year = 1446 }

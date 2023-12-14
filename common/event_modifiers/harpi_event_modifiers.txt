@@ -72,3 +72,13 @@ advanced_armies1_80 = {
 advanced_armies1_100 = {
 	discipline = 0.05
 }
+
+metallurgy2_modifier = {
+	trade_goods_size_modifier = 0.05
+	local_development_cost = -0.025
+}
+
+metallurgy7_modifier = {
+	trade_goods_size_modifier = 0.1
+	local_development_cost = -0.05
+}

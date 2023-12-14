@@ -165,54 +165,6 @@ militarist1_undo = {
 	}
 }
 
-integrated_elites_initialize = {
-	potential = {
-		has_idea_group = stewardship_ideas
-		capital_scope = {
-			NOT = { has_province_modifier = integrated_elites_pulse }
-		}
-	}
-	allow = {
-		has_idea = integrated_elites
-	}
-
-	effect = {
-		hidden_effect = {
-			capital_scope = {
-				add_province_triggered_modifier = integrated_elites_pulse
-			}
-		}
-	}
-
-	ai_will_do = {
-		factor = 400
-	}
-}
-
-marcher_lords_initialize = {
-	potential = {
-		has_idea_group = stewardship_ideas
-		capital_scope = {
-			NOT = { has_province_modifier = marcher_lords_pulse }
-		}
-	}
-	allow = {
-		has_idea = marcher_lords
-	}
-
-	effect = {
-		hidden_effect = {
-			capital_scope = {
-				add_province_triggered_modifier = marcher_lords_pulse
-			}
-		}
-	}
-
-	ai_will_do = {
-		factor = 400
-	}
-}
-
 federalist7_initialize = {
 	potential = {
 		has_idea_group = federalist_ideas
@@ -283,32 +235,6 @@ patronage1_decision = {
 	}
 }
 
-metallurgy2_initialize = {
-	potential = {
-		has_idea_group = metallurgy_ideas
-		capital_scope = {
-			NOT = {
-				has_province_modifier = metallurgy2_pulse
-			}
-		}
-	}
-	allow = {
-		has_idea = metallurgy2
-	}
-
-	effect = {
-		hidden_effect = {
-			capital_scope = {
-				add_province_triggered_modifier = metallurgy2_pulse
-			}
-		}
-	}
-
-	ai_will_do = {
-		factor = 400
-	}
-}
-
 monastic1_decision = {
 	potential = {
 		has_idea_group = monastic_ideas
@@ -331,26 +257,6 @@ monastic1_decision = {
 	}
 	ai_will_do = {
 		factor = 0
-	}
-}
-
-artificery2_initialize = {
-	potential = {
-		has_idea_group = artificery_ideas
-		capital_scope = {
-			NOT = { has_province_modifier = artificery2_pulse }
-		}
-	}
-	allow = {
-		has_idea = artificery2
-	}
-
-	effect = {
-		hidden_effect = {
-			capital_scope = {
-				add_province_triggered_modifier = artificery2_pulse
-			}
-		}
 	}
 }
 
