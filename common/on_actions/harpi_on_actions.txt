@@ -17,6 +17,7 @@ on_parliament_debate_succeeded = {
 # FROM = old owner
 on_province_owner_change = {
 	harpi_metallurgy_province_update = yes
+	harpi_sea_hawks_update = yes
 }
 
 on_trade_good_changed = {

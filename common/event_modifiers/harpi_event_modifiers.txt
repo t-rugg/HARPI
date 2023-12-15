@@ -82,3 +82,10 @@ metallurgy7_modifier = {
 	trade_goods_size_modifier = 0.1
 	local_development_cost = -0.05
 }
+
+sea_hawks_modifier = {
+	trade_value_modifier = 0.15
+	local_development_cost = -0.05
+	local_prosperity_growth = 0.25
+	local_monthly_devastation = -0.25
+}

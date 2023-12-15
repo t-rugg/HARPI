@@ -1235,10 +1235,22 @@ maritime_ideas = {
 		global_ship_cost = -0.1
 	}
 	sea_hawks = {
-		global_naval_engagement_modifier = 0.1 #1.35
+		# coastal provinces receive +15% trade value, -5% dev cost, -0.25 local monthly devastation, and +0.25 local propserity growth
+		# TODO: loc
 		admiral_cost = -0.25
+		effect = {
+			every_owned_province = {
+				harpi_sea_hawks_update = yes
+			}
+		}
+		removed_effect = {
+			every_owned_province = {
+				remove_province_modifier = sea_hawks_modifier
+			}
+		}
 	}
 	naval_fighting_instruction = {
+		global_naval_engagement_modifier = 0.1 #1.35
 		blockade_efficiency = 0.5
 		privateer_efficiency = 0.25
 	}

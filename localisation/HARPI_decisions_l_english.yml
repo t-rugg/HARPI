@@ -25,9 +25,9 @@
  marcher_lords_initialize_title:0 "§YInitialize Marcher Lords§W"
  marcher_lords_initialize_desc:0 "§gPlease allow up to 30 days for effects to update.§W"
  marcher_lords_2_marches:0 "Free Marches"
- desc_marcher_lords_2_marches:0 "We receive up to 2 free marches from the Marcher Lords idea."
+ desc_marcher_lords_2_marches:0 "We receive two free subjects Marcher Lords idea."
  marcher_lords_1_march:0 "Free Marches"
- desc_marcher_lords_1_march:0 "We receive up to 2 free marches from the Marcher Lords idea."
+ desc_marcher_lords_1_march:0 "We receive a free subject from the Marcher Lords idea."
 
  federalist7_initialize_title:0 "§YInitialize Decentralized Administration§W"
  federalist7_initialize_desc:0 "§gPlease allow up to 30 days for effects to update.§W"
@@ -111,3 +111,6 @@
  desc_advanced_armies1_80:0 "We receive 1% Discipline for every 20 Innovativeness we have. Updates (approximately) monthly."
  advanced_armies1_100:0 "Military Inventions"
  desc_advanced_armies1_100:0 "We receive 1% Discipline for every 20 Innovativeness we have. Updates (approximately) monthly."
+
+ sea_hawks_modifier:0 "Sea Hawks"
+ desc_sea_hawks_modifier:0 "Our maritime focus increases the economic output of our ports and coastlines."

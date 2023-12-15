@@ -171,3 +171,21 @@ harpi_artificery_artificer_buffs_update = {
 		remove_country_modifier = artificery6_artificers
 	}
 }
+
+harpi_sea_hawks_update = {
+	if = {
+		limit = {
+			owner = {
+				has_idea = sea_hawks
+			}
+			has_port = yes
+		}
+		add_province_modifier = {
+			name = sea_hawks_modifier
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = sea_hawks_modifier
+	}
+}
