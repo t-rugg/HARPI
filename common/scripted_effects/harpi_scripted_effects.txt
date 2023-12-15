@@ -116,7 +116,8 @@ harpi_marcher_lords_overlord_update = {
 		}
 		if = {
 			limit = {
-				march = 2
+				# march = 2
+				num_of_subjects = 6
 			}
 			remove_country_modifier = marcher_lords_1_march
 			add_country_modifier = {
@@ -126,8 +127,8 @@ harpi_marcher_lords_overlord_update = {
 		}
 		else_if = {
 			limit = {
-				march = 1
-				NOT = { march = 2 }
+				# march = 1
+				num_of_subjects = 3
 			} 
 			remove_country_modifier = marcher_lords_2_marches
 			add_country_modifier = {

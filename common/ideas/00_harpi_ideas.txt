@@ -1913,13 +1913,13 @@ stewardship_ideas = {
 	}
 
 	tribute_system = {
-		vassal_income = 0.25
+		vassal_income = 0.33
 	}
 	stewardship2 = {
 		reduced_liberty_desire = 15
 	}
 	stewardship3 = {
-		diplomatic_upkeep = 2
+		diplomatic_upkeep = 1
 	}
 	integrated_elites = {
 		# our subjects receive +20% tax and manpower, as well as -1 interest per annum and -50% fort maintenance
@@ -1937,7 +1937,7 @@ stewardship_ideas = {
 		reverse_relation_with_same_religion = 25 # makes both diplo-vassalization and converting vassals easier
 	}
 	marcher_lords = {
-		# two free marches - DO THE LOC FOR THIS!!!
+		# receive 1 free subject if you have at least 3, or 2 free subjects if you have at least 6
 		vassal_forcelimit_bonus = 1.5
 		effect = {
 			harpi_marcher_lords_overlord_update = yes
@@ -1948,6 +1948,7 @@ stewardship_ideas = {
 		}
 	}
 	stewardship7 = {
+		diplomatic_upkeep = 1
 		can_fabricate_for_vassals = yes
 	}
 	
