@@ -223,7 +223,7 @@ horde_gov_ideas = {
 theocracy_gov_ideas = {
 	# i nerfed this a lot... want to find other ways to buff it, but idk how
 	# zealous kinda competes with a lot of its design area
-	# i think iw ant a full rework
+	# i think i want a full rework at some point
 	category = MIL
 	
 	bonus = {
