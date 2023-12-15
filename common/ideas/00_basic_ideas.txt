@@ -1976,7 +1976,7 @@ infrastructure_ideas = { #1.35
 	category = ADM
 
 	bonus = {
-		development_cost = -0.075
+		development_cost = -0.05
 	}
 
 	state_efficiency = {
@@ -1994,6 +1994,7 @@ infrastructure_ideas = { #1.35
 		global_regiment_recruit_speed = -0.25
 	}
 	administrative_efficiency_idea = {
+		# i don't like this idea at all... what to do...
 		state_governing_cost = -0.1
 	}
 	fort_logistics = {

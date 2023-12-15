@@ -65,11 +65,11 @@
  patronage4:0 "Basking in Our Glory"
  patronage4_desc:0 "Truly, what better way is there to cement a legacy than to display it for all to see?\n—"
  patronage5:0 "Magisterial Opulence"
- patronage5_desc:0 "Patronising the artistic class allows our ambassadors to wear the trendiest silks and our government buildings to be made of top-notch architecture. Such artistic displays demand respect in negotiations, and carries an implicit promise that working with us might allow others to share in our wealth.\n—\n§GUpgrades the §TPatronize the Intelligentsia§G decision§W, allowing you to purchase §GRelations§W."
+ patronage5_desc:0 "Patronising the artistic class allows our ambassadors to wear the trendiest silks and our government buildings to be made of top-notch architecture. Such artistic displays demand respect in negotiations, and carries an implicit promise that working with us might allow others to share in our wealth.\n—"
  patronage6:0 "Disseminate Fine Art"
  patronage6_desc:0 "A healthy culture is a persuasive one. Soon, all our subjects will be wearing our mandilions and listening to our lute music!\n—"
  patronage7:0 "Patronal Politics"
- patronage7_desc:0 "By funding specific projects or interests of various ambassadors, statesmen, influential figures, and power brokers, we can get them to reciprocate by supporting the crown. As opposed to more blasé and corrupt forms of bribery, our investments have genuine cultural and humanitarian aims, that just so happen to cement our own influence in the process.\n—\n§GUpgrades the §TPatronize the Intelligentsia§G decision§W, allowing you to purchase §Gtemporary minor modifiers§W, such as Autonomy Reduction and Spy Network Construction Speed.\n§TPatronize the Intelligentsia§W can now be used §Yonce every 5 years§W."
+ patronage7_desc:0 "By funding specific projects or interests of various ambassadors, statesmen, influential figures, and power brokers, we can get them to reciprocate by supporting the crown. As opposed to more blasé and corrupt forms of bribery, our investments have genuine cultural and humanitarian aims, that just so happen to cement our own influence in the process.\n—\n§GUpgrades the §TPatronize the Intelligentsia§G decision§W, allowing you to purchase §Gtemporary minor modifiers§W, such as Autonomy Reduction, Spy Network Construction Speed, or Development Cost reduction.\n§TPatronize the Intelligentsia§W can now be used §Yonce every 5 years§W, and modifiers last that long."
  
  war_economy_ideas:0 "War Economy Ideas"
  war_economy1:0 "Rationing"

@@ -19,5 +19,5 @@ patronage7_religious_unity = {
 }
 
 patronage7_development_cost = {
-	development_cost = -0.02
+	development_cost = -0.025
 }

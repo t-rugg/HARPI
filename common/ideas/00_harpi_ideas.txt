@@ -130,14 +130,13 @@ patronage_ideas = {
 	patronage5 = {
 		accept_vassalization_reasons = 10
 		diplomatic_reputation = 0.5
-		# upgrades decision to pay cash for stuff - can now pay for relations
 	}
 	patronage6 = {
 		culture_conversion_cost = -0.15
 		culture_conversion_time = -0.25
 	}
 	patronage7 = {
-		monarch_diplomatic_power = 1
+		development_cost = -0.025
 		# upgrades decision to pay cash for stuff
 	}
 	

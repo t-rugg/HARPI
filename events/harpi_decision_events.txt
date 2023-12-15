@@ -1035,9 +1035,7 @@ country_event = { # Patronize the Intelligentsia
 			set_country_flag = patronize_the_intelligentsia_government
 		}
 	}
-
-	# TODO: relations option (rebalance?)
-
+	
 	option = { # Autonomy Reduction
 		name = harpi.6.autonomy
 		trigger = {
