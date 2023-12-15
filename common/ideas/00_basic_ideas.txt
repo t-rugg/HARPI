@@ -1872,10 +1872,12 @@ naval_ideas = {
 
 court_ideas = { #1.35
 	# doesn't really need tweaks tbh, I just buffed the bonus and gave a tiny bit of dip rep
+	# also gave it no stab loss on monarch death (moved from a policy into the group itself)
 	category = DIP
 
 
 	bonus = {
+		possible_dip_policy = 1 
 		legitimacy = 1
 		republican_tradition = 0.3
 		devotion = 1
@@ -1907,8 +1909,8 @@ court_ideas = { #1.35
 		estate_interaction_cooldown_modifier = -0.20
 	}
 	court_embassies = {
-		possible_dip_policy = 1 
 		monarch_diplomatic_power = 1 
+		no_stability_loss_on_monarch_death = yes
 	}
 
 	ai_will_do = {
