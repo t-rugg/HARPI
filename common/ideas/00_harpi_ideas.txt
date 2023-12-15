@@ -802,12 +802,13 @@ authority_ideas = {
 	category = DIP
 
 	bonus = {
-		max_absolutism = 15
+		min_autonomy_in_territories = -0.1
 		imperial_authority = 0.1
 		reelection_cost = -0.1
 	}
 
 	authority1 = { # dominate the court
+		max_absolutism = 5
 		all_estate_influence_modifier = -0.1
 		all_estate_loyalty_equilibrium = -0.05
 	}
@@ -830,7 +831,7 @@ authority_ideas = {
 		expand_administration_cost = -0.33
 	}
 	authority7 = {
-		min_autonomy_in_territories = -0.1
+		max_absolutism_effect = 10 # 3% admin efficiency at 110 absolutism
 	}
 
 	ai_will_do = {

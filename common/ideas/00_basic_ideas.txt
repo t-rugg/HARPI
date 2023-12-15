@@ -415,7 +415,7 @@ religious_ideas = {
 	category = ADM
 
 	bonus = { # culture conversion is gone! but I think the replacement is plenty strong personally
-		max_absolutism_effect = 0.1 # 3% admin efficiency at 110 absolutism
+		max_absolutism = 20 # hand out lots of privileges to clergy (or other estates) - 20 is a LOT, might need to be toned down, but Thor's tome has this as a reasonable number
 		brahmins_hindu_loyalty_modifier = 0.1
 		church_loyalty_modifier = 0.1
 
@@ -424,7 +424,7 @@ religious_ideas = {
 	}
 
 	# ELIKHAND MT MEANS THESE IDEAS CANNOT BE REORDERED
-	# you can change the loc and swap them but the idea names themselves CANNOT BE REORDERED
+	# you can change the loc to swap their names, but the idea identifiers themselves CANNOT BE REORDERED
 	missionary_schools = {
 		missionaries = 1
 		missionary_maintenance_cost = -0.5
@@ -457,7 +457,7 @@ religious_ideas = {
 	}
 	# RIP OG deus vult... you will be missed
 	# (it's been moved to zealous ideas)
-	deus_vult = { # change the loc
+	deus_vult = { # TODO: change the loc
 		adm_advisor_cost = -0.2
 		devotion = 1
 	}
