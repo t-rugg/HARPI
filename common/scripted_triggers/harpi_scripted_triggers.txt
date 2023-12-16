@@ -1,4 +1,5 @@
 # THIS ENTIRE FILE IS TODO
+# i've just copied these from the anbennar scripted triggers file
 
 has_completed_idea_group_of_category = {
 	[[adm_ideas]
