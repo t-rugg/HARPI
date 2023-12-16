@@ -1650,7 +1650,7 @@ expansion_ideas = {
 
 administrative_ideas = {
 	# no longer as much of an expansion-focused group
-	# still gives gov cap, but that's it
+	# still gives gov cap and OE impact reduction, but that's it
 	category = ADM
 
 	bonus = {
@@ -1666,15 +1666,15 @@ administrative_ideas = {
 	centralization = {
 		global_autonomy = -0.1
 	}
-	adaptability = { # change loc
+	adaptability = { # todo: change loc
 		overextension_impact_modifier = -0.1
 	}
-	cultural_regulations = { # change loc
+	cultural_regulations = { # todo: change loc
 		governing_capacity_modifier = 0.15
 		expand_administration_cost = -0.33
 	}
 	stable_government = {
-		stability_cost_modifier = -0.2 # down from 0.25 to make stacking it slightly less good
+		stability_cost_modifier = -0.2 # down from 0.25 to make stacking it slightly harder
 		advisor_pool = 1
 	}
 	local_rule = {
