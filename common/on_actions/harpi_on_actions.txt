@@ -41,3 +41,15 @@ on_dependency_lost = {
 		harpi_integrated_elites_subject_update = yes
 	}
 }
+
+on_flagship_captured = {
+	ROOT = { # capturer
+		increment_oak_forests_for_ships_modifier = yes
+	}
+}
+
+on_flagship_destroyed = {
+	ROOT = { # destroyer
+		increment_oak_forests_for_ships_modifier = yes
+	}
+}

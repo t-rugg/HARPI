@@ -278,7 +278,7 @@ urbanization_ideas = {
 		advisor_cost = -0.1
 	}
 	urbanization5 = {
-		global_prosperity_growth = 0.1
+		global_prosperity_growth = 0.25
 	}
 	urbanization6 = {
 		global_tax_modifier = 0.15
@@ -391,6 +391,7 @@ advanced_armies_ideas = {
 	advanced_armies1 = {
 		innovativeness_gain = 0.33
 		# +1% disc per 20 inno
+		# looking into whether I can do this with effects and on_actions but I don't think I can
 	}
 	advanced_armies2 = {
 		artillery_levels_available_vs_fort = 1

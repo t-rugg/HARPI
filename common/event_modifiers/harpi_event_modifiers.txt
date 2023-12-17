@@ -89,3 +89,19 @@ sea_hawks_modifier = {
 	local_prosperity_growth = 0.25
 	local_monthly_devastation = -0.25
 }
+
+oak_forests_for_ships_modifier1 = {
+	global_trade_goods_size_modifier = 0.05
+}
+
+oak_forests_for_ships_modifier2 = {
+	global_trade_goods_size_modifier = 0.1
+}
+
+oak_forests_for_ships_modifier3 = {
+	global_trade_goods_size_modifier = 0.15
+}
+
+oak_forests_for_ships_modifier4 = {
+	global_trade_goods_size_modifier = 0.2
+}

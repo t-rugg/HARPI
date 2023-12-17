@@ -205,7 +205,7 @@ horde_gov_ideas = {
 		horde_unity = 0.5 #1.35
 	}
 	watchers_of_the_silk_road = {	
-		caravan_power = 0.20
+		caravan_power = 0.25
 	}
 	a_magnanimous_empire = {
 		num_accepted_cultures = 2
@@ -1798,45 +1798,55 @@ humanist_ideas = {
 
 naval_ideas = {
 	# wtf do I do with this group
-	# idk its broken at naval combat but also underpowered because naval doesnt matter
-	# maybe I just leave it???
+	# idk its broken at naval combat but also underpowered because naval doesnt matter in single player
+	# for multiplayer its straight up banworthy though
+	# I decided to just nerf it and leave it, but... idk I feel like I want to give it more reasons to be worth taking
+	# super weird idea group in general
 	category = MIL
 
 	trigger = {
 		primitives = no
 	}
 
-	bonus = {
+	bonus = { 
 		global_naval_barrage_cost = -1
-		disengagement_chance = 0.15
+		global_naval_engagement_modifier = 0.025 # SEVERELY nerfed
 	}
 
 	boarding_parties = {
 		leader_naval_shock = 1
 		landing_penalty = -1 #1.35
 	}
-	improved_rams = {
-		galley_power = 0.25
+	improved_rams = { # TODO: update the loc
+		# no galley stuff in this group
+		siege_blockade_progress = 1
 	}
 	naval_cadets = {
 		leader_naval_fire = 1
 		sunk_ship_morale_hit_recieved = -0.33
 	}
 	naval_glory = {
+		naval_morale = 0.1
 		navy_tradition = 1
-		siege_blockade_progress = 1
 	}
 	press_gangs = {
 		sailors_recovery_speed = 0.25
 		allowed_marine_fraction = 0.25
 	}
 	oak_forests_for_ships = {
-		heavy_ship_power = 0.20
+		# ditch the heavy ship power
 		ship_durability = 0.1
+		# capturing or destroying a flagship grants a permanent +5% goods produced, up to +20%
+		# TODO: the loc for the above^
+		effect = {
+			initialize_oak_forests_for_ships_modifier = yes
+		}
+		removed_effect = {
+			remove_oak_forests_for_ships_modifiers = yes
+		}
 	}
 	superior_seamanship = {
-		naval_morale = 0.1
-		global_naval_engagement_modifier = 0.1
+		max_flagships = 1
 	}
 
 	ai_will_do = {
@@ -1935,7 +1945,7 @@ court_ideas = { #1.35
 }
 
 mercenary_ideas = { #1.35
-	# widespread nerfs ï¿½ yet I think this group is still strong!
+	# widespread nerfs — yet I think this group is still strong!
 	category = MIL 
 
 	bonus = {

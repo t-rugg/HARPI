@@ -86,8 +86,13 @@ harpi_metallurgy_province_update = {
 }
 
 harpi_integrated_elites_overlord_update = {
-	every_subject_country = {
-		harpi_integrated_elites_subject_update = yes
+	if = {
+		limit = {
+			has_idea = integrated_elites
+		}
+		every_subject_country = {
+			harpi_integrated_elites_subject_update = yes
+		}
 	}
 }
 
@@ -188,4 +193,105 @@ harpi_sea_hawks_update = {
 	else = {
 		remove_province_modifier = sea_hawks_modifier
 	}
+}
+
+initialize_oak_forests_for_ships_modifier = {
+	if = {
+		limit = {
+			NOT = { has_country_flag = oak_forests_for_ships_initialized }
+		}
+		set_country_flag = oak_forests_for_ships_initialized
+		set_variable = {
+			which = harpi_oak_forests_for_ships_flagship_counter
+			value = 0
+		}
+		update_oak_forests_for_ships_modifier = yes
+	}
+}
+
+increment_oak_forests_for_ships_modifier = {
+	if = {
+		limit = {
+			has_country_flag = oak_forests_for_ships_initialized
+			has_idea = oak_forests_for_ships
+			NOT = {
+				check_variable = {
+					which = harpi_oak_forests_for_ships_flagship_counter
+					value = 100 # more than we need but should prevent overflow
+				}
+			}
+		}
+		change_variable = {
+			which = harpi_oak_forests_for_ships_flagship_counter
+			value = 1
+		}
+	}
+	update_oak_forests_for_ships_modifier = yes
+}
+
+update_oak_forests_for_ships_modifier = {
+	remove_oak_forests_for_ships_modifiers = yes
+	if = {
+		limit = {
+			has_country_flag = oak_forests_for_ships_initialized
+			has_idea = oak_forests_for_ships
+		}
+		
+		if = {
+			limit = {
+				check_variable = {
+					which = harpi_oak_forests_for_ships_flagship_counter
+					value = 4
+				}
+			}
+			add_country_modifier = {
+				name = oak_forests_for_ships_modifier4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = harpi_oak_forests_for_ships_flagship_counter
+					value = 3
+				}
+			}
+			add_country_modifier = {
+				name = oak_forests_for_ships_modifier3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = harpi_oak_forests_for_ships_flagship_counter
+					value = 2
+				}
+			}
+			add_country_modifier = {
+				name = oak_forests_for_ships_modifier2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = harpi_oak_forests_for_ships_flagship_counter
+					value = 1
+				}
+			}
+			add_country_modifier = {
+				name = oak_forests_for_ships_modifier1
+				duration = -1
+			}
+		}
+
+	}
+}
+
+remove_oak_forests_for_ships_modifiers = {
+	remove_country_modifier = oak_forests_for_ships_modifier1
+	remove_country_modifier = oak_forests_for_ships_modifier2
+	remove_country_modifier = oak_forests_for_ships_modifier3
+	remove_country_modifier = oak_forests_for_ships_modifier4
 }
