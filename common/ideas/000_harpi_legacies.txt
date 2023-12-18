@@ -29,16 +29,17 @@ dwarf_legacy = {
 	}
 
 	bonus = {
-		artillery_cost = -0.1
+		state_governing_cost = -0.1
 	}
 
 	dwarf_legacy1 = {
 		development_cost = -0.03
 		num_accepted_cultures = -1 #downside!
-		tolerance_heathen = -3 #downside!
+		tolerance_heathen = -2 #downside!
 	}
 	dwarf_legacy2 = {
 		expand_infrastructure_cost_modifier = -0.25
+		build_time = -0.05
 	}
 	dwarf_legacy3 = {
 		manpower_in_own_culture_provinces = 0.15
@@ -50,7 +51,7 @@ dwarf_legacy = {
 		diplomatic_annexation_cost = -0.1
 	}
 	dwarf_legacy5 = {
-		build_time = -0.1
+		artillery_cost = -0.1
 	}
 	dwarf_legacy6 = {
 		merchants = 1
