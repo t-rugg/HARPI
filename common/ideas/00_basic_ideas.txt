@@ -1674,7 +1674,7 @@ administrative_ideas = {
 		expand_administration_cost = -0.33
 	}
 	stable_government = {
-		stability_cost_modifier = -0.2 # down from 0.25 to make stacking it slightly harder
+		stability_cost_modifier = -0.15 # down from 0.25 to make stacking it slightly harder to stack
 		advisor_pool = 1
 	}
 	local_rule = {
