@@ -261,7 +261,7 @@ economic_ideas_spy_ideas_policy = {
 		full_idea_group = spy_ideas
 	}
 	
-	interest = -0.05
+	interest = -0.5
 	global_foreign_trade_power = 0.15
 	
 	effect = {}
@@ -636,7 +636,7 @@ humanist_ideas_spy_ideas_policy = {
 		full_idea_group = spy_ideas
 	}
 	
-	interest = -0.05
+	interest = -0.5
 	stability_cost_modifier = -0.15
 	
 	effect = {}
@@ -761,7 +761,7 @@ infrastructure_ideas_spy_ideas_policy = {
 		full_idea_group = spy_ideas
 	}
 	
-	interest = -0.05
+	interest = -0.5
 	global_trade_power = 0.1
 	
 	effect = {}
@@ -786,7 +786,7 @@ infrastructure_ideas_diplomatic_ideas_policy = {
 		full_idea_group = diplomatic_ideas
 	}
 	
-	interest = -0.05
+	interest = -0.5
 	prestige = 1
 	
 	effect = {}
@@ -836,7 +836,7 @@ infrastructure_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
-	interest = -0.05
+	interest = -0.5
 	trade_company_investment_cost = -0.1
 	
 	effect = {}
@@ -1137,7 +1137,7 @@ militarist_ideas_spy_ideas_policy = {
 	}
 	
 	global_foreign_trade_power = 0.15
-	interest = -0.05
+	interest = -0.5
 	
 	effect = {}
 	removed_effect = {}

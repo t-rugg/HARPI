@@ -1,0 +1,400 @@
+innovativeness_ideas_legalist_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = innovativeness_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = innovativeness_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	technology_cost = -0.1
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+religious_ideas_legalist_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = religious_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = religious_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	missionaries = 1
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+economic_ideas_legalist_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = economic_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = economic_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	interest = -1.5
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+expansion_ideas_legalist_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = expansion_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = expansion_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	territories_governing_cost = -0.15
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+administrative_ideas_legalist_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = administrative_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = administrative_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	core_creation = -0.15
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+humanist_ideas_legalist_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	idea_cost = -0.1
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+infrastructure_ideas_legalist_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = infrastructure_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = infrastructure_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+extraction_ideas_legalist_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = extraction_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = extraction_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+urbanization_ideas_legalist_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = urbanization_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = urbanization_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+militarist_ideas_legalist_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = militarist_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = militarist_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+federalist_ideas_legalist_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = federalist_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = federalist_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+governance_ideas_legalist_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = governance_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = governance_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+metallurgy_ideas_legalist_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = metallurgy_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = metallurgy_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+parliamentary_ideas_legalist_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = parliamentary_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = parliamentary_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+filler_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = filler
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = filler
+		full_idea_group = legalist_ideas
+	}
+	
+	
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+filler_legalist_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = filler
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = filler
+		full_idea_group = legalist_ideas
+	}
+	
+	
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+

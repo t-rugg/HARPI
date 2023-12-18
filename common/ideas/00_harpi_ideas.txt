@@ -1,3 +1,131 @@
+influence_ideas = {
+	# the theme is for influence ideas to be used for EXPANSION via vassals (i.e. eventually annexing them)
+	# whereas stewardship is used for KEEPING vassals (i.e. keeping them loyal and profitable)
+	category = DIP
+
+	bonus = {
+		state_governing_cost = -0.1 # annexing a subject gives full state cores, so..
+	}
+
+	influence1 = {
+		diplomats = 1
+		diplomatic_upkeep = 1
+	}
+	diplomatic_influence = {
+		diplomatic_reputation = 2
+	}
+	influence3 = {
+		diplomatic_annexation_cost = -0.2
+	}
+	additional_loyalist_recruitment = {
+		reduced_liberty_desire = 5
+		promote_culture_cost = -0.25
+	}
+	postal_service = {
+		envoy_travel_time = -0.25
+		annexation_relations_impact = -0.5
+	}
+	buffer_states = {
+		allow_client_states = yes
+		ae_impact = -0.05
+	}
+	influence7 = {
+		can_transfer_vassal_wargoal = yes
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1.5
+			is_emperor = yes
+		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 2
+		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 3
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_dip = 8 }
+		}
+	}
+}
+
+stewardship_ideas = {
+	# focused on KEEPING vassals
+	# I mean, nothing in the group forces you to keep vassals around, but almost all of your modifiers reward you for it
+	category = DIP
+
+	bonus = {
+		liberty_desire_from_subject_development = -0.2
+		reduced_liberty_desire_on_same_continent = 0.1
+	}
+
+	tribute_system = {
+		vassal_income = 0.33
+	}
+	stewardship2 = {
+		reduced_liberty_desire = 15
+	}
+	stewardship3 = {
+		diplomatic_upkeep = 1
+	}
+	integrated_elites = {
+		# our subjects receive +20% tax and manpower, as well as -1 interest per annum and -50% fort maintenance
+		accept_vassalization_reasons = 15
+		effect = {
+			harpi_integrated_elites_overlord_update = yes
+		}
+		removed_effect = {
+			every_subject_country = {
+				remove_country_modifier = overlord_has_integrated_elites
+			}
+		}
+	}
+	stewardship5 = {
+		reverse_relation_with_same_religion = 25 # makes both diplo-vassalization and converting vassals easier
+	}
+	marcher_lords = {
+		# receive 1 free subject if you have at least 3, or 2 free subjects if you have at least 6
+		vassal_forcelimit_bonus = 1.5
+		effect = {
+			harpi_marcher_lords_overlord_update = yes
+		}
+		removed_effect = {
+			remove_country_modifier = marcher_lords_2_marches
+			remove_country_modifier = marcher_lords_1_march
+		}
+	}
+	stewardship7 = {
+		diplomatic_upkeep = 1
+		can_fabricate_for_vassals = yes
+	}
+	
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1.5
+			is_emperor = yes
+		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 2
+		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 3
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_dip = 8 }
+		}
+	}
+}
+
 reclamation_ideas = {
 	category = MIL
 	important = yes
@@ -491,10 +619,11 @@ legalist_ideas = {
 		yearly_corruption = -0.1
 	}
 	legalist2 = {
-		reform_progress_growth = 0.15
+		advisor_pool = 1
+		free_leader_pool = 1
 	}
 	legalist3 = {
-		global_autonomy = -0.05
+		global_autonomy = -0.075
 	}
 	legalist4 = {
 		global_unrest = -1
@@ -1843,134 +1972,6 @@ chaotic_ideas = {
 		modifier = {
 			factor = 1.3
 			culture_is_goblin = yes
-		}
-	}
-}
-
-influence_ideas = {
-	# the theme is for influence ideas to be used for EXPANSION via vassals (i.e. eventually annexing them)
-	# whereas stewardship is used for KEEPING vassals (i.e. keeping them loyal and profitable)
-	category = DIP
-
-	bonus = {
-		state_governing_cost = -0.1 # annexing a subject gives full state cores, so..
-	}
-
-	influence1 = {
-		diplomats = 1
-		diplomatic_upkeep = 1
-	}
-	diplomatic_influence = {
-		diplomatic_reputation = 2
-	}
-	influence3 = {
-		diplomatic_annexation_cost = -0.2
-	}
-	additional_loyalist_recruitment = {
-		reduced_liberty_desire = 5
-		promote_culture_cost = -0.25
-	}
-	postal_service = {
-		envoy_travel_time = -0.25
-		annexation_relations_impact = -0.5
-	}
-	buffer_states = {
-		allow_client_states = yes
-		ae_impact = -0.05
-	}
-	influence7 = {
-		can_transfer_vassal_wargoal = yes
-	}
-
-	ai_will_do = {
-		factor = 0.5
-		modifier = {
-			factor = 1.5
-			is_emperor = yes
-		}
-		modifier = {
-			factor = 1.5
-			num_of_subjects = 2
-		}
-		modifier = {
-			factor = 1.5
-			num_of_subjects = 3
-		}
-		modifier = {
-			factor = 0.75
-			NOT = { monthly_dip = 8 }
-		}
-	}
-}
-
-stewardship_ideas = {
-	# focused on KEEPING vassals
-	# I mean, nothing in the group forces you to keep vassals around, but almost all of your modifiers reward you for it
-	category = DIP
-
-	bonus = {
-		liberty_desire_from_subject_development = -0.2
-		reduced_liberty_desire_on_same_continent = 0.1
-	}
-
-	tribute_system = {
-		vassal_income = 0.33
-	}
-	stewardship2 = {
-		reduced_liberty_desire = 15
-	}
-	stewardship3 = {
-		diplomatic_upkeep = 1
-	}
-	integrated_elites = {
-		# our subjects receive +20% tax and manpower, as well as -1 interest per annum and -50% fort maintenance
-		accept_vassalization_reasons = 15
-		effect = {
-			harpi_integrated_elites_overlord_update = yes
-		}
-		removed_effect = {
-			every_subject_country = {
-				remove_country_modifier = overlord_has_integrated_elites
-			}
-		}
-	}
-	stewardship5 = {
-		reverse_relation_with_same_religion = 25 # makes both diplo-vassalization and converting vassals easier
-	}
-	marcher_lords = {
-		# receive 1 free subject if you have at least 3, or 2 free subjects if you have at least 6
-		vassal_forcelimit_bonus = 1.5
-		effect = {
-			harpi_marcher_lords_overlord_update = yes
-		}
-		removed_effect = {
-			remove_country_modifier = marcher_lords_2_marches
-			remove_country_modifier = marcher_lords_1_march
-		}
-	}
-	stewardship7 = {
-		diplomatic_upkeep = 1
-		can_fabricate_for_vassals = yes
-	}
-	
-
-	ai_will_do = {
-		factor = 0.5
-		modifier = {
-			factor = 1.5
-			is_emperor = yes
-		}
-		modifier = {
-			factor = 1.5
-			num_of_subjects = 2
-		}
-		modifier = {
-			factor = 1.5
-			num_of_subjects = 3
-		}
-		modifier = {
-			factor = 0.75
-			NOT = { monthly_dip = 8 }
 		}
 	}
 }
