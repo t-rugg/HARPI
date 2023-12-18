@@ -631,7 +631,7 @@ offensive_ideas = {
 		shock_damage = 0.075
 	}
 	national_conscripts = { # no more regiment recruit speed
-		land_attrition = -0.15
+		land_attrition = -0.2
 	}
 	glorious_arms = {
 		prestige_from_land = 1.0
@@ -1441,7 +1441,7 @@ quantity_ideas = { # change loc to conscription ideas
 		land_maintenance_modifier = -0.05
 	}
 	expanded_supply_trains = {
-		land_attrition = -0.25 #1.35
+		land_attrition = -0.2 #1.35
 	}
 
 	ai_will_do = {

@@ -23,6 +23,56 @@ innovativeness_ideas_spy_ideas_policy = {
 }
 
 
+innovativeness_ideas_diplomatic_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = innovativeness_ideas
+		has_idea_group = diplomatic_ideas
+	}
+
+	allow = {
+		full_idea_group = innovativeness_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
+	advisor_cost = -0.1
+	reduced_trade_penalty_on_non_main_tradenode = 0.25
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+innovativeness_ideas_trade_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = innovativeness_ideas
+		has_idea_group = trade_ideas
+	}
+
+	allow = {
+		full_idea_group = innovativeness_ideas
+		full_idea_group = trade_ideas
+	}
+	
+	trade_company_investment_cost = -0.1
+	reform_progress_growth = 0.15
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 innovativeness_ideas_offensive_ideas_policy = {
 	monarch_power = ADM
 
@@ -36,8 +86,33 @@ innovativeness_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
+	years_of_nationalism = -5
+	global_institution_spread = 0.25
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+innovativeness_ideas_defensive_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = innovativeness_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = innovativeness_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	shock_damage_received = -0.075
 	advisor_cost = -0.1
-	trade_company_investment_cost = -0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -61,8 +136,58 @@ religious_ideas_spy_ideas_policy = {
 		full_idea_group = spy_ideas
 	}
 	
-	dip_advisor_cost = -0.2
-	interest = -0.05
+	global_foreign_trade_power = 0.15
+	missionary_strength = 0.015
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+religious_ideas_diplomatic_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = religious_ideas
+		has_idea_group = diplomatic_ideas
+	}
+
+	allow = {
+		full_idea_group = religious_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
+	reduced_trade_penalty_on_non_main_tradenode = 0.25
+	tolerance_own = 1.5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+religious_ideas_trade_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = religious_ideas
+		has_idea_group = trade_ideas
+	}
+
+	allow = {
+		full_idea_group = religious_ideas
+		full_idea_group = trade_ideas
+	}
+	
+	leader_naval_manuever = 1
+	reverse_relation_with_same_religion = 10
 	
 	effect = {}
 	removed_effect = {}
@@ -74,7 +199,7 @@ religious_ideas_spy_ideas_policy = {
 
 
 religious_ideas_offensive_ideas_policy = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 	potential = {
 		has_idea_group = religious_ideas
@@ -86,7 +211,32 @@ religious_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
-	years_of_nationalism = -5
+	artillery_barrage_cost = -0.25
+	tolerance_own = 1.5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+religious_ideas_defensive_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = religious_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = religious_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	manpower_in_own_culture_provinces = 0.2
 	max_absolutism = 5
 	
 	effect = {}
@@ -99,7 +249,7 @@ religious_ideas_offensive_ideas_policy = {
 
 
 economic_ideas_spy_ideas_policy = {
-	monarch_power = DIP
+	monarch_power = ADM
 
 	potential = {
 		has_idea_group = economic_ideas
@@ -111,8 +261,58 @@ economic_ideas_spy_ideas_policy = {
 		full_idea_group = spy_ideas
 	}
 	
-	dip_advisor_cost = -0.2
+	interest = -0.05
+	global_foreign_trade_power = 0.15
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+economic_ideas_diplomatic_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = economic_ideas
+		has_idea_group = diplomatic_ideas
+	}
+
+	allow = {
+		full_idea_group = economic_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
+	heavy_ship_power = 0.1
+	diplomatic_upkeep = 1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+economic_ideas_trade_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = economic_ideas
+		has_idea_group = trade_ideas
+	}
+
+	allow = {
+		full_idea_group = economic_ideas
+		full_idea_group = trade_ideas
+	}
+	
 	inflation_reduction = 0.1
+	global_institution_spread = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -136,8 +336,33 @@ economic_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
-	artillery_barrage_cost = -0.25
-	inflation_reduction = 0.1
+	land_forcelimit_modifier = 0.15
+	global_tax_modifier = 0.15
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+economic_ideas_defensive_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = economic_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = economic_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	drill_decay_modifier = -0.25
+	build_time = -0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -161,8 +386,58 @@ expansion_ideas_spy_ideas_policy = {
 		full_idea_group = spy_ideas
 	}
 	
-	global_foreign_trade_power = 0.15
-	global_colonial_growth = 10
+	trade_steering = 0.25
+	build_cost = -0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+expansion_ideas_diplomatic_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = expansion_ideas
+		has_idea_group = diplomatic_ideas
+	}
+
+	allow = {
+		full_idea_group = expansion_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
+	prestige = 1
+	tolerance_heathen = 1.5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+expansion_ideas_trade_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = expansion_ideas
+		has_idea_group = trade_ideas
+	}
+
+	allow = {
+		full_idea_group = expansion_ideas
+		full_idea_group = trade_ideas
+	}
+	
+	trade_company_investment_cost = -0.1
+	leader_naval_manuever = 1
 	
 	effect = {}
 	removed_effect = {}
@@ -186,8 +461,33 @@ expansion_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
-	artillery_barrage_cost = -0.25
-	trade_steering = 0.25
+	global_manpower_modifier = 0.15
+	heavy_ship_cost = -0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+expansion_ideas_defensive_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = expansion_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = expansion_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	global_manpower_modifier = 0.15
+	global_prosperity_growth = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -211,8 +511,58 @@ administrative_ideas_spy_ideas_policy = {
 		full_idea_group = spy_ideas
 	}
 	
+	yearly_corruption = -0.1
 	global_foreign_trade_power = 0.15
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+administrative_ideas_diplomatic_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = administrative_ideas
+		has_idea_group = diplomatic_ideas
+	}
+
+	allow = {
+		full_idea_group = administrative_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
 	adm_advisor_cost = -0.2
+	prestige = 1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+administrative_ideas_trade_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = administrative_ideas
+		has_idea_group = trade_ideas
+	}
+
+	allow = {
+		full_idea_group = administrative_ideas
+		full_idea_group = trade_ideas
+	}
+	
+	global_institution_spread = 0.25
+	yearly_corruption = -0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -224,7 +574,7 @@ administrative_ideas_spy_ideas_policy = {
 
 
 administrative_ideas_offensive_ideas_policy = {
-	monarch_power = MIL
+	monarch_power = ADM
 
 	potential = {
 		has_idea_group = administrative_ideas
@@ -236,8 +586,33 @@ administrative_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
-	artillery_barrage_cost = -0.25
-	global_autonomy = -0.075
+	loot_amount = 0.5
+	trade_company_investment_cost = -0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+administrative_ideas_defensive_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = administrative_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = administrative_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	global_prosperity_growth = 0.25
+	adm_advisor_cost = -0.2
 	
 	effect = {}
 	removed_effect = {}
@@ -262,7 +637,57 @@ humanist_ideas_spy_ideas_policy = {
 	}
 	
 	interest = -0.05
-	global_foreign_trade_power = 0.15
+	stability_cost_modifier = -0.15
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+humanist_ideas_diplomatic_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = diplomatic_ideas
+	}
+
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
+	prestige = 1
+	global_unrest  = -1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+humanist_ideas_trade_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = trade_ideas
+	}
+
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = trade_ideas
+	}
+	
+	improve_relations = 0.15
+	global_sailors_modifier = 0.2
 	
 	effect = {}
 	removed_effect = {}
@@ -286,8 +711,33 @@ humanist_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
-	morale_damage_received = -0.075
-	improve_relations = 0.15
+	shock_damage = 0.075
+	years_of_nationalism = -5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+humanist_ideas_defensive_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	land_leader_maneuver = 1
+	global_sailors_modifier = 0.2
 	
 	effect = {}
 	removed_effect = {}
@@ -311,8 +761,58 @@ infrastructure_ideas_spy_ideas_policy = {
 		full_idea_group = spy_ideas
 	}
 	
+	interest = -0.05
+	global_trade_power = 0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+infrastructure_ideas_diplomatic_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = infrastructure_ideas
+		has_idea_group = diplomatic_ideas
+	}
+
+	allow = {
+		full_idea_group = infrastructure_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
+	interest = -0.05
+	prestige = 1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+infrastructure_ideas_trade_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = infrastructure_ideas
+		has_idea_group = trade_ideas
+	}
+
+	allow = {
+		full_idea_group = infrastructure_ideas
+		full_idea_group = trade_ideas
+	}
+	
 	build_time = -0.1
-	max_absolutism = 5
+	trade_company_investment_cost = -0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -324,7 +824,7 @@ infrastructure_ideas_spy_ideas_policy = {
 
 
 infrastructure_ideas_offensive_ideas_policy = {
-	monarch_power = MIL
+	monarch_power = ADM
 
 	potential = {
 		has_idea_group = infrastructure_ideas
@@ -336,8 +836,33 @@ infrastructure_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
-	movement_speed = 0.075
 	interest = -0.05
+	trade_company_investment_cost = -0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+infrastructure_ideas_defensive_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = infrastructure_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = infrastructure_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	movement_speed = 0.075
+	build_time = -0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -349,7 +874,7 @@ infrastructure_ideas_offensive_ideas_policy = {
 
 
 extraction_ideas_spy_ideas_policy = {
-	monarch_power = DIP
+	monarch_power = ADM
 
 	potential = {
 		has_idea_group = extraction_ideas
@@ -361,8 +886,58 @@ extraction_ideas_spy_ideas_policy = {
 		full_idea_group = spy_ideas
 	}
 	
+	max_absolutism = 5
+	global_trade_goods_size_modifier = 0.075
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+extraction_ideas_diplomatic_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = extraction_ideas
+		has_idea_group = diplomatic_ideas
+	}
+
+	allow = {
+		full_idea_group = extraction_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
+	loot_amount = 0.5
+	reduced_trade_penalty_on_non_main_tradenode = 0.25
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+extraction_ideas_trade_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = extraction_ideas
+		has_idea_group = trade_ideas
+	}
+
+	allow = {
+		full_idea_group = extraction_ideas
+		full_idea_group = trade_ideas
+	}
+	
+	trade_company_investment_cost = -0.1
 	vassal_income = 0.25
-	production_efficiency = 0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -387,6 +962,31 @@ extraction_ideas_offensive_ideas_policy = {
 	}
 	
 	siege_ability = 0.15
+	years_of_nationalism = -5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+extraction_ideas_defensive_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = extraction_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = extraction_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	mercenary_cost = -0.15
 	global_trade_goods_size_modifier = 0.075
 	
 	effect = {}
@@ -411,8 +1011,58 @@ urbanization_ideas_spy_ideas_policy = {
 		full_idea_group = spy_ideas
 	}
 	
-	max_absolutism = 5
-	interest = -0.05
+	global_prosperity_growth = 0.25
+	naval_forcelimit_modifier = 0.15
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+urbanization_ideas_diplomatic_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = urbanization_ideas
+		has_idea_group = diplomatic_ideas
+	}
+
+	allow = {
+		full_idea_group = urbanization_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
+	global_autonomy = -0.075
+	naval_forcelimit_modifier = 0.15
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+urbanization_ideas_trade_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = urbanization_ideas
+		has_idea_group = trade_ideas
+	}
+
+	allow = {
+		full_idea_group = urbanization_ideas
+		full_idea_group = trade_ideas
+	}
+	
+	naval_forcelimit_modifier = 0.15
+	global_autonomy = -0.075
 	
 	effect = {}
 	removed_effect = {}
@@ -437,7 +1087,32 @@ urbanization_ideas_offensive_ideas_policy = {
 	}
 	
 	shock_damage = 0.075
-	trade_company_investment_cost = -0.1
+	global_prosperity_growth = 0.25
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+urbanization_ideas_defensive_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = urbanization_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = urbanization_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	build_time = -0.1
+	naval_forcelimit_modifier = 0.15
 	
 	effect = {}
 	removed_effect = {}
@@ -461,8 +1136,58 @@ militarist_ideas_spy_ideas_policy = {
 		full_idea_group = spy_ideas
 	}
 	
+	global_foreign_trade_power = 0.15
+	interest = -0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+militarist_ideas_diplomatic_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = militarist_ideas
+		has_idea_group = diplomatic_ideas
+	}
+
+	allow = {
+		full_idea_group = militarist_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
+	prestige = 1
+	global_unrest = -1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+militarist_ideas_trade_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = militarist_ideas
+		has_idea_group = trade_ideas
+	}
+
+	allow = {
+		full_idea_group = militarist_ideas
+		full_idea_group = trade_ideas
+	}
+	
 	reinforce_cost_modifier = -0.15
-	dip_advisor_cost = -0.2
+	global_institution_spread = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -474,7 +1199,7 @@ militarist_ideas_spy_ideas_policy = {
 
 
 militarist_ideas_offensive_ideas_policy = {
-	monarch_power = MIL
+	monarch_power = ADM
 
 	potential = {
 		has_idea_group = militarist_ideas
@@ -486,8 +1211,33 @@ militarist_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
-	leader_cost = -0.15
-	years_of_nationalism = -5
+	war_exhaustion = -0.03
+	mil_advisor_cost = -0.2
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+militarist_ideas_defensive_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = militarist_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = militarist_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	army_tradition_decay = -0.01
+	reinforce_cost_modifier = -0.15
 	
 	effect = {}
 	removed_effect = {}
@@ -511,8 +1261,58 @@ federalist_ideas_spy_ideas_policy = {
 		full_idea_group = spy_ideas
 	}
 	
+	dip_advisor_cost = -0.2
 	reduced_liberty_desire_on_same_continent = 10
-	global_foreign_trade_power = 0.15
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+federalist_ideas_diplomatic_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = federalist_ideas
+		has_idea_group = diplomatic_ideas
+	}
+
+	allow = {
+		full_idea_group = federalist_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
+	prestige = 1
+	diplomatic_reputation = 1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+federalist_ideas_trade_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = federalist_ideas
+		has_idea_group = trade_ideas
+	}
+
+	allow = {
+		full_idea_group = federalist_ideas
+		full_idea_group = trade_ideas
+	}
+	
+	trade_company_investment_cost = -0.1
+	diplomatic_reputation = 1
 	
 	effect = {}
 	removed_effect = {}
@@ -524,7 +1324,7 @@ federalist_ideas_spy_ideas_policy = {
 
 
 federalist_ideas_offensive_ideas_policy = {
-	monarch_power = MIL
+	monarch_power = ADM
 
 	potential = {
 		has_idea_group = federalist_ideas
@@ -536,8 +1336,33 @@ federalist_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
-	discipline = 0.035
-	loot_amount = 0.5
+	state_maintenance_modifier = -0.25
+	years_of_nationalism = -5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+federalist_ideas_defensive_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = federalist_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = federalist_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	state_maintenance_modifier = -0.25
+	disengagement_chance = 0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -573,8 +1398,58 @@ governance_ideas_spy_ideas_policy = {
 }
 
 
-governance_ideas_offensive_ideas_policy = {
+governance_ideas_diplomatic_ideas_policy = {
 	monarch_power = ADM
+
+	potential = {
+		has_idea_group = governance_ideas
+		has_idea_group = diplomatic_ideas
+	}
+
+	allow = {
+		full_idea_group = governance_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
+	prestige = 1
+	reduced_trade_penalty_on_non_main_tradenode = 0.25
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+governance_ideas_trade_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = governance_ideas
+		has_idea_group = trade_ideas
+	}
+
+	allow = {
+		full_idea_group = governance_ideas
+		full_idea_group = trade_ideas
+	}
+	
+	trade_company_investment_cost = -0.1
+	years_of_nationalism = -5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+governance_ideas_offensive_ideas_policy = {
+	monarch_power = MIL
 
 	potential = {
 		has_idea_group = governance_ideas
@@ -586,8 +1461,33 @@ governance_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
-	loot_amount = 0.5
-	trade_company_investment_cost = -0.1
+	reserves_organisation = 0.1
+	global_own_trade_power = 0.15
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+governance_ideas_defensive_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = governance_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = governance_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	shock_damage_received = -0.075
+	years_of_nationalism = -5
 	
 	effect = {}
 	removed_effect = {}
@@ -611,7 +1511,57 @@ metallurgy_ideas_spy_ideas_policy = {
 		full_idea_group = spy_ideas
 	}
 	
-	interest = -0.05
+	max_absolutism = 5
+	dip_advisor_cost = -0.2
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+metallurgy_ideas_diplomatic_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = metallurgy_ideas
+		has_idea_group = diplomatic_ideas
+	}
+
+	allow = {
+		full_idea_group = metallurgy_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
+	monthly_gold_inflation_modifier = -0.25
+	prestige = 1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+metallurgy_ideas_trade_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = metallurgy_ideas
+		has_idea_group = trade_ideas
+	}
+
+	allow = {
+		full_idea_group = metallurgy_ideas
+		full_idea_group = trade_ideas
+	}
+	
+	global_prov_trade_power_modifier = 0.15
 	caravan_power = 0.25
 	
 	effect = {}
@@ -636,8 +1586,33 @@ metallurgy_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
+	loot_amount = 0.5
 	years_of_nationalism = -5
-	monthly_gold_inflation_modifier = -0.25
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+metallurgy_ideas_defensive_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = metallurgy_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = metallurgy_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	manpower_in_own_culture_provinces = 0.2
+	global_prov_trade_power_modifier = 0.15
 	
 	effect = {}
 	removed_effect = {}
@@ -661,8 +1636,58 @@ parliamentary_ideas_spy_ideas_policy = {
 		full_idea_group = spy_ideas
 	}
 	
-	max_absolutism = 5
-	all_estate_loyalty_equilibrium = 0.03
+	advisor_pool = 2
+	global_foreign_trade_power = 0.15
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+parliamentary_ideas_diplomatic_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = parliamentary_ideas
+		has_idea_group = diplomatic_ideas
+	}
+
+	allow = {
+		full_idea_group = parliamentary_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
+	prestige = 1
+	tolerance_heathen = 1.5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+parliamentary_ideas_trade_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = parliamentary_ideas
+		has_idea_group = trade_ideas
+	}
+
+	allow = {
+		full_idea_group = parliamentary_ideas
+		full_idea_group = trade_ideas
+	}
+	
+	leader_naval_manuever = 1
+	diplomatic_reputation = 1
 	
 	effect = {}
 	removed_effect = {}
@@ -674,7 +1699,7 @@ parliamentary_ideas_spy_ideas_policy = {
 
 
 parliamentary_ideas_offensive_ideas_policy = {
-	monarch_power = MIL
+	monarch_power = ADM
 
 	potential = {
 		has_idea_group = parliamentary_ideas
@@ -686,7 +1711,32 @@ parliamentary_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
-	manpower_recovery_speed = 0.15
+	all_estate_loyalty_equilibrium = 0.03
+	trade_company_investment_cost = -0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+parliamentary_ideas_defensive_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = parliamentary_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = parliamentary_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	build_time = -0.1
 	diplomatic_reputation = 1
 	
 	effect = {}
@@ -699,7 +1749,7 @@ parliamentary_ideas_offensive_ideas_policy = {
 
 
 spy_ideas_offensive_ideas_policy = {
-	monarch_power = MIL
+	monarch_power = DIP
 
 	potential = {
 		has_idea_group = spy_ideas
@@ -711,8 +1761,133 @@ spy_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
-	artillery_barrage_cost = -0.25
 	dip_advisor_cost = -0.2
+	years_of_nationalism = -5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+spy_ideas_defensive_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = spy_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = spy_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	disengagement_chance = 0.1
+	max_absolutism = 5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+diplomatic_ideas_offensive_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = diplomatic_ideas
+		has_idea_group = offensive_ideas
+	}
+
+	allow = {
+		full_idea_group = diplomatic_ideas
+		full_idea_group = offensive_ideas
+	}
+	
+	heavy_ship_cost = -0.1
+	tolerance_heathen = 1.5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+diplomatic_ideas_defensive_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = diplomatic_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = diplomatic_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	reduced_trade_penalty_on_non_main_tradenode = 0.25
+	disengagement_chance = 0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+trade_ideas_offensive_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = trade_ideas
+		has_idea_group = offensive_ideas
+	}
+
+	allow = {
+		full_idea_group = trade_ideas
+		full_idea_group = offensive_ideas
+	}
+	
+	heavy_ship_cost = -0.1
+	global_institution_spread = 0.25
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+trade_ideas_defensive_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = trade_ideas
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = trade_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	manpower_in_own_culture_provinces = 0.2
+	build_time = -0.1
 	
 	effect = {}
 	removed_effect = {}

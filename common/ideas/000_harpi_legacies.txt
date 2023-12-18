@@ -29,13 +29,13 @@ dwarf_legacy = {
 	}
 
 	bonus = {
-		development_cost = -0.025
+		artillery_cost = -0.1
 	}
 
 	dwarf_legacy1 = {
-		development_cost = -0.025
+		development_cost = -0.03
 		num_accepted_cultures = -1 #downside!
-		tolerance_heathen = -2 #downside!
+		tolerance_heathen = -3 #downside!
 	}
 	dwarf_legacy2 = {
 		expand_infrastructure_cost_modifier = -0.25
@@ -205,7 +205,65 @@ corin_legacy = {
 
 # jaher_legacy
 
-# castanor_legacy
+castanor_legacy = {
+	category = ADM
+	important = yes
+
+	trigger = {
+		adm_tech = 10
+		culture_is_human = yes
+		has_estate = estate_castonath_patricians
+		OR = {
+			tag = B31 #Castellyr
+			tag = B32 #Castanor
+			tag = Z34 #Black Castanor
+			AND = {
+				is_year = 1600
+				capital_scope = { 
+					OR = {
+						region = inner_castanor_region
+						region = west_castanor_region
+						region = south_castanor_region
+						area = cursewood_area
+						area = whistlevale_area
+					}
+				}
+			}
+		}
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+
+	castanor_legacy1 = {
+		castonath_patricians_loyalty_modifier = 0.1
+		castonath_patricians_influence_modifier = 0.05 #typically a downside
+		yearly_corruption = 0.1 #downside!
+	}
+	castanor_legacy2 = {
+		same_culture_advisor_cost = -0.2
+	}
+	castanor_legacy3 = {
+		overextension_impact_modifier = -0.1
+	}
+	castanor_legacy4 = {
+		vassal_income = 0.33
+	}
+	castanor_legacy5 = {
+		technology_cost = -0.05
+	}
+	castanor_legacy6 = {
+		prestige = 1
+	}
+	castanor_legacy7 = {
+		ae_impact = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.8
+	}
+}
 
 dameria_legacy = {
 	category = DIP
@@ -226,30 +284,31 @@ dameria_legacy = {
 	}
 
 	bonus = {
-
+		development_cost = -0.05
 	}
 
 	dameria_legacy1 = {
 		idea_cost = -0.1
+		# no downsides for this one, I'm nice
 	}
 	dameria_legacy2 = {
 		imperial_authority = 0.1
 		reasons_to_elect = 10
 	}
 	dameria_legacy3 = {
-		prestige_decay = -0.01
+		diplomatic_upkeep = 1
 	}
 	dameria_legacy4 = {
 		diplomatic_reputation = 1
 	}
 	dameria_legacy5 = {
-		
+		global_trade_power = 0.15
 	}
 	dameria_legacy6 = {
 		improve_relation_modifier = 0.2
 	}
 	dameria_legacy7 = {
-
+		prestige_decay = -0.01
 	}
 	ai_will_do = {
 		factor = 0.3
@@ -328,7 +387,7 @@ harimar_legacy = {
 		promote_culture_cost = -0.25
 	}
 	harimar_legacy7 = {
-		administrative_efficiency = 0.05 # busted!!!
+		administrative_efficiency = 0.03 # busted!!!
 	}
 
 	ai_will_do = {
