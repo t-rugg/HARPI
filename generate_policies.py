@@ -127,7 +127,7 @@ with open("generated_policies.txt", "w", encoding="windows-1252") as f:
 				# 2/3s chance to be subGroup, 1/3 to be MainGroup
 				subGroup = random.choice((group1, group2, (group1 if group2 == mainGroup else group2)))
 				# ensure subMod is different from mainMod
-				subMod = mainMod
+				subMod = mainMod # more like subMod = HARPI amirite????????
 				while subMod == mainMod:
 					subMod = ideas[subGroup][random.choice([0, 1, 3, 4])]
 
