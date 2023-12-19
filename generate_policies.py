@@ -25,27 +25,27 @@ random.seed("HARPI")
 
 adm = {
 	"innovativeness_ideas": ("advisor_cost = -0.1", "trade_efficiency = 0.1", "infantry_power = 0.075", "global_institution_spread = 0.25", "reform_progress_growth = 0.15", "artillery_fire = 0.02"),
-	"religious_ideas": ("missionary_strength = 0.015", "tolerance_own = 1.5", "morale_damage = 0.075", "max_absolutism = 5", "reverse_relation_with_same_religion = 10", "fire_damage_received = -0.075"),
+	"religious_ideas": ("global_missionary_strength = 0.01", "tolerance_own = 1.5", "morale_damage = 0.075", "max_absolutism = 5", "reverse_relation_with_same_religion = 10", "fire_damage_received = -0.075"),
 	"economic_ideas": ("inflation_reduction = 0.1", "build_time = -0.1", "land_forcelimit_modifier = 0.15", "global_tax_modifier = 0.15", "heavy_ship_power = 0.1", "drill_decay_modifier = -0.25"),
-	"expansion_ideas": ("build_cost = -0.1", "global_colonial_growth = 10" , "global_manpower_modifier = 0.15", "religious_unity = 0.1", "trade_steering = 0.25", "merc_leader_army_tradition = 0.25"), # todo
+	"expansion_ideas": ("build_cost = -0.1", "colonist_placement_chance = 0.05" , "global_manpower_modifier = 0.15", "religious_unity = 0.1", "trade_steering = 0.25", "merc_leader_army_tradition = 0.25"), # todo
 	"administrative_ideas": ("overextension_impact_modifier = -0.05", "adm_advisor_cost = -0.2", "yearly_army_professionalism = 0.002", "global_autonomy = -0.075", "yearly_corruption = -0.1", "mercenary_discipline = 0.05"),
-	"humanist_ideas": ("global_unrest  = -1", "improve_relations = 0.15", "land_leader_maneuver = 1", "stability_cost_modifier = -0.15", "global_sailors_modifier = 0.2", "morale_damage_received = -0.075"),
+	"humanist_ideas": ("global_unrest  = -1", "improve_relation_modifier = 0.15", "leader_land_manuever = 1", "stability_cost_modifier = -0.15", "global_sailors_modifier = 0.2", "morale_damage_received = -0.075"),
 	"infrastructure_ideas": ("build_time = -0.1", "global_trade_power = 0.1", "movement_speed = 0.075", "interest = -0.5", "envoy_travel_time = -0.33", "reinforce_speed = 0.15"),
-	"extraction_ideas": ("global_trade_goods_size_modifier = 0.075",  "production_efficiency = 0.1", "mercenary_cost = -0.15", "loot_amount = 0.5", "vassal_income = 0.25", "siege_ability = 0.15"),
-	"urbanization_ideas": ("global_prosperity_growth = 0.25", "naval_forcelimit_modifier = 0.15", "mercenary_manpower = 0.25", "global_autonomy = -0.075", "estate_interaction_cooldown_modifier = -0.20", "land_leader_fire = 1"),
+	"extraction_ideas": ("global_trade_goods_size_modifier = 0.075",  "production_efficiency = 0.1", "mercenary_cost = -0.15", "available_province_loot = 0.25", "vassal_income = 0.25", "siege_ability = 0.15"),
+	"urbanization_ideas": ("global_prosperity_growth = 0.25", "naval_forcelimit_modifier = 0.15", "mercenary_manpower = 0.25", "global_autonomy = -0.075", "estate_interaction_cooldown_modifier = -0.20", "leader_land_fire = 1"),
 	"militarist_ideas": ("war_exhaustion = -0.03", "reinforce_cost_modifier = -0.15", "leader_cost = -0.15", "global_unrest = -1", "mil_advisor_cost = -0.2", "army_tradition_decay = -0.01"),
-	"federalist_ideas": ("state_maintenance_modifier = -0.25", "diplomatic_reputation = 1", "discipline = 0.035", "state_maintenance_modifier = -0.25", "reduced_liberty_desire_on_same_continent = 10", "defensiveness = 0.15"),
+	"federalist_ideas": ("state_maintenance_modifier = -0.15", "diplomatic_reputation = 1", "discipline = 0.035", "vassal_income = 0.25", "reduced_liberty_desire_on_same_continent = 10", "defensiveness = 0.15"),
 	"governance_ideas": ("global_tax_modifier = 0.15", "global_own_trade_power = 0.15", "reserves_organisation = 0.1", "years_of_nationalism = -5", "diplomatic_upkeep = 1", "reinforce_speed = 0.15"),
 	"metallurgy_ideas": ("prestige = 1", "caravan_power = 0.25", "fire_damage = 0.075", "monthly_gold_inflation_modifier = -0.25", "global_prov_trade_power_modifier = 0.15", "infantry_fire = 0.1"),
-	"parliamentary_ideas": ("all_estate_loyalty_equilibrium = 0.03", "diplomatic_reputation = 1", "manpower_recovery_speed = 0.15", "advisor_pool = 2", "trade_company_investment_cost = -0.1", "backrow_artillery_damage = 0.075")
+	"parliamentary_ideas": ("all_estate_loyalty_equilibrium = 0.03", "diplomatic_reputation = 1", "manpower_recovery_speed = 0.15", "advisor_pool = 1", "trade_company_investment_cost = -0.1", "backrow_artillery_damage = 0.075")
 }
 dip = {
 	"spy_ideas": ("max_absolutism = 5", "dip_advisor_cost = -0.2", "leader_siege = 1", "interest = -0.5", "global_foreign_trade_power = 0.15", "harsh_treatment_cost = -0.25"),
-	"diplomatic_ideas": ("prestige = 1", "diplomatic_upkeep = 1", "yearly_army_professionalism = 0.002", "tolerance_heathen = 1.5", "reduced_trade_penalty_on_non_main_tradenode = 0.25", "manpower_in_accepted_culture_provinces = 0.2"),
+	"diplomatic_ideas": ("prestige = 1", "diplomatic_upkeep = 1", "cavalry_shock = 0.15", "tolerance_heathen = 1.5", "reduced_trade_penalty_on_non_main_tradenode = 0.25", "manpower_in_accepted_culture_provinces = 0.2"),
 	"trade_ideas": ("global_institution_spread = 0.25", "trade_company_investment_cost = -0.1", "discipline = 0.035", "reform_progress_growth = 0.15", "leader_naval_manuever = 1", "mercenary_discipline = 0.05"),
-	"exploration_ideas": (),
+	"exploration_ideas": ("build_cost = -0.1", "global_colonial_growth = 15", "reinforce_speed = 0.15", "treasure_fleet_income = 0.25", "navy_tradition_decay = -0.01", "shock_damage_received = -0.075"),
 	"maritime_ideas": (),
-	"court_ideas": (),
+	"court_ideas": ("advisor_cost = -0.1", "yearly_corruption = -0.1", "army_tradition_decay = -0.01", "prestige_decay = -0.01", "spy_offence = 0.25", "vassal_forcelimit_bonus = 1"),
 	"influence_ideas": (),
 	"stewardship_ideas": (),
 	"patronage_ideas": (),
@@ -55,13 +55,13 @@ dip = {
 	"authority_ideas": (),
 	"imperialist_ideas": (),
 	"adventure_ideas": (),
-	"monastic_ideas": (),
-	"lawful_ideas": (),
-	"chaotic_ideas": (),
+	"monastic_ideas": ("missionary_maintenance_cost = -0.3", "tolerance_own = 1.5", "yearly_army_professionalism = 0.002", "global_prosperity_growth = 0.25", "advisor_pool = 1", "drill_decay_modifier = -0.25"),
+	"lawful_ideas": ("global_prosperity_growth = 0.25", "monthly_splendor = 2", "discipline = 0.035", "global_autonomy = -0.075", "global_ship_repair = 0.1", "leader_land_fire = 1"),
+	"chaotic_ideas": ("overextension_impact_modifier = -0.05", "unjustified_demands = -0.1", "land_morale = 0.075", "religious_unity = 0.1", "naval_tradition_from_battle = 0.5", "cavalry_fire = 0.5"),
 }
 mil = {
-	"offensive_ideas": ("loot_amount = 0.5", "heavy_ship_cost = -0.1", "shock_damage = 0.075", "years_of_nationalism = -5", "trade_company_investment_cost = -0.1", "artillery_barrage_cost = -0.25"),
-	"defensive_ideas": ("build_time = -0.1", "improve_relations = 0.15", "shock_damage_received = -0.075", "global_prosperity_growth = 0.25", "disengagement_chance = 0.1", "manpower_in_own_culture_provinces = 0.2")
+	"offensive_ideas": ("available_province_loot = 0.25", "heavy_ship_cost = -0.1", "shock_damage = 0.075", "global_monthly_devastation = -0.05", "trade_company_investment_cost = -0.1", "artillery_barrage_cost = -0.25"),
+	"defensive_ideas": ("build_time = -0.1", "improve_relation_modifier = 0.15", "shock_damage_received = -0.075", "global_prosperity_growth = 0.25", "disengagement_chance = 0.1", "manpower_in_own_culture_provinces = 0.2")
 }
 
 combined = adm | dip | mil
@@ -117,10 +117,15 @@ formatter = '''{0}_{1}_policy = {{
 
 blacklist = []
 
+loc = open("localisation/HARPI_policies_l_english.yml", "w", encoding="utf-8-sig")
+print("l_english:", file=loc)
+formatterLoc = " {0}_{1}_policy: {2}-{3} Policy" # TODO
+formatterDesc = " desc_{0}_{1}_policy: Our embrace of {2} and understanding of {3} allows us to enact this policy."
+formatterDescLegalist = " desc_{0}_legalist_ideas_policy: Combining our Legalist principles with {1} allows us to enact this policy."
 
 # WARNING: this might be the worst code i have ever written
 # be warned, ye who enter here
-with open("generated_policies.txt", "w", encoding="windows-1252") as f: 
+with open("common/policies/HARPI_generated_policies.txt", "w", encoding="windows-1252") as f: 
 	# loop over pairs of idea groups from distinct categories
 	for group1 in ideas:
 		cat1 = getCategory(group1)
@@ -145,42 +150,64 @@ with open("generated_policies.txt", "w", encoding="windows-1252") as f:
 
 				formatted = formatter.format(group1, group2, cat, mainMod, subMod, "0.6")
 				print(formatted, file=f)
+				formattedLoc = formatterLoc.format(group1, group2, group1, group2)
+				formattedDesc = formatterDesc.format(group1, group2, mainGroup, subGroup)
+				print(formattedLoc, file=loc)
+				print(formattedDesc, file=loc)
 
 
 ###
 ### LEGALIST IDEAS
 ### 
 				
+# each modifier needs to (roughly) fit its category
+# in addition, each modifier can only occur ONCE
+# reform progress is BANNED because all policies with legalist receive a tiny 0.05 reform progress growth
+				
 legalist_adm = {
 	"innovativeness_ideas": "technology_cost = -0.1",
 	"religious_ideas": "missionaries = 1",
 	"economic_ideas": "interest = -1.5",
-	"expansion_ideas": "territories_governing_cost = -0.15",
-	"administrative_ideas": "core_creation = -0.15",
+	"expansion_ideas": "colonists = 1",
+	"administrative_ideas": "core_creation = -0.1",
 	"humanist_ideas": "idea_cost = -0.1",
-	"infrastructure_ideas": "",
-	"extraction_ideas": "",
-	"urbanization_ideas": "",
-	"militarist_ideas": "",
-	"federalist_ideas": "",
-	"governance_ideas": "",
-	"metallurgy_ideas": "",
-	"parliamentary_ideas": "",
+	"infrastructure_ideas": "build_time = -0.25",
+	"extraction_ideas": "global_trade_goods_size_modifier = 0.15",
+	"urbanization_ideas": "development_cost = -0.05",
+	"militarist_ideas": "monarch_military_power = 1",
+	"federalist_ideas": "administrative_efficiency = 0.025",
+	"governance_ideas": "governing_capacity_modifier = 0.1",
+	"metallurgy_ideas": "build_cost = -0.25",
+	"parliamentary_ideas": "global_unrest = -3",
 }
 legalist_dip = {
-	"filler": "",
+	"spy_ideas": "ae_impact = -0.15",
 }
 legalist_mil = {
-	"filler": "",
+	"offensive_ideas": "siege_ability = 0.2",
 }
 
-with open("generated_policies_legalist.txt", "w", encoding="windows-1252") as f:
+with open("common/policies/HARPI_generated_policies_legalist.txt", "w", encoding="windows-1252") as f:
 	for group in legalist_adm:
 		formatted = formatter.format(group, "legalist_ideas", "ADM", legalist_adm[group], "reform_progress_growth = 0.05", "1.2")
 		print(formatted, file=f)
+		formattedLoc = formatterLoc.format(group, "Legalist", group, "Legalist")
+		formattedDescLegalist = formatterDescLegalist.format(group, group)
+		print(formattedLoc, file=loc)
+		print(formattedDescLegalist, file=loc)
 	for group in legalist_dip:
 		formatted = formatter.format(group, "legalist_ideas", "DIP", legalist_dip[group], "reform_progress_growth = 0.05", "1.2")
 		print(formatted, file=f)
+		formattedLoc = formatterLoc.format(group, "Legalist", group, "Legalist")
+		formattedDescLegalist = formatterDescLegalist.format(group, group)
+		print(formattedLoc, file=loc)
+		print(formattedDescLegalist, file=loc)
 	for group in legalist_mil:
 		formatted = formatter.format(group, "legalist_ideas", "MIL", legalist_mil[group], "reform_progress_growth = 0.05", "1.2")
 		print(formatted, file=f)
+		formattedLoc = formatterLoc.format(group, "Legalist", group, "Legalist")
+		formattedDescLegalist = formatterDescLegalist.format(group, group)
+		print(formattedLoc, file=loc)
+		print(formattedDescLegalist, file=loc)
+
+loc.close()

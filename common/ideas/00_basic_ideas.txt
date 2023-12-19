@@ -427,7 +427,7 @@ religious_ideas = {
 	# you can change the loc to swap their names, but the idea identifiers themselves CANNOT BE REORDERED
 	missionary_schools = {
 		missionaries = 1
-		missionary_maintenance_cost = -0.5
+		missionary_maintenance_cost = -0.4
 	}
 	church_attendance_duty = { 
 		manpower_in_true_faith_provinces = 0.2
@@ -1510,7 +1510,7 @@ expansion_ideas = {
 		global_tariffs = 0.10
 	}
 	faster_colonists = {
-		global_colonial_growth = 20
+		global_colonial_growth = 15
 		envoy_travel_time = -0.2
 	}
 	vice_roys  = { #1.35
