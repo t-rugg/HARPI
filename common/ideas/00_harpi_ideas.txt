@@ -139,8 +139,7 @@ reclamation_ideas = {
 		OR = {
 			culture = moon_elf
 			culture = star_elf
-			AND = { # dwarves only get to take it if they already own a restored holds, otherwise too strong
-			        # even this might be too strong honestly... but whatever
+			AND = { 
 				culture_group = dwarven
 				NOT = {
 					has_disaster = remnant_stagnation_disaster
@@ -163,12 +162,11 @@ reclamation_ideas = {
 	}
 	
 	reclamation1 = {
-		global_tax_income = 12 # 1 ducat per month
+		global_tax_income = 6 # 1 ducat per month
 		colony_cost_modifier = -0.2
 	}
 	reclamation2 = {
 		colonists = 1
-		may_explore = yes
 	}
 	reclamation3 = {
 		morale_damage_received = -0.1
