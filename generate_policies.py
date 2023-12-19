@@ -23,7 +23,7 @@
 import random
 random.seed("HARPI")
 
-adm = {
+adm = { # legalist ideas get special handling
 	"innovativeness_ideas": ("advisor_cost = -0.1", "trade_efficiency = 0.1", "infantry_power = 0.075", "global_institution_spread = 0.25", "reform_progress_growth = 0.15", "artillery_fire = 0.02"),
 	"religious_ideas": ("global_missionary_strength = 0.01", "tolerance_own = 1.5", "morale_damage = 0.075", "max_absolutism = 5", "reverse_relation_with_same_religion = 10", "fire_damage_received = -0.075"),
 	"economic_ideas": ("inflation_reduction = 0.1", "build_time = -0.1", "land_forcelimit_modifier = 0.15", "global_tax_modifier = 0.15", "heavy_ship_power = 0.1", "drill_decay_modifier = -0.25"),
@@ -49,7 +49,6 @@ dip = {
 	"influence_ideas": (),
 	"stewardship_ideas": (),
 	"patronage_ideas": (),
-	# legalist ideas get special handling
 	"realist_ideas": (),
 	"integration_ideas": (),
 	"authority_ideas": (),

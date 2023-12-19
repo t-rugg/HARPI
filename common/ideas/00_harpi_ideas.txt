@@ -609,7 +609,7 @@ advanced_armies_ideas = {
 }
 
 legalist_ideas = {
-	category = DIP
+	category = ADM
 
 	bonus = {
 		national_focus_years = -10
