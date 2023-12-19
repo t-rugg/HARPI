@@ -5,7 +5,7 @@ aristocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		max_absolutism_effect = 10 # 3% admin efficiency at 110 absolutism
+		max_absolutism_effect = .10 # 3% admin efficiency at 110 absolutism
 
 		nobles_loyalty_modifier = 0.1
 		rajput_loyalty_modifier = 0.1

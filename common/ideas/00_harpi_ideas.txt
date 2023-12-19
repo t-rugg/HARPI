@@ -960,7 +960,7 @@ authority_ideas = {
 		expand_administration_cost = -0.33
 	}
 	authority7 = {
-		max_absolutism_effect = 10 # 3% admin efficiency at 110 absolutism
+		max_absolutism_effect = .10 # 3% admin efficiency at 110 absolutism
 	}
 
 	ai_will_do = {
