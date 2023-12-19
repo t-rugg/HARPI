@@ -61,7 +61,7 @@ economic_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	interest = -1.5
+	interest = -1.25
 	reform_progress_growth = 0.05
 	
 	effect = {}
@@ -161,7 +161,7 @@ infrastructure_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	build_time = -0.25
+	build_time = -0.2
 	reform_progress_growth = 0.05
 	
 	effect = {}
@@ -311,7 +311,7 @@ metallurgy_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	build_cost = -0.25
+	build_cost = -0.2
 	reform_progress_growth = 0.05
 	
 	effect = {}
@@ -336,7 +336,7 @@ parliamentary_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	global_unrest = -3
+	global_unrest = -2
 	reform_progress_growth = 0.05
 	
 	effect = {}
