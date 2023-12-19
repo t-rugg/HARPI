@@ -144,17 +144,8 @@ reclamation_ideas = {
 				NOT = {
 					has_disaster = remnant_stagnation_disaster
 				}
-				any_owned_province = {
-					OR = {
-						has_terrain = dwarven_hold
-						has_terrain = dwarven_hold_surface
-					}
-					NOT = {
-						has_province_modifier = damaged_hold
-						has_province_modifier = partially_ruined_hold
-						has_province_modifier = ruined_hold
-					}
-					is_city = yes
+				capital_scope = {
+					continent = serpentspine
 				}
 			}
 		}
