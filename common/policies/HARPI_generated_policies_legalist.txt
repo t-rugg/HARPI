@@ -361,7 +361,407 @@ spy_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	ae_impact = -0.15
+	diplomats = 1
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+diplomatic_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = diplomatic_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = diplomatic_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	improve_relation_modifier = 0.25
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+trade_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = trade_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = trade_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	merchants = 1
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+exploration_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = exploration_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = exploration_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	global_colonial_growth = 25
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+maritime_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = maritime_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = maritime_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	naval_forcelimit_modifier = 0.25
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+court_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	all_estate_loyalty_equilibrium = 0.05
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+influence_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = influence_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = influence_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	diplomatic_annexation_cost = -0.1
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+stewardship_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = stewardship_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = stewardship_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	diplomatic_upkeep = 2
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+patronage_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = patronage_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = patronage_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	innovativenss_gain = 0.33
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+realist_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = realist_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = realist_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	ae_impact = -0.1
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+integration_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = integration_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = integration_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	diplomatic_reputation = 2
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+authority_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = authority_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = authority_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	max_absolutism = 15
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+imperalist_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = imperalist_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = imperalist_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	province_warscore_cost = -0.1
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+adventure_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = adventure_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = adventure_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	merc_maintenance_modifier = -0.25
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+monastic_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = monastic_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = monastic_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	global_institution_spread = 1
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+lawful_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = lawful_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = lawful_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	all_estate_influence_modifier = 0.05
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+chaotic_ideas_legalist_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = chaotic_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = chaotic_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	all_estate_influence_modifier = -0.05
 	reform_progress_growth = 0.05
 	
 	effect = {}
@@ -387,6 +787,56 @@ offensive_ideas_legalist_ideas_policy = {
 	}
 	
 	siege_ability = 0.2
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+defensive_ideas_legalist_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = defensive_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = defensive_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	defensiveness = 0.3
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+reclamation_ideas_legalist_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = reclamation_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = reclamation_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	shock_damage_received = -0.075
 	reform_progress_growth = 0.05
 	
 	effect = {}
