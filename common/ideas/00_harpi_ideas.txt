@@ -86,7 +86,7 @@ stewardship_ideas = {
 		}
 	}
 	stewardship5 = {
-		reverse_relation_with_same_religion = 25 # makes both diplo-vassalization and converting vassals easier
+		reverse_relation_with_same_religion = 15 # makes both diplo-vassalization and converting vassals easier
 	}
 	marcher_lords = {
 		# receive 1 free subject if you have at least 3, or 2 free subjects if you have at least 6

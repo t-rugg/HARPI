@@ -27,7 +27,7 @@ adm = { # legalist ideas get special handling
 	"innovativeness_ideas": ("advisor_cost = -0.075", "trade_efficiency = 0.075", "infantry_power = 0.05", "global_institution_spread = 0.25", "reform_progress_growth = 0.10", "artillery_fire = 0.015"),
 	"religious_ideas": ("global_missionary_strength = 0.01", "tolerance_own = 1", "morale_damage = 0.05", "max_absolutism = 5", "reverse_relation_with_same_religion = 10", "fire_damage_received = -0.05"),
 	"economic_ideas": ("inflation_reduction = 0.05", "build_time = -0.075", "land_forcelimit_modifier = 0.1", "global_tax_modifier = 0.1", "heavy_ship_power = 0.075", "drill_decay_modifier = -0.2"),
-	"expansion_ideas": ("build_cost = -0.075", "colonist_placement_chance = 0.035" , "global_manpower_modifier = 0.10", "religious_unity = 0.075", "trade_steering = 0.2", "merc_leader_army_tradition = 0.2"),
+	"expansion_ideas": ("build_cost = -0.075", "colonist_placement_chance = 0.035" , "global_manpower_modifier = 0.10", "religious_unity = 0.075", "trade_steering = 0.25", "merc_leader_army_tradition = 0.2"),
 	"administrative_ideas": ("overextension_impact_modifier = -0.05", "adm_advisor_cost = -0.15", "yearly_army_professionalism = 0.002", "global_autonomy = -0.05", "yearly_corruption = -0.075", "mercenary_discipline = 0.035"),
 	"humanist_ideas": ("global_unrest  = -0.75", "improve_relation_modifier = 0.1", "leader_land_manuever = 1", "stability_cost_modifier = -0.1", "global_sailors_modifier = 0.15", "morale_damage_received = -0.05"),
 	"infrastructure_ideas": ("build_time = -0.075", "global_trade_power = 0.075", "movement_speed = 0.075", "interest = -0.5", "envoy_travel_time = -0.33", "reinforce_speed = 0.1"),
@@ -60,7 +60,8 @@ dip = {
 }
 mil = {
 	"offensive_ideas": ("available_province_loot = 0.25", "heavy_ship_cost = -0.1", "shock_damage = 0.05", "global_monthly_devastation = -0.05", "trade_company_investment_cost = -0.075", "artillery_barrage_cost = -0.25"),
-	"defensive_ideas": ("build_time = -0.075", "improve_relation_modifier = 0.1", "shock_damage_received = -0.05", "global_prosperity_growth = 0.2", "disengagement_chance = 0.1", "manpower_in_own_culture_provinces = 0.15")
+	"defensive_ideas": ("build_time = -0.075", "improve_relation_modifier = 0.1", "shock_damage_received = -0.05", "global_prosperity_growth = 0.2", "disengagement_chance = 0.1", "manpower_in_own_culture_provinces = 0.15"),
+	"reclamation_ideas": ("same_culture_advisor_cost = -0.1", "trade_steering = 0.25", "land_morale = 0.05", "global_missionary_strength = 0.01", "prestige = 1", "land_attrition = -0.1")
 }
 
 combined = adm | dip | mil
