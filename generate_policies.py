@@ -64,13 +64,7 @@ mil = {
 	"reclamation_ideas": ("same_culture_advisor_cost = -0.1", "trade_steering = 0.25", "land_morale = 0.05", "global_missionary_strength = 0.01", "prestige = 1", "land_attrition = -0.1")
 }
 
-combined = adm | dip | mil
-
-# remove empty — allows for partial testing
-ideas = {}
-for entry in combined:
-	if combined[entry] != ():
-		ideas[entry] = combined[entry]
+ideas = adm | dip | mil
 
 def getCategory(group):
 	if group in adm:
@@ -128,10 +122,12 @@ formatterDescLegalist = ' desc_{0}_legalist_ideas_policy: "Combining our Legalis
 with open("common/policies/HARPI_generated_policies.txt", "w", encoding="windows-1252") as f: 
 	# loop over pairs of idea groups from distinct categories
 	for group1 in ideas:
+		if ideas[group1] == (): # handle empty ideas
+			continue
 		cat1 = getCategory(group1)
 		blacklist.append(group1)
 		for group2 in ideas:
-			if group2 in blacklist:
+			if group2 in blacklist or ideas[group2] == ():
 				continue
 			cat2 = getCategory(group2)
 			if (cat1 != cat2):
