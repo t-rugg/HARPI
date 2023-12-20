@@ -37,7 +37,7 @@ adm = { # legalist ideas get special handling
 	"federalist_ideas": ("state_maintenance_modifier = -0.15", "diplomatic_reputation = 1", "discipline = 0.035", "vassal_income = 0.25", "reduced_liberty_desire_on_same_continent = 10", "defensiveness = 0.15"),
 	"governance_ideas": ("global_tax_modifier = 0.1", "global_own_trade_power = 0.1", "reserves_organisation = 0.1", "years_of_nationalism = -5", "diplomatic_upkeep = 1", "reinforce_speed = 0.1"),
 	"metallurgy_ideas": ("prestige = 1", "caravan_power = 0.25", "fire_damage = 0.05", "monthly_gold_inflation_modifier = -0.25", "global_prov_trade_power_modifier = 0.1", "infantry_fire = 0.075"),
-	"parliamentary_ideas": ("all_estate_loyalty_equilibrium = 0.03", "diplomatic_reputation = 1", "manpower_recovery_speed = 0.15", "advisor_pool = 1", "trade_company_investment_cost = -0.1", "backrow_artillery_damage = 0.05")
+	"parliamentary_ideas": ("all_estate_loyalty_equilibrium = 0.02", "diplomatic_reputation = 1", "manpower_recovery_speed = 0.15", "advisor_pool = 1", "trade_company_investment_cost = -0.1", "backrow_artillery_damage = 0.05")
 }
 dip = {
 	"spy_ideas": ("max_absolutism = 5", "dip_advisor_cost = -0.15", "leader_siege = 1", "interest = -0.5", "global_foreign_trade_power = 0.1", "harsh_treatment_cost = -0.2"),
@@ -174,13 +174,30 @@ legalist_adm = {
 	"federalist_ideas": "administrative_efficiency = 0.025",
 	"governance_ideas": "governing_capacity_modifier = 0.1",
 	"metallurgy_ideas": "build_cost = -0.2",
-	"parliamentary_ideas": "global_unrest = -2",
+	"parliamentary_ideas": "global_unrest = -2"
 }
 legalist_dip = {
-	"spy_ideas": "ae_impact = -0.15",
+	"spy_ideas": "diplomats = 1",
+	"diplomatic_ideas": "improve_relation_modifier = 0.25",
+	"trade_ideas": "merchants = 1",
+	"exploration_ideas": "global_colonial_growth = 25",
+	"maritime_ideas": "naval_forcelimit_modifier = 0.25",
+	"court_ideas": "all_estate_loyalty_equilibrium = 0.05",
+	"influence_ideas": "diplomatic_annexation_cost = -0.1",
+	"stewardship_ideas": "diplomatic_upkeep = 2",
+	"patronage_ideas": "innovativenss_gain = 0.33",
+	"realist_ideas": "ae_impact = -0.1",
+	"integration_ideas": "diplomatic_reputation = 2",
+	"authority_ideas": "max_absolutism = 15",
+	"imperalist_ideas": "province_warscore_cost = -0.1",
+	"adventure_ideas": "merc_maintenance_modifier = -0.25",
+	"monastic_ideas": "global_institution_spread = 1",
+	"lawful_ideas": "all_estate_influence_modifier = 0.05",
+	"chaotic_ideas": "all_estate_influence_modifier = -0.05",
 }
 legalist_mil = {
 	"offensive_ideas": "siege_ability = 0.2",
+	"defensive_ideas": "defensiveness = 0.3"
 }
 
 with open("common/policies/HARPI_generated_policies_legalist.txt", "w", encoding="windows-1252") as f:

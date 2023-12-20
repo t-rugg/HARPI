@@ -15,7 +15,7 @@ influence_ideas = {
 		diplomatic_reputation = 2
 	}
 	influence3 = {
-		diplomatic_annexation_cost = -0.2
+		diplomatic_annexation_cost = -0.15
 	}
 	additional_loyalist_recruitment = {
 		reduced_liberty_desire = 5
@@ -232,7 +232,7 @@ patronage_ideas = {
 		advisor_pool = 1
 	}
 	patronage3 = {
-		all_estate_loyalty_equilibrium = 0.05
+		all_estate_loyalty_equilibrium = 0.03
 		church_privilege_slots = 1
 		burghers_privilege_slots = 1
 		eunuchs_anb_privilege_slots = 1
@@ -732,7 +732,7 @@ integration_ideas = {
 		global_missionary_strength = 0.02
 	}
 	integration5 = {
-		diplomatic_annexation_cost = -0.15
+		diplomatic_annexation_cost = -0.1
 	}
 	integration6 = {
 		manpower_in_own_culture_provinces = 0.2
@@ -749,7 +749,7 @@ integration_ideas = {
 			vassal = 2
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			vassal = 3
 		}
 		modifier = {
@@ -1253,7 +1253,7 @@ federalist_ideas = {
 		governing_cost = -0.1
 	}
 	federalist5 = {
-		diplomatic_annexation_cost = -0.15
+		diplomatic_annexation_cost = -0.1
 	}
 	federalist6 = {
 		global_unrest = -1.5
@@ -1863,7 +1863,7 @@ lawful_ideas = {
 
 	lawful1 = {
 		diplomatic_reputation = 1
-		all_estate_influence_modifier = 0.05 #kinda downside!
+		all_estate_influence_modifier = 0.05 #kinda downside! but upside because mages?
 	}
 	lawful2 = {
 		advisor_cost = -0.15
