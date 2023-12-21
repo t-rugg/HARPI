@@ -42,16 +42,16 @@ dip = {
 	"spy_ideas": ("max_absolutism = 5", "dip_advisor_cost = -0.15", "leader_siege = 1", "interest = -0.5", "global_foreign_trade_power = 0.1", "harsh_treatment_cost = -0.2"),
 	"diplomatic_ideas": ("prestige = 1", "diplomatic_upkeep = 1", "cavalry_shock = 0.1", "tolerance_heathen = 1", "reduced_trade_penalty_on_non_main_tradenode = 0.25", "manpower_in_accepted_culture_provinces = 0.15"),
 	"trade_ideas": ("global_institution_spread = 0.25", "trade_efficiency = 0.075", "artillery_power = 0.05", "reform_progress_growth = 0.1", "native_assimilation = 0.25", "mercenary_discipline = 0.035"),
-	"exploration_ideas": ("build_cost = -0.075", "global_colonial_growth = 10", "reinforce_speed = 0.1", "treasure_fleet_income = 0.2", "navy_tradition_decay = -0.01", "shock_damage_received = -0.05"),
+	"exploration_ideas": ("build_cost = -0.075", "global_colonial_growth = 10", "reinforce_speed = 0.1", "treasure_fleet_income = 0.2", "global_tariffs = 0.1", "shock_damage_received = -0.05"),
 	"maritime_ideas": ("global_trade_goods_size_modifier = 0.05", "ship_durability = 0.075", "leader_cost = -0.1", "advisor_cost = -0.075", "global_ship_trade_power = 0.15", "infantry_power = 0.05"),
 	"court_ideas": ("advisor_cost = -0.075", "yearly_corruption = -0.075", "army_tradition_decay = -0.01", "stability_cost_modifier = -0.1", "spy_offence = 0.25", "vassal_forcelimit_bonus = 1"),
 	"influence_ideas": ("global_tax_modifier = 0.1", "improve_relation_modifier = 0.1", "infantry_power = 0.05", "infantry_cost = -0.075", "advisor_pool = 1", "land_attrition = -0.1"),
 	"stewardship_ideas": ("interest = -0.5", "vassal_income = 0.25", "vassal_forcelimit_bonus = 1", "yearly_corruption = -0.075", "trade_steering = 0.25", "fire_damage_received = -0.05"),
-	"patronage_ideas": (),
-	"realist_ideas": (),
-	"integration_ideas": (),
+	"patronage_ideas": ("global_prosperity_growth = 0.2", "dip_advisor_cost = -0.15", "leader_land_manuever = 1", "advisor_pool = 1", "navy_tradition_decay = -0.01", "mercenary_discipline = 0.035"),
+	"realist_ideas": ("global_unrest = -0.075", "diplomatic_reputation = 1", "backrow_artillery_damage = 0.05", "inflation_reduction = 0.05", "liberty_desire_from_subject_development = -0.15", "harsh_treatment_cost = -0.2"),
+	"integration_ideas": ("global_tax_modifier = 0.1", "envoy_travel_time = -0.33", "manpower_in_true_faith_provinces = 0.15", "global_missionary_strength = 0.01", "global_autonomy = -0.05", "land_morale = 0.05"),
 	"authority_ideas": ("stability_cost_modifier = -0.1", "yearly_absolutism = 1", "army_tradition_decay = -0.01", "global_autonomy = -0.05", "unjustified_demands = -0.1", "discipline = 0.025"),
-	"imperialist_ideas": ("global_missionary_strength = 0.01", "trade_company_investment_cost = -0.075", "fire_damage = 0.05", "prestige_decay = -0.01", "navy_tradition_decay = -0.01", "siege_ability = 0.1"),
+	"imperialist_ideas": ("religious_unity = 0.075", "trade_company_investment_cost = -0.075", "fire_damage = 0.05", "prestige_decay = -0.01", "navy_tradition_decay = -0.01", "siege_ability = 0.1"),
 	"adventure_ideas": ("years_of_nationalism = -5", "improve_relation_modifier = 0.1", "global_manpower_modifier = 0.10", "available_province_loot = 0.25", "prestige_from_land = 0.5", "shock_damage = 0.05"),
 	"monastic_ideas": ("missionary_maintenance_cost = -0.25", "tolerance_own = 1", "yearly_army_professionalism = 0.002", "global_prosperity_growth = 0.2", "advisor_pool = 1", "drill_decay_modifier = -0.2"),
 	"lawful_ideas": ("global_prosperity_growth = 0.2", "monthly_splendor = 1", "discipline = 0.025", "global_autonomy = -0.05", "global_ship_repair = 0.1", "leader_land_fire = 1"),
@@ -60,6 +60,7 @@ dip = {
 mil = {
 	"offensive_ideas": ("available_province_loot = 0.25", "heavy_ship_cost = -0.1", "shock_damage = 0.05", "global_monthly_devastation = -0.05", "trade_company_investment_cost = -0.075", "artillery_barrage_cost = -0.25"),
 	"defensive_ideas": ("build_time = -0.075", "improve_relation_modifier = 0.1", "shock_damage_received = -0.05", "global_prosperity_growth = 0.2", "disengagement_chance = 0.1", "manpower_in_own_culture_provinces = 0.15"),
+	"quality_ideas": ("global_trade_goods_size_modifier = 0.05", "hull_size_modifier = 0.075", "drill_gain_modifier = 0.35", "prestige_decay = -0.01", "naval_morale_damage_received = 0.1", "army_tradition = 0.5"),
 	"reclamation_ideas": ("same_culture_advisor_cost = -0.1", "trade_steering = 0.25", "land_morale = 0.05", "global_missionary_strength = 0.01", "prestige = 1", "land_attrition = -0.1")
 }
 
