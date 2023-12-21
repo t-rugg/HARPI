@@ -44,9 +44,9 @@ dip = {
 	"diplomatic_ideas": ("prestige = 1", "diplomatic_upkeep = 1", "cavalry_shock = 0.1", "tolerance_heathen = 1", "reduced_trade_penalty_on_non_main_tradenode = 0.25", "manpower_in_accepted_culture_provinces = 0.15"),
 	"trade_ideas": ("global_institution_spread = 0.25", "trade_efficiency = 0.075", "discipline = 0.025", "reform_progress_growth = 0.1", "native_assimilation = 0.25", "mercenary_discipline = 0.035"),
 	"exploration_ideas": ("build_cost = -0.075", "global_colonial_growth = 10", "reinforce_speed = 0.1", "treasure_fleet_income = 0.2", "navy_tradition_decay = -0.01", "shock_damage_received = -0.05"),
-	"maritime_ideas": ("global_trade_goods_size_modifier = 0.05", "ship_durability = 0.075", "leader_cost = -0.1", "advisor_cost = -0.075", "global_ship_trade_power = 0.15", "discipline = 0.035"),
+	"maritime_ideas": ("global_trade_goods_size_modifier = 0.05", "ship_durability = 0.075", "leader_cost = -0.1", "advisor_cost = -0.075", "global_ship_trade_power = 0.15", "discipline = 0.025"),
 	"court_ideas": ("advisor_cost = -0.075", "yearly_corruption = -0.075", "army_tradition_decay = -0.01", "stability_cost_modifier = -0.1", "spy_offence = 0.25", "vassal_forcelimit_bonus = 1"),
-	"influence_ideas": (),
+	"influence_ideas": ("global_tax_modifier = 0.1", "improve_relation_modifier = 0.1", "infantry_power = 0.05", "infantry_cost = -0.075", "advisor_pool = 1", "land_attrition = -0.1"),
 	"stewardship_ideas": (),
 	"patronage_ideas": (),
 	"realist_ideas": (),
@@ -114,8 +114,8 @@ blacklist = []
 loc = open("localisation/HARPI_policies_l_english.yml", "w", encoding="utf-8-sig")
 print("l_english:", file=loc)
 formatterLoc = ' {0}_{1}_policy: "{2}-{3} Policy"' # TODO
-formatterDesc = ' desc_{0}_{1}_policy: "Our embrace of {2} and understanding of {3} allows us to enact this policy."'
-formatterDescLegalist = ' desc_{0}_legalist_ideas_policy: "Combining our Legalist principles with {1} allows us to enact this policy."'
+formatterDesc = ' desc_{0}_{1}_policy: "Our embrace of {2} ideals, along with our rich understanding of the principles of {3}, allows us to enact this policy."'
+formatterDescLegalist = ' desc_{0}_legalist_ideas_policy: "Applying our Legalist approach to our {1} values allows us to enact this policy."'
 
 # WARNING: this might be the worst code i have ever written
 # be warned, ye who enter here
@@ -166,7 +166,7 @@ legalist_adm = {
 	"economic_ideas": "interest = -1.25",
 	"expansion_ideas": "colonists = 1",
 	"administrative_ideas": "core_creation = -0.1",
-	"humanist_ideas": "idea_cost = -0.1",
+	"humanist_ideas": "num_accepted_cultures = 2",
 	"infrastructure_ideas": "build_time = -0.2",
 	"extraction_ideas": "global_trade_goods_size_modifier = 0.15",
 	"urbanization_ideas": "development_cost = -0.05",
@@ -185,11 +185,11 @@ legalist_dip = {
 	"court_ideas": "all_estate_loyalty_equilibrium = 0.05",
 	"influence_ideas": "diplomatic_annexation_cost = -0.1",
 	"stewardship_ideas": "diplomatic_upkeep = 2",
-	"patronage_ideas": "innovativenss_gain = 0.33",
+	"patronage_ideas": "innovativeness_gain = 0.33",
 	"realist_ideas": "ae_impact = -0.1",
 	"integration_ideas": "diplomatic_reputation = 2",
 	"authority_ideas": "max_absolutism = 15",
-	"imperalist_ideas": "province_warscore_cost = -0.1",
+	"imperialist_ideas": "province_warscore_cost = -0.1",
 	"adventure_ideas": "merc_maintenance_modifier = -0.25",
 	"monastic_ideas": "global_institution_spread = 1",
 	"lawful_ideas": "all_estate_influence_modifier = 0.05",
@@ -199,7 +199,15 @@ legalist_mil = { # these aren't THAT much better than other mil policies; otherw
 	             # maybe you have to anyway... idk, maybe I should stop worrying about MP balance entirely since this mod isn't really designed for that
 	"offensive_ideas": "siege_ability = 0.2",
 	"defensive_ideas": "defensiveness = 0.3",
-	"reclamation_ideas": "shock_damage_received = -0.075"
+	"quality_ideas": "discipline = 0.035",
+	"quantity_ideas": "land_forcelimit_modifier  = 0.2",
+	"naval_ideas": "ship_durability = 0.1",
+	"mercenary_ideas": "mercenary_discipline = 0.05",
+	"reclamation_ideas": "shock_damage_received = -0.075",
+	"war_economy_ideas": "global_regiment_cost = -0.075",
+	"advanced_armies_ideas": "fire_damage = 0.075",
+	"zealous_ideas": "morale_damage = 0.075",
+	# TODO
 }
 
 with open("common/policies/HARPI_generated_policies_legalist.txt", "w", encoding="windows-1252") as f:

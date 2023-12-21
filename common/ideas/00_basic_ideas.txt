@@ -1250,7 +1250,6 @@ maritime_ideas = {
 		}
 	}
 	naval_fighting_instruction = {
-		global_naval_engagement_modifier = 0.1 #1.35
 		blockade_efficiency = 0.5
 		privateer_efficiency = 0.25
 	}
@@ -1320,16 +1319,17 @@ maritime_ideas = {
 
 
 quality_ideas = { # change loc maybe?
-	# this group is still exclusively military-focused, unlike other groups that care more about other things in addition to a strong military
+	# this group is still exclusively military-focused (both army and navy), unlike other groups that care more about other things in addition to a strong military
 	# it got some numeric nerfs but that's it
 	category = MIL
 
 	bonus = {
-		discipline = 0.025
+		discipline = 0.035
 	}
 
 	private_to_marshal = {
 		infantry_power = 0.075
+		drill_decay_modifier = -0.1
 	}
 	quality_education = {
 		army_tradition = 0.5
@@ -1810,7 +1810,7 @@ naval_ideas = {
 
 	bonus = { 
 		global_naval_barrage_cost = -1
-		global_naval_engagement_modifier = 0.025 # SEVERELY nerfed
+		global_naval_engagement_modifier = 0.05 # SEVERELY nerfed
 	}
 
 	boarding_parties = {
