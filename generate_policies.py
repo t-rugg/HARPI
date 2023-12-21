@@ -7,8 +7,6 @@
 #
 # bans do not apply to legalist ideas policies, but only ONE policy can have a given banned modifier (so urbanization and infrastructure can't both have dev cost for example)
 
-# format: (adm, dip, mil, adm, dip, mil) 0-indexed
-
 # for each pair of ideas:
 #   select a category (adm, dip, or mil)
 #   if adm: select adm modifier [0 or 3] from among the pair, then select another adm or dip modifier [0, 1, 3, 4] from among the unchosen in the pair
@@ -18,11 +16,12 @@
 # in practice, this means mil policies will get exactly 1 military modifier, and nothing else will have any mil modifiers
 # and each policy will have a modifier from their category, and another from adm/dip
 
-# TODO: legacies? decide what to do with these. I think I'll just not give them any policies (legacies are already strong, no policies is a legitimate downside) but that seems really unfun
+# TODO: legacies? decide what to do with these. I think I'll just not give them any policies (legacies are already strong, no policies is a legitimate downside) but that seems really unfun. hmmmmmm
 
 import random
 random.seed("HARPI")
 
+# format: "idea_group_name": ("adm_modifier", "dip_modifier", "mil_modifier", "adm_modifier", "dip_modifier", "mil_modifier") 0-indexed
 adm = { # legalist ideas get special handling
 	"innovativeness_ideas": ("advisor_cost = -0.075", "trade_efficiency = 0.075", "infantry_power = 0.05", "global_institution_spread = 0.25", "reform_progress_growth = 0.10", "artillery_fire = 0.015"),
 	"religious_ideas": ("global_missionary_strength = 0.01", "tolerance_own = 1", "morale_damage = 0.05", "max_absolutism = 5", "reverse_relation_with_same_religion = 10", "fire_damage_received = -0.05"),
@@ -42,16 +41,16 @@ adm = { # legalist ideas get special handling
 dip = {
 	"spy_ideas": ("max_absolutism = 5", "dip_advisor_cost = -0.15", "leader_siege = 1", "interest = -0.5", "global_foreign_trade_power = 0.1", "harsh_treatment_cost = -0.2"),
 	"diplomatic_ideas": ("prestige = 1", "diplomatic_upkeep = 1", "cavalry_shock = 0.1", "tolerance_heathen = 1", "reduced_trade_penalty_on_non_main_tradenode = 0.25", "manpower_in_accepted_culture_provinces = 0.15"),
-	"trade_ideas": ("global_institution_spread = 0.25", "trade_efficiency = 0.075", "discipline = 0.025", "reform_progress_growth = 0.1", "native_assimilation = 0.25", "mercenary_discipline = 0.035"),
+	"trade_ideas": ("global_institution_spread = 0.25", "trade_efficiency = 0.075", "artillery_power = 0.05", "reform_progress_growth = 0.1", "native_assimilation = 0.25", "mercenary_discipline = 0.035"),
 	"exploration_ideas": ("build_cost = -0.075", "global_colonial_growth = 10", "reinforce_speed = 0.1", "treasure_fleet_income = 0.2", "navy_tradition_decay = -0.01", "shock_damage_received = -0.05"),
-	"maritime_ideas": ("global_trade_goods_size_modifier = 0.05", "ship_durability = 0.075", "leader_cost = -0.1", "advisor_cost = -0.075", "global_ship_trade_power = 0.15", "discipline = 0.025"),
+	"maritime_ideas": ("global_trade_goods_size_modifier = 0.05", "ship_durability = 0.075", "leader_cost = -0.1", "advisor_cost = -0.075", "global_ship_trade_power = 0.15", "infantry_power = 0.05"),
 	"court_ideas": ("advisor_cost = -0.075", "yearly_corruption = -0.075", "army_tradition_decay = -0.01", "stability_cost_modifier = -0.1", "spy_offence = 0.25", "vassal_forcelimit_bonus = 1"),
 	"influence_ideas": ("global_tax_modifier = 0.1", "improve_relation_modifier = 0.1", "infantry_power = 0.05", "infantry_cost = -0.075", "advisor_pool = 1", "land_attrition = -0.1"),
-	"stewardship_ideas": (),
+	"stewardship_ideas": ("interest = -0.5", "vassal_income = 0.25", "vassal_forcelimit_bonus = 1", "yearly_corruption = -0.075", "trade_steering = 0.25", "fire_damage_received = -0.05"),
 	"patronage_ideas": (),
 	"realist_ideas": (),
 	"integration_ideas": (),
-	"authority_ideas": (),
+	"authority_ideas": ("stability_cost_modifier = -0.1", "yearly_absolutism = 1", "army_tradition_decay = -0.01", "global_autonomy = -0.05", "unjustified_demands = -0.1", "discipline = 0.025"),
 	"imperialist_ideas": ("global_missionary_strength = 0.01", "trade_company_investment_cost = -0.075", "fire_damage = 0.05", "prestige_decay = -0.01", "navy_tradition_decay = -0.01", "siege_ability = 0.1"),
 	"adventure_ideas": ("years_of_nationalism = -5", "improve_relation_modifier = 0.1", "global_manpower_modifier = 0.10", "available_province_loot = 0.25", "prestige_from_land = 0.5", "shock_damage = 0.05"),
 	"monastic_ideas": ("missionary_maintenance_cost = -0.25", "tolerance_own = 1", "yearly_army_professionalism = 0.002", "global_prosperity_growth = 0.2", "advisor_pool = 1", "drill_decay_modifier = -0.2"),
@@ -114,7 +113,7 @@ blacklist = []
 loc = open("localisation/HARPI_policies_l_english.yml", "w", encoding="utf-8-sig")
 print("l_english:", file=loc)
 formatterLoc = ' {0}_{1}_policy: "{2}-{3} Policy"' # TODO
-formatterDesc = ' desc_{0}_{1}_policy: "Our embrace of {2} ideals, along with our rich understanding of the principles of {3}, allows us to enact this policy."'
+formatterDesc = ' desc_{0}_{1}_policy: "Our embrace of {2}, along with our rich understanding of the principles of {3}, allows us to enact this policy."'
 formatterDescLegalist = ' desc_{0}_legalist_ideas_policy: "Applying our Legalist approach to our {1} values allows us to enact this policy."'
 
 # WARNING: this might be the worst code i have ever written
