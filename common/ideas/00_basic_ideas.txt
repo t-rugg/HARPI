@@ -1510,7 +1510,7 @@ expansion_ideas = {
 		global_tariffs = 0.10
 	}
 	faster_colonists = {
-		global_colonial_growth = 15
+		global_colonial_growth = 20
 		envoy_travel_time = -0.2
 	}
 	vice_roys  = { #1.35
@@ -1523,7 +1523,7 @@ expansion_ideas = {
 		governing_capacity_modifier = 0.1
 	}
 	general_colonization_law  = { # moved back for balance pacing, colonist removed
-		colonist_placement_chance = 0.10
+		colonist_placement_chance = 0.05
 	}
 
 	ai_will_do = {

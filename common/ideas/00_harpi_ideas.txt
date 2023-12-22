@@ -158,6 +158,7 @@ reclamation_ideas = {
 	}
 	reclamation2 = {
 		colonists = 1
+		colonist_placement_chance = 0.025
 	}
 	reclamation3 = {
 		morale_damage_received = -0.1
@@ -1543,10 +1544,11 @@ governance_ideas = {
 }
 
 subterranean_ideas = { # this group is comparable to Reclamation Ideas but for the other Subterranean races
-                       # they can take it earlier than dwarves can take Reclamation (i.e. it's an alternative to Expansion)
+                       # it's more focused on cavern colonization than Reclamation
 	category = MIL
 
 	trigger = {
+		num_of_colonists = 1 # require the tag to already have a colonist; no free lunch!
 		OR = {
 			culture_group = goblin
 			culture_group = kobold
