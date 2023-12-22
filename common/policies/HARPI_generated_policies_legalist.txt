@@ -961,7 +961,7 @@ war_economy_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	global_regiment_cost = -0.075
+	global_regiment_cost = -0.1
 	reform_progress_growth = 0.05
 	
 	effect = {}

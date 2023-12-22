@@ -19,7 +19,7 @@
 # TODO: legacies? decide what to do with these. I think I'll just not give them any policies (legacies are already strong, no policies is a legitimate downside) but that seems really unfun. hmmmmmm
 
 import random
-# random.seed("HARPI") - we set seed on a per-idea-group basis now
+# random.seed("HARPI") - we set seed on a per-idea-group basis now, so that it's consistent even if we modify the idea group list!
 
 # format: "idea_group_name": ("adm_modifier", "dip_modifier", "mil_modifier", "adm_modifier", "dip_modifier", "mil_modifier") 0-indexed
 adm = { # legalist ideas get special handling
@@ -63,7 +63,7 @@ mil = {
 	"quality_ideas": ("production_efficiency = 0.075", "hull_size_modifier = 0.075", "drill_gain_modifier = 0.35", "prestige_decay = -0.01", "naval_morale_damage_received = 0.1", "army_tradition = 0.5"),
 	"quantity_ideas": ("global_trade_goods_size_modifier = 0.05", "sunk_ship_morale_hit_recieved = -0.1", "reinforce_speed = 0.1", "global_tax_modifier = 0.1", "vassal_forcelimit_bonus = 1", "leader_cost = -0.1"),\
 	"naval_ideas": ("global_prosperity_growth = 0.2", "global_foreign_trade_power = 0.1", "merc_leader_army_tradition = 0.2", "prestige_from_naval = 0.5", "sailor_maintenance_modifer = -0.1", "leader_land_manuever = 1"),
-	"mercenary_ideas": (),
+	"mercenary_ideas": ("inflation_reduction = 0.05", "trade_efficiency = 0.075", "infantry_power = 0.05", "advisor_pool = 1", "vassal_income = 0.25", "global_regiment_cost = -0.05"),
 	"reclamation_ideas": ("same_culture_advisor_cost = -0.1", "trade_steering = 0.25", "land_morale = 0.05", "global_missionary_strength = 0.01", "prestige = 1", "land_attrition = -0.1")
 }
 
@@ -208,7 +208,7 @@ legalist_mil = { # these aren't THAT much better than other mil policies; otherw
 	"naval_ideas": "ship_durability = 0.1",
 	"mercenary_ideas": "mercenary_discipline = 0.05",
 	"reclamation_ideas": "shock_damage_received = -0.075",
-	"war_economy_ideas": "global_regiment_cost = -0.075",
+	"war_economy_ideas": "global_regiment_cost = -0.1",
 	"advanced_armies_ideas": "fire_damage = 0.075",
 	"zealous_ideas": "morale_damage = 0.075",
 	# TODO

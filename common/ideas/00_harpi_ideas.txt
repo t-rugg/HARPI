@@ -1573,7 +1573,6 @@ subterranean_ideas = { # this group is comparable to Reclamation Ideas but for t
 	}
 	subterranean3 = {
 		global_colonial_growth = 15
-		native_assimilation = 0.75 # this is REALLY strong in the spine, maybe overtuned?
 	}
 	subterranean4 = { # Cavern Navigation
 		leader_land_manuever = 1
