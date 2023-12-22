@@ -13,5 +13,6 @@ NDefines.NCountry.INNOVATIVENESS_FIRST_PICKED_IDEA = 0.5 -- from 2 (low because 
 -- vanilla values that may be useful to change later
 NDefines.NCountry.MAX_ACTIVE_POLICIES = 5
 NDefines.NCountry.BASE_POSSIBLE_POLICIES = 3
+NDefines.NCountry.BASE_FREE_POLICIES = 1
 NDefines.NCountry.ABANDON_IDEAGROUP_REFUND = 0.10 -- might want to lower this? potentially abusable
                                                   -- tbh I'm not even sure why this is a mechanic, I might just make it 0
