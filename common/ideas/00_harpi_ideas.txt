@@ -179,7 +179,7 @@ reclamation_ideas = {
 	
 
 	ai_will_do = {
-		factor = 0.9
+		factor = 0.75
 
 		modifier = { # increase the chance Venail takes it, but only if they already have Exploration and Expansion
 			factor = 10
