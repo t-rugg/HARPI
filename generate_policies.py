@@ -19,7 +19,7 @@
 # TODO: legacies? decide what to do with these. I think I'll just not give them any policies (legacies are already strong, no policies is a legitimate downside) but that seems really unfun. hmmmmmm
 
 import random
-random.seed("HARPI")
+# random.seed("HARPI") - we set seed on a per-idea-group basis now
 
 # format: "idea_group_name": ("adm_modifier", "dip_modifier", "mil_modifier", "adm_modifier", "dip_modifier", "mil_modifier") 0-indexed
 adm = { # legalist ideas get special handling
@@ -47,7 +47,7 @@ dip = {
 	"court_ideas": ("advisor_cost = -0.075", "yearly_corruption = -0.075", "army_tradition_decay = -0.01", "stability_cost_modifier = -0.1", "spy_offence = 0.25", "vassal_forcelimit_bonus = 1"),
 	"influence_ideas": ("global_tax_modifier = 0.1", "improve_relation_modifier = 0.1", "infantry_power = 0.05", "infantry_cost = -0.075", "advisor_pool = 1", "land_attrition = -0.1"),
 	"stewardship_ideas": ("interest = -0.5", "vassal_income = 0.25", "vassal_forcelimit_bonus = 1", "yearly_corruption = -0.075", "trade_steering = 0.25", "fire_damage_received = -0.05"),
-	"patronage_ideas": ("global_prosperity_growth = 0.2", "dip_advisor_cost = -0.15", "leader_land_manuever = 1", "advisor_pool = 1", "navy_tradition_decay = -0.01", "mercenary_discipline = 0.035"),
+	"patronage_ideas": ("global_prosperity_growth = 0.2", "dip_advisor_cost = -0.15", "leader_land_siege = 1", "advisor_pool = 1", "navy_tradition_decay = -0.01", "mercenary_discipline = 0.035"),
 	"realist_ideas": ("global_unrest = -0.075", "diplomatic_reputation = 1", "backrow_artillery_damage = 0.05", "inflation_reduction = 0.05", "liberty_desire_from_subject_development = -0.15", "harsh_treatment_cost = -0.2"),
 	"integration_ideas": ("global_tax_modifier = 0.1", "envoy_travel_time = -0.33", "manpower_in_true_faith_provinces = 0.15", "global_missionary_strength = 0.01", "global_autonomy = -0.05", "land_morale = 0.05"),
 	"authority_ideas": ("stability_cost_modifier = -0.1", "yearly_absolutism = 1", "army_tradition_decay = -0.01", "global_autonomy = -0.05", "unjustified_demands = -0.1", "discipline = 0.025"),
@@ -60,7 +60,10 @@ dip = {
 mil = {
 	"offensive_ideas": ("available_province_loot = 0.25", "heavy_ship_cost = -0.1", "shock_damage = 0.05", "global_monthly_devastation = -0.05", "trade_company_investment_cost = -0.075", "artillery_barrage_cost = -0.25"),
 	"defensive_ideas": ("build_time = -0.075", "improve_relation_modifier = 0.1", "shock_damage_received = -0.05", "global_prosperity_growth = 0.2", "disengagement_chance = 0.1", "manpower_in_own_culture_provinces = 0.15"),
-	"quality_ideas": ("global_trade_goods_size_modifier = 0.05", "hull_size_modifier = 0.075", "drill_gain_modifier = 0.35", "prestige_decay = -0.01", "naval_morale_damage_received = 0.1", "army_tradition = 0.5"),
+	"quality_ideas": ("production_efficiency = 0.075", "hull_size_modifier = 0.075", "drill_gain_modifier = 0.35", "prestige_decay = -0.01", "naval_morale_damage_received = 0.1", "army_tradition = 0.5"),
+	"quantity_ideas": ("global_trade_goods_size_modifier = 0.05", "sunk_ship_morale_hit_recieved = -0.1", "reinforce_speed = 0.1", "global_tax_modifier = 0.1", "vassal_forcelimit_bonus = 1", "leader_cost = -0.1"),\
+	"naval_ideas": ("global_prosperity_growth = 0.2", "global_foreign_trade_power = 0.1", "merc_leader_army_tradition = 0.2", "prestige_from_naval = 0.5", "sailor_maintenance_modifer = -0.1", "leader_land_manuever = 1"),
+	"mercenary_ideas": (),
 	"reclamation_ideas": ("same_culture_advisor_cost = -0.1", "trade_steering = 0.25", "land_morale = 0.05", "global_missionary_strength = 0.01", "prestige = 1", "land_attrition = -0.1")
 }
 
@@ -129,6 +132,7 @@ with open("common/policies/HARPI_generated_policies.txt", "w", encoding="windows
 		for group2 in ideas:
 			if group2 in blacklist or ideas[group2] == ():
 				continue
+			random.seed("HARPI" + group1 + group2)
 			cat2 = getCategory(group2)
 			if (cat1 != cat2):
 				# get a random modifier from the appropriate category
