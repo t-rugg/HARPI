@@ -361,7 +361,8 @@ innovativeness_ideas = {
 		war_exhaustion = -0.03
 	}
 	expanded_policies = {
-		free_adm_policy = 1 # big nerf
+		free_policy = 1 # should this be nerfed? maybe but i made policies weaker. it's proooobably fine
+		                # at the very least, it's a very fun modifier, so
 	}
 
 	ai_will_do = {
