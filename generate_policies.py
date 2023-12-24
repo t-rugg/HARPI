@@ -16,7 +16,7 @@
 # in practice, this means mil policies will get exactly 1 military modifier, and nothing else will have any mil modifiers
 # and each policy will have a modifier from their category, and another from adm/dip
 
-# TODO: legacies? decide what to do with these. I think I'll just not give them any policies (legacies are already strong, no policies is a legitimate downside) but that seems really unfun. hmmmmmm
+# TODO: legacies
 
 import random
 # random.seed("HARPI") - we set seed on a per-idea-group basis now, so that it's consistent even if we modify the idea group list!
@@ -36,7 +36,8 @@ adm = { # legalist ideas get special handling
 	"federalist_ideas": ("state_maintenance_modifier = -0.15", "diplomatic_reputation = 1", "discipline = 0.035", "vassal_income = 0.25", "reduced_liberty_desire_on_same_continent = 10", "defensiveness = 0.15"),
 	"governance_ideas": ("global_tax_modifier = 0.1", "global_own_trade_power = 0.1", "reserves_organisation = 0.1", "years_of_nationalism = -5", "diplomatic_upkeep = 1", "reinforce_speed = 0.1"),
 	"metallurgy_ideas": ("prestige = 1", "caravan_power = 0.25", "fire_damage = 0.05", "monthly_gold_inflation_modifier = -0.25", "global_prov_trade_power_modifier = 0.1", "infantry_fire = 0.075"),
-	"parliamentary_ideas": ("all_estate_loyalty_equilibrium = 0.02", "diplomatic_reputation = 1", "manpower_recovery_speed = 0.10", "advisor_pool = 1", "trade_company_investment_cost = -0.075", "backrow_artillery_damage = 0.05")
+	"parliamentary_ideas": ("all_estate_loyalty_equilibrium = 0.02", "diplomatic_reputation = 1", "manpower_recovery_speed = 0.10", "advisor_pool = 1", "trade_company_investment_cost = -0.075", "backrow_artillery_damage = 0.05"),
+	"castanor_legacy": ("global_missionary_strength = 0.01", "tolerance_own = 1", "infantry_power = 0.05", "stability_cost_modifier = -0.1", "liberty_desire_from_subject_development = -0.1", "leader_cost = -0.1"),
 }
 dip = {
 	"spy_ideas": ("max_absolutism = 5", "dip_advisor_cost = -0.15", "leader_siege = 1", "interest = -0.5", "global_foreign_trade_power = 0.1", "harsh_treatment_cost = -0.2"),
@@ -48,7 +49,7 @@ dip = {
 	"influence_ideas": ("global_tax_modifier = 0.1", "improve_relation_modifier = 0.1", "infantry_power = 0.05", "infantry_cost = -0.075", "advisor_pool = 1", "land_attrition = -0.1"),
 	"stewardship_ideas": ("interest = -0.5", "vassal_income = 0.25", "vassal_forcelimit_bonus = 1", "yearly_corruption = -0.075", "trade_steering = 0.25", "fire_damage_received = -0.05"),
 	"patronage_ideas": ("global_prosperity_growth = 0.2", "dip_advisor_cost = -0.15", "leader_land_siege = 1", "advisor_pool = 1", "navy_tradition_decay = -0.01", "mercenary_discipline = 0.035"),
-	"realist_ideas": ("global_unrest = -0.075", "diplomatic_reputation = 1", "backrow_artillery_damage = 0.05", "inflation_reduction = 0.05", "liberty_desire_from_subject_development = -0.15", "harsh_treatment_cost = -0.2"),
+	"realist_ideas": ("global_unrest = -0.075", "diplomatic_reputation = 1", "backrow_artillery_damage = 0.05", "inflation_reduction = 0.05", "liberty_desire_from_subject_development = -0.1", "harsh_treatment_cost = -0.2"),
 	"integration_ideas": ("global_tax_modifier = 0.1", "envoy_travel_time = -0.33", "manpower_in_true_faith_provinces = 0.15", "global_missionary_strength = 0.01", "global_autonomy = -0.05", "land_morale = 0.05"),
 	"authority_ideas": ("stability_cost_modifier = -0.1", "yearly_absolutism = 1", "army_tradition_decay = -0.01", "global_autonomy = -0.05", "unjustified_demands = -0.1", "discipline = 0.025"),
 	"imperialist_ideas": ("religious_unity = 0.075", "trade_company_investment_cost = -0.075", "fire_damage = 0.05", "prestige_decay = -0.01", "navy_tradition_decay = -0.01", "siege_ability = 0.1"),
@@ -165,7 +166,8 @@ with open("common/policies/HARPI_generated_policies.txt", "w", encoding="windows
 # each modifier needs to (roughly) fit its category
 # in addition, each modifier can only occur ONCE
 # reform progress is BANNED because all policies with legalist receive a tiny 0.05 reform progress growth
-				
+# TODO: legacies? unsure what to do with these. maybe just lots of reform progress? maybe something funny like 2 free policies of that category? idk
+
 legalist_adm = {
 	"innovativeness_ideas": "technology_cost = -0.1",
 	"religious_ideas": "missionaries = 1",
