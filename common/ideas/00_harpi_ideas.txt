@@ -1148,7 +1148,7 @@ parliamentary_ideas = {
 	category = ADM
 
 	bonus = {
-		yearly_corruption = -0.1
+		yearly_corruption = -0.05
 		legitimacy = 1
 		republican_tradition = 0.3
 		devotion = 1

@@ -56,6 +56,7 @@ dip = {
 	"monastic_ideas": ("missionary_maintenance_cost = -0.25", "tolerance_own = 1", "yearly_army_professionalism = 0.002", "global_prosperity_growth = 0.2", "advisor_pool = 1", "drill_decay_modifier = -0.2"),
 	"lawful_ideas": ("global_prosperity_growth = 0.2", "monthly_splendor = 1", "discipline = 0.025", "global_autonomy = -0.05", "global_ship_repair = 0.1", "leader_land_fire = 1"),
 	"chaotic_ideas": ("overextension_impact_modifier = -0.05", "unjustified_demands = -0.1", "land_morale = 0.05", "religious_unity = 0.075", "naval_tradition_from_battle = 0.5", "cavalry_fire = 0.35"),
+	"dwarf_legacy": ("build_cost = -0.075", "caravan_power = 0.25", "army_tradition_decay = -0.01", "global_unrest = -0.075", "reverse_relation_with_same_religion = 10", "defensiveness = 0.15")
 }
 mil = {
 	"offensive_ideas": ("available_province_loot = 0.25", "heavy_ship_cost = -0.1", "shock_damage = 0.05", "global_monthly_devastation = -0.05", "trade_company_investment_cost = -0.075", "artillery_barrage_cost = -0.25"),
@@ -64,7 +65,8 @@ mil = {
 	"quantity_ideas": ("global_trade_goods_size_modifier = 0.05", "sunk_ship_morale_hit_recieved = -0.1", "reinforce_speed = 0.1", "global_tax_modifier = 0.1", "vassal_forcelimit_bonus = 1", "leader_cost = -0.1"),\
 	"naval_ideas": ("global_prosperity_growth = 0.2", "global_foreign_trade_power = 0.1", "merc_leader_army_tradition = 0.2", "prestige_from_naval = 0.5", "sailor_maintenance_modifer = -0.1", "leader_land_manuever = 1"),
 	"mercenary_ideas": ("inflation_reduction = 0.05", "trade_efficiency = 0.075", "infantry_power = 0.05", "advisor_pool = 1", "vassal_income = 0.25", "global_regiment_cost = -0.05"),
-	"reclamation_ideas": ("same_culture_advisor_cost = -0.1", "trade_steering = 0.25", "land_morale = 0.05", "global_missionary_strength = 0.01", "prestige = 1", "land_attrition = -0.1")
+	"reclamation_ideas": ("same_culture_advisor_cost = -0.1", "trade_steering = 0.25", "land_morale = 0.05", "global_missionary_strength = 0.01", "prestige = 1", "land_attrition = -0.1"),
+	"war_economy_ideas": (),
 }
 
 ideas = adm | dip | mil

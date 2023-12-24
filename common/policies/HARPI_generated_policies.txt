@@ -423,6 +423,31 @@ innovativeness_ideas_chaotic_ideas_policy = {
 }
 
 
+innovativeness_ideas_dwarf_legacy_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = innovativeness_ideas
+		has_idea_group = dwarf_legacy
+	}
+
+	allow = {
+		full_idea_group = innovativeness_ideas
+		full_idea_group = dwarf_legacy
+	}
+	
+	build_cost = -0.075
+	advisor_cost = -0.075
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 innovativeness_ideas_offensive_ideas_policy = {
 	monarch_power = MIL
 
@@ -1013,6 +1038,31 @@ religious_ideas_chaotic_ideas_policy = {
 	
 	tolerance_own = 1
 	unjustified_demands = -0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+religious_ideas_dwarf_legacy_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = religious_ideas
+		has_idea_group = dwarf_legacy
+	}
+
+	allow = {
+		full_idea_group = religious_ideas
+		full_idea_group = dwarf_legacy
+	}
+	
+	reverse_relation_with_same_religion = 10
+	max_absolutism = 5
 	
 	effect = {}
 	removed_effect = {}
@@ -1623,6 +1673,31 @@ economic_ideas_chaotic_ideas_policy = {
 }
 
 
+economic_ideas_dwarf_legacy_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = economic_ideas
+		has_idea_group = dwarf_legacy
+	}
+
+	allow = {
+		full_idea_group = economic_ideas
+		full_idea_group = dwarf_legacy
+	}
+	
+	build_cost = -0.075
+	global_unrest = -0.075
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 economic_ideas_offensive_ideas_policy = {
 	monarch_power = ADM
 
@@ -2213,6 +2288,31 @@ expansion_ideas_chaotic_ideas_policy = {
 	
 	unjustified_demands = -0.1
 	religious_unity = 0.075
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+expansion_ideas_dwarf_legacy_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = expansion_ideas
+		has_idea_group = dwarf_legacy
+	}
+
+	allow = {
+		full_idea_group = expansion_ideas
+		full_idea_group = dwarf_legacy
+	}
+	
+	reverse_relation_with_same_religion = 10
+	trade_steering = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -2823,6 +2923,31 @@ administrative_ideas_chaotic_ideas_policy = {
 }
 
 
+administrative_ideas_dwarf_legacy_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = administrative_ideas
+		has_idea_group = dwarf_legacy
+	}
+
+	allow = {
+		full_idea_group = administrative_ideas
+		full_idea_group = dwarf_legacy
+	}
+	
+	adm_advisor_cost = -0.15
+	reverse_relation_with_same_religion = 10
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 administrative_ideas_offensive_ideas_policy = {
 	monarch_power = MIL
 
@@ -3413,6 +3538,31 @@ humanist_ideas_chaotic_ideas_policy = {
 	
 	global_unrest  = -0.75
 	naval_tradition_from_battle = 0.5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+humanist_ideas_dwarf_legacy_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = dwarf_legacy
+	}
+
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = dwarf_legacy
+	}
+	
+	build_cost = -0.075
+	reverse_relation_with_same_religion = 10
 	
 	effect = {}
 	removed_effect = {}
@@ -4023,6 +4173,31 @@ infrastructure_ideas_chaotic_ideas_policy = {
 }
 
 
+infrastructure_ideas_dwarf_legacy_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = infrastructure_ideas
+		has_idea_group = dwarf_legacy
+	}
+
+	allow = {
+		full_idea_group = infrastructure_ideas
+		full_idea_group = dwarf_legacy
+	}
+	
+	build_time = -0.075
+	build_cost = -0.075
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 infrastructure_ideas_offensive_ideas_policy = {
 	monarch_power = MIL
 
@@ -4613,6 +4788,31 @@ extraction_ideas_chaotic_ideas_policy = {
 	
 	overextension_impact_modifier = -0.05
 	religious_unity = 0.075
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+extraction_ideas_dwarf_legacy_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = extraction_ideas
+		has_idea_group = dwarf_legacy
+	}
+
+	allow = {
+		full_idea_group = extraction_ideas
+		full_idea_group = dwarf_legacy
+	}
+	
+	caravan_power = 0.25
+	vassal_income = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -5223,6 +5423,31 @@ urbanization_ideas_chaotic_ideas_policy = {
 }
 
 
+urbanization_ideas_dwarf_legacy_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = urbanization_ideas
+		has_idea_group = dwarf_legacy
+	}
+
+	allow = {
+		full_idea_group = urbanization_ideas
+		full_idea_group = dwarf_legacy
+	}
+	
+	global_prosperity_growth = 0.2
+	caravan_power = 0.25
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 urbanization_ideas_offensive_ideas_policy = {
 	monarch_power = ADM
 
@@ -5813,6 +6038,31 @@ militarist_ideas_chaotic_ideas_policy = {
 	
 	global_unrest = -0.075
 	unjustified_demands = -0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+militarist_ideas_dwarf_legacy_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = militarist_ideas
+		has_idea_group = dwarf_legacy
+	}
+
+	allow = {
+		full_idea_group = militarist_ideas
+		full_idea_group = dwarf_legacy
+	}
+	
+	mil_advisor_cost = -0.15
+	reverse_relation_with_same_religion = 10
 	
 	effect = {}
 	removed_effect = {}
@@ -6423,6 +6673,31 @@ federalist_ideas_chaotic_ideas_policy = {
 }
 
 
+federalist_ideas_dwarf_legacy_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = federalist_ideas
+		has_idea_group = dwarf_legacy
+	}
+
+	allow = {
+		full_idea_group = federalist_ideas
+		full_idea_group = dwarf_legacy
+	}
+	
+	reverse_relation_with_same_religion = 10
+	reduced_liberty_desire_on_same_continent = 10
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 federalist_ideas_offensive_ideas_policy = {
 	monarch_power = ADM
 
@@ -7012,6 +7287,31 @@ governance_ideas_chaotic_ideas_policy = {
 	}
 	
 	overextension_impact_modifier = -0.05
+	global_own_trade_power = 0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+governance_ideas_dwarf_legacy_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = governance_ideas
+		has_idea_group = dwarf_legacy
+	}
+
+	allow = {
+		full_idea_group = governance_ideas
+		full_idea_group = dwarf_legacy
+	}
+	
+	reverse_relation_with_same_religion = 10
 	global_own_trade_power = 0.1
 	
 	effect = {}
@@ -7623,6 +7923,31 @@ metallurgy_ideas_chaotic_ideas_policy = {
 }
 
 
+metallurgy_ideas_dwarf_legacy_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = metallurgy_ideas
+		has_idea_group = dwarf_legacy
+	}
+
+	allow = {
+		full_idea_group = metallurgy_ideas
+		full_idea_group = dwarf_legacy
+	}
+	
+	monthly_gold_inflation_modifier = -0.25
+	prestige = 1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 metallurgy_ideas_offensive_ideas_policy = {
 	monarch_power = MIL
 
@@ -8213,6 +8538,31 @@ parliamentary_ideas_chaotic_ideas_policy = {
 	
 	overextension_impact_modifier = -0.05
 	naval_tradition_from_battle = 0.5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+parliamentary_ideas_dwarf_legacy_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = parliamentary_ideas
+		has_idea_group = dwarf_legacy
+	}
+
+	allow = {
+		full_idea_group = parliamentary_ideas
+		full_idea_group = dwarf_legacy
+	}
+	
+	reverse_relation_with_same_religion = 10
+	diplomatic_reputation = 1
 	
 	effect = {}
 	removed_effect = {}
@@ -11363,6 +11713,181 @@ chaotic_ideas_reclamation_ideas_policy = {
 	
 	land_attrition = -0.1
 	naval_tradition_from_battle = 0.5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+dwarf_legacy_offensive_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = dwarf_legacy
+		has_idea_group = offensive_ideas
+	}
+
+	allow = {
+		full_idea_group = dwarf_legacy
+		full_idea_group = offensive_ideas
+	}
+	
+	reverse_relation_with_same_religion = 10
+	trade_company_investment_cost = -0.075
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+dwarf_legacy_defensive_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = dwarf_legacy
+		has_idea_group = defensive_ideas
+	}
+
+	allow = {
+		full_idea_group = dwarf_legacy
+		full_idea_group = defensive_ideas
+	}
+	
+	improve_relation_modifier = 0.1
+	global_unrest = -0.075
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+dwarf_legacy_quality_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = dwarf_legacy
+		has_idea_group = quality_ideas
+	}
+
+	allow = {
+		full_idea_group = dwarf_legacy
+		full_idea_group = quality_ideas
+	}
+	
+	army_tradition = 0.5
+	build_cost = -0.075
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+dwarf_legacy_quantity_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = dwarf_legacy
+		has_idea_group = quantity_ideas
+	}
+
+	allow = {
+		full_idea_group = dwarf_legacy
+		full_idea_group = quantity_ideas
+	}
+	
+	vassal_forcelimit_bonus = 1
+	build_cost = -0.075
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+dwarf_legacy_naval_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = dwarf_legacy
+		has_idea_group = naval_ideas
+	}
+
+	allow = {
+		full_idea_group = dwarf_legacy
+		full_idea_group = naval_ideas
+	}
+	
+	defensiveness = 0.15
+	sailor_maintenance_modifer = -0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+dwarf_legacy_mercenary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = dwarf_legacy
+		has_idea_group = mercenary_ideas
+	}
+
+	allow = {
+		full_idea_group = dwarf_legacy
+		full_idea_group = mercenary_ideas
+	}
+	
+	defensiveness = 0.15
+	vassal_income = 0.25
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+dwarf_legacy_reclamation_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = dwarf_legacy
+		has_idea_group = reclamation_ideas
+	}
+
+	allow = {
+		full_idea_group = dwarf_legacy
+		full_idea_group = reclamation_ideas
+	}
+	
+	land_morale = 0.05
+	build_cost = -0.075
 	
 	effect = {}
 	removed_effect = {}
