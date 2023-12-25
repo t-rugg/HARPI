@@ -67,7 +67,7 @@ mil = {
 	"naval_ideas": ("global_prosperity_growth = 0.2", "global_foreign_trade_power = 0.1", "merc_leader_army_tradition = 0.2", "prestige_from_naval = 0.5", "sailor_maintenance_modifer = -0.1", "leader_land_manuever = 1"),
 	"mercenary_ideas": ("inflation_reduction = 0.05", "trade_efficiency = 0.075", "infantry_power = 0.05", "advisor_pool = 1", "vassal_income = 0.25", "global_regiment_cost = -0.05"),
 	"reclamation_ideas": ("same_culture_advisor_cost = -0.1", "trade_steering = 0.25", "land_morale = 0.05", "global_missionary_strength = 0.01", "prestige = 1", "land_attrition = -0.1"),
-	"war_economy_ideas": (),
+	"war_economy_ideas": ("interest = -0.5", "naval_tradition_from_battle = 0.5", "reserves_organisation = 0.1", "inflation_reduction = 0.05", "global_monthly_devastation = -0.05", "morale_damage_received = -0.05")
 }
 
 ideas = adm | dip | mil
@@ -135,7 +135,8 @@ with open("common/policies/HARPI_generated_policies.txt", "w", encoding="windows
 		for group2 in ideas:
 			if group2 in blacklist or ideas[group2] == ():
 				continue
-			random.seed("HARPI" + group1 + group2)
+			random.seed("HARPI" + group1 + group2) # ensures predictable outcomes so adding/removing an idea group
+			                                       # doesn't ruin every policy that comes "after" that idea group
 			cat2 = getCategory(group2)
 			if (cat1 != cat2):
 				# get a random modifier from the appropriate category
