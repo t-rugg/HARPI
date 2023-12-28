@@ -716,11 +716,12 @@ integration_ideas = {
 	category = DIP
 
 	bonus = {
-		culture_conversion_time = -0.25
+		free_dip_policy = 1
 	}
 
 	integration1 = {
 		culture_conversion_cost = -0.5
+		culture_conversion_time = -0.25
 	}
 	integration2 = {
 		years_of_nationalism = -5
@@ -733,7 +734,7 @@ integration_ideas = {
 		global_missionary_strength = 0.02
 	}
 	integration5 = {
-		diplomatic_annexation_cost = -0.1
+		diplomatic_annexation_cost = -0.15
 	}
 	integration6 = {
 		manpower_in_own_culture_provinces = 0.2
