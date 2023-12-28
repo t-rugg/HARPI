@@ -292,7 +292,7 @@ theocracy_gov_ideas = {
 	}
 }
 
-indigenous_ideas = {
+indigenous_ideas = { # TODO
 	category = MIL
 
 	bonus = {
@@ -571,6 +571,7 @@ diplomatic_ideas = {
 
 	bonus = { # reduced_stab_impacts moved to realist
 		monarch_diplomatic_power = 1
+		reasons_to_elect = 10
 	}
 	
 	grand_banquets = {
@@ -582,8 +583,8 @@ diplomatic_ideas = {
 	cabinet = {
 		diplomatic_upkeep = 1
 	}
-	flexible_negotiation = { # CAREFUL
-		province_warscore_cost = -0.1
+	flexible_negotiation = { # rework
+		diplomats = 1
 	}
 	experienced_diplomats  = {
 		diplomatic_reputation = 1
@@ -593,7 +594,7 @@ diplomatic_ideas = {
 		envoy_travel_time = -0.2
 	}
 	diplomatic_corps = {
-		diplomats = 1
+		free_dip_policy = 1
 	}
 
 	ai_will_do = {
@@ -625,7 +626,7 @@ offensive_ideas = {
 	category = MIL
 
 	bonus = {# this is, like, half the reason to take the group in SP
-		province_warscore_cost = -0.1
+		province_warscore_cost = -0.075
 	}
 
 	bayonet_leaders = { # leader pips are mostly removed from offensive

@@ -4,7 +4,8 @@ influence_ideas = {
 	category = DIP
 
 	bonus = {
-		state_governing_cost = -0.1 # annexing a subject gives full state cores, so..
+		num_accepted_cultures = 1
+		can_transfer_vassal_wargoal = yes
 	}
 
 	influence1 = {
@@ -27,10 +28,9 @@ influence_ideas = {
 	}
 	buffer_states = {
 		allow_client_states = yes
-		ae_impact = -0.05
 	}
 	influence7 = {
-		can_transfer_vassal_wargoal = yes
+		ae_impact = -0.1
 	}
 
 	ai_will_do = {
@@ -158,13 +158,13 @@ reclamation_ideas = {
 	}
 	reclamation2 = {
 		colonists = 1
-		colonist_placement_chance = 0.025
+		colonist_placement_chance = 0.05
 	}
 	reclamation3 = {
 		morale_damage_received = -0.1
 	}
 	reclamation4 = {
-		warscore_cost_vs_other_religion = -0.1
+		warscore_cost_vs_other_religion = -0.075
 	}
 	reclamation5 = {
 		land_forcelimit_modifier = 0.15
@@ -716,7 +716,7 @@ integration_ideas = {
 	category = DIP
 
 	bonus = {
-		free_dip_policy = 1
+		state_governing_cost = -0.1 # annexing a subject gives full state cores, so..
 	}
 
 	integration1 = {
@@ -858,7 +858,7 @@ zealous_ideas = {
 		shock_damage = 0.075
 	}
 	zealous3 = {
-		warscore_cost_vs_other_religion = -0.1
+		warscore_cost_vs_other_religion = -0.075
     }
 	zealous4 = {
 		recover_army_morale_speed = 0.1
@@ -1477,7 +1477,7 @@ imperialist_ideas = {
 		envoy_travel_time = -0.2
 	}
 	imperialist7 = {
-		province_warscore_cost = -0.1
+		province_warscore_cost = -0.075
 	}
 
 	ai_will_do = {
@@ -1629,7 +1629,7 @@ adventure_ideas = {
 		infantry_cost = -0.1
 	}
 	adventure2 = { # a home without a homeland
-		province_warscore_cost = -0.1
+		province_warscore_cost = -0.075
 		migration_cost = -0.25
 	}
 	adventure3 = { # promotion of esteemed adventurers
@@ -1934,7 +1934,6 @@ chaotic_ideas = {
 		yearly_corruption = -0.15
 	}
 	chaotic3 = {
-		province_warscore_cost = -0.1
 		war_exhaustion = -0.03
 	}
 	chaotic4 = {
