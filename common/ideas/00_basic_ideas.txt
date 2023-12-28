@@ -341,7 +341,7 @@ innovativeness_ideas = {
 	}
 
 	empiricism = {
-		innovativeness_gain = 0.5 # should this be nerfed? might screw with MT balance....
+		innovativeness_gain = 0.4 # slight nerf
 	}
 	patron_of_art  = {
 		prestige_decay = -0.01
