@@ -1958,13 +1958,21 @@ chaotic_ideas = {
 	ai_will_do = {
 		factor = 0.4
 		modifier = {
-			factor = 1.5
+			factor = 1.3
 			has_country_modifier = monstrous_nation
 			NOT = {tag = R62} # the Command
 		}
 		modifier = {
-			factor = 1.3
+			factor = 1.6
 			culture_is_goblin = yes
+		}
+		modifier = {
+			factor = 1.1
+			culture_is_gnomish = yes
+		}
+		modifier = {
+			factor = 1.2
+			culture_is_kobold = yes
 		}
 	}
 }
