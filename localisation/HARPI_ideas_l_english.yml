@@ -126,6 +126,20 @@
  artificery7_desc:0 "filler"
 
  authority_ideas:0 "Authority Ideas"
+ authority1:0 "Dominate the Court"
+ authority1_desc:0 "For too long, we have been held back by the squabbling of local power-holders, entrenched interests, and various other institutions more concerned with their own self-interest than the good of the realm. We must take the reins directly in order to pull these decadent influences into a better era, one where they work to our government's benefit rather than its detriment. Of course, they'll engage in their typical grumbling and complaining, but we can weather their criticisms."
+ authority2:0 "Elevate Experts"
+ authority2_desc:0 "By maintaining a tighter grip on our court, we can ensure that particularly talented and useful thinkers have more sway in our realm. Of course, they will reward us handsomely, both through reciprocal favours and their own competence.\n—"
+ authority3:0 "filler"
+ authority3_desc:0 "filler"
+ authority4:0 "filler"
+ authority4_desc:0 "filler"
+ authority5:0 "filler"
+ authority5_desc:0 "filler"
+ authority6:0 "filler"
+ authority6_desc:0 "filler"
+ authority7:0 "filler"
+ authority7_desc:0 "filler"
 
  zealous_ideas:0 "Zealous Ideas"
 

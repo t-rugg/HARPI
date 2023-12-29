@@ -233,7 +233,7 @@ patronage_ideas = {
 		advisor_pool = 1
 	}
 	patronage3 = {
-		all_estate_loyalty_equilibrium = 0.03
+		all_estate_loyalty_equilibrium = 0.025
 		church_privilege_slots = 1
 		burghers_privilege_slots = 1
 		eunuchs_anb_privilege_slots = 1
@@ -929,14 +929,14 @@ authority_ideas = {
 
 	authority1 = { # dominate the court
 		max_absolutism = 5
-		all_estate_influence_modifier = -0.1
-		all_estate_loyalty_equilibrium = -0.05
+		all_estate_loyalty_equilibrium = -0.025
+		all_estate_influence_modifier = -0.05
 	}
 	authority2 = { # elevate experts
 		free_leader_pool = 1
-		mages_loyalty_modifier = 0.075
+		mages_loyalty_modifier = 0.05
 		mages_influence_modifier = 0.1
-		artificers_loyalty_modifier = 0.075
+		artificers_loyalty_modifier = 0.05
 		artificers_influence_modifier = 0.1
 	}
 	authority3 = {
