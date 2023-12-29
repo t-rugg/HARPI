@@ -295,3 +295,41 @@ remove_oak_forests_for_ships_modifiers = {
 	remove_country_modifier = oak_forests_for_ships_modifier3
 	remove_country_modifier = oak_forests_for_ships_modifier4
 }
+
+harpi_chaotic2_national_focus_changed = {
+	remove_country_modifier = chaotic2_adm_focus
+	remove_country_modifier = chaotic2_dip_focus
+	remove_country_modifier = chaotic2_mil_focus
+	if = {
+		limit = {
+			has_idea = chaotic2
+		}
+		if = {
+			limit = {
+				national_focus = ADM
+			}
+			add_country_modifier = {
+				name = chaotic2_adm_focus
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				national_focus = DIP
+			}
+			add_country_modifier = {
+				name = chaotic2_dip_focus
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				national_focus = MIL
+			}
+			add_country_modifier = {
+				name = chaotic2_mil_focus
+				duration = -1
+			}
+		}
+	}
+}

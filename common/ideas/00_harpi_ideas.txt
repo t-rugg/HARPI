@@ -1883,7 +1883,7 @@ lawful_ideas = {
 	}
 	lawful6 = {
 		interest = -0.75
-		discipline = 0.025
+		discipline = 0.05
 	}
 	lawful7 = {
 		max_absolutism = 10
@@ -1927,14 +1927,17 @@ chaotic_ideas = {
 	}
 
 	chaotic1 = {
-		national_focus_years = -5
+		yearly_corruption = -0.15
 		all_estate_influence_modifier = -0.05
 	}
 	chaotic2 = {	
-		yearly_corruption = -0.15
+		national_focus_years = -5
+		# gain 1 free policy of your national focus type
+		# TODO: loc
 	}
 	chaotic3 = {
 		war_exhaustion = -0.03
+		allowed_rajput_fraction = 0.1 # artificers
 	}
 	chaotic4 = {
 		tolerance_heretic = 2

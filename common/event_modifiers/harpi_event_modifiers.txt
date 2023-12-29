@@ -105,3 +105,15 @@ oak_forests_for_ships_modifier3 = {
 oak_forests_for_ships_modifier4 = {
 	global_trade_goods_size_modifier = 0.2
 }
+
+chaotic2_adm_focus = {
+	free_adm_policy = 1
+}
+
+chaotic2_dip_focus = {
+	free_dip_policy = 1
+}
+
+chaotic2_mil_focus = {
+	free_mil_policy = 1
+}
