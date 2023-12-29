@@ -41,7 +41,7 @@ adm = { # legalist ideas get special handling
 }
 dip = {
 	"spy_ideas": ("max_absolutism = 5", "dip_advisor_cost = -0.15", "leader_siege = 1", "interest = -0.5", "global_foreign_trade_power = 0.1", "harsh_treatment_cost = -0.2"),
-	"diplomatic_ideas": ("prestige = 1", "diplomatic_upkeep = 1", "cavalry_shock = 0.1", "tolerance_heathen = 1", "reduced_trade_penalty_on_non_main_tradenode = 0.25", "manpower_in_accepted_culture_provinces = 0.15"),
+	"diplomatic_ideas": ("prestige = 1", "diplomatic_upkeep = 1", "cavalry_shock = 0.15", "tolerance_heathen = 1", "reduced_trade_penalty_on_non_main_tradenode = 0.25", "manpower_in_accepted_culture_provinces = 0.15"),
 	"trade_ideas": ("global_institution_spread = 0.25", "trade_efficiency = 0.075", "artillery_power = 0.05", "reform_progress_growth = 0.1", "native_assimilation = 0.25", "mercenary_discipline = 0.035"),
 	"exploration_ideas": ("build_cost = -0.075", "global_colonial_growth = 10", "reinforce_speed = 0.1", "treasure_fleet_income = 0.2", "global_tariffs = 0.1", "shock_damage_received = -0.05"),
 	"maritime_ideas": ("global_trade_goods_size_modifier = 0.05", "ship_durability = 0.075", "leader_cost = -0.1", "advisor_cost = -0.075", "global_ship_trade_power = 0.15", "infantry_power = 0.05"),
@@ -63,11 +63,12 @@ mil = {
 	"offensive_ideas": ("available_province_loot = 0.25", "heavy_ship_cost = -0.1", "shock_damage = 0.05", "global_monthly_devastation = -0.05", "trade_company_investment_cost = -0.075", "artillery_barrage_cost = -0.25"),
 	"defensive_ideas": ("build_time = -0.075", "improve_relation_modifier = 0.1", "shock_damage_received = -0.05", "global_prosperity_growth = 0.2", "disengagement_chance = 0.1", "manpower_in_own_culture_provinces = 0.15"),
 	"quality_ideas": ("production_efficiency = 0.075", "hull_size_modifier = 0.075", "drill_gain_modifier = 0.35", "prestige_decay = -0.01", "naval_morale_damage_received = 0.1", "army_tradition = 0.5"),
-	"quantity_ideas": ("global_trade_goods_size_modifier = 0.05", "sunk_ship_morale_hit_recieved = -0.1", "reinforce_speed = 0.1", "global_tax_modifier = 0.1", "vassal_forcelimit_bonus = 1", "leader_cost = -0.1"),\
+	"quantity_ideas": ("global_trade_goods_size_modifier = 0.05", "sunk_ship_morale_hit_recieved = -0.1", "reinforce_speed = 0.1", "global_tax_modifier = 0.1", "vassal_forcelimit_bonus = 1", "leader_cost = -0.1"),
 	"naval_ideas": ("global_prosperity_growth = 0.2", "global_foreign_trade_power = 0.1", "merc_leader_army_tradition = 0.2", "prestige_from_naval = 0.5", "sailor_maintenance_modifer = -0.1", "leader_land_manuever = 1"),
 	"mercenary_ideas": ("inflation_reduction = 0.05", "trade_efficiency = 0.075", "infantry_power = 0.05", "advisor_pool = 1", "vassal_income = 0.25", "global_regiment_cost = -0.05"),
 	"reclamation_ideas": ("same_culture_advisor_cost = -0.1", "trade_steering = 0.25", "land_morale = 0.05", "global_missionary_strength = 0.01", "prestige = 1", "land_attrition = -0.1"),
-	"war_economy_ideas": ("interest = -0.5", "naval_tradition_from_battle = 0.5", "reserves_organisation = 0.1", "inflation_reduction = 0.05", "global_monthly_devastation = -0.05", "morale_damage_received = -0.05")
+	"war_economy_ideas": ("interest = -0.5", "naval_tradition_from_battle = 0.5", "reserves_organisation = 0.1", "inflation_reduction = 0.05", "global_monthly_devastation = -0.05", "morale_damage_received = -0.05"),
+	"zealous_ideas": ("missionary_maintenance_cost = -0.25", "diplomatic_upkeep = 1", "army_tradition_from_battle = 0.5", "war_exhaustion = -0.01", "years_of_nationalism = -5", "icavalry_shock = 0.15"),
 }
 
 ideas = adm | dip | mil
