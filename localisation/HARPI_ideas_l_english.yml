@@ -293,7 +293,7 @@
  metallurgy1:0 "Coke-Fueled Ovens"
  metallurgy1_desc:0 "Our forges burn hot and our coffers hotter.\n—"
  metallurgy2:0 "Efficient Mines"
- metallurgy2_desc:0 "We need a steady supply of ores and metals to feed our metallurgy industry.\n—\nProvinces producing mineable goods (Iron, Gold, Copper, Mithril, Salt, or Gems) gain §G+5% Goods Produced§W and §-2.5% development cost§W."
+ metallurgy2_desc:0 "We need a steady supply of ores and metals to feed our metallurgy industry.\n—\nProvinces producing mineable goods (Iron, Gold, Copper, Mithril, Salt, or Gems) gain §G+7.5% Goods Produced§W and §-3% development cost§W."
  metallurgy3:0 "Rifle-Making"
  metallurgy3_desc:0 "Good metal makes good guns.\n—"
  metallurgy4:0 "Pristine Mints"

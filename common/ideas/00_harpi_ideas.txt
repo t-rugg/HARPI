@@ -613,7 +613,7 @@ legalist_ideas = {
 		free_leader_pool = 1
 	}
 	legalist3 = {
-		global_autonomy = -0.075
+		global_autonomy = -0.05
 	}
 	legalist4 = {
 		global_unrest = -1
@@ -922,6 +922,7 @@ authority_ideas = {
 	category = DIP
 
 	bonus = {
+		max_absolutism_effect = .10 # 3% admin efficiency at 110 absolutism
 		imperial_authority = 0.1
 		reelection_cost = -0.1
 	}
@@ -932,6 +933,7 @@ authority_ideas = {
 		all_estate_loyalty_equilibrium = -0.05
 	}
 	authority2 = { # elevate experts
+		free_leader_pool = 1
 		mages_loyalty_modifier = 0.075
 		mages_influence_modifier = 0.1
 		artificers_loyalty_modifier = 0.075
@@ -941,7 +943,7 @@ authority_ideas = {
 		build_time = -0.15
 	}
 	authority4 = {
-		free_leader_pool = 1
+		global_autonomy = -0.05
 	}
 	authority5 = {
 		estate_interaction_cooldown_modifier = -0.2
@@ -951,7 +953,6 @@ authority_ideas = {
 	}
 	authority7 = {
 		min_autonomy_in_territories = -0.1
-		max_absolutism_effect = .10 # 3% admin efficiency at 110 absolutism
 	}
 
 	ai_will_do = {
@@ -1672,13 +1673,15 @@ metallurgy_ideas = {
 
 	bonus = {
 		embargo_efficiency = 0.5
+		adm_tech_cost_modifier = -0.05
 	}
 	metallurgy1 = {
 		production_efficiency = 0.1
 	}
 	metallurgy2 = { # Efficient Mines
 		mercantilism_cost = -0.1
-		# provinces producing mineable goods gain +5% goods produced and -2.5% development cost
+		nobles_loyalty_modifier = 0.05
+		# provinces producing mineable goods gain +7.5% goods produced and -3% development cost
 		effect = {
 			every_owned_province = {
 				harpi_metallurgy_province_update = yes
@@ -1707,7 +1710,8 @@ metallurgy_ideas = {
 	}
 	metallurgy7 = { # Quality Mines
 		mercantilism_cost = -0.1
-		# doubles the effects of metallurgy2 to 10% goods produced and -5% dev cost
+		burghers_loyalty_modifier = 0.05
+		# doubles the effects of metallurgy2 to 15% goods produced and -6% dev cost
 		effect = {
 			every_owned_province = {
 				harpi_metallurgy_province_update = yes
@@ -1875,7 +1879,7 @@ lawful_ideas = {
 		overextension_impact_modifier = -0.05
 	}
 	lawful4 = {
-		global_autonomy = -0.1
+		global_autonomy = -0.1 # more than usual
 		harsh_treatment_cost = -0.25
 	}
 	lawful5 = {
