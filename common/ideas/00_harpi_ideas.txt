@@ -153,7 +153,7 @@ reclamation_ideas = {
 	}
 	
 	reclamation1 = {
-		global_tax_income = 6 # 1 ducat per month
+		global_tax_income = 6 # 0.5 ducats per month
 		colony_cost_modifier = -0.2
 	}
 	reclamation2 = {
@@ -1863,7 +1863,7 @@ lawful_ideas = {
 	}
 
 	bonus = {
-		min_autonomy_in_territories = -0.05
+		stability_cost_modifier = -0.15
 		nobles_loyalty_modifier = 0.05
 	}
 
@@ -1876,14 +1876,13 @@ lawful_ideas = {
 	}
 	lawful3 = {
 		ae_impact = -0.1
-		overextension_impact_modifier = -0.05
 	}
 	lawful4 = {
 		global_autonomy = -0.1 # more than usual
 		harsh_treatment_cost = -0.25
 	}
 	lawful5 = {
-		stability_cost_modifier = -0.15
+		diplomats = 1
 	}
 	lawful6 = {
 		interest = -0.75
@@ -1953,7 +1952,7 @@ chaotic_ideas = {
 	}
 	chaotic6 = {
 		mil_advisor_cost = -0.2
-		morale_damage = 0.075
+		morale_damage = 0.1
 	}
 	chaotic7 = {
 		core_creation = -0.1
