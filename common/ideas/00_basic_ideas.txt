@@ -41,7 +41,8 @@ aristocracy_ideas = {
 		leader_siege = 1
 	}
 	noble_resilience = { 
-		cav_to_inf_ratio = 0.1
+		# cav_to_inf_ratio = 0.1 - moved to honor so that caf to inf ratio isnt restricted by government
+		discipline = 0.025
 		global_autonomy = -0.05 
 	}
 	noble_officers = {

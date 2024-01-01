@@ -217,6 +217,7 @@ legalist_mil = { # these aren't THAT much better than other mil policies; otherw
 	"war_economy_ideas": "global_regiment_cost = -0.1",
 	"advanced_armies_ideas": "fire_damage = 0.075",
 	"zealous_ideas": "morale_damage = 0.075",
+	"honor_ideas": "cav_to_inf_ratio = 0.15",
 	# TODO
 }
 
