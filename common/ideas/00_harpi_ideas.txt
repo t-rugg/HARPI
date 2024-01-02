@@ -782,6 +782,16 @@ militarist_ideas = {
 		# Grants decision to increase ruler's mil at the cost of admin and/or dip - once per ruler
 		# militarist1_decision
 		war_exhaustion = -0.03
+		removed_effect = {
+			add_corruption = 0.5
+			clr_country_flag = militarist1_adm
+			clr_country_flag = militarist1_dip
+			clr_country_flag = militarist1_both
+			clr_country_flag = militarist1_used
+			remove_country_modifier = militarist1_adm_modifier
+			remove_country_modifier = militarist1_dip_modifier
+			remove_country_modifier = militarist1_mil_modifier
+		}
 	}
 	militarist2 = { # stratocratic institutions
 		leader_cost = -0.15

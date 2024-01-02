@@ -6,7 +6,7 @@
  parliamentary5_initialize_desc:0 "§GThis will enable development and prosperity gain upon assigning parliament seats.§W\n§RRevoking parliament seats will undo the development and prosperity gain. This applies for the rest of the campaign, even if you cancel the Parliamentary Ideas group.§W"
 
  militarist1_decision_title:0 "Focus Our Efforts on the Military"
- militarist1_decision_desc:0 "We can change our focus from our realm's administration or diplomacy, to favour paying attention to the military instead. §YThis can be undone later§W.\n\nIf it's been at least 10 years since we last did this (regardless of who our ruler was at the time), we will §Glose 2 Corruption§W."
+ militarist1_decision_desc:0 "We can change our focus from our realm's administration or diplomacy, to favour paying attention to the military instead. While this is active, we gain §G+2.5% Discipline§W.\n\mYThis can be undone later for a small Corruption cost§W.\n\n"
  harpi.1.t:0 "Focus Our Efforts on the Military"
  harpi.1.d:0 "Should we divert our ruler's attention to the military effort?"
  harpi.1.a:0 "Focus less on administration."
@@ -14,8 +14,11 @@
  harpi.1.c:0 "Focus less on all other matters of statecraft."
  harpi.1.cancel:0 "Never mind."
  militarist1_undo_title:0 "Cancel Military Focus"
- militarist1_undo_desc:0 "Cancel our focus on the military.\n\nWe will §Rgain 0.5 Corruption§W. If we lost Corruption the last time we focused on the military, we will §Rregain§W that Corruption as well."
- militarist1_undo_tooltip:0 "Our ruler must have a high enough military skill to reassign to the old skills."
+ militarist1_undo_desc:0 "Cancel our focus on the military.\n\nWe will §Rgain 0.5 Corruption§W."
+ militarist1_undo_tooltip:0 "We are focusing our efforts on the military."
+ militarist1_adm_modifier:0 "We are focusing our efforts on the military."
+ militarist1_dip_modifier:0 "We are focusing our efforts on the military."
+ militarist1_both_modifier:0 "We are focusing our efforts on the military."
 
  integrated_elites_initialize_title:0 "§YInitialize Integrated Elites§W"
  integrated_elites_initialize_desc:0 "§gPlease allow up to 30 days for effects to update.§W"

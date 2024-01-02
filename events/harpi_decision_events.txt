@@ -11,98 +11,40 @@ country_event = {
 	option = {
 		name = harpi.1.a
 		ai_chance = { factor = 50 }	
-		trigger = {
-			adm = 1
+		add_country_modifier = {
+			name = militarist1_adm_modifier
+			duration = -1
 		}
-		change_adm = -1
-		change_mil = 1
 		hidden_effect = {
-			set_ruler_flag = militarist1_adm
-			clr_country_flag = militarist1_gained_points # will be set later if we did gain points
+			set_country_flag = militarist1_adm
 		}
-		if = {
-			limit = {
-				OR = {
-					NOT = { has_country_flag = militarist1_timer }
-					had_country_flag = {
-						flag = militarist1_timer
-						days = 3650
-					}
-				}
-			}
-			add_corruption = -2
-			hidden_effect = {
-				clr_country_flag = militarist1_timer # timer measures time since last gaining points
-				set_country_flag = militarist1_timer
-				set_country_flag = militarist1_gained_points
-			}
-		}
-	}
-	option = {
-		name = harpi.1.b
+	}	option = {
+		name = harpi.1.a
 		ai_chance = { factor = 50 }	
-		trigger = {
-			dip = 1
+		add_country_modifier = {
+			name = militarist1_dip_modifier
+			duration = -1
 		}
-		change_dip = -1
-		change_mil = 1
 		hidden_effect = {
-			set_ruler_flag = militarist1_adm
-		}		
-		if = {
-			limit = {
-				OR = {
-					NOT = { has_country_flag = militarist1_timer }
-					had_country_flag = {
-						flag = militarist1_timer
-						days = 3650
-					}
-				}
-			}
-			add_corruption = -2
-			hidden_effect = {
-				clr_country_flag = militarist1_timer
-				set_country_flag = militarist1_timer
-				set_country_flag = militarist1_gained_points
-			}
+			set_country_flag = militarist1_dip
 		}
-	}
+	}	
 	option = {
-		name = harpi.1.c
+		name = harpi.1.a
 		ai_chance = { factor = 50 }	
-		trigger = {
-			adm = 1
-			dip = 1
-		}	
-		change_adm = -1
-		change_dip = -1
-		change_mil = 2
-		hidden_effect = {
-			set_ruler_flag = militarist1_both
+		add_country_modifier = {
+			name = militarist1_both_modifier
+			duration = -1
 		}
-		if = {
-			limit = {
-				OR = {
-					NOT = { has_country_flag = militarist1_timer }
-					had_country_flag = {
-						flag = militarist1_timer
-						days = 3650
-					}
-				}
-			}
-			add_corruption = -2
-			hidden_effect = {
-				clr_country_flag = militarist1_timer
-				set_country_flag = militarist1_timer
-				set_country_flag = militarist1_gained_points
-			}
+		hidden_effect = {
+			set_country_flag = militarist1_both
 		}
 	}
 	option = {
 		name = harpi.1.cancel
 		ai_chance = { factor = 0 }	
 		hidden_effect = {
-			clr_ruler_flag = militarist1_used
+			clr_country_flag = militarist1_used
 		}
 	}
 }

@@ -57,22 +57,18 @@ parliamentary7_decision = {
 militarist1_decision = {
 	potential = {
 		has_idea_group = militarist_ideas
-		NOT = { has_ruler_flag = militarist1_used }
+		NOT = { has_country_flag = militarist1_used }
 	}
 	allow = {
 		has_idea = militarist1
-		OR = {
-			adm = 1
-			dip = 1
-		}
 	}
 
 	effect = {
 		hidden_effect = {
-			clr_ruler_flag = militarist1_adm
-			clr_ruler_flag = militarist1_dip
-			clr_ruler_flag = militarist1_both # I don't think these first 3 are necessary, but I'll include 'em anyway to be safe
-			set_ruler_flag = militarist1_used # this definitely IS necessary
+			clr_country_flag = militarist1_adm
+			clr_country_flag = militarist1_dip
+			clr_country_flag = militarist1_both # I don't think these first 3 are necessary, but I'll include 'em anyway to be safe
+			set_country_flag = militarist1_used # this definitely IS necessary
 		}
 		country_event = {
 			id = harpi.1
@@ -86,75 +82,53 @@ militarist1_undo = {
 	potential = {
 		has_idea_group = militarist_ideas
 		OR = {
-			has_ruler_flag = militarist1_adm
-			has_ruler_flag = militarist1_dip
-			has_ruler_flag = militarist1_both
+			has_country_flag = militarist1_adm
+			has_country_flag = militarist1_dip
+			has_country_flag = militarist1_both
 		}
 	}
 	allow = {
-		has_idea = militarist1
 		custom_trigger_tooltip = {
 			tooltip = militarist1_undo_tooltip
 			OR = {
-				AND = {
-					OR = {
-						has_ruler_flag = militarist1_adm
-						has_ruler_flag = militarist1_dip
-					}
-					mil = 1
-				}
-				AND = {
-					has_ruler_flag = militarist1_both
-					mil = 2
-				}
+				has_country_flag = militarist1_adm
+				has_country_flag = militarist1_dip
+				has_country_flag = militarist1_both
 			}
 		}
 	}
 
 	effect = {
+		add_corruption = 0.5
+		if = {
+			limit = {
+				has_country_flag = militarist1_adm
+			}
+			remove_country_modifier = militarist1_adm_modifier
+			hidden_effect = {
+				clr_country_flag = militarist1_adm
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = militarist1_dip
+			}
+			remove_country_modifier = militarist1_dip_modifier
+			hidden_effect = {
+				clr_country_flag = militarist1_dip
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = militarist1_both
+			}
+			remove_country_modifier = militarist1_both_modifier
+			hidden_effect = {
+				clr_country_flag = militarist1_both
+			}
+		}
 		hidden_effect = {
-			clr_ruler_flag = militarist1_used
-		}
-		if = {
-			limit = {
-				has_ruler_flag = militarist1_adm
-			}
-			change_adm = 1
-			change_mil = -1
-			hidden_effect = {
-				clr_ruler_flag = militarist1_adm
-			}
-		}
-		if = {
-			limit = {
-				has_ruler_flag = militarist1_dip
-			}
-			change_dip = 1
-			change_mil = -1
-			hidden_effect = {
-				clr_ruler_flag = militarist1_dip
-			}
-		}
-		if = {
-			limit = {
-				has_ruler_flag = militarist1_both
-			}
-			change_adm = 1
-			change_dip = 1
-			change_mil = -2
-			hidden_effect = {
-				clr_ruler_flag = militarist1_both
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = militarist1_gained_points
-			}
-			add_corruption = 2.5
-			hidden_effect = {
-				clr_country_flag = militarist1_timer
-				clr_country_flag = militarist1_gained_points
-			}
+			clr_country_flag = militarist1_used
 		}
 	}
 

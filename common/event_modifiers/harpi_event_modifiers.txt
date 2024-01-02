@@ -117,3 +117,22 @@ chaotic2_dip_focus = {
 chaotic2_mil_focus = {
 	free_mil_policy = 1
 }
+
+militarist1_adm_modifier = {
+	country_military_power = 1
+	country_admin_power = -1
+	discipline = 0.025
+}
+
+militarist1_dip_modifier = {
+	country_military_power = 1
+	country_diplomatic_power = -1
+	discipline = 0.025
+}
+
+militarist1_both_modifier = {
+	country_military_power = 2
+	country_admin_power = -1
+	country_diplomatic_power = -1
+	discipline = 0.025
+}

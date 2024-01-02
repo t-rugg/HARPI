@@ -145,8 +145,8 @@
 
  militarist_ideas:0 "Militarist Ideas"
  militarist1:0 "Militaristic Focus"
- militarist1_desc:0 "Much of our state infrastructure is tailored specifically to support our military. While this can come with compromises in other areas, it significantly increases our military capabilities.\n—\n§GUnlocks the §TFocus Our Efforts on the Military§G decision§W, allowing you to lower your ruler's Administrative and/or Diplomatic skill to increase their Military skill. Doing so §Greduces Corruption by 2§W (§Yonce every 10 years§W)."
- militarst2:0 "Stratocratic Institutions"
+ militarist1_desc:0 "Much of our state infrastructure is tailored specifically to support our military. While this can come with compromises in other areas, it significantly increases our military capabilities.\n—\n§GUnlocks the §TFocus Our Efforts on the Military§G decision§W, allowing you to lower your country's Administrative and/or Diplomatic monarch point generation to increase your Military monarch point generation. This military focus grants §G+2.5% Discipline§W while active.\n§RCancelling this idea will cause us to incur 0.5 Corruption, and will remove the Focus Our Efforts on the Military modifier if active!§W"
+ militarist2:0 "Stratocratic Institutions"
  militarist2_desc:0 "There is a significant intersection between our nobility and bureaucracy, and high-ranking officials in our military. If one didn't know better, they'd almost think our state is a puppet of our military! Placing such status on military accomplishments means many aristocrats are lining up to become generals and admirals, and we have become quite good at scouting talent cheaply.\n—"
 
  integration_ideas:0 "Integration Ideas"
