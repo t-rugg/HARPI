@@ -46,7 +46,7 @@ HARPI's idea groups were designed with the following principles in mind:
 
 ## Attributions
 
-Most of the mod was built from the ground up for Anbennar. Some UI elements were adapted from [The Idea Variation](https://steamcommunity.com/sharedfiles/filedetails/?id=604203692) and [Homebrew](https://steamcommunity.com/sharedfiles/filedetails/?id=2696955589), and some inspiration may have been taken from these projects at points. However, all idea groups, content, and design principles were purpose-built for HARPI.
+Most of the mod was built from the ground up for Anbennar. Some UI elements were adapted from [The Idea Variation](https://steamcommunity.com/sharedfiles/filedetails/?id=604203692) and [Homebrew](https://steamcommunity.com/sharedfiles/filedetails/?id=2696955589), and some inspiration may have been taken from these projects at points. However, all idea groups, content, and design principles were purpose-built for HARPI. Idea group art was generated via Stable Diffusion using [Dreamshaper 8](https://civitai.com/models/4384/dreamshaper), but I would like to replace this with hand-drawn art in the future if feasible.
 
 Special thanks to the following resources for helping me with mod creation, design, and balance:
 
