@@ -2,7 +2,6 @@ harpi_on_parliament_seat_given_effect = {
 	if = {
 		limit = {
 			owner = {
-				has_country_flag = parliamentary5_initialized
 				has_idea = parliamentary5
 			}
 		}

@@ -1189,6 +1189,11 @@ parliamentary_ideas = {
 		# removes when unassigning
 		# done via on_actions
 		global_tax_modifier = 0.1
+		effect = {
+			hidden_effect = {
+				set_country_flag = parliamentary5_initialized # so that removing a parliament seat still removes dev even if idea group cancelled
+			}
+		}
 	}
 	parliamentary6 = {
 		reform_progress_growth = 0.15
@@ -1274,6 +1279,13 @@ federalist_ideas = {
 	federalist7 = { # Decentralized Administration
 		# 1% EXTRA ADMIN EFFICIENCY PER AGE
 		max_absolutism_effect = -0.10 #downside!
+		effect = {
+			hidden_effect = {
+				capital_scope = {
+					add_province_triggered_modifier = federalist7_pulse
+				}
+			}
+		}
 	}
 	
 

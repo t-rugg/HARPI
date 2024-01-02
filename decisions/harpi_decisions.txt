@@ -137,30 +137,6 @@ militarist1_undo = {
 	}
 }
 
-federalist7_initialize = {
-	potential = {
-		has_idea_group = federalist_ideas
-		capital_scope = {
-			NOT = { has_province_modifier = federalist7_pulse }
-		}
-	}
-	allow = {
-		has_idea = federalist7
-	}
-
-	effect = {
-		hidden_effect = {
-			capital_scope = {
-				add_province_triggered_modifier = federalist7_pulse
-			}
-		}
-	}
-
-	ai_will_do = {
-		factor = 400
-	}
-}
-
 mixed_armies7_initialize = {
 	potential = {
 		has_idea_group = mixed_armies_ideas
@@ -253,27 +229,6 @@ advanced_armies1_initialize = {
 
 	ai_will_do = {
 		factor = 0 # very laggy, don't let AI do it!
-	}
-}
-
-parliamentary5_initialize = {
-	potential = {
-		has_idea_group = parliamentary_ideas
-		NOT = { has_country_flag = parliamentary5_initialized }
-	}
-
-	allow = {
-		has_idea = parliamentary5
-	}
-
-	effect = {
-		hidden_effect = {
-			set_country_flag = parliamentary5_initialized
-		}
-	}
-
-	ai_will_do = {
-		factor = 400
 	}
 }
 
