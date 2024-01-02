@@ -1160,7 +1160,7 @@ parliamentary_ideas = {
 	category = ADM
 
 	bonus = {
-		yearly_corruption = -0.05
+		yearly_absolutism = 2
 		legitimacy = 1
 		republican_tradition = 0.3
 		devotion = 1
@@ -1179,7 +1179,7 @@ parliamentary_ideas = {
 		# gain 25 of each mana upon succeeding in a parliament debate
 	}
 	parliamentary3 = {
-		yearly_absolutism = 2
+		yearly_corruption = -0.1
 	}
 	parliamentary4 = { # something about not being held back by feudal bureaucracy
 		global_manpower_modifier = 0.15
