@@ -1674,7 +1674,7 @@ adventure_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 1.5
+		factor = 0.9
 		modifier = { # disallow after age of greentide
 			factor = 0
 			OR = {
