@@ -13,6 +13,18 @@ HARPI is an idea group submod for Anbennar. It is currently heavily WIP and is m
 
 As development continues, this section will be updated to contain information on the mod. Once this mod is in a more complete state, it will be uploaded to the Steam Workshop.
 
+## Compatibility
+
+HARPI is **exclusively** an idea group mod. It doesn't affect the game in any other way, besides in balance changes related to idea groups and policies. This maximizes compatibility between HARPI and Anbennar — **HARPI should be compatible with both the polished Steam version and the in-development BitBucket version, as long as they are on the same version of EU4 as HARPI**. This also means that HARPI shouldn't break any mechanics or mission trees, and should be compatible with most other submods that themselves don't affect idea groups.
+
+However, there are a few caveats:
+
+* Any mission trees that reference specific ideas or idea groups are not _guaranteed_ to function in HARPI. I have done my best to try to make these mission trees still work, but there are some edge cases. For example, Deus Vult was moved from Religious Ideas to Zealous Ideas, which affects the Elikhand mission tree's pacing. That said, most mission trees should still function, even if the pacing was affected. If you become aware of anything that significantly breaks, please let me know.
+* Idea groups have a knock-on effect on overall game balance. I have done my best to account for this, such as by reducing the tech cost from ideas from 2% to 1%, and nerfing the Innovativeness gain from being the first to take an idea from 2 Innovativenss to 0.5 Innovativeness. I have also limited the presence of certain modifiers; for example, there are still only 3 Colonists available from idea groups (1 each from Exploration/Expansion/Reclamation or Subterranean), as in vanilla (1 from Exploration, 2 from Expansion). Still, though I tried to keep the experience as close to vanilla Anbennar as possible, there may be effects on overall game pacing and balance as a result of the changes HARPI has made.
+* The player is better at choosing idea groups and policies than the AI, and therefore any mod that gives more choices in this regard will slightly favour the player.
+
+If any further compatibility or stability issues are encountered, please inform me with steps to reproduce.
+
 ## Design Principles
 
 HARPI's idea groups were designed with the following principles in mind:
