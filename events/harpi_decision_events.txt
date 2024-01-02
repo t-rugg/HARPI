@@ -19,7 +19,7 @@ country_event = {
 			set_country_flag = militarist1_adm
 		}
 	}	option = {
-		name = harpi.1.a
+		name = harpi.1.b
 		ai_chance = { factor = 50 }	
 		add_country_modifier = {
 			name = militarist1_dip_modifier
@@ -30,7 +30,7 @@ country_event = {
 		}
 	}	
 	option = {
-		name = harpi.1.a
+		name = harpi.1.c
 		ai_chance = { factor = 50 }	
 		add_country_modifier = {
 			name = militarist1_both_modifier

@@ -790,7 +790,7 @@ militarist_ideas = {
 			clr_country_flag = militarist1_used
 			remove_country_modifier = militarist1_adm_modifier
 			remove_country_modifier = militarist1_dip_modifier
-			remove_country_modifier = militarist1_mil_modifier
+			remove_country_modifier = militarist1_both_modifier
 		}
 	}
 	militarist2 = { # stratocratic institutions
@@ -1179,7 +1179,7 @@ parliamentary_ideas = {
 		# gain 25 of each mana upon succeeding in a parliament debate
 	}
 	parliamentary3 = {
-		can_revoke_parliament_seats = yes
+		yearly_absolutism = 2
 	}
 	parliamentary4 = { # something about not being held back by feudal bureaucracy
 		global_manpower_modifier = 0.15
