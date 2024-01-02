@@ -6,7 +6,7 @@
  parliamentary5_initialize_desc:0 "§GThis will enable development and prosperity gain upon assigning parliament seats.§W\n§RRevoking parliament seats will undo the development and prosperity gain. This applies for the rest of the campaign, even if you cancel the Parliamentary Ideas group.§W"
 
  militarist1_decision_title:0 "Focus Our Efforts on the Military"
- militarist1_decision_desc:0 "We can change our focus from our realm's administration or diplomacy, to favour paying attention to the military instead. §YThis can be undone later§W.\n\nIf it's been at least 10 years since we last did this (regardless of who our ruler was at the time), we will gain §G30 of each monarch point§W."
+ militarist1_decision_desc:0 "We can change our focus from our realm's administration or diplomacy, to favour paying attention to the military instead. §YThis can be undone later§W.\n\nIf it's been at least 10 years since we last did this (regardless of who our ruler was at the time), we will §Glose 2 Corruption§W."
  harpi.1.t:0 "Focus Our Efforts on the Military"
  harpi.1.d:0 "Should we divert our ruler's attention to the military effort?"
  harpi.1.a:0 "Focus less on administration."
@@ -14,7 +14,7 @@
  harpi.1.c:0 "Focus less on all other matters of statecraft."
  harpi.1.cancel:0 "Never mind."
  militarist1_undo_title:0 "Cancel Military Focus"
- militarist1_undo_desc:0 "Cancel our focus on the military.\n\nIf we gained monarch points the last time we focused on the military, we will have to §Rrefund§W them."
+ militarist1_undo_desc:0 "Cancel our focus on the military.\n\nWe will §Rgain 0.5 Corruption§W. If we lost Corruption the last time we focused on the military, we will §Rregain§W that Corruption as well."
  militarist1_undo_tooltip:0 "Our ruler must have a high enough military skill to reassign to the old skills."
 
  integrated_elites_initialize_title:0 "§YInitialize Integrated Elites§W"

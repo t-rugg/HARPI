@@ -30,9 +30,7 @@ country_event = {
 					}
 				}
 			}
-			add_adm_power = 30
-			add_dip_power = 30
-			add_mil_power = 30
+			add_corruption = -2
 			hidden_effect = {
 				clr_country_flag = militarist1_timer # timer measures time since last gaining points
 				set_country_flag = militarist1_timer
@@ -61,9 +59,7 @@ country_event = {
 					}
 				}
 			}
-			add_adm_power = 30
-			add_dip_power = 30
-			add_mil_power = 30
+			add_corruption = -2
 			hidden_effect = {
 				clr_country_flag = militarist1_timer
 				set_country_flag = militarist1_timer
@@ -94,9 +90,7 @@ country_event = {
 					}
 				}
 			}
-			add_adm_power = 30
-			add_dip_power = 30
-			add_mil_power = 30
+			add_corruption = -2
 			hidden_effect = {
 				clr_country_flag = militarist1_timer
 				set_country_flag = militarist1_timer

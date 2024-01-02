@@ -150,9 +150,7 @@ militarist1_undo = {
 			limit = {
 				has_country_flag = militarist1_gained_points
 			}
-			add_adm_power = -30
-			add_dip_power = -30
-			add_mil_power = -30
+			add_corruption = 2.5
 			hidden_effect = {
 				clr_country_flag = militarist1_timer
 				clr_country_flag = militarist1_gained_points
