@@ -384,7 +384,7 @@ religious_ideas = {
 	category = ADM
 
 	bonus = { # culture conversion is gone! but I think the replacement is plenty strong personally
-		max_absolutism = 20 # hand out lots of privileges to clergy (or other estates) - 20 is a LOT, might need to be toned down, but Thor's tome has this as a reasonable number
+		max_absolutism = 10 # hand out lots of privileges to clergy (or other estates)
 		brahmins_hindu_loyalty_modifier = 0.1
 		church_loyalty_modifier = 0.1
 
@@ -421,8 +421,18 @@ religious_ideas = {
 		establish_order_cost = -0.25
 	}
 	inquisition = {
-		missionaries = 1
 		prestige_per_development_from_conversion = 0.1
+		# -5 min local autonomy, -0.025 monthly autonomy, and -10% governing cost in provinces that follow our religion
+		effect = {
+			every_owned_province = {
+				harpi_inquisition_update = yes
+			}
+		}
+		removed_effect = {
+			every_owned_province = {
+				remove_province_modifier = harpi_inquisition_province_modifier
+			}
+		}
 	}
 	# RIP OG deus vult... you will be missed
 	# (it's been moved to zealous ideas)

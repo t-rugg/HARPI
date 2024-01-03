@@ -332,3 +332,34 @@ harpi_chaotic2_national_focus_changed = {
 		}
 	}
 }
+
+harpi_inquisition_update = {
+	if = {
+		limit = {
+			owner = {
+				has_idea = inquisition
+			}
+			has_owner_religion = yes
+			NOT = {
+				has_province_modifier = harpi_inquisition_province_modifier
+			}
+		}
+		add_province_modifier = {
+			name = harpi_inquisition_province_modifier
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = harpi_inquisition_province_modifier
+	}
+}
+
+harpi_inquisition_owner_change = {
+	harpi_inquisition_update = yes
+}
+
+harpi_inquisition_convert_country = {
+	every_owned_province = {
+		harpi_inquisition_update = yes
+	}
+}

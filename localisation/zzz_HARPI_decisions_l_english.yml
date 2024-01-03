@@ -110,3 +110,6 @@
 
  sea_hawks_modifier:0 "Sea Hawks"
  desc_sea_hawks_modifier:0 "Our maritime focus increases the economic output of our ports and coastlines."
+
+ harpi_inquisition_province_modifier:0 "Inquisition"
+ desc_harpi_inquisition_province_modifier:0 "Our fanatical inquisition creates a pretense for us to root out opposing forces and maintain better control of our provinces."

@@ -136,3 +136,9 @@ militarist1_both_modifier = {
 	country_diplomatic_power = -1
 	discipline = 0.025
 }
+
+harpi_inquisition_province_modifier = {
+	min_local_autonomy = -5
+	local_autonomy = -0.025
+	local_governing_cost = -0.1
+}

@@ -18,6 +18,7 @@ on_parliament_debate_succeeded = {
 on_province_owner_change = {
 	harpi_metallurgy_province_update = yes
 	harpi_sea_hawks_update = yes
+	harpi_inquisition_owner_change = yes
 }
 
 on_trade_good_changed = {
@@ -56,4 +57,14 @@ on_flagship_destroyed = {
 
 on_national_focus_change = {
 	harpi_chaotic2_national_focus_changed = yes
+}
+
+# country religion
+on_religion_change = {
+	harpi_inquisition_convert_country = yes
+}
+
+# triggers when religion is changed in any way (missionary, effect, etc.)
+on_province_religion_changed = {
+	harpi_inquisition_update = yes
 }
