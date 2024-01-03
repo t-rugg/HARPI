@@ -60,8 +60,8 @@ stewardship_ideas = {
 	category = DIP
 
 	bonus = {
-		liberty_desire_from_subject_development = -0.2
-		reduced_liberty_desire_on_same_continent = 0.1
+		can_fabricate_for_vassals = yes
+		global_tariffs = 0.10
 	}
 
 	tribute_system = {
@@ -71,7 +71,7 @@ stewardship_ideas = {
 		reduced_liberty_desire = 15
 	}
 	stewardship3 = {
-		diplomatic_upkeep = 1
+		diplomatic_upkeep = 2
 	}
 	integrated_elites = {
 		# our subjects receive +20% tax and manpower, as well as -1 interest per annum and -50% fort maintenance
@@ -86,6 +86,7 @@ stewardship_ideas = {
 		}
 	}
 	stewardship5 = {
+		improve_relation_modifier = 0.2
 		reverse_relation_with_same_religion = 15 # makes both diplo-vassalization and converting vassals easier
 	}
 	marcher_lords = {
@@ -100,8 +101,8 @@ stewardship_ideas = {
 		}
 	}
 	stewardship7 = {
-		diplomatic_upkeep = 1
-		can_fabricate_for_vassals = yes
+		liberty_desire_from_subject_development = -0.2
+		reduced_liberty_desire_on_same_continent = 10
 	}
 	
 
