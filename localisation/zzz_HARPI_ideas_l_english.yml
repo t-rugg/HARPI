@@ -1,5 +1,5 @@
 ﻿l_english:
- dwarf_legacy:0 "§VLegacy of Aul-Dwarov§W"
+ dwarf_legacy:0 "§VLegacy of Aul-Dwarov§!"
  dwarf_legacy1:0 "A Dwarven Empire"
  dwarf_legacy1_desc:0 "Aul-Dwarov was an empire by dwarves, for dwarves. Certain lesser races may be allowed residence in our holds, but they live in the shadows of the halls our ancestors built.\n"
  dwarf_legacy2:0 "Responsible Digging"
@@ -15,7 +15,7 @@
  dwarf_legacy7:0 "Hold Politics"
  dwarf_legacy7_desc:0 "Though we are one empire of dwarves, there are many different holds with their own rich cultures, traditions, and values. These holds together make up the new Aul-Dwarov, and we can learn a great many things from their diverse traditions.\n—"
 
- corin_legacy:0 "§VLegacy of Corin§W"
+ corin_legacy:0 "§VLegacy of Corin§!"
  corin_legacy1:0 "Escanni Chivalry"
  corin_legacy1_desc:0 "While more an adventurer than an aristocrat, Corin died to protect noble Escanni values from the encroaching Greentide. To righly honour her legacy, we must preserve the Escanni tradition of chivalric combat.\n—"
  corin_legacy2:0 "Martyr of Escann"
@@ -31,13 +31,13 @@
  corin_legacy7:0 "Beacons of Hope"
  corin_legacy7_desc:0 "Corin possessed an aura of hope, invigorating her allies against all odds. While most of our generals and adventurers could not hope to match Corin's abilities, they nonetheless attempt to capture some of this eminence, and spur our allies on to charge forth in the name of glory.\n—"
 
- roilsard_legacy:0 "§VLegacy of Roilsard§W"
+ roilsard_legacy:0 "§VLegacy of Roilsard§!"
 
- reaver_legacy:0 "§VLegacy of the Reavers§W"
+ reaver_legacy:0 "§VLegacy of the Reavers§!"
 
- harimar_legacy:0 "§VLegacy of Harimar§W"
+ harimar_legacy:0 "§VLegacy of Harimar§!"
 
- corin_legacy:0 "§VLegacy of Corin§W"
+ corin_legacy:0 "§VLegacy of Corin§!"
 
  reclamation_ideas:0 "Reclamation Ideas"
  reclamation1:0 "Foreign Investment"
@@ -57,7 +57,7 @@
 
  patronage_ideas:0 "Cultural Ideas"
  patronage1:0 "Sponsor the Arts"
- patronage1_desc:0 "Investment in our culture can pay dividends in solidifying the respectability and reputation of our rule.\n—\n§GUnlocks the §TPatronize the Intelligentsia§G decision§W, allowing you to spend ¤ Crowns to purchase §GPrestige§W or to §Gstrengthen your government§W.\n§TPatronize the Intelligentsia§W can be used §Yonce every 10 years§W."
+ patronage1_desc:0 "Investment in our culture can pay dividends in solidifying the respectability and reputation of our rule.\n—\n§GUnlocks the §TPatronize the Intelligentsia§G decision§!, allowing you to spend ¤ Crowns to purchase §GPrestige§! or to §Gstrengthen your government§!.\n§TPatronize the Intelligentsia§! can be used §Yonce every 10 years§!."
  patronage2:0 "New Talent"
  patronage2_desc:0 "Having a reputation as a generous employer allows us to find the best and the brightest of each new generation.\n—"
  patronage3:0 "Benefactors of Public Life"
@@ -69,7 +69,7 @@
  patronage6:0 "Disseminate Fine Art"
  patronage6_desc:0 "A healthy culture is a persuasive one. Soon, all our subjects will be wearing our mandilions and listening to our lute music!\n—"
  patronage7:0 "Patronal Politics"
- patronage7_desc:0 "By funding specific projects or interests of various ambassadors, statesmen, influential figures, and power brokers, we can get them to reciprocate by supporting the crown. As opposed to more blasé and corrupt forms of bribery, our investments have genuine cultural and humanitarian aims, that just so happen to cement our own influence in the process.\n—\n§GUpgrades the §TPatronize the Intelligentsia§G decision§W, allowing you to purchase §Gtemporary minor modifiers§W, such as Autonomy Reduction, Spy Network Construction Speed, or Development Cost reduction.\n§TPatronize the Intelligentsia§W can now be used §Yonce every 5 years§W, and modifiers last that long."
+ patronage7_desc:0 "By funding specific projects or interests of various ambassadors, statesmen, influential figures, and power brokers, we can get them to reciprocate by supporting the crown. As opposed to more blasé and corrupt forms of bribery, our investments have genuine cultural and humanitarian aims, that just so happen to cement our own influence in the process.\n—\n§GUpgrades the §TPatronize the Intelligentsia§G decision§!, allowing you to purchase §Gtemporary minor modifiers§!, such as Autonomy Reduction, Spy Network Construction Speed, or Development Cost reduction.\n§TPatronize the Intelligentsia§! can now be used §Yonce every 5 years§!, and modifiers last that long."
  
  war_economy_ideas:0 "War Economy Ideas"
  war_economy1:0 "Rationing"
@@ -89,7 +89,7 @@
 
  advanced_armies_ideas:0 "Advanced Army Ideas"
  advanced_armies1:0 "Military Inventions"
- advanced_armies1_desc:0 "When necessary, we muster our brightest minds to improve the capabilities of our military. Scientists and artificers are truly our nation's farthest-back line.\n—\n§G+1% Discipline§ for each 20 Innovativeness we have.§W"
+ advanced_armies1_desc:0 "When necessary, we muster our brightest minds to improve the capabilities of our military. Scientists and artificers are truly our nation's farthest-back line.\n—\n§G+1% Discipline§ for each 20 Innovativeness we have.§!"
  advanced_armies2:0 "a"
  advanced_armies2_desc:0 "a"
  advanced_armies3:0 "a"
@@ -107,13 +107,11 @@
 
  logistics_ideas:0 "Logistics Ideas"
 
- diplomatic_ideas:0 "Ambassadorial Ideas"
-
  artificery_ideas:0 "Artificery Ideas"
  artificery1:0 "filler"
  artificery1_desc:0 "filler"
  artificery2:0 "filler"
- artificery2_desc:0 "filler \n—\nArtificer regiments receive §G+5% Discipline§W."
+ artificery2_desc:0 "filler \n—\nArtificer regiments receive §G+5% Discipline§!."
  artificery3:0 "filler"
  artificery3_desc:0 "filler"
  artificery4:0 "filler"
@@ -121,7 +119,7 @@
  artificery5:0 "filler"
  artificery5_desc:0 "filler"
  artificery6:0 "filler"
- artificery6_desc:0 "filler \n—\nArtificer regiments receive §G+10% movement speed§W and §G-25% reinforcement cost§W."
+ artificery6_desc:0 "filler \n—\nArtificer regiments receive §G+10% movement speed§! and §G-25% reinforcement cost§!."
  artificery7:0 "filler"
  artificery7_desc:0 "filler"
 
@@ -145,7 +143,7 @@
 
  militarist_ideas:0 "Militarist Ideas"
  militarist1:0 "Militaristic Focus"
- militarist1_desc:0 "Much of our state infrastructure is tailored specifically to support our military. While this can come with compromises in other areas, it significantly increases our military capabilities.\n—\n§GUnlocks the §TFocus Our Efforts on the Military§G decision§W, allowing you to lower your country's Administrative and/or Diplomatic monarch point generation to increase your Military monarch point generation. This military focus grants §G+2.5% Discipline§W while active.\n§RCancelling this idea will cause us to incur 0.5 Corruption, and will remove the Focus Our Efforts on the Military modifier if active!§W"
+ militarist1_desc:0 "Much of our state infrastructure is tailored specifically to support our military. While this can come with compromises in other areas, it significantly increases our military capabilities.\n—\n§GUnlocks the §TFocus Our Efforts on the Military§G decision§!, allowing you to lower your country's Administrative and/or Diplomatic monarch point generation to increase your Military monarch point generation. This military focus grants §G+2.5% Discipline§! while active.\n§RCancelling this idea will cause us to incur 0.5 Corruption, and will remove the Focus Our Efforts on the Military modifier if active!§!"
  militarist2:0 "Stratocratic Institutions"
  militarist2_desc:0 "There is a significant intersection between our nobility and bureaucracy, and high-ranking officials in our military. If one didn't know better, they'd almost think our state is a puppet of our military! Placing such status on military accomplishments means many aristocrats are lining up to become generals and admirals, and we have become quite good at scouting talent cheaply.\n—"
 
@@ -181,7 +179,7 @@
  legalist6:0 "a"
  legalist6_desc:0 "a"
  legalist7:0 "Robust Lawmaking"
- legalist7_desc:0 "We must establish a clear and strong legal code, to guide our state forward forevermore.\n—\n§VStronger policies than other idea groups.\n§W(Legalist idea's policies bestow §Ga powerful modifier from the other idea group§W in addition to §G+5% monthly reform progress§W.)\n§GHas policies with all categories of idea group§Y (including other administrative idea groups)§G.§W"
+ legalist7_desc:0 "We must establish a clear and strong legal code, to guide our state forward forevermore.\n—\n§VStronger policies than other idea groups.\n§!(Legalist idea's policies bestow §Ga powerful modifier from the other idea group§! in addition to §G+5% monthly reform progress§!.)\n§GHas policies with all categories of idea group§Y (including other administrative idea groups)§G.§!"
 
  urbanization_ideas:0 "Urbanization Ideas"
  urbanization1:0 "Centralized Bureaucracy"
@@ -205,17 +203,17 @@
  parliamentary1:0 "Concessions on Regional Issues"
  parliamentary1_desc:0 "By stoking regional issues and then making small compromises on them, we can leave parliamentary officials in our debt at minimal cost to the state. Naturally, we will leverage this on the important debates.\n—"
  parliamentary2:0 "Right to the Floor" 
- parliamentary2_desc:0 "We will allow any parliamentary official to propose an issue in front of their peers, and even allow some community input from various interest groups. Most proposed ideas are rejected, but even a bad idea makes our path forward clearer.\n—\n§GGain 25 of each monarch point upon succeeding in a parliamentary debate.§W"
+ parliamentary2_desc:0 "We will allow any parliamentary official to propose an issue in front of their peers, and even allow some community input from various interest groups. Most proposed ideas are rejected, but even a bad idea makes our path forward clearer.\n—\n§GGain 25 of each monarch point upon succeeding in a parliamentary debate.§!"
  parliamentary3:0 "Negotiated Rights"
  parliamentary3_desc:0 "Our parliament is influential, but it is not a replacement for central authority. We reserve the right to hold them accountable.\n—"
  parliamentary4:0 "Beyond Feudalism" 
  parliamentary4_desc:0 "In feudalism, many of the influential landowners and aristocrats act only in their self-interest, and refuse to grant the crown a single man more than they are owed. But soldiers under a parliament know that they serve their realm as a whole, not individual landlords.\n—"
  parliamentary5:0 "Local Interests"
- parliamentary5_desc:0 "By giving locals representation in parliament, they are better able to advocate on their behalf and fix issues that matter to them. This increases the wealth and happiness of localities.\n—\nAssigning a parliament seat gives a province §G10 prosperity§W and §G1 of each development§W. Removing a parliament seat undoes this effect."
+ parliamentary5_desc:0 "By giving locals representation in parliament, they are better able to advocate on their behalf and fix issues that matter to them. This increases the wealth and happiness of localities.\n—\nAssigning a parliament seat gives a province §G10 prosperity§! and §G1 of each development§!. Removing a parliament seat undoes this effect."
  parliamentary6:0 "Lively Debates"
- parliamentary6_desc:0 "As frustrating as parliamentary arguments can be, they are how real progress is made in our country.\n—\n§GGain 15 Reform Progress upon succeeding in a parliamentary debate.§W"
+ parliamentary6_desc:0 "As frustrating as parliamentary arguments can be, they are how real progress is made in our country.\n—\n§GGain 15 Reform Progress upon succeeding in a parliamentary debate.§!"
  parliamentary7:0 "Party Whips"
- parliamentary7_desc:0 "Sometimes, an issue simply has to be passed in our favour. Thankfully, we have become quite good at making that happen. Whether through rhetoric, bargains, blackmailing, or threats, we can often force an issue through parliament despite opposition.\n—\n§GUnlocks the §TForce Issue Through Parliament§G decision§W, which can be used §Yonce every 20 years§W to immediately win a parliamentary debate by paying 3 Republican Tradition (or 10 Legitimacy, or equivalent)."
+ parliamentary7_desc:0 "Sometimes, an issue simply has to be passed in our favour. Thankfully, we have become quite good at making that happen. Whether through rhetoric, bargains, blackmailing, or threats, we can often force an issue through parliament despite opposition.\n—\n§GUnlocks the §TForce Issue Through Parliament§G decision§!, which can be used §Yonce every 20 years§! to immediately win a parliamentary debate by paying 3 Republican Tradition (or 10 Legitimacy, or equivalent)."
 
  professional_army_ideas:0 "Professional Army Ideas"
 
@@ -233,7 +231,7 @@
  federalist6:0 "Manufactured Consent"
  federalist6_desc:0 "Creating so many layers of separation between our federal and provincial governments has allowed us to easily deflect criticism. We can simply redirect any complaints to the more appropriate authorities, whoever those may be, and leave them to deal with the peasant rabble.\n—"
  federalist7:0 "Decentralized Administration"
- federalist7_desc:0 "A loose government is a flexible one.\n—\n§G+1% Administrative Efficiency per age §Y(for a total of +4% in the Age of Artificery)§W. The full bonus for the current age applies no matter when this idea group was taken."
+ federalist7_desc:0 "A loose government is a flexible one.\n—\n§G+1% Administrative Efficiency per age §Y(for a total of +4% in the Age of Artificery)§!. The full bonus for the current age applies no matter when this idea group was taken."
 
  mixed_armies_ideas:0 "Assimilated Army Ideas"
  mixed_armies1:0 "The Monster You Know"
@@ -249,7 +247,7 @@
  mixed_armies6:0 "An Army of Many"
  mixed_armies6_desc:0 "Our army is founded on the basis of preserving and expanding our state institutions, not on any racial or nationalist grounds. This more professional approach makes it easier to integrate men from our vassals into our main regiments.\n—"
  mixed_armies7:0 "Diverse Barracks"
- mixed_armies7_desc:0 "The strength of ogres; the training of elves; the intelligence of gnomes; the brutality of orcs. Our army should tap into the abilities of all the races of our empire, so that they can each contribute something they accel at.\n—\nEach §YCoexisting§W race in our country provides a §Gsmall military bonus§W, except for the primary race of our military. The bonus is larger for §TIntegrated§W races.\n§gThe race must be actually present as a pop in our country. The bonus provided by each race can be seen in a decision (WIP).§W"
+ mixed_armies7_desc:0 "The strength of ogres; the training of elves; the intelligence of gnomes; the brutality of orcs. Our army should tap into the abilities of all the races of our empire, so that they can each contribute something they accel at.\n—\nEach §YCoexisting§! race in our country provides a §Gsmall military bonus§!, except for the primary race of our military. The bonus is larger for §TIntegrated§! races.\n§gThe race must be actually present as a pop in our country. The bonus provided by each race can be seen in a decision (WIP).§!"
 
  imperialist_ideas:0 "Imperialist Ideas"
 
@@ -307,7 +305,7 @@
  metallurgy1:0 "Coke-Fueled Ovens"
  metallurgy1_desc:0 "Our forges burn hot and our coffers hotter.\n—"
  metallurgy2:0 "Efficient Mines"
- metallurgy2_desc:0 "We need a steady supply of ores and metals to feed our metallurgy industry.\n—\nProvinces producing mineable goods (Iron, Gold, Copper, Mithril, Salt, or Gems) gain §G+7.5% Goods Produced§W and §-3% development cost§W."
+ metallurgy2_desc:0 "We need a steady supply of ores and metals to feed our metallurgy industry.\n—\n§G+7.5%§! Goods Produced and §G-3%§! Development Cost in provinces producing mineable goods (§YIron, Gold, Copper, Mithril, Salt, or Gems§!)"
  metallurgy3:0 "Rifle-Making"
  metallurgy3_desc:0 "Good metal makes good guns.\n—"
  metallurgy4:0 "Pristine Mints"
@@ -317,11 +315,11 @@
  metallurgy6:0 "Excessive Cannons"
  metallurgy6_desc:0 "When designing warships, all navies need to consider practical restraints. No matter what, if you add too many cannons, your ships will be too heavy to float. But at least we don't have to worry about shortages of metals.\n—"
  metallurgy7:0 "Quality Mines"
- metallurgy7_desc:0 "The best techniques in the world don't matter if we don't have the best metal to go along with them.\n—\n§GDoubles the effects of Efficient Mines on provinces with mineable goods§W."
+ metallurgy7_desc:0 "The best techniques in the world don't matter if we don't have the best metal to go along with them.\n—\n§GDoubles§! the effects of Efficient Mines on provinces with mineable goods"
 
  monastic_ideas:0 "Monastic Ideas"
  monastic1:0 "Monastic Contemplation"
- monastic1_desc:0 "Through temperance, we can reflect. Through reflection, we gain clarity.\n—\nCan take a decision to §Ggain 2 Innovativeness§W at the cost of £icon_stability£§R+1 Stability cost to declare war§W and £icon_manpower£§R-50% Manpower recovery speed§W for §Y5 years§W. §YThis decision can only be taken when at peace and when its debuff is not active, and removing the idea group does not remove this debuff.§W"
+ monastic1_desc:0 "Through temperance, we can reflect. Through reflection, we gain clarity.\n—\nCan take a decision to §Ggain 2 Innovativeness§! at the cost of £icon_stability£§R+1 Stability cost to declare war§! and £icon_manpower£§R-50% Manpower recovery speed§! for §Y5 years§!. §YThis decision can only be taken when at peace and when its debuff is not active, and removing the idea group does not remove this debuff.§!"
  monastic2:0 "Pious Thought"
  monastic2_desc:0 "Our commitment to religious studies allows us to better inform our societal development in a righteous and divine manner.\n—"
  monastic3:0 "Monastery Scribes"
@@ -335,24 +333,9 @@
  monastic7:0 "Monastic Tutelage"
  monastic7_desc:0 "Not everyone trained in a monastery is suited for the monk life. Thankfully, these people tend to be highly-educated, and we can easily recruit them to serve our court — and pay them much than their clerical salary ever would.\n—"
 
- lawful_ideas:0 "§YLawful Alignment§W"
+ lawful_ideas:0 "§YLawful Alignment§!"
 
- chaotic_ideas:0 "§YChaotic Alignment§W"
+ chaotic_ideas:0 "§YChaotic Alignment§!"
 
  stewardship_ideas:0 "Stewardship Ideas"
 
- religious_ideas:0 "Religiousss Ideas"
- missionary_schools:0 "Missionary Schools"
- missionary_schools_desc:0 "Although there is no shortage of people ready to go out and spread the true faith, most of these people simply do more harm than good. However, specialist schools to train the missionaries will ensure we have more people who cannot only spread the faith, but succeed as well.\n—"
- church_attendance_duty:0 "Church Attendance Duty"
- church_attendance_duty_desc:0 "By adopting a mandatory church attendance policy, the emphasis on religious values and beliefs will unquestionably minimize the costs of maintaining law and order.\n—"
- divine_supremacy:0 "Divine Supremacy"
- divine_supremacy_desc:0 "It is of the utmost importance that we rid our nation and its surrounding borders from the infidels pestering our lands.\n—"
- devoutness:0 "Devoutness"
- devoutness_desc:0 "Religion is one of the most important bulwarks of our rulership. By public displays of piety by the rulers, the ruled will follow suit. The growing of piety amongst our people will strengthen our rule.\n—"
- religious_tradition:0 "Religious Tradition"
- religious_tradition_desc:0 "The strength of our faith and public displays of piety and worship are admired by other lands both near and far. This is reflected in the prestige and glory to our realm.\n—"
- inquisition:0 "Inquisition"
- inquisition_desc:0 "FILLER\n—\nProvinces following your state religion receive §G-5%§W Local Minimum Autonomy, §G-0.025§W Monthly Autonomy Change, and §G-10%§W Province Governing Cost."
- deus_vult:0 "FILLER"
- deus_vult_desc:0 "FILLER\n—"
