@@ -27,7 +27,7 @@ on_trade_good_changed = {
 
 on_dependency_gained = {
 	ROOT = { # overlord
-		harpi_marcher_lords_overlord_update = yes
+		# harpi_marcher_lords_overlord_update = yes
 	}
 	FROM = { # subject
 		harpi_integrated_elites_subject_update = yes
@@ -36,7 +36,7 @@ on_dependency_gained = {
 
 on_dependency_lost = {
 	ROOT = { # overlord
-		harpi_marcher_lords_overlord_update = yes
+		# harpi_marcher_lords_overlord_update = yes
 	}
 	FROM = { # subject
 		harpi_integrated_elites_subject_update = yes

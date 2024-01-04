@@ -90,15 +90,14 @@ stewardship_ideas = {
 		reverse_relation_with_same_religion = 15 # makes both diplo-vassalization and converting vassals easier
 	}
 	marcher_lords = {
-		# receive 1 free subject if you have at least 3, or 2 free subjects if you have at least 6
 		vassal_forcelimit_bonus = 1
-		effect = {
-			harpi_marcher_lords_overlord_update = yes
-		}
-		removed_effect = {
-			remove_country_modifier = marcher_lords_2_marches
-			remove_country_modifier = marcher_lords_1_march
-		}
+		# effect = {
+		# 	# harpi_marcher_lords_overlord_update = yes
+		# }
+		# removed_effect = {
+		# 	# remove_country_modifier = marcher_lords_2_marches
+		# 	# remove_country_modifier = marcher_lords_1_march
+		# }
 	}
 	stewardship7 = {
 		liberty_desire_from_subject_development = -0.2

@@ -5,13 +5,13 @@ overlord_has_integrated_elites = {
 	fort_maintenance_modifier = -0.5
 }
 
-marcher_lords_2_marches = {
-	diplomatic_upkeep = 2
-}
+# marcher_lords_2_marches = {
+# 	diplomatic_upkeep = 2
+# }
 
-marcher_lords_1_march = {
-	diplomatic_upkeep = 1
-}
+# marcher_lords_1_march = {
+# 	diplomatic_upkeep = 1
+# }
 
 federalist7_age1 = {
 	administrative_efficiency = 0.01
