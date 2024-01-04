@@ -537,7 +537,7 @@ innovativeness_ideas_quantity_ideas_policy = {
 	}
 	
 	advisor_cost = -0.075
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -4037,7 +4037,7 @@ humanist_ideas_quantity_ideas_policy = {
 	}
 	
 	global_trade_goods_size_modifier = 0.05
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -7537,7 +7537,7 @@ federalist_ideas_quantity_ideas_policy = {
 	}
 	
 	vassal_income = 0.25
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -10586,7 +10586,7 @@ spy_ideas_quantity_ideas_policy = {
 		full_idea_group = quantity_ideas
 	}
 	
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	interest = -0.5
 	
 	effect = {}
@@ -10836,7 +10836,7 @@ diplomatic_ideas_quantity_ideas_policy = {
 		full_idea_group = quantity_ideas
 	}
 	
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	tolerance_heathen = 1
 	
 	effect = {}
@@ -11587,7 +11587,7 @@ maritime_ideas_quantity_ideas_policy = {
 	}
 	
 	global_ship_trade_power = 0.15
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -11961,7 +11961,7 @@ court_ideas_zealous_ideas_policy = {
 		full_idea_group = zealous_ideas
 	}
 	
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	missionary_maintenance_cost = -0.25
 	
 	effect = {}
@@ -11986,7 +11986,7 @@ court_ideas_artificery_ideas_policy = {
 		full_idea_group = artificery_ideas
 	}
 	
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	tolerance_heathen = 1
 	
 	effect = {}
@@ -12311,7 +12311,7 @@ stewardship_ideas_quality_ideas_policy = {
 		full_idea_group = quality_ideas
 	}
 	
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	yearly_corruption = -0.075
 	
 	effect = {}
@@ -12836,7 +12836,7 @@ realist_ideas_quantity_ideas_policy = {
 		full_idea_group = quantity_ideas
 	}
 	
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	liberty_desire_from_subject_development = -0.1
 	
 	effect = {}
@@ -13337,7 +13337,7 @@ authority_ideas_quantity_ideas_policy = {
 	}
 	
 	reinforce_speed = 0.1
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -13837,7 +13837,7 @@ adventure_ideas_quantity_ideas_policy = {
 	}
 	
 	global_manpower_modifier = 0.10
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -14087,7 +14087,7 @@ monastic_ideas_quantity_ideas_policy = {
 	}
 	
 	tolerance_own = 1
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -14337,7 +14337,7 @@ lawful_ideas_quantity_ideas_policy = {
 	}
 	
 	leader_cost = -0.1
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -14586,7 +14586,7 @@ chaotic_ideas_quantity_ideas_policy = {
 		full_idea_group = quantity_ideas
 	}
 	
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	overextension_impact_modifier = -0.05
 	
 	effect = {}
@@ -14836,7 +14836,7 @@ dwarf_legacy_quantity_ideas_policy = {
 		full_idea_group = quantity_ideas
 	}
 	
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.25
 	build_cost = -0.075
 	
 	effect = {}
