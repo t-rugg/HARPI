@@ -518,7 +518,7 @@ advanced_armies_ideas = {
 	}
 	advanced_armies3 = {
 		infantry_fire = 0.10
-		special_unit_forcelimit = 0.3 # adds 30% of the fraction (e.g. 30% rajput fraction becomes 40% rajput fraction)
+		special_unit_forcelimit = 0.2 # adds 20% of the fraction (e.g. 20% rajput fraction becomes 24% rajput fraction)
 		                              # this might be broken with some tag... not sure. might have to change to rajput fraction but this is more fun
 	}
 	advanced_armies4 = {

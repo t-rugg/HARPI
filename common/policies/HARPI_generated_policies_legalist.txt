@@ -1048,3 +1048,28 @@ honor_ideas_legalist_ideas_policy = {
 }
 
 
+artificery_ideas_legalist_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = artificery_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = artificery_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	special_unit_forcelimit = 0.2
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
