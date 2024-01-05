@@ -137,7 +137,7 @@ militarist1_both_modifier = {
 }
 
 harpi_inquisition_province_modifier = {
-	min_local_autonomy = -5
+	local_development_cost = -0.05
 	local_autonomy = -0.025
-	local_governing_cost = -0.1
+	local_governing_cost = -0.05
 }

@@ -68,8 +68,9 @@ mil = {
 	"mercenary_ideas": ("inflation_reduction = 0.05", "trade_efficiency = 0.075", "infantry_power = 0.05", "advisor_pool = 1", "vassal_income = 0.25", "global_regiment_cost = -0.05"),
 	"reclamation_ideas": ("same_culture_advisor_cost = -0.1", "trade_steering = 0.25", "land_morale = 0.05", "global_missionary_strength = 0.01", "prestige = 1", "land_attrition = -0.1"),
 	"war_economy_ideas": ("interest = -0.5", "naval_tradition_from_battle = 0.5", "reserves_organisation = 0.1", "inflation_reduction = 0.05", "global_monthly_devastation = -0.05", "morale_damage_received = -0.05"),
-	"zealous_ideas": ("missionary_maintenance_cost = -0.25", "diplomatic_upkeep = 1", "army_tradition_from_battle = 0.5", "war_exhaustion = -0.01", "years_of_nationalism = -5", "icavalry_shock = 0.15"),
-	"artificery_ideas": ("tolerance_heathen = 1", "envoy_travel_time = -0.2", "infantry_fire = 0.075", "production_efficiency = 0.075", "number_of_cannons_modifier = 0.075", "land_attrition = -0.1")
+	"zealous_ideas": ("missionary_maintenance_cost = -0.25", "diplomatic_upkeep = 1", "army_tradition_from_battle = 0.5", "war_exhaustion = -0.01", "years_of_nationalism = -5", "cavalry_shock = 0.15"),
+	"artificery_ideas": ("tolerance_heathen = 1", "envoy_travel_time = -0.2", "infantry_fire = 0.075", "production_efficiency = 0.075", "number_of_cannons_modifier = 0.075", "land_attrition = -0.1"),
+	"advanced_armies_ideas": ("global_institution_spread = 0.25", "heavy_ship_power = 0.075", "movement_speed = 0.075", "artillery_cost = -0.075", "prestige_from_land = 0.5", "fire_damage = 0.05"),
 }
 
 ideas = adm | dip | mil

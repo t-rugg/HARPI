@@ -422,7 +422,7 @@ religious_ideas = {
 	}
 	inquisition = {
 		prestige_per_development_from_conversion = 0.1
-		# -5 min local autonomy, -0.025 monthly autonomy, and -10% governing cost in provinces that follow our religion
+		# -5% development cost, -0.025 monthly autonomy, and -5% governing cost in provinces that follow our religion
 		effect = {
 			every_owned_province = {
 				harpi_inquisition_update = yes
@@ -1204,7 +1204,7 @@ maritime_ideas = {
 		global_ship_cost = -0.1
 	}
 	sea_hawks = {
-		# coastal provinces receive +15% trade value, -5% dev cost, -0.25 local monthly devastation, and +0.25 local propserity growth
+		# coastal provinces receive +10% trade value, -5% dev cost, and +0.1 local propserity growth
 		# TODO: loc
 		admiral_cost = -0.25
 		effect = {
