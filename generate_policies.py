@@ -23,7 +23,7 @@ import random
 
 # format: "idea_group_name": ("adm_modifier", "dip_modifier", "mil_modifier", "adm_modifier", "dip_modifier", "mil_modifier") 0-indexed
 adm = { # legalist ideas get special handling
-	"innovativeness_ideas": ("advisor_cost = -0.075", "trade_efficiency = 0.075", "infantry_power = 0.05", "global_institution_spread = 0.25", "reform_progress_growth = 0.10", "artillery_fire = 0.015"),
+	"innovativeness_ideas": ("advisor_cost = -0.075", "trade_efficiency = 0.075", "infantry_power = 0.05", "global_institution_spread = 0.25", "reform_progress_growth = 0.10", "artillery_fire = 0.15"),
 	"religious_ideas": ("global_missionary_strength = 0.01", "tolerance_own = 1", "morale_damage = 0.05", "max_absolutism = 5", "reverse_relation_with_same_religion = 10", "fire_damage_received = -0.05"),
 	"economic_ideas": ("inflation_reduction = 0.05", "build_time = -0.075", "land_forcelimit_modifier = 0.1", "global_tax_modifier = 0.1", "heavy_ship_power = 0.075", "drill_decay_modifier = -0.2"),
 	"expansion_ideas": ("build_cost = -0.075", "colonist_placement_chance = 0.035" , "global_manpower_modifier = 0.10", "religious_unity = 0.075", "trade_steering = 0.25", "merc_leader_army_tradition = 0.2"),
