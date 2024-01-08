@@ -71,6 +71,7 @@ mil = {
 	"zealous_ideas": ("missionary_maintenance_cost = -0.25", "diplomatic_upkeep = 1", "army_tradition_from_battle = 0.5", "war_exhaustion = -0.01", "years_of_nationalism = -5", "cavalry_shock = 0.15"),
 	"artificery_ideas": ("tolerance_heathen = 1", "envoy_travel_time = -0.2", "infantry_fire = 0.075", "production_efficiency = 0.075", "number_of_cannons_modifier = 0.075", "land_attrition = -0.1"),
 	"advanced_armies_ideas": ("global_institution_spread = 0.25", "heavy_ship_power = 0.075", "movement_speed = 0.075", "artillery_cost = -0.075", "prestige_from_land = 0.5", "fire_damage = 0.05"),
+	"mixed_armies_ideas": ("global_autonomy = -0.05", "diplomatic_reputation = 1", "mercenary_discipline = 0.035", "all_estate_loyalty_equilibrium = 0.02", "reduced_trade_penalty_on_non_main_tradenode = 0.25", "land_forcelimit_modifier  = 0.1")
 }
 
 ideas = adm | dip | mil
@@ -211,16 +212,17 @@ legalist_mil = { # these aren't THAT much better than other mil policies; otherw
 	             # maybe you have to anyway... idk, maybe I should stop worrying about MP balance entirely since this mod isn't really designed for that
 	"offensive_ideas": "siege_ability = 0.2",
 	"defensive_ideas": "defensiveness = 0.3",
-	"quality_ideas": "discipline = 0.035",
+	"quality_ideas": "discipline = 0.05",
 	"quantity_ideas": "land_forcelimit_modifier  = 0.2",
 	"naval_ideas": "ship_durability = 0.1",
-	"mercenary_ideas": "mercenary_discipline = 0.05",
-	"reclamation_ideas": "shock_damage_received = -0.075",
+	"mercenary_ideas": "mercenary_discipline = 0.075",
+	"reclamation_ideas": "shock_damage_received = -0.1",
 	"war_economy_ideas": "global_regiment_cost = -0.1",
-	"advanced_armies_ideas": "fire_damage = 0.075",
-	"zealous_ideas": "morale_damage = 0.075",
-	"honor_ideas": "cav_to_inf_ratio = 0.15",
-	"artificery_ideas": "special_unit_forcelimit = 0.2"
+	"advanced_armies_ideas": "fire_damage = 0.1",
+	"zealous_ideas": "morale_damage = 0.1",
+	"honor_ideas": "cav_to_inf_ratio = 0.2",
+	"artificery_ideas": "special_unit_forcelimit = 0.3",
+	"mixed_armies_ideas": "morale_damage_received = -0.1"
 	# TODO
 }
 

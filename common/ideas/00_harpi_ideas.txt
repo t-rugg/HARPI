@@ -1405,7 +1405,7 @@ mixed_armies_ideas = { # loc: assimilated army ideas??
 	category = MIL
 
 	bonus = {
-		possible_mil_policy = 1
+		morale_damage_received = -0.1
 	}
 
 	mixed_armies1 = {

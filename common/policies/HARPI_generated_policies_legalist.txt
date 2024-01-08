@@ -836,7 +836,7 @@ quality_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	discipline = 0.035
+	discipline = 0.05
 	reform_progress_growth = 0.05
 	
 	effect = {}
@@ -911,7 +911,7 @@ mercenary_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	mercenary_discipline = 0.05
+	mercenary_discipline = 0.075
 	reform_progress_growth = 0.05
 	
 	effect = {}
@@ -936,7 +936,7 @@ reclamation_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	shock_damage_received = -0.075
+	shock_damage_received = -0.1
 	reform_progress_growth = 0.05
 	
 	effect = {}
@@ -986,7 +986,7 @@ advanced_armies_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	fire_damage = 0.075
+	fire_damage = 0.1
 	reform_progress_growth = 0.05
 	
 	effect = {}
@@ -1011,7 +1011,7 @@ zealous_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	morale_damage = 0.075
+	morale_damage = 0.1
 	reform_progress_growth = 0.05
 	
 	effect = {}
@@ -1036,7 +1036,7 @@ honor_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	cav_to_inf_ratio = 0.15
+	cav_to_inf_ratio = 0.2
 	reform_progress_growth = 0.05
 	
 	effect = {}
@@ -1061,7 +1061,32 @@ artificery_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	special_unit_forcelimit = 0.2
+	special_unit_forcelimit = 0.3
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+mixed_armies_ideas_legalist_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = mixed_armies_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = mixed_armies_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	morale_damage_received = -0.1
 	reform_progress_growth = 0.05
 	
 	effect = {}
