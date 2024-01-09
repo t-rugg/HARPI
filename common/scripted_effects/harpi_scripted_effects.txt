@@ -363,3 +363,28 @@ harpi_inquisition_convert_country = {
 		harpi_inquisition_update = yes
 	}
 }
+
+harpi_urbanization_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_idea = urbanization2
+			}
+			OR = {
+				has_terrain = city_terrain
+				is_in_capital_area = yes
+			}
+			NOT = {
+				has_terrain = dwarven_hold
+				has_terrain = dwarven_hold_surface
+			}
+		}
+		add_province_modifier = {
+			name = urbanization2_modifier
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = urbanization2_modifier
+	}
+}

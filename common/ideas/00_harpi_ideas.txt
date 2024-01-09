@@ -370,7 +370,7 @@ urbanization_ideas = {
 	category = ADM
 
 	bonus = {
-		development_cost = -0.05
+		promote_culture_cost = -0.25
 	}
 
 	trigger = {
@@ -382,11 +382,21 @@ urbanization_ideas = {
 
 	urbanization1 = {
 		state_maintenance_modifier = -0.25
-		promote_culture_cost = -0.25
+		expand_infrastructure_cost_modifier = -0.25
 	}
 	urbanization2 = {
-		development_cost = -0.025
-		expand_infrastructure_cost_modifier = -0.25
+		development_cost = -0.05
+		# additional -5% dev cost and -10% governing cost in cities and in your capital area
+		effect = {
+			every_owned_province = {
+				harpi_urbanization_province_update = yes
+			}
+		}
+		removed_effect = { # ignore CWTools, this works
+			every_owned_province = {
+				remove_province_modifier = urbanization2_modifier
+			}
+		}
 	}
 	urbanization3 = {
 		reform_progress_growth = 0.15
