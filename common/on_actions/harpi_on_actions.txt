@@ -57,7 +57,41 @@ on_flagship_destroyed = {
 }
 
 on_national_focus_change = {
-	harpi_chaotic2_national_focus_changed = yes
+	remove_country_modifier = chaotic2_adm_focus
+	remove_country_modifier = chaotic2_dip_focus
+	remove_country_modifier = chaotic2_mil_focus
+	if = {
+		limit = {
+			has_idea = chaotic2
+		}
+		if = {
+			limit = {
+				national_focus = ADM
+			}
+			add_country_modifier = {
+				name = chaotic2_adm_focus
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				national_focus = DIP
+			}
+			add_country_modifier = {
+				name = chaotic2_dip_focus
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				national_focus = MIL
+			}
+			add_country_modifier = {
+				name = chaotic2_mil_focus
+				duration = -1
+			}
+		}
+	}
 }
 
 # country religion

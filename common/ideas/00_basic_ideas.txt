@@ -384,7 +384,7 @@ religious_ideas = {
 	category = ADM
 
 	bonus = { # culture conversion is gone! but I think the replacement is plenty strong personally
-		max_absolutism = 10 # hand out lots of privileges to clergy (or other estates)
+		culture_conversion_cost = -0.15
 		brahmins_hindu_loyalty_modifier = 0.1
 		church_loyalty_modifier = 0.1
 

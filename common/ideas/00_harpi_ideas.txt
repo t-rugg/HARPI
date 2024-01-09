@@ -730,7 +730,7 @@ integration_ideas = {
 	}
 
 	integration1 = {
-		culture_conversion_cost = -0.5
+		culture_conversion_cost = -0.33
 		culture_conversion_time = -0.25
 	}
 	integration2 = {
@@ -1967,6 +1967,12 @@ chaotic_ideas = {
 		national_focus_years = -5
 		# gain 1 free policy of your national focus type
 		# TODO: loc
+		effect = {}
+		removed_effect = {
+			remove_country_modifier = chaotic2_adm_focus
+			remove_country_modifier = chaotic2_dip_focus
+			remove_country_modifier = chaotic2_mil_focus
+		}
 	}
 	chaotic3 = {
 		war_exhaustion = -0.03
