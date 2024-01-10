@@ -425,10 +425,7 @@ urbanization_ideas = {
 		}
 		modifier = { # devving-oriented nation
 			factor = 3.5
-			OR = {
-				culture_group = dwarven
 				has_reform = free_city
-			}
 		}
 		modifier = { # near full gov cap
 			factor = 1.05

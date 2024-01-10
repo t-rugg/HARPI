@@ -374,7 +374,7 @@ harpi_urbanization_province_update = {
 			}
 			OR = {
 				has_terrain = city_terrain
-				is_in_capital_area = yes
+				num_of_times_expanded_infrastructure = 1
 			}
 			NOT = {
 				has_terrain = dwarven_hold
