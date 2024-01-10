@@ -144,5 +144,4 @@ harpi_inquisition_province_modifier = {
 
 urbanization2_modifier = {
 	local_development_cost = -0.05
-	local_governing_cost = -0.1
 }

@@ -370,7 +370,7 @@ urbanization_ideas = {
 	category = ADM
 
 	bonus = {
-		promote_culture_cost = -0.25
+		state_governing_cost = -0.1
 	}
 
 	trigger = {
