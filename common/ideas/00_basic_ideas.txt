@@ -1381,10 +1381,10 @@ quantity_ideas = { # change loc to conscription ideas
 		land_forcelimit_modifier  = 0.25 #1.35
 	}
 	mass_army = {
-		global_manpower_modifier = 0.2 #1.35
+		global_manpower_modifier = 0.25 #1.35
 	}
 	the_young_can_serve = {
-		manpower_recovery_speed = 0.15
+		manpower_recovery_speed = 0.2
 	}
 	enforced_service = {
 		global_regiment_cost = -0.1
