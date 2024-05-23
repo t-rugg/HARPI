@@ -28,13 +28,13 @@
  desc_marcher_lords_1_march:0 "We receive a free subject from the Marcher Lords idea."
 
  federalist7_age1:0 "Decentralized Administration"
- desc_federalist7_age1:0 "We receive 1% Administrative Efficiency per Age from the Decentralized Administration idea."
+ desc_federalist7_age1:0 "We receive 1.25% Administrative Efficiency per Age from the Decentralized Administration idea."
  federalist7_age2:0 "Decentralized Administration"
- desc_federalist7_age2:0 "We receive 1% Administrative Efficiency per Age from the Decentralized Administration idea."
+ desc_federalist7_age2:0 "We receive 1.25% Administrative Efficiency per Age from the Decentralized Administration idea."
  federalist7_age3:0 "Decentralized Administration"
- desc_federalist7_age3:0 "We receive 1% Administrative Efficiency per Age from the Decentralized Administration idea."
+ desc_federalist7_age3:0 "We receive 1.25% Administrative Efficiency per Age from the Decentralized Administration idea."
  federalist7_age4:0 "Decentralized Administration"
- desc_federalist7_age4:0 "We receive 1% Administrative Efficiency per Age from the Decentralized Administration idea."
+ desc_federalist7_age4:0 "We receive 1.25% Administrative Efficiency per Age from the Decentralized Administration idea."
 
  mixed_armies7_initialize_title:0 "§YInitialize Mixed Armies§W"
  mixed_armies7_initialize_desc:0 "Modifiers are hidden to avoid cluttering your government screen. Their effects can still be seen when checking the modified value itself.\n§gPlease allow up to 30 days for effects to update."

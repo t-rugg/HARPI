@@ -945,6 +945,7 @@ authority_ideas = {
 	category = DIP
 
 	bonus = {
+		possible_dip_policy = 1
 		imperial_authority = 0.1
 		reelection_cost = -0.1
 	}
@@ -974,7 +975,7 @@ authority_ideas = {
 		expand_administration_cost = -0.33
 	}
 	authority7 = {
-		max_absolutism_effect = .10 # 3% admin efficiency at 110 absolutism
+		administrative_efficiency = 0.015 # careful!
 	}
 
 	ai_will_do = {
@@ -1289,8 +1290,8 @@ federalist_ideas = {
 		global_unrest = -1.5
 	}
 	federalist7 = { # Decentralized Administration
-		# 1% EXTRA ADMIN EFFICIENCY PER AGE
-		max_absolutism_effect = -0.10 #downside!
+		# 1.25% EXTRA ADMIN EFFICIENCY PER AGE
+		max_absolutism = -10 #downside!
 		effect = {
 			hidden_effect = {
 				capital_scope = {
