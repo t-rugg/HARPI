@@ -1321,15 +1321,15 @@ honor_ideas = {
 		prestige_from_land = 0.5
 	}
 
+	honor3 = { # Trumpet and Staff
+		leader_land_shock = 1
+	}
 	honor1 = { # Lance and Horse
-		cavalry_power = 0.1
+		cavalry_shock = 0.15
 	}
 	honor2 = { # Saber and Shield
 		army_tradition_from_battle = 1
 		naval_tradition_from_battle = 1
-	}
-	honor3 = { # Trumpet and Staff
-		leader_land_shock = 1
 	}
 	honor4 = { # They Will Greet Us As Liberators
 		ae_impact = -0.05
