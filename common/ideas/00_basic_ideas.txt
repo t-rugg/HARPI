@@ -5,7 +5,7 @@ aristocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		max_absolutism_effect = .10 # 3% admin efficiency at 110 absolutism
+		cavalry_fire = 0.25
 
 		nobles_loyalty_modifier = 0.1
 		rajput_loyalty_modifier = 0.1
@@ -33,16 +33,16 @@ aristocracy_ideas = {
 	}
 	
 	noble_knights = {
-		cavalry_power = 0.15
-		cavalry_cost = -0.20
+		cavalry_power = 0.1
+		leader_siege = 1
 	}
 	serfdom = {
 		global_manpower_modifier = 0.15
-		leader_siege = 1
+		development_cost = -0.05
 	}
 	noble_resilience = { 
 		cav_to_inf_ratio = 0.1
-		global_autonomy = -0.05 
+		cavalry_cost = -0.2
 	}
 	noble_officers = {
 		army_tradition_decay = -0.01
@@ -53,11 +53,12 @@ aristocracy_ideas = {
 		general_cost = -0.1
 	}
 	rightful_conquest = {
-		shock_damage = 0.075
+		shock_damage = 0.05
 		fabricate_claims_cost = -0.5
 	}
 	local_nobility = {
 		no_stability_loss_on_monarch_death = yes
+		global_autonomy = -0.05 
 	}
 	
 
@@ -79,9 +80,12 @@ aristocracy_ideas = {
 			factor = 0.5
 			is_subject = yes
 		}
-		modifier = { 
-			factor = 1.25
-			has_idea_group = spy_ideas 
+		modifier = {
+			factor = 2
+			OR = {
+				tag = H90 #Spiderwretch
+				tag = B58 #Adenica
+			}
 		}
 	}
 }
@@ -131,7 +135,7 @@ plutocracy_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 3.75
+		factor = 1.5
 		
 		modifier = {
 			factor = 1.25
@@ -142,11 +146,7 @@ plutocracy_ideas = {
 			production_income_percentage = 0.35
 		}
 		modifier = {
-			factor = 0.5
-			NOT = { monthly_mil = 7 }
-		}
-		modifier = {
-			factor = 1.1
+			factor = 1.25
 			OR = {
 				personality = ai_capitalist
 				personality = ai_militarist 
@@ -204,10 +204,14 @@ horde_gov_ideas = {
 	}
 	
 	ai_will_do = {
-		factor = 8
+		factor = 6
 		modifier = {
 			factor = 1.5
 			personality = ai_militarist 
+		}
+		modifier = {
+			factor = 2
+			tag = H90 #Spiderwretch
 		}
 	}
 }
@@ -747,6 +751,10 @@ defensive_ideas = {
 			factor = 2
 			is_march = yes
 		}
+		modifier = { # this is moderately annoying on great powers because of the defensive pip
+			factor = 0.3
+			is_great_power = yes 
+		}
 	}
 }
 
@@ -831,9 +839,6 @@ trade_ideas = {
 
 
 economic_ideas = {
-	# I don't think I need to touch this? it's very aggressively okay
-	# maybe make it more focused on loans and tax, and remove the production/goods produced
-	# but that seems like a very boring idea group. idk
 	category = ADM
 
 	bonus = {
@@ -865,18 +870,14 @@ economic_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0.35
+		factor = 0.5
 		modifier = {
-			factor = 2
+			factor = 1.5
 			inflation = 5
 		}
 		modifier = {
-			factor = 1.25
-			inflation = 10
-		}
-		modifier = {
 			factor = 1.5
-			has_reform = steppe_horde
+			inflation = 10
 		}
 		modifier = {
 			factor = 1.1
@@ -890,27 +891,11 @@ economic_ideas = {
 			factor = 1.2
 			personality = ai_capitalist 
 		}
-		modifier = { 
-			factor = 0.8
-			NOT = { monthly_adm = 7 } 
-		}
-		modifier = {
-			factor = 1.1
-			national_focus = ADM 
-		}
-		# modifier = {
-		# 	factor = 1.05
-		# 	OR = {
-		# 		has_idea_group = quality_ideas
-		# 		has_idea_group = trade_ideas
-		# 		has_idea_group = offensive_ideas 
-		# 	}
-		# }
 	}
 }
 
 exploration_ideas = {
-	# changing this too much has the potential to screw with balance. i just moved the colonial range back 1 idea for balance pacing reasons (so that it costs 1200 dip to unlock still))
+	# changing this too much has the potential to screw with balance. i just moved the colonial range back 1 idea for balance pacing reasons (so that it costs 1200 dip to unlock still)
 	category = DIP
 	important = yes
 
@@ -1373,7 +1358,7 @@ quality_ideas = { # change loc maybe?
 	}
 }
 
-quantity_ideas = { # change loc to conscription ideas
+quantity_ideas = { 
 	# some numerical nerfs but nothing major on that front
 	category = MIL
 
@@ -1838,7 +1823,6 @@ naval_ideas = {
 
 court_ideas = { #1.35
 	# doesn't really need tweaks tbh, I just buffed the bonus and gave a tiny bit of dip rep
-	# also gave it no stab loss on monarch death (moved from a policy into the group itself)
 	category = DIP
 
 
