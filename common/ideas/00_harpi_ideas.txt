@@ -424,12 +424,18 @@ urbanization_ideas = {
 			}
 		}
 		modifier = { # devving-oriented nation
-			factor = 3.5
+			factor = 3
 				has_reform = free_city
 		}
 		modifier = { # near full gov cap
 			factor = 1.05
 			governing_capacity_percentage = 0.9
+		}
+		modifier = {
+			factor = 1.4
+			any_owned_province = {
+				has_terrain = city_terrain
+			}
 		}
 		modifier = {
 			factor = 1.15
@@ -441,7 +447,7 @@ urbanization_ideas = {
 			NOT = {tag = R62}
 		}
 		modifier = {
-			factor = 4
+			factor = 5
 			OR = {
 				tag = G91 #Isobelin
 				tag = A38 #Anbenncost
@@ -939,7 +945,6 @@ authority_ideas = {
 	category = DIP
 
 	bonus = {
-		max_absolutism_effect = .10 # 3% admin efficiency at 110 absolutism
 		imperial_authority = 0.1
 		reelection_cost = -0.1
 	}
@@ -969,7 +974,7 @@ authority_ideas = {
 		expand_administration_cost = -0.33
 	}
 	authority7 = {
-		min_autonomy_in_territories = -0.1
+		max_absolutism_effect = .10 # 3% admin efficiency at 110 absolutism
 	}
 
 	ai_will_do = {
@@ -1248,7 +1253,7 @@ professional_army_ideas = { # focus is thematically on standing armies, drilling
 		war_exhaustion = -0.03
 	}
 	professional_army7 = {
-		discipline = 0.025
+		discipline = 0.05
 	}
 
 	ai_will_do = {
@@ -1318,7 +1323,6 @@ honor_ideas = {
 
 	honor1 = { # Lance and Horse
 		cavalry_power = 0.1
-		cav_to_inf_ratio = 0.1
 	}
 	honor2 = { # Saber and Shield
 		army_tradition_from_battle = 1

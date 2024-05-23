@@ -41,8 +41,7 @@ aristocracy_ideas = {
 		leader_siege = 1
 	}
 	noble_resilience = { 
-		# cav_to_inf_ratio = 0.1 - moved to honor so that caf to inf ratio isnt restricted by government
-		discipline = 0.025
+		cav_to_inf_ratio = 0.1
 		global_autonomy = -0.05 
 	}
 	noble_officers = {
@@ -1293,11 +1292,11 @@ quality_ideas = { # change loc maybe?
 	category = MIL
 
 	bonus = {
-		discipline = 0.035
+		discipline = 0.025
 	}
 
 	private_to_marshal = {
-		infantry_power = 0.075
+		infantry_power = 0.1
 		drill_decay_modifier = -0.1
 	}
 	quality_education = {
@@ -1305,7 +1304,7 @@ quality_ideas = { # change loc maybe?
 		navy_tradition = 0.5
 	}
 	finest_of_horses = {
-		cavalry_power = 0.075
+		cavalry_power = 0.1
 	}
 	escort_ships = {
 		ship_durability = 0.05
@@ -1317,7 +1316,7 @@ quality_ideas = { # change loc maybe?
 		naval_attrition = -0.25
 	}
 	massed_battery = {
-		artillery_power = 0.075
+		artillery_power = 0.1
 	}
 
 	ai_will_do = {
