@@ -1604,7 +1604,11 @@ subterranean_ideas = { # this group is comparable to Reclamation Ideas but for t
 		infantry_fire = 0.1
 	}
 	subterranean5 = {
-		colony_development_boost = 1
+		# colony_development_boost = 1 - after first age
+		colony_cost_modifier = -0.2
+		removed_effect = {
+			remove_country_modifier = subterranean5_modifier
+		}
 	}
 	subterranean6 = { # Traps and Dead Ends
 		defensiveness = 0.15

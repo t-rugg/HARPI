@@ -279,7 +279,7 @@
  subterranean4:0 "Cavern Navigation"
  subterranean4_desc:0 "Even with access to maps, there is a great level of cave-traversal proficiency that can be borne only through much effort and experience. Thnakfully, our armies are more than capable.\n—" 
  subterranean5:0 "Chthonic Food"
- subterranean5_desc:0 "While the surface-dwellers subsist off their pathetic, sun-scorched, soil-grown slop, we find nourishment and fulfilment in the fungi and serpentsbloom of the caverns.\n—"
+ subterranean5_desc:0 "While the surface-dwellers subsist off their pathetic, sun-scorched, soil-grown slop, we find nourishment and fulfilment in the fungi and serpentsbloom of the caverns.\n—\n+1 development in finished colonies after the Age of Greentide."
  subterranean6:0 "Traps and Dead Ends"
  subterranean6_desc:0 "Those on the surface need to build their fortifications from scratch, in the middle of the open. What fools! We already have such impressive defensive structures available to us, carved into the earth of Halann itself!\n—"
  subterranean7:0 "Cave-Ins"
@@ -319,7 +319,7 @@
 
  monastic_ideas:0 "Monastic Ideas"
  monastic1:0 "Monastic Contemplation"
- monastic1_desc:0 "Through temperance, we can reflect. Through reflection, we gain clarity.\n—\nCan take a decision to §Ggain 2 Innovativeness§! at the cost of £icon_stability£§R+1 Stability cost to declare war§! and £icon_manpower£§R-50% Manpower recovery speed§! for §Y5 years§!. §YThis decision can only be taken when at peace and when its debuff is not active, and removing the idea group does not remove this debuff.§!"
+ monastic1_desc:0 "Through temperance, we can reflect. Through reflection, we gain clarity.\n—\nCan take a decision to §Ggain 1 Innovativeness§! at the cost of £icon_stability£§R+1 Stability cost to declare war§! and £icon_manpower£§R-30% Manpower recovery speed§! for §Y5 years§!. §YThis decision can only be taken when at peace and when its debuff is not active, and removing the idea group does not remove this debuff.§!"
  monastic2:0 "Pious Thought"
  monastic2_desc:0 "Our commitment to religious studies allows us to better inform our societal development in a righteous and divine manner.\n—"
  monastic3:0 "Monastery Scribes"

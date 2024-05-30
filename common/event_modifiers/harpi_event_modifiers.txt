@@ -145,3 +145,7 @@ harpi_inquisition_province_modifier = {
 urbanization2_modifier = {
 	local_development_cost = -0.05
 }
+
+subterranean5_modifier = {
+	colony_development_boost = 1
+}

@@ -113,3 +113,8 @@
 
  harpi_inquisition_province_modifier:0 "Inquisition"
  desc_harpi_inquisition_province_modifier:0 "Our fanatical inquisition creates a pretense for us to maintain better control of our provinces and foster local communities."
+
+ subterranean5_initialize_title:0 "§YInitialize Chthonic Food Colony Boost§W"
+ subterranean5_initialize_desc:0 "Enables the secondary effect of Chthonic Food after leaving the Age of Greentide. This modifier will be removed if you remove the idea group."
+ subterranean5_modifier:0 "Chthonic Food"
+ desc_subterranean5_modifier:0 "Our willingness to eat cave food helps strengthen our subterranean expansion."
