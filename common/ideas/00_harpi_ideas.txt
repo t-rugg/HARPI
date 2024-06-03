@@ -2010,3 +2010,170 @@ chaotic_ideas = {
 		}
 	}
 }
+
+naval_ideas = {
+	# wtf do I do with this group
+	# idk its broken at naval combat but also underpowered because naval doesnt matter in single player
+	# for multiplayer its straight up banworthy though
+	# super weird idea group in general
+	category = MIL
+
+	trigger = {
+		primitives = no
+	}
+
+	bonus = { 
+		capture_ship_chance = 0.25
+		global_naval_barrage_cost = -1
+	}
+
+	boarding_parties = {
+		leader_naval_shock = 1
+		landing_penalty = -1 #1.35
+	}
+	improved_rams = { # TODO: update the loc
+		galley_power = 0.15
+		siege_blockade_progress = 1
+	}
+	naval_cadets = {
+		leader_naval_fire = 1
+		sunk_ship_morale_hit_recieved = -0.2
+	}
+	naval_glory = {
+		naval_morale = 0.1
+		free_navy_leader_pool = 1
+	}
+	press_gangs = {
+		sailors_recovery_speed = 0.25
+		allowed_marine_fraction = 0.25
+	}
+	oak_forests_for_ships = {
+		# ditch the heavy ship power
+		number_of_cannons_modifier = 0.1
+		# capturing or destroying a flagship grants a permanent +5% goods produced, up to +20%
+		# TODO: the loc for the above^
+		effect = {
+			initialize_oak_forests_for_ships_modifier = yes
+		}
+		removed_effect = {
+			remove_oak_forests_for_ships_modifiers = yes
+		}
+	}
+	superior_seamanship = {
+		global_naval_engagement_modifier = 0.1 # nerfed
+	}
+
+	ai_will_do = {
+		factor = 0.45
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+			NOT = { is_colonial_nation = yes }
+		}
+		modifier = {
+			factor = 0.31
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.31
+			num_of_cities = 50
+		}
+
+		modifier = {
+			factor = 2
+			has_government_attribute = is_pirate_republic_reform
+		}
+	}
+}
+
+high_seas_ideas = {
+	category = MIL
+
+	trigger = {
+		primitives = no
+	}
+
+	bonus = {
+		possible_dip_policy = 1
+		free_dip_policy = 1
+		privateer_efficiency = 0.15
+	}
+
+	high_seas1 = {
+		heavy_ship_power = 0.15
+		heavy_ship_cost = -0.15
+	}
+	
+	high_seas2 = {
+		flagship_morale = 0.2
+		flagship_cost = -0.4
+	}
+
+	high_seas3 = {
+		merchants = 1
+		trade_range_modifier = 0.5
+		ship_power_propagation = 0.15
+	}
+
+	high_seas4 = {
+		naval_attrition = -0.15
+		sailor_maintenance_modifer = -0.15
+	}
+
+	high_seas5 = {
+		hull_size_modifier = 0.05
+		navy_tradition = 1
+	}
+
+	high_seas6 = {
+		movement_speed_in_fleet_modifier = 1 
+		reduced_liberty_desire_on_other_continent = 15
+	}
+
+	high_seas7 = {
+		ship_durability = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0.3
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+			NOT = { is_colonial_nation = yes }
+		}
+		modifier = {
+			factor = 0.31
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.31
+			num_of_cities = 50
+		}
+
+		modifier = {
+			factor = 10
+			has_government_attribute = is_pirate_republic_reform
+		}
+
+		modifier = {
+			factor = 2
+			num_of_heavy_ship = 20
+		}
+	}
+}

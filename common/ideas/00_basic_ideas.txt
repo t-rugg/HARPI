@@ -300,7 +300,7 @@ indigenous_ideas = { # TODO
 		idea_cost = -0.1
 	}
 	indigenous_treaties = {
-		province_warscore_cost = -0.2
+		province_warscore_cost = -0.1 #nerfed
 	}
 
 	ai_will_do = {
@@ -1165,12 +1165,12 @@ maritime_ideas = {
 
 	bonus = {
 		sea_repair = yes
-		movement_speed_in_fleet_modifier = 1 
+		light_ship_cost = -0.15
 	}
 
 	merchant_traditions = {
 		naval_tradition_from_trade = 1.0
-		trade_range_modifier = 0.25
+		ship_power_propagation = 0.25
 	}
 	merchant_marine = {
 		global_sailors_modifier = 0.5
@@ -1182,10 +1182,9 @@ maritime_ideas = {
 	}
 	grand_navy = {
 		naval_forcelimit_modifier = 0.5
-		ship_power_propagation = 0.25
 	}
 	ships_penny = {
-		global_ship_cost = -0.1
+		global_ship_cost = -0.15
 	}
 	sea_hawks = {
 		# coastal provinces receive +10% trade value, -5% dev cost, and +0.1 local propserity growth
@@ -1737,89 +1736,7 @@ humanist_ideas = {
 
 # see 00_harpi_ideas.txt for new influence
 
-naval_ideas = {
-	# wtf do I do with this group
-	# idk its broken at naval combat but also underpowered because naval doesnt matter in single player
-	# for multiplayer its straight up banworthy though
-	# I decided to just nerf it and leave it, but... idk I feel like I want to give it more reasons to be worth taking
-	# super weird idea group in general
-	category = MIL
-
-	trigger = {
-		primitives = no
-	}
-
-	bonus = { 
-		global_naval_barrage_cost = -1
-		global_naval_engagement_modifier = 0.05 # SEVERELY nerfed
-	}
-
-	boarding_parties = {
-		leader_naval_shock = 1
-		landing_penalty = -1 #1.35
-	}
-	improved_rams = { # TODO: update the loc
-		# no galley stuff in this group
-		siege_blockade_progress = 1
-	}
-	naval_cadets = {
-		leader_naval_fire = 1
-		sunk_ship_morale_hit_recieved = -0.33
-	}
-	naval_glory = {
-		naval_morale = 0.1
-		navy_tradition = 1
-	}
-	press_gangs = {
-		sailors_recovery_speed = 0.25
-		allowed_marine_fraction = 0.25
-	}
-	oak_forests_for_ships = {
-		# ditch the heavy ship power
-		ship_durability = 0.1
-		# capturing or destroying a flagship grants a permanent +5% goods produced, up to +20%
-		# TODO: the loc for the above^
-		effect = {
-			initialize_oak_forests_for_ships_modifier = yes
-		}
-		removed_effect = {
-			remove_oak_forests_for_ships_modifiers = yes
-		}
-	}
-	superior_seamanship = {
-		max_flagships = 1
-	}
-
-	ai_will_do = {
-		factor = 0.45
-		modifier = {
-			factor = 0
-			is_tribal = yes
-		}
-		modifier = {
-			factor = 0
-			primitives = yes
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 1 }
-			NOT = { is_colonial_nation = yes }
-		}
-		modifier = {
-			factor = 0.31
-			NOT = { num_of_ports = 10 }
-		}
-		modifier = {
-			factor = 0.31
-			num_of_cities = 50
-		}
-
-		modifier = {
-			factor = 10
-			has_government_attribute = is_pirate_republic_reform
-		}
-	}
-}
+# see 00_harpi_ideas.txt for new naval
 
 court_ideas = { #1.35
 	# doesn't really need tweaks tbh, I just buffed the bonus and gave a tiny bit of dip rep
