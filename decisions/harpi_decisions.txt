@@ -236,6 +236,7 @@ advanced_armies1_initialize = {
 subterranean5_initialize = {
 	potential = {
 		has_idea_group = subterranean_ideas
+		NOT = { has_country_modifier = subterranean5_modifier }
 	}
 
 	allow = {
