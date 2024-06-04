@@ -744,7 +744,8 @@ integration_ideas = {
 		state_maintenance_modifier = -0.25
 	}
 	integration4 = {
-		global_missionary_strength = 0.02
+		missionaries = 1
+		global_missionary_strength = 0.01
 	}
 	integration5 = {
 		diplomatic_annexation_cost = -0.15
@@ -2113,6 +2114,7 @@ high_seas_ideas = {
 	}
 	
 	high_seas2 = {
+		leader_naval_manuever = 1
 		flagship_morale = 0.2
 		flagship_cost = -0.4
 	}
