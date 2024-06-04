@@ -976,7 +976,7 @@ authority_ideas = {
 		expand_administration_cost = -0.33
 	}
 	authority7 = {
-		administrative_efficiency = 0.015 # careful!
+		administrative_efficiency = 0.02 # careful!
 	}
 
 	ai_will_do = {
@@ -1291,7 +1291,8 @@ federalist_ideas = {
 		global_unrest = -1.5
 	}
 	federalist7 = { # Decentralized Administration
-		# 1.25% EXTRA ADMIN EFFICIENCY PER AGE
+		# 1% EXTRA ADMIN EFFICIENCY PER AGE
+		administrative_efficiency = 0.01
 		max_absolutism = -10 #downside!
 		effect = {
 			hidden_effect = {

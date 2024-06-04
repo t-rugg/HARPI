@@ -14,19 +14,19 @@ overlord_has_integrated_elites = {
 # }
 
 federalist7_age1 = {
-	administrative_efficiency = 0.0125
+	administrative_efficiency = 0.01
 }
 
 federalist7_age2 = {
-	administrative_efficiency = 0.025
+	administrative_efficiency = 0.02
 }
 
 federalist7_age3 = {
-	administrative_efficiency = 0.0375
+	administrative_efficiency = 0.03
 }
 
 federalist7_age4 = {
-	administrative_efficiency = 0.05
+	administrative_efficiency = 0.04
 }
 
 monastic1_contemplation = {
@@ -86,6 +86,7 @@ metallurgy7_modifier = {
 sea_hawks_modifier = {
 	trade_value_modifier = 0.1
 	local_development_cost = -0.05
+	min_local_autonomy = -10
 	local_prosperity_growth = 0.1
 }
 

@@ -1187,7 +1187,7 @@ maritime_ideas = {
 		global_ship_cost = -0.15
 	}
 	sea_hawks = {
-		# coastal provinces receive +10% trade value, -5% dev cost, and +0.1 local propserity growth
+		# coastal provinces receive +10% trade value, -5% dev cost, -10 min local autonomy, and +0.1 local propserity growth
 		# TODO: loc
 		admiral_cost = -0.25
 		effect = {
@@ -1608,7 +1608,7 @@ administrative_ideas = {
 	}
 	adaptability = {
 		overextension_impact_modifier = -0.1
-		core_creation = -0.05
+		core_creation = -0.1
 	}
 	cultural_regulations = { # todo: change loc
 		governing_capacity_modifier = 0.1

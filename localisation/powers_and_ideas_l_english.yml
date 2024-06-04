@@ -353,7 +353,7 @@
  grand_navy:0 "Grand Navy"
  grand_navy_desc:0 "Allows us to create one of the largest and most powerful fleets the world has ever seen."
  sea_hawks:0 "Seahawks"
- sea_hawks_desc:0 "FILLER\n—\n§G+10%§! Trade Value, §G-5%§! Local Development Cost, and §G+0.1§! Local Prosperity Growth in coastal provinces"
+ sea_hawks_desc:0 "FILLER\n—\n§G+10%§! Trade Value, §G-5%§! Local Development Cost, §G-10§! Minimum Local Autonomy, and §G+0.1§! Local Prosperity Growth in coastal provinces"
  excellent_shipwrights:0 "Excellent Shipwrights"
  excellent_shipwrights_desc:0 "By gathering the best shipbuilders our nation has to offer, we are able to build us a fleet of modern vessels unmatched in craftsmanship and maneuverability."
  naval_fighting_instruction:0 "Naval Fighting Instruction"
