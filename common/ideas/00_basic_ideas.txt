@@ -1358,33 +1358,37 @@ quality_ideas = { # change loc maybe?
 }
 
 quantity_ideas = { 
-	# some numerical nerfs but nothing major on that front
+	# some numerical nerfs but also some minor new stuff
 	category = MIL
 
 	bonus = {
-		land_forcelimit_modifier  = 0.25 #1.35
+		land_forcelimit_modifier  = 0.33 #1.35
 	}
+
 	mass_army = {
 		global_manpower_modifier = 0.25 #1.35
-	}
-	the_young_can_serve = {
-		manpower_recovery_speed = 0.2
 	}
 	enforced_service = {
 		global_regiment_cost = -0.1
 		war_taxes_cost_modifier = -0.5
 	}
+	the_young_can_serve = {
+		manpower_recovery_speed = 0.2
+	}
 	camp_followers = {
 		global_supply_limit_modifier = 0.33
+		reserves_organisation = 0.1
 	}
 	reinforcement_drafts = {
 		reinforce_cost_modifier = -0.33 #1.35
 	}
+	expanded_supply_trains = {
+		overextension_impact_modifier = -0.1
+		land_attrition = -0.1 #1.35
+	}
 	the_old_and_infirm = {
 		land_maintenance_modifier = -0.05
-	}
-	expanded_supply_trains = {
-		land_attrition = -0.2 #1.35
+		free_leader_pool = 1
 	}
 
 	ai_will_do = {
