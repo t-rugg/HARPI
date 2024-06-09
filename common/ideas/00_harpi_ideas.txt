@@ -28,6 +28,7 @@ influence_ideas = {
 	}
 	buffer_states = {
 		allow_client_states = yes
+		max_absolutism = 5
 	}
 	influence7 = {
 		ae_impact = -0.1
@@ -867,29 +868,29 @@ zealous_ideas = {
 	category = MIL
 
 	bonus = {
-		cavalry_cost = -0.15
-		tolerance_heretic = -2
-		tolerance_heathen = -2
+		cavalry_cost = -0.2
 		adventurers_loyalty_modifier = 0.05
 		church_loyalty_modifier = 0.05
 	}
 
 
 	zealous1 = {
-		manpower_in_true_faith_provinces = 0.2
+		shock_damage = 0.075
+		tolerance_heretic = -2
+		tolerance_heathen = -2
 	}
 	zealous2 = {
-		shock_damage = 0.075
+		missionaries = 1
 	}
 	zealous3 = {
-		warscore_cost_vs_other_religion = -0.075
+		manpower_in_true_faith_provinces = 0.2
     }
 	zealous4 = {
-		recover_army_morale_speed = 0.1
+		recover_army_morale_speed = 0.15
 	}
 	zealous5 = {
-		missionaries = 1
-		global_missionary_strength = 0.01
+		global_missionary_strength = 0.02
+		tolerance_own = 1
 	}
 	zealous6 = {
 		land_morale = 0.075

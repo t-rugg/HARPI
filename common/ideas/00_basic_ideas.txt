@@ -180,7 +180,7 @@ horde_gov_ideas = {
 	}
 	
 	horse_lords = {
-		cavalry_cost = -0.33
+		cavalry_cost = -0.2
 		cav_to_inf_ratio = 0.10
 	}
 	beyond_the_sun = {
@@ -386,8 +386,9 @@ innovativeness_ideas = {
 religious_ideas = {
 	category = ADM
 
-	bonus = { # culture conversion is gone! but I think the replacement is plenty strong personally
+	bonus = { 
 		culture_conversion_cost = -0.15
+		devotion = 1
 		brahmins_hindu_loyalty_modifier = 0.1
 		church_loyalty_modifier = 0.1
 
@@ -418,10 +419,11 @@ religious_ideas = {
 		yearly_doom_reduction = 1
 		yearly_authority = 0.15
 		yearly_patriarch_authority = 0.005
+		establish_order_cost = -0.25
 	}
 	religious_tradition = {
+		same_religion_advisor_cost = -0.1
 		reverse_relation_with_same_religion = 10
-		establish_order_cost = -0.25
 	}
 	inquisition = {
 		prestige_per_development_from_conversion = 0.1
@@ -439,9 +441,8 @@ religious_ideas = {
 	}
 	# RIP OG deus vult... you will be missed
 	# (it's been moved to zealous ideas)
-	deus_vult = { # TODO: change the loc
-		adm_advisor_cost = -0.2
-		devotion = 1
+	deus_vult = { 
+		warscore_cost_vs_other_religion = -0.1
 	}
 
 	ai_will_do = {
