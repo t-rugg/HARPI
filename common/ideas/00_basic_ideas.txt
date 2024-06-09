@@ -422,11 +422,10 @@ religious_ideas = {
 		establish_order_cost = -0.25
 	}
 	religious_tradition = {
-		same_religion_advisor_cost = -0.1
 		reverse_relation_with_same_religion = 10
 	}
 	inquisition = {
-		prestige_per_development_from_conversion = 0.1
+		same_religion_advisor_cost = -0.1
 		# -5% development cost, -0.025 monthly autonomy, and -5% governing cost in provinces that follow our religion
 		effect = {
 			every_owned_province = {
@@ -442,7 +441,7 @@ religious_ideas = {
 	# RIP OG deus vult... you will be missed
 	# (it's been moved to zealous ideas)
 	deus_vult = { 
-		warscore_cost_vs_other_religion = -0.1
+		cb_on_religious_enemies = yes
 	}
 
 	ai_will_do = {
