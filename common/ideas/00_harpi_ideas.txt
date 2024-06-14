@@ -739,7 +739,6 @@ integration_ideas = {
 	}
 	integration2 = {
 		years_of_nationalism = -5
-		autonomy_change_time = -0.25
 	}
 	integration3 = {
 		state_maintenance_modifier = -0.25

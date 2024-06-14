@@ -480,7 +480,7 @@ spy_ideas = {
 	category = DIP
 
 	bonus = {
-		rebel_support_efficiency = 1
+		yearly_corruption = -0.2
 		spy_action_cost_modifier = -0.2 #1.35
 	}
 	
@@ -489,15 +489,14 @@ spy_ideas = {
 		can_transfer_vassal_wargoal = yes #1.35
 	}
 
+	efficient_spies = {
+		spy_offence = 0.5
+	}		
+	
 	state_propaganda = {
 		ae_impact = -0.1
 		global_rebel_suppression_efficiency = 0.5 # new
 	}
-
-	efficient_spies = {
-		spy_offence = 0.5
-		siege_ability = 0.1
-	}	
 	
 	agent_training = {
 		diplomats = 1
@@ -506,15 +505,15 @@ spy_ideas = {
 
 	vetting = {
 		global_spy_defence = 0.33
-		yearly_corruption = -0.2
+		rebel_support_efficiency = 1
 	}
 	
 	privateers = {
-		capture_ship_chance = 0.25
-		privateer_efficiency = 0.33
+		siege_ability = 0.1
 	}
 	
 	blackmailing = {
+		autonomy_change_time = -0.25
 		monthly_favor_modifier = 0.33
 		# accept_vassalization_reasons = 15 - moved to influence
 	}
