@@ -10,5 +10,5 @@ dependencies={
 	"Anbennar-PublicFork"
 	"Anbennar-Steam-Release"
 }
-supported_version="1.36.1"
+supported_version="1.37.2"
 path="C:/Users/0nami/Documents/Paradox Interactive/Europa Universalis IV/mod/HARPI"
