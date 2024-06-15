@@ -39,7 +39,7 @@
 
  corin_legacy:0 "§VLegacy of Corin§!"
 
- reclamation_ideas:0 "Reclamation Ideas"
+ reclamation_ideas:0 "§lReclamation Ideas§!"
  reclamation1:0 "Foreign Investment"
  reclamation1_desc:0 "Various foreign banks and merchants have decided to fund our valiant cause. Of course, we aren't fools; we know they have their own agendas and expect some return on their investment. Still, we should take advantage of these opportunities while they exist.\n—"
  reclamation2:0 "Resettlements"
@@ -269,7 +269,7 @@
 
  governance_ideas:0 "Governance Ideas"
 
- subterranean_ideas:0 "Subterranean Ideas"
+ subterranean_ideas:0 "§lSubterranean Ideas§!"
  subterranean1:0 "Crevace Warfare"
  subterranean1_desc:0 "Mastery of the caves has given us intricate knowledge of various shelters and escape paths. Our enemies will struggle to pursue us as we fit into every nook and cranny and can easily slip away.\n—"
  subterranean2:0 "Cave System Maps"
@@ -339,3 +339,4 @@
 
  stewardship_ideas:0 "Stewardship Ideas"
 
+ expeditionary_ideas:0 "§lExpeditionary Ideas§!"

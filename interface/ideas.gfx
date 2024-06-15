@@ -418,4 +418,10 @@ spriteTypes = {
 		noOfFrames = 1
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
+	spriteType = {
+		name = "GFX_idea_expeditionary_ideas"
+		texturefile = "gfx/interface/ideas/idea_expeditionary_ideas.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
 }
