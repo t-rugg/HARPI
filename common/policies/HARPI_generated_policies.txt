@@ -586,7 +586,7 @@ innovativeness_ideas_mercenary_ideas_policy = {
 		full_idea_group = mercenary_ideas
 	}
 	
-	global_regiment_cost = -0.05
+	global_regiment_cost = -0.035
 	trade_efficiency = 0.075
 	
 	effect = {}
@@ -813,6 +813,31 @@ innovativeness_ideas_honor_ideas_policy = {
 	
 	interest = -0.5
 	reform_progress_growth = 0.10
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+innovativeness_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = innovativeness_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = innovativeness_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	artillery_fire = 0.15
+	trade_steering = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -1648,6 +1673,31 @@ religious_ideas_honor_ideas_policy = {
 }
 
 
+religious_ideas_expeditionary_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = religious_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = religious_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	global_autonomy = -0.05
+	max_absolutism = 5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 economic_ideas_spy_ideas_policy = {
 	monarch_power = DIP
 
@@ -2463,6 +2513,31 @@ economic_ideas_honor_ideas_policy = {
 	
 	drill_decay_modifier = -0.2
 	prestige = 1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+economic_ideas_expeditionary_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = economic_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = economic_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	mil_advisor_cost = -0.15
+	heavy_ship_power = 0.075
 	
 	effect = {}
 	removed_effect = {}
@@ -3298,6 +3373,31 @@ expansion_ideas_honor_ideas_policy = {
 }
 
 
+expansion_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = expansion_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = expansion_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	global_manpower_modifier = 0.10
+	mil_advisor_cost = -0.15
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 administrative_ideas_spy_ideas_policy = {
 	monarch_power = ADM
 
@@ -4113,6 +4213,31 @@ administrative_ideas_honor_ideas_policy = {
 	
 	yearly_army_professionalism = 0.002
 	diplomatic_reputation = 1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+administrative_ideas_expeditionary_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = administrative_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = administrative_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	global_autonomy = -0.05
+	mil_advisor_cost = -0.15
 	
 	effect = {}
 	removed_effect = {}
@@ -4948,6 +5073,31 @@ humanist_ideas_honor_ideas_policy = {
 }
 
 
+humanist_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	morale_damage_received = -0.05
+	stability_cost_modifier = -0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 infrastructure_ideas_spy_ideas_policy = {
 	monarch_power = ADM
 
@@ -5773,6 +5923,31 @@ infrastructure_ideas_honor_ideas_policy = {
 }
 
 
+infrastructure_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = infrastructure_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = infrastructure_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	mercenary_discipline = 0.035
+	trade_steering = 0.25
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 extraction_ideas_spy_ideas_policy = {
 	monarch_power = DIP
 
@@ -6361,7 +6536,7 @@ extraction_ideas_mercenary_ideas_policy = {
 		full_idea_group = mercenary_ideas
 	}
 	
-	global_regiment_cost = -0.05
+	global_regiment_cost = -0.035
 	available_province_loot = 0.25
 	
 	effect = {}
@@ -6588,6 +6763,31 @@ extraction_ideas_honor_ideas_policy = {
 	
 	interest = -0.5
 	vassal_income = 0.25
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+extraction_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = extraction_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = extraction_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	siege_ability = 0.1
+	mil_advisor_cost = -0.15
 	
 	effect = {}
 	removed_effect = {}
@@ -7423,6 +7623,31 @@ urbanization_ideas_honor_ideas_policy = {
 }
 
 
+urbanization_ideas_expeditionary_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = urbanization_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = urbanization_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	mil_advisor_cost = -0.15
+	improve_relation_modifier = 0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 militarist_ideas_spy_ideas_policy = {
 	monarch_power = DIP
 
@@ -8248,6 +8473,31 @@ militarist_ideas_honor_ideas_policy = {
 }
 
 
+militarist_ideas_expeditionary_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = militarist_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = militarist_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	war_exhaustion = -0.01
+	global_autonomy = -0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 federalist_ideas_spy_ideas_policy = {
 	monarch_power = DIP
 
@@ -8836,7 +9086,7 @@ federalist_ideas_mercenary_ideas_policy = {
 		full_idea_group = mercenary_ideas
 	}
 	
-	global_regiment_cost = -0.05
+	global_regiment_cost = -0.035
 	vassal_income = 0.25
 	
 	effect = {}
@@ -9063,6 +9313,31 @@ federalist_ideas_honor_ideas_policy = {
 	
 	drill_decay_modifier = -0.2
 	diplomatic_reputation = 1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+federalist_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = federalist_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = federalist_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	discipline = 0.035
+	trade_steering = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -9898,6 +10173,31 @@ governance_ideas_honor_ideas_policy = {
 }
 
 
+governance_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = governance_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = governance_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	reinforce_speed = 0.1
+	global_autonomy = -0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 metallurgy_ideas_spy_ideas_policy = {
 	monarch_power = DIP
 
@@ -10713,6 +11013,31 @@ metallurgy_ideas_honor_ideas_policy = {
 	
 	prestige = 1
 	monthly_gold_inflation_modifier = -0.25
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+metallurgy_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = metallurgy_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = metallurgy_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	fire_damage = 0.05
+	global_prov_trade_power_modifier = 0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -11548,6 +11873,31 @@ parliamentary_ideas_honor_ideas_policy = {
 }
 
 
+parliamentary_ideas_expeditionary_ideas_policy = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = parliamentary_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = parliamentary_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	global_autonomy = -0.05
+	trade_company_investment_cost = -0.075
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 castanor_legacy_spy_ideas_policy = {
 	monarch_power = ADM
 
@@ -12136,7 +12486,7 @@ castanor_legacy_mercenary_ideas_policy = {
 		full_idea_group = mercenary_ideas
 	}
 	
-	global_regiment_cost = -0.05
+	global_regiment_cost = -0.035
 	stability_cost_modifier = -0.1
 	
 	effect = {}
@@ -12363,6 +12713,31 @@ castanor_legacy_honor_ideas_policy = {
 	
 	stability_cost_modifier = -0.1
 	prestige = 1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+castanor_legacy_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = castanor_legacy
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = castanor_legacy
+		full_idea_group = expeditionary_ideas
+	}
+	
+	infantry_power = 0.05
+	stability_cost_modifier = -0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -12737,6 +13112,31 @@ spy_ideas_honor_ideas_policy = {
 	}
 	
 	leader_siege = 1
+	global_foreign_trade_power = 0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+spy_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = spy_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = spy_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	land_attrition = -0.1
 	global_foreign_trade_power = 0.1
 	
 	effect = {}
@@ -13123,6 +13523,31 @@ diplomatic_ideas_honor_ideas_policy = {
 }
 
 
+diplomatic_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = diplomatic_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = diplomatic_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	cavalry_shock = 0.15
+	improve_relation_modifier = 0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 trade_ideas_offensive_ideas_policy = {
 	monarch_power = DIP
 
@@ -13488,6 +13913,31 @@ trade_ideas_honor_ideas_policy = {
 	
 	trade_efficiency = 0.075
 	global_institution_spread = 0.25
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+trade_ideas_expeditionary_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = trade_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = trade_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	trade_steering = 0.25
+	trade_efficiency = 0.075
 	
 	effect = {}
 	removed_effect = {}
@@ -13873,6 +14323,31 @@ exploration_ideas_honor_ideas_policy = {
 }
 
 
+exploration_ideas_expeditionary_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = exploration_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = exploration_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	global_colonial_growth = 10
+	mil_advisor_cost = -0.15
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 maritime_ideas_offensive_ideas_policy = {
 	monarch_power = DIP
 
@@ -14238,6 +14713,31 @@ maritime_ideas_honor_ideas_policy = {
 	
 	global_ship_trade_power = 0.15
 	ship_durability = 0.075
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+maritime_ideas_expeditionary_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = maritime_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = maritime_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	global_ship_trade_power = 0.15
+	trade_steering = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -14623,6 +15123,31 @@ court_ideas_honor_ideas_policy = {
 }
 
 
+court_ideas_expeditionary_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	spy_offence = 0.25
+	global_autonomy = -0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 influence_ideas_offensive_ideas_policy = {
 	monarch_power = MIL
 
@@ -14998,6 +15523,31 @@ influence_ideas_honor_ideas_policy = {
 }
 
 
+influence_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = influence_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = influence_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	mercenary_discipline = 0.035
+	infantry_cost = -0.075
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 stewardship_ideas_offensive_ideas_policy = {
 	monarch_power = DIP
 
@@ -15362,6 +15912,31 @@ stewardship_ideas_honor_ideas_policy = {
 	}
 	
 	vassal_income = 0.25
+	yearly_corruption = -0.075
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+stewardship_ideas_expeditionary_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = stewardship_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = stewardship_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	trade_steering = 0.25
 	yearly_corruption = -0.075
 	
 	effect = {}
@@ -15748,6 +16323,31 @@ patronage_ideas_honor_ideas_policy = {
 }
 
 
+patronage_ideas_expeditionary_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = patronage_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = patronage_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	dip_advisor_cost = -0.15
+	navy_tradition_decay = -0.01
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 realist_ideas_offensive_ideas_policy = {
 	monarch_power = MIL
 
@@ -16113,6 +16713,31 @@ realist_ideas_honor_ideas_policy = {
 	
 	drill_decay_modifier = -0.2
 	prestige = 1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+realist_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = realist_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = realist_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	backrow_artillery_damage = 0.05
+	mil_advisor_cost = -0.15
 	
 	effect = {}
 	removed_effect = {}
@@ -16498,6 +17123,31 @@ integration_ideas_honor_ideas_policy = {
 }
 
 
+integration_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = integration_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = integration_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	land_morale = 0.05
+	mil_advisor_cost = -0.15
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 authority_ideas_offensive_ideas_policy = {
 	monarch_power = DIP
 
@@ -16863,6 +17513,31 @@ authority_ideas_honor_ideas_policy = {
 	
 	discipline = 0.025
 	interest = -0.5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+authority_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = authority_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = authority_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	army_tradition_decay = -0.01
+	global_autonomy = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -17248,6 +17923,31 @@ imperialist_ideas_honor_ideas_policy = {
 }
 
 
+imperialist_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = imperialist_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = imperialist_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	siege_ability = 0.1
+	mil_advisor_cost = -0.15
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 adventure_ideas_offensive_ideas_policy = {
 	monarch_power = DIP
 
@@ -17623,6 +18323,31 @@ adventure_ideas_honor_ideas_policy = {
 }
 
 
+adventure_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = adventure_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = adventure_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	shock_damage = 0.05
+	prestige_from_land = 0.5
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 monastic_ideas_offensive_ideas_policy = {
 	monarch_power = DIP
 
@@ -17987,6 +18712,31 @@ monastic_ideas_honor_ideas_policy = {
 	}
 	
 	drill_decay_modifier = -0.2
+	advisor_pool = 1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+monastic_ideas_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = monastic_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = monastic_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	mercenary_discipline = 0.035
 	advisor_pool = 1
 	
 	effect = {}
@@ -18373,6 +19123,31 @@ lawful_ideas_honor_ideas_policy = {
 }
 
 
+lawful_ideas_expeditionary_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = lawful_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = lawful_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	trade_steering = 0.25
+	global_ship_repair = 0.1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 chaotic_ideas_offensive_ideas_policy = {
 	monarch_power = DIP
 
@@ -18748,6 +19523,31 @@ chaotic_ideas_honor_ideas_policy = {
 }
 
 
+chaotic_ideas_expeditionary_ideas_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = chaotic_ideas
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = chaotic_ideas
+		full_idea_group = expeditionary_ideas
+	}
+	
+	unjustified_demands = -0.1
+	trade_steering = 0.25
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
 dwarf_legacy_offensive_ideas_policy = {
 	monarch_power = DIP
 
@@ -19113,6 +19913,31 @@ dwarf_legacy_honor_ideas_policy = {
 	
 	reverse_relation_with_same_religion = 10
 	diplomatic_reputation = 1
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+
+dwarf_legacy_expeditionary_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = dwarf_legacy
+		has_idea_group = expeditionary_ideas
+	}
+
+	allow = {
+		full_idea_group = dwarf_legacy
+		full_idea_group = expeditionary_ideas
+	}
+	
+	army_tradition_decay = -0.01
+	reverse_relation_with_same_religion = 10
 	
 	effect = {}
 	removed_effect = {}

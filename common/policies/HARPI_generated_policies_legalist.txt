@@ -686,7 +686,7 @@ adventure_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	merc_maintenance_modifier = -0.25
+	monthly_reform_progress_modifier = 0.25
 	reform_progress_growth = 0.05
 	
 	effect = {}
@@ -1112,6 +1112,56 @@ high_seas_ideas_legalist_ideas_policy = {
 	}
 	
 	heavy_ship_power = 0.15
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+expeditionary_ideas_legalist_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = expeditionary_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = expeditionary_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	colonist_placement_chance = 0.075
+	reform_progress_growth = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.2
+	}
+}
+
+
+subterranean_ideas_legalist_ideas_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = subterranean_ideas
+		has_idea_group = legalist_ideas
+	}
+
+	allow = {
+		full_idea_group = subterranean_ideas
+		full_idea_group = legalist_ideas
+	}
+	
+	land_maintenance_modifier = -0.15
 	reform_progress_growth = 0.05
 	
 	effect = {}
