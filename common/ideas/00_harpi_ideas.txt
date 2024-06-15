@@ -311,9 +311,9 @@ expeditionary_ideas = {
 		adventurers_loyalty_modifier = 0.1
 	}
 
-	expeditionary1 = {
+	expeditionary1 = { # grand expedition
 		free_leader_pool = 1
-		global_manpower = 2
+		land_forcelimit = 2 # flat!
 	}
 	expeditionary2 = {
 		army_tradition_from_battle = 1
@@ -1748,12 +1748,11 @@ adventure_ideas = {
 	}
 
 	bonus = {
-		mercenary_manpower = 0.25
+		global_missionary_strength = 0.01
 		adventurers_loyalty_modifier = 0.1
-		adventurers_influence_modifier = 0.1
 	}
 	adventure1 = { # the call of adventure
-		global_manpower = 4 # +4000 manpower
+		global_manpower = 2 # +2000 manpower
 		infantry_cost = -0.1
 	}
 	adventure2 = { # a home without a homeland
@@ -1766,9 +1765,11 @@ adventure_ideas = {
 	}
 	adventure4 = { # to make a name for oneself
 		leader_cost = -0.25
+		cavalry_cost = -0.1
 	}
 	adventure5 = { # adventurer parties
 		mercenary_cost = -0.2
+		mercenary_manpower = 0.2
 	}
 	adventure6 = { # settling down
 		build_time = -0.15
@@ -1780,10 +1781,9 @@ adventure_ideas = {
 
 	ai_will_do = {
 		factor = 0.9
-		modifier = { # disallow after age of greentide
+		modifier = { # disallow after age of greentide/unravelling
 			factor = 0
 			OR = {
-				current_age = age_of_reformation
 				current_age = age_of_absolutism
 				current_age = age_of_revolutions
 			}
