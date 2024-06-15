@@ -155,7 +155,7 @@ with open("common/policies/HARPI_generated_policies.txt", "w", encoding="windows
 				# get a random modifier from adm or dip modifiers of one of the groups
 				# 2/3s chance to be subGroup, 1/3 to be MainGroup
 				subGroup = random.choice((group1, group2, (group1 if group2 == mainGroup else group2)))
-				# ensure subMod is different from mainMod
+				# ensure we don't repeat modifiers
 				subMod = mainMod # more like subMod = HARPI amirite????????
 				while subMod == mainMod:
 					subMod = ideas[subGroup][random.choice([0, 1, 3, 4])]
@@ -174,7 +174,7 @@ with open("common/policies/HARPI_generated_policies.txt", "w", encoding="windows
 				
 # each modifier needs to (roughly) fit its category
 # in addition, each modifier can only occur ONCE
-# reform progress is BANNED because all policies with legalist receive a tiny 0.05 reform progress growth
+# reform progress growth is BANNED because all policies with legalist receive a tiny 0.05 reform progress growth (modifier is fine, see adventure_ideas)
 # TODO: legacies? unsure what to do with these. maybe just lots of reform progress? maybe something funny like 2 free policies of that category? idk
 
 legalist_adm = {
@@ -211,6 +211,7 @@ legalist_dip = {
 	"monastic_ideas": "global_institution_spread = 1",
 	"lawful_ideas": "all_estate_influence_modifier = 0.05",
 	"chaotic_ideas": "all_estate_influence_modifier = -0.05",
+	"adventure_ideas": "monthly_reform_progress_modifier = 0.25",
 }
 legalist_mil = { # these aren't THAT much better than other mil policies; otherwise you'd have to take legalist every MP game
 	             # maybe you have to anyway... idk, maybe I should stop worrying about MP balance entirely since this mod isn't really designed for that
