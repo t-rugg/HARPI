@@ -223,7 +223,7 @@ theocracy_gov_ideas = {
 	category = MIL
 	
 	bonus = {
-		global_missionary_strength = 0.01
+		global_missionary_strength = 0.015
 		church_loyalty_modifier = 0.1
 		brahmins_hindu_loyalty_modifier = 0.1
 		brahmins_muslim_loyalty_modifier = 0.1
