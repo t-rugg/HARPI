@@ -924,7 +924,7 @@ country_event = { # Patronize the Intelligentsia
 				}
 			}
 		}
-		add_years_of_income = -1
+		add_years_of_income = -0.5
 		add_prestige = 10
 		hidden_effect = {
 			clr_country_flag = patronize_the_intelligentsia_delay
@@ -947,7 +947,7 @@ country_event = { # Patronize the Intelligentsia
 				}
 			}
 		}
-		add_years_of_income = -1
+		add_years_of_income = -0.5
 		add_legitimacy_equivalent = {
 			amount = 10
 			republican_tradition = 5
@@ -973,7 +973,7 @@ country_event = { # Patronize the Intelligentsia
 				}
 			}
 		}
-		add_years_of_income = -1
+		add_years_of_income = -0.5
 		add_country_modifier = {
 			name = patronage7_autonomy
 			duration = 5475
@@ -999,7 +999,7 @@ country_event = { # Patronize the Intelligentsia
 				}
 			}
 		}
-		add_years_of_income = -1
+		add_years_of_income = -0.5
 		add_country_modifier = {
 			name = patronage7_spy_offence
 			duration = 5475
@@ -1051,7 +1051,7 @@ country_event = { # Patronize the Intelligentsia
 				}
 			}
 		}
-		add_years_of_income = -1
+		add_years_of_income = -0.5
 		add_country_modifier = {
 			name = patronage7_tolerance_own
 			duration = 5475
@@ -1077,9 +1077,35 @@ country_event = { # Patronize the Intelligentsia
 				}
 			}
 		}
-		add_years_of_income = -1
+		add_years_of_income = -0.5
 		add_country_modifier = {
 			name = patronage7_religious_unity
+			duration = 5475
+		}
+		hidden_effect = {
+			clr_country_flag = patronize_the_intelligentsia_delay
+			set_country_flag = patronize_the_intelligentsia_delay
+		}
+	}
+
+	option = { # Prosperity
+		name = harpi.6.prosperity
+		trigger = {
+			has_idea = patronage7
+			custom_trigger_tooltip = {
+				tooltip = patronize_the_intelligentsia_delay_tooltip
+				OR = {
+					NOT = { has_country_flag = patronize_the_intelligentsia_delay }
+					had_country_flag = {
+						flag = patronize_the_intelligentsia_delay
+						days = 5475
+					}
+				}
+			}
+		}
+		add_years_of_income = -0.5
+		add_country_modifier = {
+			name = patronage7_prosperity
 			duration = 5475
 		}
 		hidden_effect = {
@@ -1106,32 +1132,6 @@ country_event = { # Patronize the Intelligentsia
 		add_years_of_income = -1
 		add_country_modifier = {
 			name = patronage7_development_cost
-			duration = 5475
-		}
-		hidden_effect = {
-			clr_country_flag = patronize_the_intelligentsia_delay
-			set_country_flag = patronize_the_intelligentsia_delay
-		}
-	}
-
-	option = { # Prosperity
-		name = harpi.6.prosperity
-		trigger = {
-			has_idea = patronage7
-			custom_trigger_tooltip = {
-				tooltip = patronize_the_intelligentsia_delay_tooltip
-				OR = {
-					NOT = { has_country_flag = patronize_the_intelligentsia_delay }
-					had_country_flag = {
-						flag = patronize_the_intelligentsia_delay
-						days = 5475
-					}
-				}
-			}
-		}
-		add_years_of_income = -1
-		add_country_modifier = {
-			name = patronage7_prosperity
 			duration = 5475
 		}
 		hidden_effect = {
