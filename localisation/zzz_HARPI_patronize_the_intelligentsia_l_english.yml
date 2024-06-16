@@ -1,6 +1,7 @@
 ﻿l_english:
  patronize_the_intelligentsia_delay_tooltip:0 "We can only patronize the intelligentsia once every 15 years."
  harpi.6.prestige:0 "Patronize artists"
+ harpi.6.innovativeness:0 "Patronize academics"
  harpi.6.government:0 "Patronize political thinkers"
  harpi.6.autonomy:0 "Patronize competent administrators"
  harpi.6.spy_offence:0 "Patronize foreign talent"
