@@ -57,7 +57,7 @@
 
  patronage_ideas:0 "Cultural Ideas"
  patronage1:0 "Sponsor the Arts"
- patronage1_desc:0 "Investment in our culture can pay dividends in solidifying the respectability and reputation of our rule.\n—\n§GUnlocks§! the §TPatronize the Intelligentsia§! decision, allowing you to spend ¤ Crowns to purchase Prestige or to strengthen your government.\n§TPatronize the Intelligentsia§! can be used §Yonce every 10 years§!."
+ patronage1_desc:0 "Investment in our culture can pay dividends in solidifying the respectability and reputation of our rule.\n—\n§GUnlocks§! the §TPatronize the Intelligentsia§! decision, allowing you to spend ¤ Crowns to purchase Prestige or to strengthen your government.\n§TPatronize the Intelligentsia§! can be used §Yonce every 15 years§!."
  patronage2:0 "New Talent"
  patronage2_desc:0 "Having a reputation as a generous employer allows us to find the best and the brightest of each new generation.\n—"
  patronage3:0 "Benefactors of Public Life"
@@ -69,7 +69,7 @@
  patronage6:0 "Disseminate Fine Art"
  patronage6_desc:0 "A healthy culture is a persuasive one. Soon, all our subjects will be wearing our mandilions and listening to our lute music!\n—"
  patronage7:0 "Patronal Politics"
- patronage7_desc:0 "By funding specific projects or interests of various ambassadors, statesmen, influential figures, and power brokers, we can get them to reciprocate by supporting the crown. As opposed to more blasé and corrupt forms of bribery, our investments have genuine cultural and humanitarian aims, that just so happen to cement our own influence in the process.\n—\n§GUpgrades§! the §TPatronize the Intelligentsia§! decision, allowing you to purchase §Gtemporary minor modifiers§!, such as Autonomy Reduction, Spy Network Construction Speed, or Development Cost reduction.\n§TPatronize the Intelligentsia§! can now be used §Yonce every 5 years§!, and modifiers last that long."
+ patronage7_desc:0 "By funding specific projects or interests of various ambassadors, statesmen, influential figures, and power brokers, we can get them to reciprocate by supporting the crown. As opposed to more blasé and corrupt forms of bribery, our investments have genuine cultural and humanitarian aims, that just so happen to cement our own influence in the process.\n—\n§GUpgrades§! the §TPatronize the Intelligentsia§! decision, allowing you to purchase §Gtemporary minor modifiers§!, such as Autonomy Reduction, Prosperity Growth, or Development Cost reduction. Modifiers last for §Y15 years§!."
  
  war_economy_ideas:0 "War Economy Ideas"
  war_economy1:0 "Rationing"

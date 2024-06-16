@@ -1,5 +1,5 @@
 patronage7_autonomy = {
-	global_autonomy = -0.05
+	global_autonomy = -0.1
 }
 
 patronage7_spy_offence = {
@@ -11,13 +11,17 @@ patronage7_spy_defence = {
 }
 
 patronage7_tolerance_own = {
-	tolerance_own = 1
+	tolerance_own = 2
 }
 
 patronage7_religious_unity = {
-	religious_unity = 0.05
+	religious_unity = 0.1
 }
 
 patronage7_development_cost = {
-	development_cost = -0.025
+	development_cost = -0.05
+}
+
+patronage7_prosperity = {
+	global_prosperity_growth = 0.5
 }
