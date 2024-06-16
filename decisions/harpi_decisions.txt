@@ -164,10 +164,20 @@ mixed_armies7_initialize = {
 patronage1_decision = {
 	potential = {
 		has_idea_group = patronage_ideas
+		NOT = { has_country_flag = patronage_decision_menu_open }
 	}
 	allow = {
-		has_idea = patronage1		
-		NOT = { has_country_flag = patronage_decision_menu_open }
+		has_idea = patronage1	
+		custom_trigger_tooltip = {
+			tooltip = patronize_the_intelligentsia_delay_tooltip
+			OR = {
+				NOT = { has_country_flag = patronize_the_intelligentsia_delay }
+				had_country_flag = {
+					flag = patronize_the_intelligentsia_delay
+					days = 5475
+				}
+			}
+		}	
 	}
 	
 	effect = {
