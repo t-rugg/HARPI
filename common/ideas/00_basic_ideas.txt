@@ -95,7 +95,7 @@ plutocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		global_prov_trade_power_modifier = 0.25 #1.35
+		republican_tradition = 0.3
 		burghers_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
 		
