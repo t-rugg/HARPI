@@ -1300,7 +1300,7 @@ leadership_ideas = {
 	category = MIL
 
 	bonus = {
-		leader_cost = -0.15
+		army_tradition_decay = -0.01
 		merc_leader_army_tradition = 0.33
 	}
 
@@ -1329,10 +1329,11 @@ leadership_ideas = {
 		leader_naval_manuever = 1
 	}
 	leadership6 = {
-		army_tradition_decay = -0.01
+		leader_siege = 1
 	}
 	leadership7 = {
-		leader_siege = 1
+		max_general_shock = 1
+		max_general_fire = 1
 	}
 
 	ai_will_do = {
