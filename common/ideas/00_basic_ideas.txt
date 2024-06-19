@@ -782,6 +782,7 @@ trade_ideas = {
   	}
 	trade_manipulation = {
 		center_of_trade_upgrade_cost = -0.2
+		justify_trade_conflict_cost = -0.2
 	}
 	merchant_adventures = {
 		trade_range_modifier = 0.25
@@ -791,12 +792,11 @@ trade_ideas = {
 		mercantilism_cost = -0.25
 	}
 	overseas_merchants = {
-		placed_merchant_power = 10
+		merchants = 1
 		reduced_trade_penalty_on_non_main_tradenode = 0.25
 	}
 	fast_negotiations = {
 		trade_steering = 0.25
-		caravan_power = 0.25
 	}
 
 	ai_will_do = {
