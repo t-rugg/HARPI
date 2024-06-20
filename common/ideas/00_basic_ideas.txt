@@ -481,7 +481,6 @@ spy_ideas = {
 
 	bonus = {
 		yearly_corruption = -0.2
-		spy_action_cost_modifier = -0.2 #1.35
 	}
 	
 	claim_fabrication = {
@@ -513,7 +512,7 @@ spy_ideas = {
 	}
 	
 	blackmailing = {
-		autonomy_change_time = -0.25
+		spy_action_cost_modifier = -0.2 #1.35
 		monthly_favor_modifier = 0.33
 		# accept_vassalization_reasons = 15 - moved to influence
 	}
@@ -1383,7 +1382,7 @@ quantity_ideas = {
 		reinforce_cost_modifier = -0.33 #1.35
 	}
 	expanded_supply_trains = {
-		overextension_impact_modifier = -0.1
+		overextension_impact_modifier = -0.05
 		land_attrition = -0.1 #1.35
 	}
 	the_old_and_infirm = {
@@ -1611,7 +1610,6 @@ administrative_ideas = {
 		global_tax_modifier = 0.1
 	}
 	adaptability = {
-		overextension_impact_modifier = -0.1
 		core_creation = -0.1
 	}
 	cultural_regulations = { # todo: change loc
