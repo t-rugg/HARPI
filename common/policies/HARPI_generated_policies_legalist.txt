@@ -136,7 +136,7 @@ humanist_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	num_accepted_cultures = 2
+	religious_unity = 0.15
 	monthly_reform_progress = 0.05
 	
 	effect = {}
@@ -261,7 +261,7 @@ federalist_ideas_legalist_ideas_policy = {
 		full_idea_group = legalist_ideas
 	}
 	
-	administrative_efficiency = 0.025
+	num_accepted_cultures = 2
 	monthly_reform_progress = 0.05
 	
 	effect = {}
