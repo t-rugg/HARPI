@@ -175,7 +175,7 @@ with open("common/policies/HARPI_generated_policies.txt", "w", encoding="windows
 				
 # each modifier needs to (roughly) fit its category
 # in addition, each modifier can only occur ONCE
-# reform progress growth is BANNED because all policies with legalist receive a tiny 0.05 reform progress growth (modifier is fine, see adventure_ideas)
+# monthly reform progress is BANNED because all policies with legalist receive a tiny 0.05 reform progress growth (growth is fine, see adventure_ideas)
 # TODO: legacies? unsure what to do with these. maybe just lots of reform progress? maybe something funny like 2 free policies of that category? idk
 
 legalist_adm = {
@@ -212,7 +212,7 @@ legalist_dip = {
 	"monastic_ideas": "global_institution_spread = 1",
 	"lawful_ideas": "all_estate_influence_modifier = 0.05",
 	"chaotic_ideas": "all_estate_influence_modifier = -0.05",
-	"adventure_ideas": "monthly_reform_progress_modifier = 0.25",
+	"adventure_ideas": "reform_progress_growth = 0.25",
 }
 legalist_mil = { # these aren't THAT much better than other mil policies; otherwise you'd have to take legalist every MP game
 	             # maybe you have to anyway... idk, maybe I should stop worrying about MP balance entirely since this mod isn't really designed for that
@@ -238,21 +238,21 @@ legalist_mil = { # these aren't THAT much better than other mil policies; otherw
 
 with open("common/policies/HARPI_generated_policies_legalist.txt", "w", encoding="windows-1252") as f:
 	for group in legalist_adm:
-		formatted = formatter.format(group, "legalist_ideas", "ADM", legalist_adm[group], "reform_progress_growth = 0.05", "1.2")
+		formatted = formatter.format(group, "legalist_ideas", "ADM", legalist_adm[group], "monthly_reform_progress = 0.05", "1.2")
 		print(formatted, file=f)
 		formattedLoc = formatterLoc.format(group, "legalist_ideas", group, "Legalist")
 		formattedDescLegalist = formatterDescLegalist.format(group, group)
 		print(formattedLoc, file=loc)
 		print(formattedDescLegalist, file=loc)
 	for group in legalist_dip:
-		formatted = formatter.format(group, "legalist_ideas", "DIP", legalist_dip[group], "reform_progress_growth = 0.05", "1.2")
+		formatted = formatter.format(group, "legalist_ideas", "DIP", legalist_dip[group], "monthly_reform_progress = 0.05", "1.2")
 		print(formatted, file=f)
 		formattedLoc = formatterLoc.format(group, "legalist_ideas", group, "Legalist")
 		formattedDescLegalist = formatterDescLegalist.format(group, group)
 		print(formattedLoc, file=loc)
 		print(formattedDescLegalist, file=loc)
 	for group in legalist_mil:
-		formatted = formatter.format(group, "legalist_ideas", "MIL", legalist_mil[group], "reform_progress_growth = 0.05", "1.2")
+		formatted = formatter.format(group, "legalist_ideas", "MIL", legalist_mil[group], "monthly_reform_progress = 0.05", "1.2")
 		print(formatted, file=f)
 		formattedLoc = formatterLoc.format(group, "legalist_ideas", group, "Legalist")
 		formattedDescLegalist = formatterDescLegalist.format(group, group)

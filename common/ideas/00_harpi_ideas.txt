@@ -1344,7 +1344,7 @@ parliamentary_ideas = {
 	category = ADM
 
 	bonus = {
-		yearly_absolutism = 2
+		yearly_absolutism = 3
 		advisor_cost = -0.1
 	}
 
@@ -1357,7 +1357,10 @@ parliamentary_ideas = {
 	}
 	parliamentary2 = {
 		num_of_parliament_issues = 2
-		# gain 25 of each mana upon succeeding in a parliament debate
+		# gain 40 of each mana upon succeeding in a parliament debate
+		# math: comparable to 1 mana per month. 1 mana / month * 12 month / yr = 12 mana / year
+		# so 120 mana / 10 years. divide into 3 categories and thats 40 mana of each category!
+		# goes hard with parliament_effect_duration tho
 	}
 	parliamentary3 = {
 		yearly_corruption = -0.1
@@ -1366,7 +1369,7 @@ parliamentary_ideas = {
 		global_manpower_modifier = 0.15
 	}
 	parliamentary5 = {
-		# adds 1 of each dev and 10 prosperity when assigning parliament seat
+		# +25 prosperity, -25 autonomy when assigning parliament seat
 		# removes when unassigning
 		# done via on_actions
 		global_tax_modifier = 0.1
@@ -1378,7 +1381,7 @@ parliamentary_ideas = {
 	}
 	parliamentary6 = {
 		reform_progress_growth = 0.15
-		# gain 15 reform progress upon succeeding in a parliament debate
+		# gain 20 reform progress upon succeeding in a parliament debate
 	}
 	parliamentary7 = {
 		# grants a decision to force an issue through parliament
