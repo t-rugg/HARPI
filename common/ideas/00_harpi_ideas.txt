@@ -1345,7 +1345,7 @@ parliamentary_ideas = {
 
 	bonus = {
 		yearly_absolutism = 3
-		advisor_cost = -0.1
+		all_power_cost = -0.01
 	}
 
 	trigger = {

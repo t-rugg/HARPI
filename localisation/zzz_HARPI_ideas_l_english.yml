@@ -203,7 +203,7 @@
  parliamentary1:0 "Concessions on Regional Issues"
  parliamentary1_desc:0 "By stoking regional issues and then making small compromises on them, we can leave parliamentary officials in our debt at minimal cost to the state. Naturally, we will leverage this on the important debates.\n—"
  parliamentary2:0 "Right to the Floor" 
- parliamentary2_desc:0 "We will allow any parliamentary official to propose an issue in front of their peers, and even allow some community input from various interest groups. Most proposed ideas are rejected, but even a bad idea makes our path forward clearer.\n—\n§GGain 40 of each monarch point upon succeeding in a parliamentary debate§!"
+ parliamentary2_desc:0 "We will allow any parliamentary official to propose an issue in front of their peers, and even allow some community input from various interest groups. Most proposed ideas are rejected, but even a bad idea makes our path forward clearer.\n—\nGain §G40 of each monarch point§! upon succeeding in a parliamentary debate"
  parliamentary3:0 "Negotiated Rights"
  parliamentary3_desc:0 "Our parliament is influential, but it is not a replacement for central authority. We reserve the right to hold them accountable.\n—"
  parliamentary4:0 "Beyond Feudalism" 
@@ -211,9 +211,9 @@
  parliamentary5:0 "Local Interests"
  parliamentary5_desc:0 "By giving locals representation in parliament, they are better able to advocate on their behalf and fix issues that matter to them. This increases the wealth and happiness of localities.\n—\nAssigning a parliament seat gives a province §G+25 prosperity§! and §G-25 local autonomy§! (§Yremoving a parliament seat undoes this effect§!)"
  parliamentary6:0 "Lively Debates"
- parliamentary6_desc:0 "As frustrating as parliamentary arguments can be, they are how real progress is made in our country.\n—\n§GGain 20 Reform Progress upon succeeding in a parliamentary debate.§!"
+ parliamentary6_desc:0 "As frustrating as parliamentary arguments can be, they are how real progress is made in our country.\n—\nGain §G20 Reform Progress§! upon succeeding in a parliamentary debate"
  parliamentary7:0 "Party Whips"
- parliamentary7_desc:0 "Sometimes, an issue simply has to be passed in our favour. Thankfully, we have become quite good at making that happen. Whether through rhetoric, bargains, blackmailing, or threats, we can often force an issue through parliament despite opposition.\n—\n§GUnlocks the §TForce Issue Through Parliament§G decision§!, which can be used §Yonce every 20 years§! to immediately win a parliamentary debate by paying 3 Republican Tradition (or 10 Legitimacy, or equivalent)."
+ parliamentary7_desc:0 "Sometimes, an issue simply has to be passed in our favour. Thankfully, we have become quite good at making that happen. Whether through rhetoric, bargains, blackmailing, or threats, we can often force an issue through parliament despite opposition.\n—\nUnlocks the §TForce Issue Through Parliament§! decision, which can be used §Yonce every 20 years§! to immediately win a parliamentary debate by paying 3 Republican Tradition (or 10 Legitimacy, or equivalent)"
 
  professional_army_ideas:0 "Professional Army Ideas"
 
