@@ -1458,7 +1458,7 @@ federalist_ideas = {
 		diplomatic_annexation_cost = -0.1
 	}
 	federalist6 = {
-		global_unrest = -1.5
+		global_unrest = -1
 	}
 	federalist7 = { # Decentralized Administration
 		# 1% EXTRA ADMIN EFFICIENCY PER AGE

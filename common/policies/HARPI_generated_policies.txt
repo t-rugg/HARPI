@@ -2812,7 +2812,7 @@ expansion_ideas_stewardship_ideas_policy = {
 	}
 	
 	colonist_placement_chance = 0.035
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -3487,7 +3487,7 @@ expansion_ideas_plutocracy_ideas_policy = {
 	}
 	
 	build_time = -0.075
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -3512,7 +3512,7 @@ administrative_ideas_spy_ideas_policy = {
 	}
 	
 	global_autonomy = -0.05
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -3636,7 +3636,7 @@ administrative_ideas_court_ideas_policy = {
 		full_idea_group = court_ideas
 	}
 	
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	advisor_cost = -0.075
 	
 	effect = {}
@@ -3687,7 +3687,7 @@ administrative_ideas_stewardship_ideas_policy = {
 	}
 	
 	vassal_income = 0.25
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -4012,7 +4012,7 @@ administrative_ideas_quality_ideas_policy = {
 	}
 	
 	overextension_impact_modifier = -0.05
-	naval_morale_damage_received = 0.1
+	naval_morale_damage_received = -0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -4137,7 +4137,7 @@ administrative_ideas_war_economy_ideas_policy = {
 	}
 	
 	morale_damage_received = -0.05
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -4512,7 +4512,7 @@ humanist_ideas_court_ideas_policy = {
 	}
 	
 	global_unrest  = -0.75
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -5187,7 +5187,7 @@ humanist_ideas_honor_ideas_policy = {
 	}
 	
 	cavalry_power = 0.05
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -5386,7 +5386,7 @@ infrastructure_ideas_court_ideas_policy = {
 		full_idea_group = court_ideas
 	}
 	
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	spy_offence = 0.25
 	
 	effect = {}
@@ -5436,7 +5436,7 @@ infrastructure_ideas_stewardship_ideas_policy = {
 		full_idea_group = stewardship_ideas
 	}
 	
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	envoy_travel_time = -0.2
 	
 	effect = {}
@@ -6112,7 +6112,7 @@ infrastructure_ideas_plutocracy_ideas_policy = {
 	}
 	
 	reinforce_speed = 0.1
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -6637,7 +6637,7 @@ extraction_ideas_quality_ideas_policy = {
 	}
 	
 	global_trade_goods_size_modifier = 0.05
-	naval_morale_damage_received = 0.1
+	naval_morale_damage_received = -0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -8736,7 +8736,7 @@ militarist_ideas_plutocracy_ideas_policy = {
 		full_idea_group = plutocracy_ideas
 	}
 	
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	global_prov_trade_power_modifier = 0.1
 	
 	effect = {}
@@ -12237,7 +12237,7 @@ parliamentary_ideas_plutocracy_ideas_policy = {
 	}
 	
 	manpower_recovery_speed = 0.10
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -14037,7 +14037,7 @@ trade_ideas_quality_ideas_policy = {
 	}
 	
 	army_tradition = 0.5
-	naval_morale_damage_received = 0.1
+	naval_morale_damage_received = -0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -14387,7 +14387,7 @@ trade_ideas_plutocracy_ideas_policy = {
 	}
 	
 	mercenary_discipline = 0.035
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -15261,7 +15261,7 @@ court_ideas_offensive_ideas_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	advisor_cost = -0.075
 	
 	effect = {}
@@ -15311,7 +15311,7 @@ court_ideas_quality_ideas_policy = {
 		full_idea_group = quality_ideas
 	}
 	
-	naval_morale_damage_received = 0.1
+	naval_morale_damage_received = -0.1
 	stability_cost_modifier = -0.1
 	
 	effect = {}
@@ -15386,7 +15386,7 @@ court_ideas_mercenary_ideas_policy = {
 		full_idea_group = mercenary_ideas
 	}
 	
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	inflation_reduction = 0.05
 	
 	effect = {}
@@ -16037,7 +16037,7 @@ influence_ideas_honor_ideas_policy = {
 	}
 	
 	cavalry_power = 0.05
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -16162,7 +16162,7 @@ stewardship_ideas_quality_ideas_policy = {
 	}
 	
 	vassal_forcelimit_bonus = 0.25
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -16187,7 +16187,7 @@ stewardship_ideas_quantity_ideas_policy = {
 	}
 	
 	trade_steering = 0.25
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -16237,7 +16237,7 @@ stewardship_ideas_mercenary_ideas_policy = {
 	}
 	
 	vassal_income = 0.25
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -16462,7 +16462,7 @@ stewardship_ideas_honor_ideas_policy = {
 	}
 	
 	vassal_income = 0.25
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -16487,7 +16487,7 @@ stewardship_ideas_expeditionary_ideas_policy = {
 	}
 	
 	trade_steering = 0.25
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -16512,7 +16512,7 @@ stewardship_ideas_plutocracy_ideas_policy = {
 	}
 	
 	mercenary_manpower = 0.2
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -19062,7 +19062,7 @@ adventure_ideas_plutocracy_ideas_policy = {
 	}
 	
 	naval_morale_damage_received = 0.1
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -19137,7 +19137,7 @@ monastic_ideas_quality_ideas_policy = {
 	}
 	
 	advisor_pool = 1
-	naval_morale_damage_received = 0.1
+	naval_morale_damage_received = -0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -19912,7 +19912,7 @@ lawful_ideas_plutocracy_ideas_policy = {
 	}
 	
 	naval_morale_damage_received = 0.1
-	yearly_corruption = -0.075
+	yearly_corruption = -0.05
 	
 	effect = {}
 	removed_effect = {}
