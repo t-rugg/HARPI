@@ -1016,11 +1016,11 @@ militarist_ideas = {
 	militarist5 = {
 		global_unrest = -2
 	}
-	militarist6 = {
-		max_absolutism = 10
-	}
-	militarist7 = { # military cantons
+	militarist6 = {# military cantons
 		global_manpower_modifier = 0.15
+	}
+	militarist7 = { 
+		max_absolutism = 10
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}
@@ -1755,20 +1755,22 @@ governance_ideas = {
 	governance2 = {
 		global_tax_modifier = 0.15
 	}
-	governance3 = {
-		core_creation = -0.1
+	governance3 = { # Seamless Integration
+		core_creation = -0.05
+		diplomatic_annexation_cost = -0.05
+		overextension_impact_modifier = -0.05
 	}
 	governance4 = {
-		state_maintenance_modifier = -0.25
+		build_cost = -0.1
 	}
 	governance5 = {
-		global_autonomy = -0.05
+		state_maintenance_modifier = -0.25
 	}
 	governance6 = {
-		yearly_absolutism = 1
+		global_autonomy = -0.05
 	}
 	governance7 = {
-		governing_capacity_modifier = 0.1
+		governing_capacity_modifier = 0.2
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}

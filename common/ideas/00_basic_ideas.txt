@@ -1659,7 +1659,7 @@ administrative_ideas = {
 		global_tax_modifier = 0.1
 	}
 	adaptability = {
-		core_creation = -0.1
+		core_creation = -0.15
 	}
 	cultural_regulations = { # todo: change loc
 		governing_capacity_modifier = 0.1

@@ -185,7 +185,7 @@
  urbanization1:0 "Centralized Bureaucracy"
  urbanization1_desc:0 "We need not spread ourselves thin.\n—"
  urbanization2:0 "Dense Streets"
- urbanization2_desc:0 "Keeping people close together makes it easier to serve their needs and to develop the community around them.\n—§-5%§ Local Development Cost in provinces with City terrain or with at least one level of Expanded Infrastructure, except for Holds and Surface Holds"
+ urbanization2_desc:0 "Keeping people close together makes it easier to serve their needs and to develop the community around them.\n—\n§G-5%§! Local Development Cost in provinces with City terrain or with at least one level of Expanded Infrastructure, except for Holds and Surface Holds"
  urbanization3:0 "The Way of the Future"
  urbanization3_desc:0 "It is common for landowners to be barriers to progress, conservative forces opposing any societal change that may threaten their iron grip on the peasantry. By focusing our economy's wealth in our cities, we can gradually strip these rent-seekers from their political influence, paving the way for a better society.\n—"
  urbanization4:0 "Attracting Talent"
