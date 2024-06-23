@@ -400,3 +400,24 @@ harpi_urbanization_province_update = {
 		remove_province_modifier = urbanization2_modifier
 	}
 }
+
+harpi_gov_idea_dev_cost_update = {
+	if = {
+		limit = {
+			owner = {
+				OR = {
+					has_idea = local_nobility
+					has_idea = emancipation
+					has_idea = martyrs
+				}
+			
+		}
+		add_country_modifier = {
+			name = harpi_gov_idea_dev_cost
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = harpi_gov_idea_dev_cost
+	}
+}

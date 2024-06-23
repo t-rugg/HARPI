@@ -150,3 +150,7 @@ urbanization2_modifier = {
 subterranean5_modifier = {
 	colony_development_boost = 1
 }
+
+harpi_gov_idea_dev_cost = {
+	development_cost = -0.05
+}
