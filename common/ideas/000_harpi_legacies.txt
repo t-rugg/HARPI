@@ -1,749 +1,749 @@
-# Legacies unlock at tech 10 and are very tag-specific
-# Also you can only have 1 Legacy at a time (unless...?)
+# # Legacies unlock at tech 10 and are very tag-specific
+# # Also you can only have 1 Legacy at a time (unless...?)
 
-# Legacies always start with a downside idea that enforces the "theme" of the legacy
-# Since Legacies start with a downside, they are marked as "important" so the AI fleshes them out quickly (i.e. recoups their investment)
+# # Legacies always start with a downside idea that enforces the "theme" of the legacy
+# # Since Legacies start with a downside, they are marked as "important" so the AI fleshes them out quickly (i.e. recoups their investment)
 
-dwarf_legacy = {
-	category = DIP
-	important = yes
+# dwarf_legacy = {
+# 	category = DIP
+# 	important = yes
 
-	trigger = {
-		adm_tech = 10
-		culture_group = dwarven
-		capital_scope = {
-			OR = {
-				continent = serpentspine
-				province_id = 526 #Odval Tungr
-			}
-		}
-		NOT = {
-			has_disaster = remnant_stagnation_disaster
-		}
-		NOT = { 
-			OR = {
-				tag = H94 #obsidian legion
-				tag = I23 #obsidian legion formable
-			}
-		}
-	}
+# 	trigger = {
+# 		adm_tech = 10
+# 		culture_group = dwarven
+# 		capital_scope = {
+# 			OR = {
+# 				continent = serpentspine
+# 				province_id = 526 #Odval Tungr
+# 			}
+# 		}
+# 		NOT = {
+# 			has_disaster = remnant_stagnation_disaster
+# 		}
+# 		NOT = { 
+# 			OR = {
+# 				tag = H94 #obsidian legion
+# 				tag = I23 #obsidian legion formable
+# 			}
+# 		}
+# 	}
 
-	bonus = {
-		state_governing_cost = -0.1
-	}
+# 	bonus = {
+# 		state_governing_cost = -0.1
+# 	}
 
-	dwarf_legacy1 = {
-		development_cost = -0.03
-		num_accepted_cultures = -1 #downside!
-		tolerance_heathen = -2 #downside!
-	}
-	dwarf_legacy2 = {
-		expand_infrastructure_cost_modifier = -0.25
-		build_time = -0.05
-	}
-	dwarf_legacy3 = {
-		manpower_in_own_culture_provinces = 0.15
-		manpower_in_accepted_culture_provinces = 0.15
-		manpower_in_culture_group_provinces = 0.15
-	}
-	dwarf_legacy4 = { # Back in the Fold
-		accept_vassalization_reasons = 15
-		diplomatic_annexation_cost = -0.1
-	}
-	dwarf_legacy5 = {
-		artillery_cost = -0.1
-	}
-	dwarf_legacy6 = {
-		merchants = 1
-		caravan_power = 0.33
-	}
-	dwarf_legacy7 = {
-		reform_progress_growth = 0.15
-		parliament_backing_chance = 0.10
-	}
+# 	dwarf_legacy1 = {
+# 		development_cost = -0.03
+# 		num_accepted_cultures = -1 #downside!
+# 		tolerance_heathen = -2 #downside!
+# 	}
+# 	dwarf_legacy2 = {
+# 		expand_infrastructure_cost_modifier = -0.25
+# 		build_time = -0.05
+# 	}
+# 	dwarf_legacy3 = {
+# 		manpower_in_own_culture_provinces = 0.15
+# 		manpower_in_accepted_culture_provinces = 0.15
+# 		manpower_in_culture_group_provinces = 0.15
+# 	}
+# 	dwarf_legacy4 = { # Back in the Fold
+# 		accept_vassalization_reasons = 15
+# 		diplomatic_annexation_cost = -0.1
+# 	}
+# 	dwarf_legacy5 = {
+# 		artillery_cost = -0.1
+# 	}
+# 	dwarf_legacy6 = {
+# 		merchants = 1
+# 		caravan_power = 0.33
+# 	}
+# 	dwarf_legacy7 = {
+# 		reform_progress_growth = 0.15
+# 		parliament_backing_chance = 0.10
+# 	}
 
-	ai_will_do = {
-		factor = 0.5
-		modifier = { # these dwarves explicitly reject some concepts of this idea group (either dwarven supremacy or recreating Aul-Dwarov)
-			factor = 0.2
-			OR = {
-				tag = I02 #Krakdhumvror
-				tag = I11 #Shazstundihr
-			}
-		}
-		modifier = { # at least 5 holds
-			factor = 1.4
-			num_of_owned_provinces_with = {
-				value = 5
-				OR = {
-					has_terrain = dwarven_hold
-					has_terrain = dwarven_hold_surface
-				}
-			}
-		}
-		modifier = { # has large parliament
-			factor = 1.2
-			current_size_of_parliament = 7
-		}
-		modifier = { # ancestor worship
-			factor = 1.2
-			religion = ancestor_worship
-			dominant_religion = ancestor_worship
-		}
-	}
-}
+# 	ai_will_do = {
+# 		factor = 0.5
+# 		modifier = { # these dwarves explicitly reject some concepts of this idea group (either dwarven supremacy or recreating Aul-Dwarov)
+# 			factor = 0.2
+# 			OR = {
+# 				tag = I02 #Krakdhumvror
+# 				tag = I11 #Shazstundihr
+# 			}
+# 		}
+# 		modifier = { # at least 5 holds
+# 			factor = 1.4
+# 			num_of_owned_provinces_with = {
+# 				value = 5
+# 				OR = {
+# 					has_terrain = dwarven_hold
+# 					has_terrain = dwarven_hold_surface
+# 				}
+# 			}
+# 		}
+# 		modifier = { # has large parliament
+# 			factor = 1.2
+# 			current_size_of_parliament = 7
+# 		}
+# 		modifier = { # ancestor worship
+# 			factor = 1.2
+# 			religion = ancestor_worship
+# 			dominant_religion = ancestor_worship
+# 		}
+# 	}
+# }
 
-corin_legacy = {
-	category = MIL
-	important = yes
+# corin_legacy = {
+# 	category = MIL
+# 	important = yes
 
-	trigger = {
-		adm_tech = 10
-		OR = {
-			has_personal_deity = corin
-			religion = corinite
-			has_harmonized_with = cannorian
-			has_reform = end_the_greentide
-			tag = B02 #Corintar
-			tag = H35 #Corinsfield
-		}
-	}
+# 	trigger = {
+# 		adm_tech = 10
+# 		OR = {
+# 			has_personal_deity = corin
+# 			religion = corinite
+# 			has_harmonized_with = cannorian
+# 			has_reform = end_the_greentide
+# 			tag = B02 #Corintar
+# 			tag = H35 #Corinsfield
+# 		}
+# 	}
 
-	bonus = {
-		mercenary_discipline = 0.05
-		adventurers_loyalty_modifier = 0.1
-		adventurers_influence_modifier = 0.1
-	}
+# 	bonus = {
+# 		mercenary_discipline = 0.05
+# 		adventurers_loyalty_modifier = 0.1
+# 		adventurers_influence_modifier = 0.1
+# 	}
 
-	corin_legacy1 = { # Escanni Chivalry
-		army_tradition_decay = -0.1
-		artillery_cost = 0.1 #downside!
-		defensiveness = -0.2 #downside!
-		nobles_influence_modifier = 0.1 #kind of a downside
-	}
-	corin_legacy2 = {
-		morale_damage_received = -0.075
-		sunk_ship_morale_hit_recieved = -0.1
-	}
-	corin_legacy3 = { # Corin's Circle
-		num_accepted_cultures = 2
-		female_advisor_chance = 0.33
-		may_recruit_female_generals = yes
-	}
-	corin_legacy4 = {
-		global_monthly_devastation = -0.05
-		war_exhaustion = -0.03
-	}
-	corin_legacy5 = {
-		yearly_karma_decay = 0.1
-		ae_impact = -0.1
-	}
-	corin_legacy6 = {
-		assault_fort_ability = 0.33
-		assault_fort_cost_modifier = -0.5
-	}
-	corin_legacy7 = {
-		leader_land_shock = 1
-	}
+# 	corin_legacy1 = { # Escanni Chivalry
+# 		army_tradition_decay = -0.1
+# 		artillery_cost = 0.1 #downside!
+# 		defensiveness = -0.2 #downside!
+# 		nobles_influence_modifier = 0.1 #kind of a downside
+# 	}
+# 	corin_legacy2 = {
+# 		morale_damage_received = -0.075
+# 		sunk_ship_morale_hit_recieved = -0.1
+# 	}
+# 	corin_legacy3 = { # Corin's Circle
+# 		num_accepted_cultures = 2
+# 		female_advisor_chance = 0.33
+# 		may_recruit_female_generals = yes
+# 	}
+# 	corin_legacy4 = {
+# 		global_monthly_devastation = -0.05
+# 		war_exhaustion = -0.03
+# 	}
+# 	corin_legacy5 = {
+# 		yearly_karma_decay = 0.1
+# 		ae_impact = -0.1
+# 	}
+# 	corin_legacy6 = {
+# 		assault_fort_ability = 0.33
+# 		assault_fort_cost_modifier = -0.5
+# 	}
+# 	corin_legacy7 = {
+# 		leader_land_shock = 1
+# 	}
 
-	ai_will_do = {
-		factor = 0.4
-		modifier = { # not sufficiently corinite - the player can still take it in these weird edge cases, but the AI shouldn't
-			factor = 0
-			OR = {
-				NOT = { religion = corinite }
-				NOT = { ruler_religion = corinite } 
-				NOT = { 
-					dominant_religion = corinite
-					dominant_religion = regent_court
-					dominant_religion = ravelian
-					dominant_religion = old_dookan
-					dominant_religion = great_dookan
-				}
-			}
-		}
-		modifier = {
-			factor = 1.6
-			OR = {
-				culture_group = escanni
-				tag = B02 #Corintar
-				tag = H35 #Corinsfield
-			}
-		}
-		modifier = {
-			factor = 2
-			ruler_has_personality = zealot_personality
-		}
-		modifier = {
-			factor = 1.3
-			OR = {
-				has_idea_group = religious_ideas
-				has_idea_group = zealous_ideas
-			}
-		}
-		modifier = { #corinites dominant in EoA
-			factor = 1.2
-			is_part_of_hre = yes
-			hre_religion = corinite
-		}
-		modifier = { #corinites dominant in EoA - extra boost for emperor
-			factor = 1.3
-			is_emperor = yes
-			hre_religion = corinite
-		}
-		modifier = { #corinites haven't won EoA
-			factor = 0.5 
-			is_part_of_hre = yes # we don't want HRE members going all super-corin unless corinites win the league war, so this triggers even in religious peace
-			NOT = { hre_religion = corinite }
-		}
-		modifier = { #corinites haven't won EoA - emperor will never take this then
-			factor = 0
-			is_emperor = yes
-			NOT = { hre_religion = corinite }
-		}
-	}
-}
+# 	ai_will_do = {
+# 		factor = 0.4
+# 		modifier = { # not sufficiently corinite - the player can still take it in these weird edge cases, but the AI shouldn't
+# 			factor = 0
+# 			OR = {
+# 				NOT = { religion = corinite }
+# 				NOT = { ruler_religion = corinite } 
+# 				NOT = { 
+# 					dominant_religion = corinite
+# 					dominant_religion = regent_court
+# 					dominant_religion = ravelian
+# 					dominant_religion = old_dookan
+# 					dominant_religion = great_dookan
+# 				}
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 1.6
+# 			OR = {
+# 				culture_group = escanni
+# 				tag = B02 #Corintar
+# 				tag = H35 #Corinsfield
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 2
+# 			ruler_has_personality = zealot_personality
+# 		}
+# 		modifier = {
+# 			factor = 1.3
+# 			OR = {
+# 				has_idea_group = religious_ideas
+# 				has_idea_group = zealous_ideas
+# 			}
+# 		}
+# 		modifier = { #corinites dominant in EoA
+# 			factor = 1.2
+# 			is_part_of_hre = yes
+# 			hre_religion = corinite
+# 		}
+# 		modifier = { #corinites dominant in EoA - extra boost for emperor
+# 			factor = 1.3
+# 			is_emperor = yes
+# 			hre_religion = corinite
+# 		}
+# 		modifier = { #corinites haven't won EoA
+# 			factor = 0.5 
+# 			is_part_of_hre = yes # we don't want HRE members going all super-corin unless corinites win the league war, so this triggers even in religious peace
+# 			NOT = { hre_religion = corinite }
+# 		}
+# 		modifier = { #corinites haven't won EoA - emperor will never take this then
+# 			factor = 0
+# 			is_emperor = yes
+# 			NOT = { hre_religion = corinite }
+# 		}
+# 	}
+# }
 
-# jaher_legacy
+# # jaher_legacy
 
-castanor_legacy = {
-	category = ADM
-	important = yes
+# castanor_legacy = {
+# 	category = ADM
+# 	important = yes
 
-	trigger = {
-		adm_tech = 10
-		culture_is_human = yes
-		has_estate = estate_castonath_patricians
-		OR = {
-			tag = B31 #Castellyr
-			tag = B32 #Castanor
-			tag = Z34 #Black Castanor
-			AND = {
-				is_year = 1600
-				capital_scope = { 
-					OR = {
-						region = inner_castanor_region
-						region = west_castanor_region
-						region = south_castanor_region
-						area = cursewood_area
-						area = whistlevale_area
-					}
-				}
-			}
-		}
-	}
+# 	trigger = {
+# 		adm_tech = 10
+# 		culture_is_human = yes
+# 		has_estate = estate_castonath_patricians
+# 		OR = {
+# 			tag = B31 #Castellyr
+# 			tag = B32 #Castanor
+# 			tag = Z34 #Black Castanor
+# 			AND = {
+# 				is_year = 1600
+# 				capital_scope = { 
+# 					OR = {
+# 						region = inner_castanor_region
+# 						region = west_castanor_region
+# 						region = south_castanor_region
+# 						area = cursewood_area
+# 						area = whistlevale_area
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	bonus = {
-		discipline = 0.05
-	}
+# 	bonus = {
+# 		discipline = 0.05
+# 	}
 
-	castanor_legacy1 = {
-		castonath_patricians_loyalty_modifier = 0.1
-		castonath_patricians_influence_modifier = 0.05 #typically a downside
-		yearly_corruption = 0.1 #downside!
-	}
-	castanor_legacy2 = {
-		same_culture_advisor_cost = -0.2
-	}
-	castanor_legacy3 = {
-		overextension_impact_modifier = -0.1
-	}
-	castanor_legacy4 = {
-		vassal_income = 0.33
-	}
-	castanor_legacy5 = {
-		technology_cost = -0.05
-	}
-	castanor_legacy6 = {
-		prestige = 1
-	}
-	castanor_legacy7 = {
-		ae_impact = -0.1
-	}
+# 	castanor_legacy1 = {
+# 		castonath_patricians_loyalty_modifier = 0.1
+# 		castonath_patricians_influence_modifier = 0.05 #typically a downside
+# 		yearly_corruption = 0.1 #downside!
+# 	}
+# 	castanor_legacy2 = {
+# 		same_culture_advisor_cost = -0.2
+# 	}
+# 	castanor_legacy3 = {
+# 		overextension_impact_modifier = -0.1
+# 	}
+# 	castanor_legacy4 = {
+# 		vassal_income = 0.33
+# 	}
+# 	castanor_legacy5 = {
+# 		technology_cost = -0.05
+# 	}
+# 	castanor_legacy6 = {
+# 		prestige = 1
+# 	}
+# 	castanor_legacy7 = {
+# 		ae_impact = -0.1
+# 	}
 
-	ai_will_do = {
-		factor = 0.8
-	}
-}
+# 	ai_will_do = {
+# 		factor = 0.8
+# 	}
+# }
 
-dameria_legacy = {
-	category = DIP
-	important = yes
+# dameria_legacy = {
+# 	category = DIP
+# 	important = yes
 
-	trigger = {
-		adm_tech = 10
-		OR = {
-			tag = A58 #Dameria
-			tag = B07 #Sons of Dameria
-			tag = B37 #Rogieria
-			tag = A38 #Anbenncost
-			primary_culture = east_damerian
-			primary_culture = west_damerian
-			primary_culture = rogieran
-			primary_culture = anbenncoster
-		}
-	}
+# 	trigger = {
+# 		adm_tech = 10
+# 		OR = {
+# 			tag = A58 #Dameria
+# 			tag = B07 #Sons of Dameria
+# 			tag = B37 #Rogieria
+# 			tag = A38 #Anbenncost
+# 			primary_culture = east_damerian
+# 			primary_culture = west_damerian
+# 			primary_culture = rogieran
+# 			primary_culture = anbenncoster
+# 		}
+# 	}
 
-	bonus = {
-		development_cost = -0.05
-	}
+# 	bonus = {
+# 		development_cost = -0.05
+# 	}
 
-	dameria_legacy1 = {
-		idea_cost = -0.1
-		# no downsides for this one, I'm nice
-	}
-	dameria_legacy2 = {
-		imperial_authority = 0.1
-		reasons_to_elect = 10
-	}
-	dameria_legacy3 = {
-		diplomatic_upkeep = 1
-	}
-	dameria_legacy4 = {
-		diplomatic_reputation = 1
-	}
-	dameria_legacy5 = {
-		global_trade_power = 0.15
-	}
-	dameria_legacy6 = {
-		improve_relation_modifier = 0.2
-	}
-	dameria_legacy7 = {
-		prestige_decay = -0.01
-	}
-	ai_will_do = {
-		factor = 0.3
-		modifier = {
-			factor = 10
-			OR = {
-				tag = A58 #Dameria
-				tag = Z01 #Empire of Anbennar
-			}
-		}
-		modifier = {
-			factor = 2
-			is_emperor = yes
-		}
-	}
-}
+# 	dameria_legacy1 = {
+# 		idea_cost = -0.1
+# 		# no downsides for this one, I'm nice
+# 	}
+# 	dameria_legacy2 = {
+# 		imperial_authority = 0.1
+# 		reasons_to_elect = 10
+# 	}
+# 	dameria_legacy3 = {
+# 		diplomatic_upkeep = 1
+# 	}
+# 	dameria_legacy4 = {
+# 		diplomatic_reputation = 1
+# 	}
+# 	dameria_legacy5 = {
+# 		global_trade_power = 0.15
+# 	}
+# 	dameria_legacy6 = {
+# 		improve_relation_modifier = 0.2
+# 	}
+# 	dameria_legacy7 = {
+# 		prestige_decay = -0.01
+# 	}
+# 	ai_will_do = {
+# 		factor = 0.3
+# 		modifier = {
+# 			factor = 10
+# 			OR = {
+# 				tag = A58 #Dameria
+# 				tag = Z01 #Empire of Anbennar
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 2
+# 			is_emperor = yes
+# 		}
+# 	}
+# }
 
-harimar_legacy = {
-	category = ADM
-	important = yes
+# harimar_legacy = {
+# 	category = ADM
+# 	important = yes
 
-	trigger = {
-		adm_tech = 10
-		OR = { # is harimari, has harimari admin, or harimari are integrated + has castes
-			culture_is_harimari = yes
-			AND = {
-				# high_tolerance_harimari_race_trigger = yes # harimari integrated - automatically passed by harimari admin
-				has_country_modifier = harimari_administration
-				NOT = { # exclude the jadd tags, which can get harimari admin via MT. maybe remove this?
-					tag = F46 #Jaddari 
-					tag = F51 #Jadd Empire
-					tag = F99 #Jadd Empire Civil War
-				}
-			}
-			AND = {
-				high_tolerance_harimari_race_trigger = yes # harimari integrated
-				OR = {
-					has_country_flag = has_caste_estates
-					has_country_flag = has_caste_estates_reformed # I don't think this is necessary?
-				}
-			}
-		}
-		NOT = { # elves claiming to be the inheritors of harimar's legacy after Jaher's hated conquests would be absurd
-			culture_is_elven = yes
-			has_country_modifier = elven_administration
-		}
-	}
+# 	trigger = {
+# 		adm_tech = 10
+# 		OR = { # is harimari, has harimari admin, or harimari are integrated + has castes
+# 			culture_is_harimari = yes
+# 			AND = {
+# 				# high_tolerance_harimari_race_trigger = yes # harimari integrated - automatically passed by harimari admin
+# 				has_country_modifier = harimari_administration
+# 				NOT = { # exclude the jadd tags, which can get harimari admin via MT. maybe remove this?
+# 					tag = F46 #Jaddari 
+# 					tag = F51 #Jadd Empire
+# 					tag = F99 #Jadd Empire Civil War
+# 				}
+# 			}
+# 			AND = {
+# 				high_tolerance_harimari_race_trigger = yes # harimari integrated
+# 				OR = {
+# 					has_country_flag = has_caste_estates
+# 					has_country_flag = has_caste_estates_reformed # I don't think this is necessary?
+# 				}
+# 			}
+# 		}
+# 		NOT = { # elves claiming to be the inheritors of harimar's legacy after Jaher's hated conquests would be absurd
+# 			culture_is_elven = yes
+# 			has_country_modifier = elven_administration
+# 		}
+# 	}
 
-	bonus = {
-		free_adm_policy = 1
-	}
+# 	bonus = {
+# 		free_adm_policy = 1
+# 	}
 
-	harimar_legacy1 = {
-		all_estate_loyalty_equilibrium = 0.05
-		yearly_corruption = 0.1 #downside!
-		navy_tradition_decay = 0.1 #downside! though kinda whatever...
-	}
-	harimar_legacy2 = { # recruit from the castes
-		advisor_cost = -0.1
-		all_estate_influence_modifier = 0.05 #downside?
-	}
-	harimar_legacy3 = { # the stern father of rahen
-		liberty_desire_from_subject_development = -0.25
-		global_unrest = 1 #downside!
-	}
-	harimar_legacy4 = {
-		army_tradition_from_battle = 0.5
-		prestige_from_land = 0.5
-	}
-	harimar_legacy5 = { # intentionally not giving any forcelimit...
-		vassal_income = 0.25
-		vassal_manpower_bonus = 0.25 #potential balance weirdness but w/e
-	}
-	harimar_legacy6 = {
-		num_accepted_cultures = 1
-		promote_culture_cost = -0.25
-	}
-	harimar_legacy7 = {
-		administrative_efficiency = 0.03 # busted!!!
-	}
+# 	harimar_legacy1 = {
+# 		all_estate_loyalty_equilibrium = 0.05
+# 		yearly_corruption = 0.1 #downside!
+# 		navy_tradition_decay = 0.1 #downside! though kinda whatever...
+# 	}
+# 	harimar_legacy2 = { # recruit from the castes
+# 		advisor_cost = -0.1
+# 		all_estate_influence_modifier = 0.05 #downside?
+# 	}
+# 	harimar_legacy3 = { # the stern father of rahen
+# 		liberty_desire_from_subject_development = -0.25
+# 		global_unrest = 1 #downside!
+# 	}
+# 	harimar_legacy4 = {
+# 		army_tradition_from_battle = 0.5
+# 		prestige_from_land = 0.5
+# 	}
+# 	harimar_legacy5 = { # intentionally not giving any forcelimit...
+# 		vassal_income = 0.25
+# 		vassal_manpower_bonus = 0.25 #potential balance weirdness but w/e
+# 	}
+# 	harimar_legacy6 = {
+# 		num_accepted_cultures = 1
+# 		promote_culture_cost = -0.25
+# 	}
+# 	harimar_legacy7 = {
+# 		administrative_efficiency = 0.03 # busted!!!
+# 	}
 
-	ai_will_do = {
-		factor = 0.6
-		modifier = { # empire ranks only
-			factor = 0
-			NOT = { government_rank = 3 }
-		}
-		modifier = {
-			factor = 1.2
-			culture_is_harimari = yes
-			has_country_modifier = harimari_administration
-		}
-		modifier = {
-			factor = 1.1
-			has_country_modifier = harimari_military
-		}
-	}
-}
+# 	ai_will_do = {
+# 		factor = 0.6
+# 		modifier = { # empire ranks only
+# 			factor = 0
+# 			NOT = { government_rank = 3 }
+# 		}
+# 		modifier = {
+# 			factor = 1.2
+# 			culture_is_harimari = yes
+# 			has_country_modifier = harimari_administration
+# 		}
+# 		modifier = {
+# 			factor = 1.1
+# 			has_country_modifier = harimari_military
+# 		}
+# 	}
+# }
 
-precursor_legacy = {
-	category = ADM
-	important = yes
+# precursor_legacy = {
+# 	category = ADM
+# 	important = yes
 
-	trigger = {
-		adm_tech = 10
-		OR = { # 3 cases
-			AND = { # ruinborn kingdom/empire
-				culture_is_ruinborn = yes
-				government_rank = 2 # at least a kingdom
-			}
-			AND = { # elven or ruinborn tag that has a precursor relic
-				OR = {
-					culture_is_elven = yes
-					culture_is_ruinborn = yes
-				}
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 1
-					trade_goods = precursor_relics
-				}
-			}
-			AND = { # kingdom or empire that has LOTS of precursor relics
-				government_rank = 2 # at least a kingdom
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 6
-					trade_goods = precursor_relics
-				}
-			}
-		}
-	}
+# 	trigger = {
+# 		adm_tech = 10
+# 		OR = { # 3 cases
+# 			AND = { # ruinborn kingdom/empire
+# 				culture_is_ruinborn = yes
+# 				government_rank = 2 # at least a kingdom
+# 			}
+# 			AND = { # elven or ruinborn tag that has a precursor relic
+# 				OR = {
+# 					culture_is_elven = yes
+# 					culture_is_ruinborn = yes
+# 				}
+# 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+# 					value = 1
+# 					trade_goods = precursor_relics
+# 				}
+# 			}
+# 			AND = { # kingdom or empire that has LOTS of precursor relics
+# 				government_rank = 2 # at least a kingdom
+# 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+# 					value = 6
+# 					trade_goods = precursor_relics
+# 				}
+# 			}
+# 		}
+# 	}
 
-	bonus = {
-		all_power_cost = -0.025
-	}
+# 	bonus = {
+# 		all_power_cost = -0.025
+# 	}
 
-	precursor_legacy1 = {	
-		all_power_cost = -0.025
-		yearly_corruption = 0.2 #downside! - TODO: MAKE IT SO THE AI DOESN'T SUFFER THIS
-		stability_cost_modifier = 0.33 #downside!
-	}
-	precursor_legacy2 = { # Learning from the Precursors
-		innovativeness_gain = 0.25
-		global_institution_spread = -0.25 #downside! the precursors didn't have these fancy-schmancy institutions! >:(
-		embracement_cost = 0.25 #downside!
-	}
-	precursor_legacy3 = {
-		governing_capacity_modifier = 0.1
-	}
-	precursor_legacy4 = {
-		legitimacy = 1
-		republican_tradition = 0.3
-		devotion = 1
-		horde_unity = 1
-	}
-	precursor_legacy5 = {
-		culture_conversion_cost = -0.15
-		culture_conversion_time = -0.25
-	}
-	precursor_legacy6 = {
-		prestige = 1
-	}
-	precursor_legacy7 = {
-		max_absolutism_effect = 0.1
-	}
+# 	precursor_legacy1 = {	
+# 		all_power_cost = -0.025
+# 		yearly_corruption = 0.2 #downside! - TODO: MAKE IT SO THE AI DOESN'T SUFFER THIS
+# 		stability_cost_modifier = 0.33 #downside!
+# 	}
+# 	precursor_legacy2 = { # Learning from the Precursors
+# 		innovativeness_gain = 0.25
+# 		global_institution_spread = -0.25 #downside! the precursors didn't have these fancy-schmancy institutions! >:(
+# 		embracement_cost = 0.25 #downside!
+# 	}
+# 	precursor_legacy3 = {
+# 		governing_capacity_modifier = 0.1
+# 	}
+# 	precursor_legacy4 = {
+# 		legitimacy = 1
+# 		republican_tradition = 0.3
+# 		devotion = 1
+# 		horde_unity = 1
+# 	}
+# 	precursor_legacy5 = {
+# 		culture_conversion_cost = -0.15
+# 		culture_conversion_time = -0.25
+# 	}
+# 	precursor_legacy6 = {
+# 		prestige = 1
+# 	}
+# 	precursor_legacy7 = {
+# 		max_absolutism_effect = 0.1
+# 	}
 
-	ai_will_do = {
-		factor = 0.33
-		modifier = {
-			factor = 2
-			tag = Z43 #Aelnar - not Venail!
-		}
-		modifier = {
-			factor = 1.5
-			culture_group = eordan_ruinborn_elf
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { government_rank = 2 }
-		}
-		modifier = { # if the AI has corruption issues, don't let them take this
-			factor = 0
-			corruption = 0.1
-		}
-	}
-}
+# 	ai_will_do = {
+# 		factor = 0.33
+# 		modifier = {
+# 			factor = 2
+# 			tag = Z43 #Aelnar - not Venail!
+# 		}
+# 		modifier = {
+# 			factor = 1.5
+# 			culture_group = eordan_ruinborn_elf
+# 		}
+# 		modifier = {
+# 			factor = 0.1
+# 			NOT = { government_rank = 2 }
+# 		}
+# 		modifier = { # if the AI has corruption issues, don't let them take this
+# 			factor = 0
+# 			corruption = 0.1
+# 		}
+# 	}
+# }
 
-greentide_legacy = {
-	category = ADM
-	important = yes
+# greentide_legacy = {
+# 	category = ADM
+# 	important = yes
 
-	trigger = {
-		adm_tech = 10
-		OR = {
-			religion = great_dookan # automatically eligible cause dookanson followers
-			AND = { # orc/half-orc/goblin with a capital in castanor or control over all of castonath
-				OR = {
-					num_of_owned_provinces_with = { # own all of castonath as a state
-						value = 3
-						area = castonath_area
-						is_state_core = root
-					}
-					capital_scope = { # capital in castanor proper
-						OR = {
-							region = inner_castanor_region
-							region = west_castanor_region
-							region = south_castanor_region
-						}
-					}
-				}
-				OR = {
-					culture_is_orcish = yes
-					culture_is_half_orcish = yes
-					culture_is_goblin = yes
-				}
-			}
-		}
-	}
+# 	trigger = {
+# 		adm_tech = 10
+# 		OR = {
+# 			religion = great_dookan # automatically eligible cause dookanson followers
+# 			AND = { # orc/half-orc/goblin with a capital in castanor or control over all of castonath
+# 				OR = {
+# 					num_of_owned_provinces_with = { # own all of castonath as a state
+# 						value = 3
+# 						area = castonath_area
+# 						is_state_core = root
+# 					}
+# 					capital_scope = { # capital in castanor proper
+# 						OR = {
+# 							region = inner_castanor_region
+# 							region = west_castanor_region
+# 							region = south_castanor_region
+# 						}
+# 					}
+# 				}
+# 				OR = {
+# 					culture_is_orcish = yes
+# 					culture_is_half_orcish = yes
+# 					culture_is_goblin = yes
+# 				}
+# 			}
+# 		}
+# 	}
 
-	bonus = {
-		unjustified_demands = -0.2
-		monstrous_tribes_loyalty_modifier = 0.1
-		nobles_loyalty_modifier = 0.05
-		adventurers_loyalty_modifier = -0.05
-	}
+# 	bonus = {
+# 		unjustified_demands = -0.2
+# 		monstrous_tribes_loyalty_modifier = 0.1
+# 		nobles_loyalty_modifier = 0.05
+# 		adventurers_loyalty_modifier = -0.05
+# 	}
 
-	greentide_legacy1 = {
-		manpower_recovery_speed = 0.2
-		advisor_cost = 0.1 #downside!
-		development_cost = 0.1 #downside!
-	}
-	greentide_legacy2 = {
-		province_warscore_cost = -0.1
-	}
-	greentide_legacy3 = {
-		shock_damage_received = -0.075
-		fire_damage_received = -0.05
-	}
-	greentide_legacy4 = {
-		infantry_cost = -0.1
-	}
-	greentide_legacy5 = {
-		core_creation = -0.1
-	}
-	greentide_legacy6 = {
-		war_exhaustion = -0.03
-		autonomy_change_time = -0.25
-	}
-	greentide_legacy7 = {
-		monarch_military_power = 1
-	}
+# 	greentide_legacy1 = {
+# 		manpower_recovery_speed = 0.2
+# 		advisor_cost = 0.1 #downside!
+# 		development_cost = 0.1 #downside!
+# 	}
+# 	greentide_legacy2 = {
+# 		province_warscore_cost = -0.1
+# 	}
+# 	greentide_legacy3 = {
+# 		shock_damage_received = -0.075
+# 		fire_damage_received = -0.05
+# 	}
+# 	greentide_legacy4 = {
+# 		infantry_cost = -0.1
+# 	}
+# 	greentide_legacy5 = {
+# 		core_creation = -0.1
+# 	}
+# 	greentide_legacy6 = {
+# 		war_exhaustion = -0.03
+# 		autonomy_change_time = -0.25
+# 	}
+# 	greentide_legacy7 = {
+# 		monarch_military_power = 1
+# 	}
 
-	ai_will_do = {
-		factor = 0.5
-	}
-}
+# 	ai_will_do = {
+# 		factor = 0.5
+# 	}
+# }
 
-reaver_legacy = {
-	category = DIP
-	important = yes
+# reaver_legacy = {
+# 	category = DIP
+# 	important = yes
 
-	trigger = {
-		adm_tech = 10
-		OR = {
-			tag = A02 #Deranne
-			tag = A05 #Reveria
-			tag = A11 #Pearlsedge
-			primary_culture = reverian
-			AND = { # be a human, own reaver coast (reveria proper), accept reverians
-				culture_is_human = yes
-				OR = {
-					accepted_culture = reverian
-					culture_group = gerudian
-				}
-				num_of_owned_provinces_with = {
-					value = 3
-					area = reaver_coast_area
-					culture_group = gerudian
-				}
-			}
-			AND = { # be a gerudian with a naval interest
-				culture_group = gerudian
-				OR = {
-					num_of_ports = 25
-					has_idea_group = naval_ideas
-					has_idea_group = exploration_ideas
-					num_ships_privateering = 30
-				}
-			}
-		}
-	}
+# 	trigger = {
+# 		adm_tech = 10
+# 		OR = {
+# 			tag = A02 #Deranne
+# 			tag = A05 #Reveria
+# 			tag = A11 #Pearlsedge
+# 			primary_culture = reverian
+# 			AND = { # be a human, own reaver coast (reveria proper), accept reverians
+# 				culture_is_human = yes
+# 				OR = {
+# 					accepted_culture = reverian
+# 					culture_group = gerudian
+# 				}
+# 				num_of_owned_provinces_with = {
+# 					value = 3
+# 					area = reaver_coast_area
+# 					culture_group = gerudian
+# 				}
+# 			}
+# 			AND = { # be a gerudian with a naval interest
+# 				culture_group = gerudian
+# 				OR = {
+# 					num_of_ports = 25
+# 					has_idea_group = naval_ideas
+# 					has_idea_group = exploration_ideas
+# 					num_ships_privateering = 30
+# 				}
+# 			}
+# 		}
+# 	}
 
-	bonus = {
-		same_culture_advisor_cost = -0.2
-		artificers_loyalty_modifier = 0.05
-		adventurers_loyalty_modifier = 0.05
-	}
+# 	bonus = {
+# 		same_culture_advisor_cost = -0.2
+# 		artificers_loyalty_modifier = 0.05
+# 		adventurers_loyalty_modifier = 0.05
+# 	}
 
-	reaver_legacy1 = {
-		hull_size_modifier = 0.1
-		improve_relation_modifier = -0.1 #downside!
-		caravan_power = -0.2 #downside!
-	}
-	reaver_legacy2 = {
-		religious_unity = 0.2
-		tolerance_heathen = 2
-	}
-	reaver_legacy3 = { # Raid the Coasts
-		available_province_loot = 0.5
-		privateer_efficiency = 0.2
-	}
-	reaver_legacy4 = {
-		merchants = 1
-		placed_merchant_power = 10 # kind of weird mechanically since this mostly only matters for inland nodes as trade power in coastal nodes is too high... whatever!
-	}
-	reaver_legacy5 = {
-		drill_decay_modifier = -0.25
-		infantry_power = 0.075
-	}
-	reaver_legacy6 = { #collecting tribute
-		reduced_liberty_desire = 10 
-		global_tax_modifier = 0.15
-	}
-	reaver_legacy7 = { # reaver diplomacy
-		reduced_stab_impacts = yes
-		power_projection_from_insults = 1
-	}
+# 	reaver_legacy1 = {
+# 		hull_size_modifier = 0.1
+# 		improve_relation_modifier = -0.1 #downside!
+# 		caravan_power = -0.2 #downside!
+# 	}
+# 	reaver_legacy2 = {
+# 		religious_unity = 0.2
+# 		tolerance_heathen = 2
+# 	}
+# 	reaver_legacy3 = { # Raid the Coasts
+# 		available_province_loot = 0.5
+# 		privateer_efficiency = 0.2
+# 	}
+# 	reaver_legacy4 = {
+# 		merchants = 1
+# 		placed_merchant_power = 10 # kind of weird mechanically since this mostly only matters for inland nodes as trade power in coastal nodes is too high... whatever!
+# 	}
+# 	reaver_legacy5 = {
+# 		drill_decay_modifier = -0.25
+# 		infantry_power = 0.075
+# 	}
+# 	reaver_legacy6 = { #collecting tribute
+# 		reduced_liberty_desire = 10 
+# 		global_tax_modifier = 0.15
+# 	}
+# 	reaver_legacy7 = { # reaver diplomacy
+# 		reduced_stab_impacts = yes
+# 		power_projection_from_insults = 1
+# 	}
 
-	ai_will_do = {
-		factor = 0.3
-		modifier = {
-			factor = 0
-			has_port = no
-		}
-		modifier = { # Reveria can raid coasts
-			factor = 3
-			has_idea = A05_second_age_of_reavers # Reveria last national idea
-		}
-		modifier = { # privateers
-			factor = 1.5
-			num_ships_privateering = 10
-		}
-		modifier = { # gerudian pirate (navigator)
-			factor = 1.2
-			ruler_has_personality = navigator_personality
-			culture_group = gerudian
-		}
-		modifier = { # naval idea groups
-			factor = 1.2
-			OR = {
-				has_idea_group = naval_ideas
-				has_idea_group = exploration_ideas
-			}
-		}
-		modifier = { # Deranne and Pearlsedge should be extra unlikely to take this, they're mostly de-Reaver-ized
-			factor = 0.5
-			OR = {
-				tag = A02 #Deranne
-				tag = A11 #Pearlsedge
-			}
-		}
-		modifier = { # simple lorent + gawed blacklist, maybe should be more sophisticated than this but idc
-			factor = 0
-			OR = {
-				tag = A01 #Lorent
-				tag = A13 #Gawed
-			}
-		}
-	}
-}
+# 	ai_will_do = {
+# 		factor = 0.3
+# 		modifier = {
+# 			factor = 0
+# 			has_port = no
+# 		}
+# 		modifier = { # Reveria can raid coasts
+# 			factor = 3
+# 			has_idea = A05_second_age_of_reavers # Reveria last national idea
+# 		}
+# 		modifier = { # privateers
+# 			factor = 1.5
+# 			num_ships_privateering = 10
+# 		}
+# 		modifier = { # gerudian pirate (navigator)
+# 			factor = 1.2
+# 			ruler_has_personality = navigator_personality
+# 			culture_group = gerudian
+# 		}
+# 		modifier = { # naval idea groups
+# 			factor = 1.2
+# 			OR = {
+# 				has_idea_group = naval_ideas
+# 				has_idea_group = exploration_ideas
+# 			}
+# 		}
+# 		modifier = { # Deranne and Pearlsedge should be extra unlikely to take this, they're mostly de-Reaver-ized
+# 			factor = 0.5
+# 			OR = {
+# 				tag = A02 #Deranne
+# 				tag = A11 #Pearlsedge
+# 			}
+# 		}
+# 		modifier = { # simple lorent + gawed blacklist, maybe should be more sophisticated than this but idc
+# 			factor = 0
+# 			OR = {
+# 				tag = A01 #Lorent
+# 				tag = A13 #Gawed
+# 			}
+# 		}
+# 	}
+# }
 
-roilsard_legacy = {
-	category = DIP
-	important = yes
+# roilsard_legacy = {
+# 	category = DIP
+# 	important = yes
 
-	trigger = {
-		adm_tech = 10
-		OR = {
-			tag = A78 #Roilsard
-			tag = A57 #Toarnen
-			tag = G91 #Isobelin
-			primary_culture = roilsardi
-			primary_culture = isobeliner
-		}
-	}
+# 	trigger = {
+# 		adm_tech = 10
+# 		OR = {
+# 			tag = A78 #Roilsard
+# 			tag = A57 #Toarnen
+# 			tag = G91 #Isobelin
+# 			primary_culture = roilsardi
+# 			primary_culture = isobeliner
+# 		}
+# 	}
 
-	bonus = {
-		global_ship_trade_power = 0.2
-		placed_merchant_power = 10
-	}
+# 	bonus = {
+# 		global_ship_trade_power = 0.2
+# 		placed_merchant_power = 10
+# 	}
 
-	roilsard_legacy1 = { # trained against the cavalry of lorent
-		shock_damage_received = -0.075
-		cavalry_power = -0.2 #downside! roilsardis don't like cavs
-		prestige_decay = 0.01 #downside! (mostly) roilsardis are known for their hedonistic natures
-	}
-	roilsard_legacy2 = { 
-		range = 0.25
-		colonist_placement_chance = 0.1 # preferred over settler increase to try to balance Isobelin going over colonist limit slightly
-	}
-	roilsard_legacy3 = {
-		development_cost = -0.05
-	}
-	roilsard_legacy4 = { # Lencenor and Dameria
-		diplomats = 1
-		diplomatic_upkeep = 1
-	}
-	roilsard_legacy5 = {
-		diplomatic_annexation_cost = -0.15
-	}
-	roilsard_legacy6 = { # Roilsardi stubbornness
-		tolerance_own = 2
-	}
-	roilsard_legacy7 = { # lots of military bonuses for a DIP group; it's proooobably fine? but be careful
-		infantry_power = 0.075
-	}
+# 	roilsard_legacy1 = { # trained against the cavalry of lorent
+# 		shock_damage_received = -0.075
+# 		cavalry_power = -0.2 #downside! roilsardis don't like cavs
+# 		prestige_decay = 0.01 #downside! (mostly) roilsardis are known for their hedonistic natures
+# 	}
+# 	roilsard_legacy2 = { 
+# 		range = 0.25
+# 		colonist_placement_chance = 0.1 # preferred over settler increase to try to balance Isobelin going over colonist limit slightly
+# 	}
+# 	roilsard_legacy3 = {
+# 		development_cost = -0.05
+# 	}
+# 	roilsard_legacy4 = { # Lencenor and Dameria
+# 		diplomats = 1
+# 		diplomatic_upkeep = 1
+# 	}
+# 	roilsard_legacy5 = {
+# 		diplomatic_annexation_cost = -0.15
+# 	}
+# 	roilsard_legacy6 = { # Roilsardi stubbornness
+# 		tolerance_own = 2
+# 	}
+# 	roilsard_legacy7 = { # lots of military bonuses for a DIP group; it's proooobably fine? but be careful
+# 		infantry_power = 0.075
+# 	}
 
-	ai_will_do = {
-		factor = 0.33
-		modifier = {
-			factor = 2
-			OR = {
-				tag = A78 #Roilsard
-				tag = A57 #Toarnen
-			}
-		}
-		modifier = {
-			factor = 1.2
-			monthly_dip = 8
-		}
-		modifier = {
-			factor = 0.1
-			OR = { # the player can take it as Isobelin, but it should be very unlikely for the AI to do so
-				tag = G91 #Isobelin
-				primary_culture = isobeliner
-			}
-		}
-	}
-}
+# 	ai_will_do = {
+# 		factor = 0.33
+# 		modifier = {
+# 			factor = 2
+# 			OR = {
+# 				tag = A78 #Roilsard
+# 				tag = A57 #Toarnen
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 1.2
+# 			monthly_dip = 8
+# 		}
+# 		modifier = {
+# 			factor = 0.1
+# 			OR = { # the player can take it as Isobelin, but it should be very unlikely for the AI to do so
+# 				tag = G91 #Isobelin
+# 				primary_culture = isobeliner
+# 			}
+# 		}
+# 	}
+# }
