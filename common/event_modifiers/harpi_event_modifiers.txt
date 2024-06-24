@@ -154,3 +154,8 @@ subterranean5_modifier = {
 harpi_gov_idea_dev_cost = {
 	development_cost = -0.05
 }
+
+harpi_infrastructure_modifier = {
+	allowed_num_of_buildings = 1
+	local_governing_cost_increase = -5
+}

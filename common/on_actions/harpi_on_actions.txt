@@ -20,6 +20,13 @@ on_province_owner_change = {
 	harpi_sea_hawks_update = yes
 	harpi_inquisition_owner_change = yes
 	harpi_urbanization_province_update = yes
+	harpi_infrastructure_province_update = yes
+}
+
+# ROOT = province
+on_expanded_infrastructure = {
+	harpi_urbanization_province_update = yes
+	harpi_infrastructure_province_update = yes
 }
 
 on_trade_good_changed = {

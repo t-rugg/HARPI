@@ -553,10 +553,12 @@ extraction_ideas = {
 }
 
 urbanization_ideas = {
+	# this group incentivizes you to expand infrastructure but doesn't give you a discount on that
+	# if you want that, grab infrastructure ideas!
 	category = ADM
 
 	bonus = {
-		state_governing_cost = -0.1
+		governing_capacity_modifier = 0.1
 	}
 
 	trigger = {
@@ -568,11 +570,10 @@ urbanization_ideas = {
 
 	urbanization1 = {
 		state_maintenance_modifier = -0.25
-		expand_infrastructure_cost_modifier = -0.25
 	}
 	urbanization2 = {
 		development_cost = -0.05
-		# additional -5% dev cost and -10% governing cost in cities and in your capital area
+		# additional -5% dev cost in cities and in non-holds with expanded infrastructure
 		effect = {
 			every_owned_province = {
 				harpi_urbanization_province_update = yes
@@ -727,7 +728,7 @@ advanced_armies_ideas = {
 		mil_tech_cost_modifier = -0.1
 	}
 	advanced_armies5 = {
-		global_institution_spread = 0.2
+		global_institution_spread = 0.25
 	}
 	advanced_armies6 = {
 		number_of_cannons_modifier = 0.1
@@ -1770,7 +1771,7 @@ governance_ideas = {
 		global_autonomy = -0.05
 	}
 	governance7 = {
-		governing_capacity_modifier = 0.2
+		governing_capacity_modifier = 0.15
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}
@@ -2070,7 +2071,7 @@ lawful_ideas = {
 		diplomats = 1
 	}
 	lawful6 = {
-		interest = -0.75
+		interest = -0.5
 		discipline = 0.05
 	}
 	lawful7 = {

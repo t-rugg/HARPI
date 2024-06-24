@@ -7021,7 +7021,7 @@
  infrastructure_ideas:0 "Infrastructure Ideas"
  infrastructure_ideas_bonus:0 "Full Infrastructure"
  efficient_construction_plans:0 "Efficient Construction Plans"
- efficient_construction_plans_desc:0 "Our efficient planning around construction allows us to complete orders of work without cutting any corners."
+ efficient_construction_plans_desc:0 "Our efficient planning around construction allows us to complete orders of work without cutting any corners.\n—\nThe first level of expanded infrastructure in a province costs 5 less governing capacity and grants an additional building slot"
  expanded_infrastructure_network:0 "Expanded Infrastructure Network"
  expanded_infrastructure_network_desc:0 "The road network within our nation is a vital part of our commercial and administrative flourishing. As such, we should care to improve and maintain it."
  merchant_passes:0 "Merchant Passes"

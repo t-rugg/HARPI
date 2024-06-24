@@ -401,6 +401,24 @@ harpi_urbanization_province_update = {
 	}
 }
 
+harpi_infrastructure_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_idea = efficient_construction_plans
+			}
+			num_of_times_expanded_infrastructure = 1
+		}
+		add_province_modifier = {
+			name = harpi_infrastructure_modifier
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = harpi_infrastructure_modifier
+	}
+}
+
 harpi_gov_idea_dev_cost_update = {
 	if = {
 		limit = {

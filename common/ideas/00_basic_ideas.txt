@@ -131,7 +131,7 @@ plutocracy_ideas = {
 	}
 	free_cities = {
 		caravan_power = 0.25
-		expand_infrastructure_cost_modifier = -0.25
+		expand_infrastructure_cost_modifier = -0.1
 		# maybe a bonus for expanding infrastructure?
 	}
 	emancipation = {
@@ -1904,26 +1904,35 @@ infrastructure_ideas = { #1.35
 	category = ADM
 
 	bonus = {
-		development_cost = -0.05
+		trade_company_investment_cost = -0.1
 	}
 
 	state_efficiency = {
-		global_prosperity_growth = 0.25
-		# state_maintenance_modifier = -0.33
+		production_efficiency = 0.1
 	}
 	organised_construction = {
 		build_cost = -0.1 
 	}
 	efficient_construction_plans = {
+		# provinces with at least 1 level of expanded infrastructure get a bonus building slot and -5 gov cost increase
 		expand_infrastructure_cost_modifier = -0.25
+		effect = {
+			every_owned_province = {
+				harpi_infrastructure_province_update = yes
+			}
+		}
+		removed_effect = { # ignore CWTools, this works
+			every_owned_province = {
+				remove_province_modifier = harpi_infrastructure_modifier
+			}
+		}
 	}
 	expanded_infrastructure_network = {
 		global_supply_limit_modifier = 0.25
 		global_regiment_recruit_speed = -0.25
 	}
 	administrative_efficiency_idea = {
-		# i don't like this idea at all... what to do...
-		state_governing_cost = -0.1
+		development_cost = -0.05
 	}
 	fort_logistics = {
 		fort_maintenance_modifier = -0.15
