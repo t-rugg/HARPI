@@ -14,19 +14,19 @@ overlord_has_integrated_elites = {
 # }
 
 federalist7_age1 = {
-	administrative_efficiency = 0.01
+	administrative_efficiency = 0.005
 }
 
 federalist7_age2 = {
-	administrative_efficiency = 0.02
+	administrative_efficiency = 0.01
 }
 
 federalist7_age3 = {
-	administrative_efficiency = 0.03
+	administrative_efficiency = 0.015
 }
 
 federalist7_age4 = {
-	administrative_efficiency = 0.04
+	administrative_efficiency = 0.02
 }
 
 monastic1_contemplation = {

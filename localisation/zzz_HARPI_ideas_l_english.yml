@@ -231,7 +231,7 @@
  federalist6:0 "Manufactured Consent"
  federalist6_desc:0 "Creating so many layers of separation between our federal and provincial governments has allowed us to easily deflect criticism. We can simply redirect any complaints to the more appropriate authorities, whoever those may be, and leave them to deal with the peasant rabble.\n—"
  federalist7:0 "Decentralized Administration"
- federalist7_desc:0 "A loose government is a flexible one.\n—\n§G+1%§! Administrative Efficiency per age §Y(for a total of +4% in the Age of Artificery)§!. The full bonus for the current age applies no matter when this idea group was taken."
+ federalist7_desc:0 "A loose government is a flexible one.\n—\n§G+0.5%§! Administrative Efficiency per age §Y(for a total of +3% in the Age of Artificery)§!"
 
  mixed_armies_ideas:0 "Assimilated Army Ideas"
  mixed_armies1:0 "The Monster You Know"
@@ -336,7 +336,23 @@
  lawful_ideas:0 "§YLawful Alignment§!"
 
  chaotic_ideas:0 "§YChaotic Alignment§!"
+ chaotic1:0 "Defanged Institutions"
+ chaotic1_desc:0 "Power corrupts. By limiting the power and influence of various established sectors of the country, we can reduce the amount of vectors for abuse bad actors have.\n—"
+ chaotic2:0 "Changing Plans"
+ chaotic2_desc:0 "Our government policy is fundamentally reactive, rather than proactive. We can easily adapt to changing circumstances rather than needing to fight against restrictive barriers and limitations.\n—§G+1§! free policy of our currently-active national focus's category\n§YNote: There are visual issues with EU4's policy interface; the menu may appear to have a free policy slot, even when there isn't§!"
+ chaotic3:0 "Survival of the Fittest"
+ chaotic3_desc:0 "Only the ignorant still cling to central authorities to protect them from the realities of the world. We should instead embrace the competition, to allow us to be as excellent as possible.\n—"
+ chaotic4:0 "Unrestricted Practice"
+ chaotic4_desc:0 "You shouldn't have a lawman breathing down your neck as you do your daily religious rites.\n—"
+ chaotic5:0 "Flexible Administration"
+ chaotic5_desc:0 "\n—"
+ chaotic6:0 "Chaotic Military Practices"
+ chaotic6_desc:0 "\n—"
+ chaotic7:0 "The Only Right"
+ chaotic7_desc:0 "Some try to argue that their conquests are somehow "noble" or "righteous" or "just". Such attitudes hold them back, as taking more than necessary will expose the falsitude of their posturing. We project no such delusions; might makes right, and so the strong take from the weak.\n—"
 
  stewardship_ideas:0 "Stewardship Ideas"
 
  expeditionary_ideas:0 "§lExpeditionary Ideas§!"
+
+ harpi_gov_idea_dev_cost:0 "From Government Form Idea Group"

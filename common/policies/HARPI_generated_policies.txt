@@ -7862,7 +7862,7 @@ urbanization_ideas_plutocracy_ideas_policy = {
 	}
 	
 	mercenary_manpower = 0.2
-	naval_morale_damage_received = 0.1
+	naval_morale_damage_received = -0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -9612,7 +9612,7 @@ federalist_ideas_plutocracy_ideas_policy = {
 	}
 	
 	state_maintenance_modifier = -0.15
-	naval_morale_damage_received = 0.1
+	naval_morale_damage_received = -0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -14812,7 +14812,7 @@ exploration_ideas_plutocracy_ideas_policy = {
 	}
 	
 	global_prov_trade_power_modifier = 0.1
-	naval_morale_damage_received = 0.1
+	naval_morale_damage_received = -0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -15662,7 +15662,7 @@ court_ideas_plutocracy_ideas_policy = {
 	}
 	
 	global_prov_trade_power_modifier = 0.1
-	naval_morale_damage_received = 0.1
+	naval_morale_damage_received = -0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -18211,7 +18211,7 @@ authority_ideas_plutocracy_ideas_policy = {
 		full_idea_group = plutocracy_ideas
 	}
 	
-	naval_morale_damage_received = 0.1
+	naval_morale_damage_received = -0.1
 	build_time = -0.075
 	
 	effect = {}
@@ -19061,7 +19061,7 @@ adventure_ideas_plutocracy_ideas_policy = {
 		full_idea_group = plutocracy_ideas
 	}
 	
-	naval_morale_damage_received = 0.1
+	naval_morale_damage_received = -0.1
 	yearly_corruption = -0.05
 	
 	effect = {}
@@ -19486,7 +19486,7 @@ monastic_ideas_plutocracy_ideas_policy = {
 		full_idea_group = plutocracy_ideas
 	}
 	
-	naval_morale_damage_received = 0.1
+	naval_morale_damage_received = -0.1
 	advisor_pool = 1
 	
 	effect = {}
@@ -19911,7 +19911,7 @@ lawful_ideas_plutocracy_ideas_policy = {
 		full_idea_group = plutocracy_ideas
 	}
 	
-	naval_morale_damage_received = 0.1
+	naval_morale_damage_received = -0.1
 	yearly_corruption = -0.05
 	
 	effect = {}

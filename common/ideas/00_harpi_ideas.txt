@@ -886,9 +886,11 @@ realist_ideas = {
 	}
 	realist4 = { # spheres of influence
 		reduced_liberty_desire_on_same_continent = 10
+		monthly_kalsyto_influence = 0.1 # kalsyto-specific mechanic
 	}
 	realist5 = {
 		monthly_favor_modifier = 0.33
+		diplomatic_reputation = 1
 	}
 	realist6 = { # realpolitik - we can't let treaties or marital ties hold us back, etc.
 		reduced_stab_impacts = yes
@@ -1504,7 +1506,7 @@ federalist_ideas = {
 		global_unrest = -1
 	}
 	federalist7 = { # Decentralized Administration
-		# 1% EXTRA ADMIN EFFICIENCY PER AGE
+		# 0.5% EXTRA ADMIN EFFICIENCY PER AGE
 		administrative_efficiency = 0.01
 		max_absolutism = -10 #downside!
 		effect = {
@@ -1698,7 +1700,7 @@ imperialist_ideas = {
 	category = DIP
 
 	bonus = {
-		trade_steering = 0.25
+		prestige = 1
 	}
 
 	imperialist1 = {
@@ -1706,6 +1708,7 @@ imperialist_ideas = {
 		can_chain_claim = yes
 	}
 	imperialist2 = {
+		trade_steering = 0.25
 		center_of_trade_upgrade_cost = -0.2
 	}
 	imperialist3 = {
@@ -1723,7 +1726,7 @@ imperialist_ideas = {
 		envoy_travel_time = -0.2
 	}
 	imperialist7 = {
-		province_warscore_cost = -0.075
+		global_colonial_growth = 15
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}
@@ -1801,7 +1804,7 @@ adventure_ideas = {
 	}
 
 	bonus = {
-		global_missionary_strength = 0.015
+		global_missionary_strength = 0.01
 		adventurers_loyalty_modifier = 0.1
 	}
 	adventure1 = { # the call of adventure
@@ -2049,7 +2052,7 @@ lawful_ideas = {
 	}
 
 	bonus = {
-		stability_cost_modifier = -0.15
+		core_creation = -0.05
 		nobles_loyalty_modifier = 0.05
 	}
 
@@ -2065,7 +2068,7 @@ lawful_ideas = {
 	}
 	lawful4 = {
 		global_autonomy = -0.1 # more than usual
-		harsh_treatment_cost = -0.25
+		yearly_harmony = 0.1
 	}
 	lawful5 = {
 		diplomats = 1
@@ -2076,6 +2079,7 @@ lawful_ideas = {
 	}
 	lawful7 = {
 		max_absolutism = 10
+		war_exhaustion_cost = 1
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}
@@ -2139,17 +2143,19 @@ chaotic_ideas = {
 	chaotic4 = {
 		tolerance_heretic = 2
 		tolerance_heathen = 2
+		yearly_harmony = 0.1
 	}
 	chaotic5 = { # Flexible Administration
 		move_capital_cost_modifier = -0.3
-		estate_interaction_cooldown_modifier = -0.2
+		estate_interaction_cooldown_modifier = -0.1
 	}
 	chaotic6 = {
 		mil_advisor_cost = -0.2
 		morale_damage = 0.1
 	}
 	chaotic7 = {
-		core_creation = -0.1
+		province_warscore_cost = -0.075
+		max_absolutism = -10
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}

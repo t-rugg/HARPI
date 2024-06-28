@@ -76,7 +76,7 @@ mil = {
 	"high_seas_ideas": ("production_efficiency = 0.075", "global_foreign_trade_power = 0.1", "artillery_power = 0.05", "trade_company_investment_cost = -0.075", "spy_offence = 0.25", "reinforce_speed = 0.1"),
 	"honor_ideas": ("interest = -0.5", "diplomatic_reputation = 1", "drill_decay_modifier = -0.2", "prestige = 1", "yearly_corruption = -0.05", "cavalry_power = 0.05"),
 	"expeditionary_ideas": ("global_autonomy = -0.05", "improve_relation_modifier = 0.1", "mercenary_discipline = 0.035", "mil_advisor_cost = -0.15", "trade_steering = 0.25", "land_attrition = -0.1"),
-	"plutocracy_ideas": ("build_time = -0.075", "naval_morale_damage_received = 0.1", "mercenary_manpower = 0.2", "yearly_corruption = -0.05", "global_prov_trade_power_modifier = 0.1", "drill_decay_modifier = -0.2")
+	"plutocracy_ideas": ("build_time = -0.075", "naval_morale_damage_received = -0.1", "mercenary_manpower = 0.2", "yearly_corruption = -0.05", "global_prov_trade_power_modifier = 0.1", "drill_decay_modifier = -0.2")
 }
 
 ideas = adm | dip | mil

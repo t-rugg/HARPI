@@ -131,8 +131,6 @@ plutocracy_ideas = {
 	}
 	free_cities = {
 		caravan_power = 0.25
-		expand_infrastructure_cost_modifier = -0.1
-		# maybe a bonus for expanding infrastructure?
 	}
 	emancipation = {
 		manpower_recovery_speed = 0.15

@@ -422,13 +422,11 @@ harpi_infrastructure_province_update = {
 harpi_gov_idea_dev_cost_update = {
 	if = {
 		limit = {
-			owner = {
-				OR = {
-					has_idea = local_nobility
-					has_idea = emancipation
-					has_idea = martyrs
-				}
-			
+			OR = {
+				has_idea = local_nobility
+				has_idea = emancipation
+				has_idea = martyrs
+			}
 		}
 		add_country_modifier = {
 			name = harpi_gov_idea_dev_cost
