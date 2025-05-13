@@ -1527,8 +1527,8 @@ quantity_ideas = {
 
 
 expansion_ideas = {
-	# colonial stuff mostly not touched to preserve colonial balanced
-	# 1 colonist was removed however
+	# colonial stuff mostly not touched to preserve colonial balance
+	# 1 colonist was removed however, and settler increase was nerfed from 20 to 15
 	# other things shuffled around/tweaked
 	# generally speaking, this group was buffed significantly but lost a colonist
 	category = ADM
@@ -1546,11 +1546,11 @@ expansion_ideas = {
 		global_tariffs = 0.10
 	}
 	faster_colonists = {
-		global_colonial_growth = 20
+		global_colonial_growth = 15
 		envoy_travel_time = -0.2
 	}
 	vice_roys  = { #1.35
-		core_creation = -0.10 # goal is to be low enough that players don't feel FORCED to take this even if they don't want to colonize
+		core_creation = -0.075 # goal is to be low enough that players don't feel FORCED to take this even if they don't want to colonize
  	}
 	additional_diplomats = { # change the loc
 		min_autonomy_in_territories = -0.1

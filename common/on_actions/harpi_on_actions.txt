@@ -118,3 +118,40 @@ on_capital_moved = {
 		}
 	}
 }
+
+on_colony_finished = {
+	owner = {
+		if = {
+			limit = { has_idea = expeditionary6 }
+			capital_scope = {
+				area = {
+					if = {
+						limit = { is_institution_enabled = printing_press }
+						add_institution_embracement = {
+							which = printing_press
+							value = 10
+						}
+					}
+					if = {
+						limit = { is_institution_enabled = new_world_i }
+						add_institution_embracement = {
+							which = new_world_i
+							value = 10
+						}
+					}
+					if = {
+						limit = { is_institution_enabled = renaissance }
+						add_institution_embracement = {
+							which = renaissance
+							value = 10
+						}
+					}
+					add_institution_embracement = {
+						which = feudalism
+						value = 10
+					}								
+				}
+			}
+		}
+	}
+}

@@ -239,6 +239,9 @@ subterranean_ideas = { # this group is comparable to Reclamation Ideas but for t
 				has_terrain = dwarven_hold
 				has_terrain = dwarven_hold_surface
 			}
+			NOT = {
+				region = dragon_coast_region
+			}
 		}
 		NOT = {
 			has_idea_group = reclamation_ideas
@@ -309,6 +312,7 @@ expeditionary_ideas = {
 			has_idea_group = reclamation_ideas
 			has_idea_group = subterranean_ideas
 		}
+		is_colonial_nation = no # they get a free colonist from their national ideas in HARPI
 	}
 
 	bonus = {
@@ -318,7 +322,7 @@ expeditionary_ideas = {
 
 	expeditionary1 = { # grand expedition
 		free_leader_pool = 1
-		land_forcelimit = 2 # flat!
+		land_forcelimit = 4 # flat!
 	}
 	expeditionary2 = {
 		army_tradition_from_battle = 1
@@ -332,9 +336,10 @@ expeditionary_ideas = {
 	expeditionary5 = {
 		colonists = 1 # intentionally late in the group - for balance pacing with expansion ideas
 				      # (e.g. ynnic adventurers can fill out expansion + expeditionary simultaneously, so we don't want them getting both colonists upfront)
-		global_colonial_growth = 10
+		global_colonial_growth = 15
 	}
 	expeditionary6 = { # plundered knowledge
+		# upon finishing a colony, gain 10 institution spread in capital up till printing press
 		technology_cost = -0.05
 	}
 	expeditionary7 = {
@@ -1238,7 +1243,7 @@ artificery_ideas = {
 	category = MIL
 
 	bonus = {
-		artificers_privilege_slots = 2
+		artificers_privilege_slots = 1
 	}
 
 	trigger = {
@@ -1250,7 +1255,7 @@ artificery_ideas = {
 		artificers_influence_modifier = 0.1
 	}
 	artificery2 = {
-		allowed_rajput_fraction = 0.15 # artificers - gnomes get 0.3 now... not sure what the right number is
+		allowed_rajput_fraction = 0.05 # artificers
 		# artificers receive +5% discipline
 		effect = {
 			harpi_artificery_artificer_buffs_update = yes
@@ -1267,7 +1272,7 @@ artificery_ideas = {
 		siege_ability = 0.15
 	}
 	artificery5 = {
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.075
 	}
 	artificery6 = {
 		drill_decay_modifier = -0.25
