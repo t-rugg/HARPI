@@ -5,11 +5,10 @@ influence_ideas = {
 
 	bonus = {
 		num_accepted_cultures = 1
-		can_transfer_vassal_wargoal = yes
+		# can_transfer_vassal_wargoal = yes - op?
 	}
 
 	influence1 = {
-		diplomats = 1
 		diplomatic_upkeep = 1
 	}
 	diplomatic_influence = {
@@ -26,12 +25,12 @@ influence_ideas = {
 		envoy_travel_time = -0.25
 		annexation_relations_impact = -0.5
 	}
+	influence6 = {
+		ae_impact = -0.1
+	}
 	buffer_states = {
 		allow_client_states = yes
 		max_absolutism = 5
-	}
-	influence7 = {
-		ae_impact = -0.1
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}
@@ -2091,7 +2090,7 @@ lawful_ideas = {
 	category = DIP
 
 	trigger = {
-		adm_tech = 10
+		adm_tech = 16
 		NOT = {
 			has_idea_group = chaotic_ideas
 		}
@@ -2155,7 +2154,7 @@ chaotic_ideas = {
 	category = DIP
 
 	trigger = {
-		adm_tech = 10
+		adm_tech = 16
 		NOT = {
 			has_idea_group = lawful_ideas
 		}
@@ -2173,7 +2172,6 @@ chaotic_ideas = {
 	chaotic2 = {	
 		national_focus_years = -5
 		# gain 1 free policy of your national focus type
-		# TODO: loc
 		effect = {}
 		removed_effect = {
 			remove_country_modifier = chaotic2_adm_focus
@@ -2199,8 +2197,8 @@ chaotic_ideas = {
 		unjustified_demands = -0.3
 	}
 	chaotic7 = {
-		province_warscore_cost = -0.075
-		max_absolutism = -5
+		province_warscore_cost = -0.1
+		annexation_relations_impact = 1
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}
