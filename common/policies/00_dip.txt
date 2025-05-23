@@ -663,29 +663,29 @@
 # 	}
 # }
 
-# mandatory_service = {
-# 	monarch_power = DIP
-# 	potential = {
-# 		has_idea_group = diplomatic_ideas
-# 		has_idea_group = plutocracy_ideas
-# 	}
-	
-# 	allow = {
-# 		full_idea_group = diplomatic_ideas
-# 		full_idea_group = plutocracy_ideas
-# 	}
-	
-# 	reelection_cost = -0.10
-# 	global_manpower_modifier = 0.1
-# 	may_recruit_female_generals = yes
-# 	female_advisor_chance = 0.25
+mandatory_service = { # must exist for compatibility with anbennar
+	monarch_power = DIP
+	potential = {
+		has_idea_group = diplomatic_ideas
+		has_idea_group = plutocracy_ideas
+	}
 
-# 	effect = {}
-# 	removed_effect = {}
-# 	ai_will_do = {
-# 		factor = 0
-# 	}
-# }
+	allow = {
+		full_idea_group = diplomatic_ideas
+		full_idea_group = plutocracy_ideas
+	}
+
+	reelection_cost = -0.10
+	global_manpower_modifier = 0.1
+	may_recruit_female_generals = yes
+	female_advisor_chance = 0.25
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0
+	}
+}
 
 
 # professional_diplomatic_corps = {
