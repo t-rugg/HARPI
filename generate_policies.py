@@ -37,7 +37,7 @@ adm = { # legalist ideas get special handling
 	"governance_ideas": ("global_tax_modifier = 0.1", "global_own_trade_power = 0.1", "reserves_organisation = 0.1", "years_of_nationalism = -3", "diplomatic_upkeep = 1", "reinforce_speed = 0.1"),
 	"metallurgy_ideas": ("prestige = 1", "caravan_power = 0.25", "fire_damage = 0.05", "monthly_gold_inflation_modifier = -0.25", "global_prov_trade_power_modifier = 0.1", "infantry_fire = 0.075"),
 	"parliamentary_ideas": ("all_estate_loyalty_equilibrium = 0.02", "diplomatic_reputation = 1", "manpower_recovery_speed = 0.10", "advisor_pool = 1", "trade_company_investment_cost = -0.075", "backrow_artillery_damage = 0.05"),
-	"castanor_legacy": ("global_missionary_strength = 0.01", "tolerance_own = 1", "infantry_power = 0.05", "stability_cost_modifier = -0.1", "liberty_desire_from_subject_development = -0.1", "leader_cost = -0.1"),
+	#"castanor_legacy": ("global_missionary_strength = 0.01", "tolerance_own = 1", "infantry_power = 0.05", "stability_cost_modifier = -0.1", "liberty_desire_from_subject_development = -0.1", "leader_cost = -0.1"),
 }
 dip = {
 	"spy_ideas": ("max_absolutism = 5", "dip_advisor_cost = -0.15", "leader_siege = 1", "interest = -0.5", "global_foreign_trade_power = 0.1", "harsh_treatment_cost = -0.2"),
@@ -57,7 +57,7 @@ dip = {
 	"monastic_ideas": ("missionary_maintenance_cost = -0.25", "tolerance_own = 1", "yearly_army_professionalism = 0.002", "global_prosperity_growth = 0.2", "advisor_pool = 1", "drill_decay_modifier = -0.2"),
 	"lawful_ideas": ("global_prosperity_growth = 0.2", "monthly_splendor = 1", "discipline = 0.025", "global_autonomy = -0.05", "global_ship_repair = 0.1", "leader_land_fire = 1"),
 	"chaotic_ideas": ("overextension_impact_modifier = -0.05", "unjustified_demands = -0.1", "land_morale = 0.05", "religious_unity = 0.075", "naval_tradition_from_battle = 0.5", "cavalry_fire = 0.35"),
-	"dwarf_legacy": ("build_cost = -0.075", "caravan_power = 0.25", "army_tradition_decay = -0.01", "global_unrest = -0.075", "reverse_relation_with_same_religion = 10", "defensiveness = 0.15")
+	#"dwarf_legacy": ("build_cost = -0.075", "caravan_power = 0.25", "army_tradition_decay = -0.01", "global_unrest = -0.075", "reverse_relation_with_same_religion = 10", "defensiveness = 0.15")
 }
 mil = {
 	"offensive_ideas": ("available_province_loot = 0.25", "heavy_ship_cost = -0.1", "shock_damage = 0.05", "global_monthly_devastation = -0.05", "trade_company_investment_cost = -0.075", "artillery_barrage_cost = -0.25"),

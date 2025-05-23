@@ -14,19 +14,19 @@ influence_ideas = {
 	diplomatic_influence = {
 		diplomatic_reputation = 2
 	}
-	influence3 = {
-		diplomatic_annexation_cost = -0.15
-	}
 	additional_loyalist_recruitment = {
 		reduced_liberty_desire = 5
 		promote_culture_cost = -0.25
 	}
+	influence4 = {
+		diplomatic_annexation_cost = -0.15
+	}
+	influence5 = {
+		ae_impact = -0.1
+	}
 	postal_service = {
 		envoy_travel_time = -0.25
 		annexation_relations_impact = -0.5
-	}
-	influence6 = {
-		ae_impact = -0.1
 	}
 	buffer_states = {
 		allow_client_states = yes
@@ -957,8 +957,8 @@ integration_ideas = {
 		diplomats = 1
 	}
 	integration5 = {
-		manpower_in_own_culture_provinces = 0.2
-		manpower_in_accepted_culture_provinces = 0.1
+		manpower_in_own_culture_provinces = 0.15
+		manpower_in_accepted_culture_provinces = 0.15
 	}
 	integration6 = {
 		missionaries = 1
@@ -1358,7 +1358,6 @@ leadership_ideas = {
 	category = MIL
 
 	bonus = {
-		army_tradition_decay = -0.01
 		merc_leader_army_tradition = 0.33
 	}
 
@@ -1387,11 +1386,13 @@ leadership_ideas = {
 		leader_naval_manuever = 1
 	}
 	leadership6 = {
-		leader_siege = 1
+		army_tradition_decay = -0.01
 	}
 	leadership7 = {
-		max_general_shock = 1
-		max_general_fire = 1
+		# when taken for the first time, immediately receive a war wizard
+		# AI only gets this if great conquerors enabled!
+		# TODO - implementation and loc
+		leader_siege = 1
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}
